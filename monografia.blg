@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: monografia.aux
+The style file: babunsrt.bst
+Database file #1: bibliografia.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty language in abramo2000relaccoes
+Warning--there's a number but no volume in abramo2000relaccoes
+You've used 5 entries,
+            2465 wiz_defined-function locations,
+            611 strings with 6337 characters,
+and the built_in function-call counts, 1223 in all, are:
+= -- 97
+> -- 27
+< -- 0
++ -- 12
+- -- 7
+* -- 114
+:= -- 164
+add.period$ -- 11
+call.type$ -- 5
+change.case$ -- 4
+chr.to.int$ -- 0
+cite$ -- 7
+duplicate$ -- 69
+empty$ -- 157
+format.name$ -- 17
+if$ -- 273
+int.to.chr$ -- 0
+int.to.str$ -- 5
+missing$ -- 6
+newline$ -- 37
+num.names$ -- 5
+pop$ -- 37
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 20
+stack$ -- 0
+substring$ -- 44
+swap$ -- 24
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 9
+width$ -- 6
+write$ -- 63
+(There were 2 warnings)

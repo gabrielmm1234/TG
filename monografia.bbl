@@ -1,0 +1,57 @@
+\begin{thebibliography}{1}
+  \providebibliographyfont{name}{}%
+  \providebibliographyfont{lastname}{}%
+  \providebibliographyfont{title}{\emph}%
+  \providebibliographyfont{jtitle}{\btxtitlefont}%
+  \providebibliographyfont{etal}{\emph}%
+  \providebibliographyfont{journal}{}%
+  \providebibliographyfont{volume}{}%
+  \providebibliographyfont{ISBN}{\MakeUppercase}%
+  \providebibliographyfont{ISSN}{\MakeUppercase}%
+  \providebibliographyfont{url}{\url}%
+  \providebibliographyfont{numeral}{}%
+  \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+
+\expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem {abramo2000relaccoes}
+\btxnamefont {\btxlastnamefont {Abramo}, Cl{\'a}udio\btxfnamespacelong
+  Weber}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Rela{\c{c}}{\~o}es
+  entre {\'\i}ndices de percep{\c{c}}{\~a}o de corrup{\c{c}}{\~a}o e outros
+  indicadores em onze pa{\'\i}ses da am{\'e}rica latina}{Rela{\c{c}}{\~o}es
+  entre {\'\i}ndices de percep{\c{c}}{\~a}o de corrup{\c{c}}{\~a}o e outros
+  indicadores em onze pa{\'\i}ses da Am{\'e}rica Latina}}.
+\newblock \btxjournalfont {SPECK, Bruno W. et al. Os custos da
+  corrup{\c{c}}{\~a}o. Cadernos Adenauer}, (10):47--62, 2000.
+
+\bibitem {filgueiras2009tolerancia}
+\btxnamefont {\btxlastnamefont {Filgueiras}, Fernando}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {A toler{\^a}ncia {\`a} corrup{\c{c}}{\~a}o
+  no brasil: uma antinomia entre normas morais e pr{\'a}tica social}{A
+  toler{\^a}ncia {\`a} corrup{\c{c}}{\~a}o no Brasil: uma antinomia entre
+  normas morais e pr{\'a}tica social}}.
+\newblock \btxjournalfont {Opini{\~a}o P{\'u}blica}, 15(2):386--421, 2009.
+
+\bibitem {Dbmspopularity}
+\btxnamefont {\btxlastnamefont {engines}~db}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Dbms popularity broken down by database model.}{Dbms
+  popularity broken down by database model.}}
+\newblock \url{https://db-engines.com/en/ranking_categories}.
+\newblock Acessado em setembro de 2017.
+
+\bibitem {ppginf}
+\btxnamefont {\btxlastnamefont {PPGI/UnB}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Regimento do programa de p\'{o}s-gradua\c{c}\~{a}o em
+  inform\'{a}tica da universidade de bras\'{i}lia}{Regimento do Programa de
+  P\'{o}s-gradua\c{c}\~{a}o em Inform\'{a}tica da Universidade de
+  Bras\'{i}lia}}.
+\newblock http://ppgi.unb.br/normatives, 2013.
+
+\bibitem {covey_first_1995}
+\btxnamefont {\btxlastnamefont {Covey}, Stephen\btxfnamespacelong R},
+  \btxnamefont {A\btxfnamespacelong Roger \btxlastnamefont
+  {Merrill}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {Rebecca\btxfnamespacelong R \btxlastnamefont {Merrill}}\btxauthorcolon\
+  \btxtitlefont {First things first}.
+\newblock \btxpublisherfont {Simon and Schuster}, 1995.
+
+\end{thebibliography}
