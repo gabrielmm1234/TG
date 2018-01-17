@@ -1,5 +1,15 @@
 \backcite {abramo2000relaccoes}{{1}{1}{chapter.1}}
 \backcite {filgueiras2009tolerancia}{{1}{1}{chapter.1}}
 \backcite {Dbmspopularity}{{2}{1}{chapter.1}}
-\backcite {ppginf}{{5}{2.2}{section.2.2}}
-\backcite {covey_first_1995}{{13}{2.2}{table.2.2}}
+\backcite {FirstNoSQL}{{4}{2.2.1}{subsection.2.2.1}}
+\backcite {Chang:2008:BDS:1365815.1365816}{{4}{2.2.1}{subsection.2.2.1}}
+\backcite {DeCandia:2007:DAH:1323293.1294281}{{5}{2.2.1}{subsection.2.2.1}}
+\backcite {Cattell:2011:SSN:1978915.1978919}{{5}{2.2.2}{subsection.2.2.2}}
+\backcite {SistemaDeBd}{{6}{2.2.3}{subsection.2.2.3}}
+\backcite {Pritchett:2008:BAA:1394127.1394128}{{6}{2.2.3}{subsection.2.2.3}}
+\backcite {Brewer:2010:CFT:1835698.1835701}{{6}{2.2.3}{subsection.2.2.3}}
+\backcite {nayak2013type}{{7}{2.2.4}{subsection.2.2.4}}
+\backcite {OrientDB}{{8}{2.4.1}{subsection.2.4.1}}
+\backcite {OrientDB}{{8}{2.4.1}{subsection.2.4.1}}
+\backcite {Graphpopularity}{{8}{2.4.1}{subsection.2.4.1}}
+\backcite {dayarathna2012xgdbench}{{9}{2.4.2}{subsection.2.4.2}}

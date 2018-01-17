@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.26)  17 NOV 2017 17:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.26)  16 JAN 2018 23:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1106,7 +1106,7 @@ LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <20> not available
 LaTeX Font Warning: Font shape `T1/ua1/bx/n' in size <20> not available
 (Font)              size <20.74> substituted on input line 39.
 
-<img/positivo_cor.pdf, id=139, 119.44624pt x 60.225pt>
+<img/positivo_cor.pdf, id=92, 119.44624pt x 60.225pt>
 File: img/positivo_cor.pdf Graphic file (type pdf)
 
 <use img/positivo_cor.pdf>
@@ -1162,224 +1162,100 @@ Package babel Info: Redefining portuges shorthand "|
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  17.62474pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.94398pt
+text indent calculated (toc, 0): 13.5pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 1):  17.62474pt
 text indent by \l@... (toc, 1):  27.02464pt
-number indent by parent (toc, 1):  16.94398pt
+number indent by parent (toc, 1):  13.5pt
 text indent calculated (toc, 1): 20.88887pt
-number indent calculated (toc, 1): 16.94398pt
+number indent calculated (toc, 1): 13.5pt
 number indent by \l@... (toc, 1):  17.62474pt
 text indent by \l@... (toc, 1):  27.02464pt
-number indent by parent (toc, 1):  16.94398pt
+number indent by parent (toc, 1):  13.5pt
 text indent calculated (toc, 1): 20.88887pt
-number indent calculated (toc, 1): 16.94398pt
+number indent calculated (toc, 1): 13.5pt
 number indent by \l@... (toc, 1):  17.62474pt
 text indent by \l@... (toc, 1):  27.02464pt
-number indent by parent (toc, 1):  16.94398pt
+number indent by parent (toc, 1):  13.5pt
 text indent calculated (toc, 1): 20.88887pt
-number indent calculated (toc, 1): 16.94398pt
+number indent calculated (toc, 1): 13.5pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  17.62474pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.94398pt
-number indent calculated (toc, 0): 0.0pt
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 8.
-(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 8.
-
-number indent by \l@... (toc, 1):  17.62474pt
-text indent by \l@... (toc, 1):  27.02464pt
-number indent by parent (toc, 1):  16.94398pt
-text indent calculated (toc, 1): 20.88887pt
-number indent calculated (toc, 1): 16.94398pt
-number indent by \l@... (toc, 1):  17.62474pt
-text indent by \l@... (toc, 1):  27.02464pt
-number indent by parent (toc, 1):  16.94398pt
-text indent calculated (toc, 1): 20.88887pt
-number indent calculated (toc, 1): 16.94398pt
-number indent by \l@... (toc, 1):  17.62474pt
-text indent by \l@... (toc, 1):  27.02464pt
-number indent by parent (toc, 1):  16.94398pt
-text indent calculated (toc, 1): 20.88887pt
-number indent calculated (toc, 1): 16.94398pt
-number indent by \l@... (toc, 1):  17.62474pt
-text indent by \l@... (toc, 1):  27.02464pt
-number indent by parent (toc, 1):  16.94398pt
-text indent calculated (toc, 1): 20.88887pt
-number indent calculated (toc, 1): 16.94398pt
-number indent by \l@... (toc, 1):  17.62474pt
-text indent by \l@... (toc, 1):  27.02464pt
-number indent by parent (toc, 1):  16.94398pt
-text indent calculated (toc, 1): 20.88887pt
-number indent calculated (toc, 1): 16.94398pt
-number indent by \l@... (toc, 2):  44.64938pt
-text indent by \l@... (toc, 2):  37.59943pt
-number indent by parent (toc, 2):  37.83286pt
-text indent calculated (toc, 2): 30.02785pt
-number indent calculated (toc, 2): 37.83286pt
-number indent by \l@... (toc, 2):  44.64938pt
-text indent by \l@... (toc, 2):  37.59943pt
-number indent by parent (toc, 2):  37.83286pt
-text indent calculated (toc, 2): 30.02785pt
-number indent calculated (toc, 2): 37.83286pt
-number indent by \l@... (toc, 2):  44.64938pt
-text indent by \l@... (toc, 2):  37.59943pt
-number indent by parent (toc, 2):  37.83286pt
-text indent calculated (toc, 2): 30.02785pt
-number indent calculated (toc, 2): 37.83286pt
-number indent by \l@... (toc, 2):  44.64938pt
-text indent by \l@... (toc, 2):  37.59943pt
-number indent by parent (toc, 2):  37.83286pt
-text indent calculated (toc, 2): 30.02785pt
-number indent calculated (toc, 2): 37.83286pt
-number indent by \l@... (toc, 2):  44.64938pt
-text indent by \l@... (toc, 2):  37.59943pt
-number indent by parent (toc, 2):  37.83286pt
-text indent calculated (toc, 2): 30.02785pt
-number indent calculated (toc, 2): 37.83286pt
-number indent by \l@... (toc, 0):  0.0pt
-text indent by \l@... (toc, 0):  17.62474pt
-number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.94398pt
+text indent calculated (toc, 0): 13.5pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 1):  17.62474pt
 text indent by \l@... (toc, 1):  27.02464pt
-number indent by parent (toc, 1):  16.94398pt
+number indent by parent (toc, 1):  13.5pt
 text indent calculated (toc, 1): 20.88887pt
-number indent calculated (toc, 1): 16.94398pt
-number indent by \l@... (toc, 2):  44.64938pt
-text indent by \l@... (toc, 2):  37.59943pt
-number indent by parent (toc, 2):  37.83286pt
-text indent calculated (toc, 2): 30.02785pt
-number indent calculated (toc, 2): 37.83286pt
-number indent by \l@... (toc, 2):  44.64938pt
-text indent by \l@... (toc, 2):  37.59943pt
-number indent by parent (toc, 2):  37.83286pt
-text indent calculated (toc, 2): 30.02785pt
-number indent calculated (toc, 2): 37.83286pt
-number indent by \l@... (toc, 2):  44.64938pt
-text indent by \l@... (toc, 2):  37.59943pt
-number indent by parent (toc, 2):  37.83286pt
-text indent calculated (toc, 2): 30.02785pt
-number indent calculated (toc, 2): 37.83286pt
-number indent by \l@... (toc, 2):  44.64938pt
-text indent by \l@... (toc, 2):  37.59943pt
-number indent by parent (toc, 2):  37.83286pt
-text indent calculated (toc, 2): 30.02785pt
-number indent calculated (toc, 2): 37.83286pt
-number indent by \l@... (toc, 2):  44.64938pt
-text indent by \l@... (toc, 2):  37.59943pt
-number indent by parent (toc, 2):  37.83286pt
-text indent calculated (toc, 2): 30.02785pt
-number indent calculated (toc, 2): 37.83286pt
-number indent by \l@... (toc, 0):  0.0pt
-text indent by \l@... (toc, 0):  17.62474pt
-number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.94398pt
-number indent calculated (toc, 0): 0.0pt
+number indent calculated (toc, 1): 13.5pt
 number indent by \l@... (toc, 1):  17.62474pt
 text indent by \l@... (toc, 1):  27.02464pt
-number indent by parent (toc, 1):  16.94398pt
+number indent by parent (toc, 1):  13.5pt
 text indent calculated (toc, 1): 20.88887pt
-number indent calculated (toc, 1): 16.94398pt
+number indent calculated (toc, 1): 13.5pt
+number indent by \l@... (toc, 2):  44.64938pt
+text indent by \l@... (toc, 2):  37.59943pt
+number indent by parent (toc, 2):  34.38887pt
+text indent calculated (toc, 2): 30.02785pt
+number indent calculated (toc, 2): 34.38887pt
+number indent by \l@... (toc, 2):  44.64938pt
+text indent by \l@... (toc, 2):  37.59943pt
+number indent by parent (toc, 2):  34.38887pt
+text indent calculated (toc, 2): 30.02785pt
+number indent calculated (toc, 2): 34.38887pt
+number indent by \l@... (toc, 2):  44.64938pt
+text indent by \l@... (toc, 2):  37.59943pt
+number indent by parent (toc, 2):  34.38887pt
+text indent calculated (toc, 2): 30.02785pt
+number indent calculated (toc, 2): 34.38887pt
+number indent by \l@... (toc, 2):  44.64938pt
+text indent by \l@... (toc, 2):  37.59943pt
+number indent by parent (toc, 2):  34.38887pt
+text indent calculated (toc, 2): 30.02785pt
+number indent calculated (toc, 2): 34.38887pt
 number indent by \l@... (toc, 1):  17.62474pt
 text indent by \l@... (toc, 1):  27.02464pt
-number indent by parent (toc, 1):  16.94398pt
+number indent by parent (toc, 1):  13.5pt
 text indent calculated (toc, 1): 20.88887pt
-number indent calculated (toc, 1): 16.94398pt
+number indent calculated (toc, 1): 13.5pt
+number indent by \l@... (toc, 1):  17.62474pt
+text indent by \l@... (toc, 1):  27.02464pt
+number indent by parent (toc, 1):  13.5pt
+text indent calculated (toc, 1): 20.88887pt
+number indent calculated (toc, 1): 13.5pt
+number indent by \l@... (toc, 2):  44.64938pt
+text indent by \l@... (toc, 2):  37.59943pt
+number indent by parent (toc, 2):  34.38887pt
+text indent calculated (toc, 2): 30.02785pt
+number indent calculated (toc, 2): 34.38887pt
+number indent by \l@... (toc, 2):  44.64938pt
+text indent by \l@... (toc, 2):  37.59943pt
+number indent by parent (toc, 2):  34.38887pt
+text indent calculated (toc, 2): 30.02785pt
+number indent calculated (toc, 2): 34.38887pt
+number indent by \l@... (toc, 2):  44.64938pt
+text indent by \l@... (toc, 2):  37.59943pt
+number indent by parent (toc, 2):  34.38887pt
+text indent calculated (toc, 2): 30.02785pt
+number indent calculated (toc, 2): 34.38887pt
+number indent by \l@... (toc, 1):  17.62474pt
+text indent by \l@... (toc, 1):  27.02464pt
+number indent by parent (toc, 1):  13.5pt
+text indent calculated (toc, 1): 20.88887pt
+number indent calculated (toc, 1): 13.5pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  17.62474pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.94398pt
-number indent calculated (toc, 0): 0.0pt
-number indent by \l@... (toc, 0):  0.0pt
-text indent by \l@... (toc, 0):  17.62474pt
-number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.94398pt
-number indent calculated (toc, 0): 0.0pt
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 35.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 35.
-[7
-
-]
-number indent by \l@... (toc, 0):  0.0pt
-text indent by \l@... (toc, 0):  17.62474pt
-number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.94398pt
-number indent calculated (toc, 0): 0.0pt
-number indent by \l@... (toc, 0):  0.0pt
-text indent by \l@... (toc, 0):  17.62474pt
-number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.94398pt
-number indent calculated (toc, 0): 0.0pt
-number indent by \l@... (toc, 0):  0.0pt
-text indent by \l@... (toc, 0):  17.62474pt
-number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.94398pt
+text indent calculated (toc, 0): 13.5pt
 number indent calculated (toc, 0): 0.0pt
 )
 \tf@toc=\write7
 \openout7 = `monografia.toc'.
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 39.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 39.
- [8] (./monografia.lof
-number indent by \l@... (lof, 1):  17.62474pt
-text indent by \l@... (lof, 1):  27.02464pt
-number indent by parent (lof, 1):  17.62474pt
-text indent calculated (lof, 1): 20.88887pt
-number indent calculated (lof, 1): 17.62474pt
-number indent by \l@... (lof, 1):  17.62474pt
-text indent by \l@... (lof, 1):  27.02464pt
-number indent by parent (lof, 1):  17.62474pt
-text indent calculated (lof, 1): 20.88887pt
-number indent calculated (lof, 1): 17.62474pt
-number indent by \l@... (lof, 1):  17.62474pt
-text indent by \l@... (lof, 1):  27.02464pt
-number indent by parent (lof, 1):  17.62474pt
-text indent calculated (lof, 1): 20.88887pt
-number indent calculated (lof, 1): 17.62474pt
-)
-\tf@lof=\write8
-\openout8 = `monografia.lof'.
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 39.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 39.
- [9
-
-] (./monografia.lot
-number indent by \l@... (lot, 1):  17.62474pt
-text indent by \l@... (lot, 1):  27.02464pt
-number indent by parent (lot, 1):  17.62474pt
-text indent calculated (lot, 1): 20.88887pt
-number indent calculated (lot, 1): 17.62474pt
-number indent by \l@... (lot, 1):  17.62474pt
-text indent by \l@... (lot, 1):  27.02464pt
-number indent by parent (lot, 1):  17.62474pt
-text indent calculated (lot, 1): 20.88887pt
-number indent calculated (lot, 1): 17.62474pt
-number indent by \l@... (lot, 1):  17.62474pt
-text indent by \l@... (lot, 1):  27.02464pt
-number indent by parent (lot, 1):  17.62474pt
-text indent calculated (lot, 1): 20.88887pt
-number indent calculated (lot, 1): 17.62474pt
-)
-\tf@lot=\write9
-\openout9 = `monografia.lot'.
-
  (./tex/siglas.tex
-\@gls@deffile=\write10
-\openout10 = `monografia.glsdefs'.
+\@gls@deffile=\write8
+\openout8 = `monografia.glsdefs'.
 
 )
 No file monografia.acr.
@@ -1387,7 +1263,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 39.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 39.
-[10
+[7
 
 ] (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
@@ -1402,30 +1278,30 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 40.
 (./tex/1_Introducao.tex
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 8.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 8.
  [1
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 10.
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 15.
+(babel)             in language  on input line 11.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 16.
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 15.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 16.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 22.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 25.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 25.
- [2]
+(babel)             in language  on input line 23.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 26.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 26.
+ [2]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 27.
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 41.
@@ -1436,207 +1312,70 @@ Package babel Info: Redefining portuges shorthand "|
 Cap\'{\i }tulo 2.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 41.
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 41.
 (./tex/2_UnB-CIC.tex
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 23.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 26.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 31.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 31.
  [4
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 68.
-
-Overfull \hbox (51.10614pt too wide) in paragraph at lines 83--83
-[]\T1/lmtt/m/n/12 \coordenador[a]{\prof[a] \dr[a] Ada Lovelace}{Bibliothèque un
-iverselle de Genève}%[] 
- []
-
+(babel)             in language  on input line 34.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 46.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 48.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 48.
+ [5]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 59.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 59.
+ [6]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 64.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 85.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 91.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 95.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 95.
+ [7]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 95.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 103.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 105.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 106.
-[5]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 109.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 109.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 109.
+(babel)             in language  on input line 105.
+ [8]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 124.
+(babel)             in language  on input line 108.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 133.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 150.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 150.
- [6]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 200.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 200.
- [7]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 220.
- <img/contorno_preto.pdf, id=304, 51.392pt x 25.696pt>
-File: img/contorno_preto.pdf Graphic file (type pdf)
-
-<use img/contorno_preto.pdf>
-Package pdftex.def Info: img/contorno_preto.pdf used on input line 247.
-(pdftex.def)             Requested size: 227.62206pt x 113.81354pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 258.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 258.
-[8]
-File: img/positivo_cor.pdf Graphic file (type pdf)
- <use img/positivo_cor.pdf>
-Package pdftex.def Info: img/positivo_cor.pdf used on input line 268.
-(pdftex.def)             Requested size: 113.81102pt x 57.3834pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 284.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 284.
- [9 <./img/contorno_preto.pdf>]
-
-LaTeX Warning: Reference `latexvsword' on page 10 undefined on input line 287.
-
-File: img/positivo_cor.pdf Graphic file (type pdf)
-<use img/positivo_cor.pdf>
-Package pdftex.def Info: img/positivo_cor.pdf used on input line 297.
-(pdftex.def)             Requested size: 113.81102pt x 57.3834pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 304.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 331.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 331.
- [10]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 363.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 379.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 379.
- [11]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 427.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 427.
- [12]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 460.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 478.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 478.
- [13])
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 42.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 42.
- [14]
-Cap\'{\i }tulo 3.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 42.
-(./tex/3_TCC.tex
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 3.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 10.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 16.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 16.
- [15
-
-]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 21.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 30.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 33.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 33.
- [16]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 41.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 55.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 55.
- [17]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 115.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 43.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 43.
- [18]
-Cap\'{\i }tulo 4.
+(babel)             in language  on input line 42.
+ [9]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 43.
-(./tex/4_Apresentacao.tex
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 10.
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-[][][][]$\T1/lmtt/m/n/10 http : / / www . smallbusinesscomputing . com / biztoo
-ls / article . php / 684871 /
- []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 34.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 34.
-[19
-
-]
-Overfull \hbox (251.25394pt too wide) in paragraph at lines 36--36
-[][][][]$\T1/lmtt/m/n/10 http : / / finiteattentionspan . wordpress . com / 200
-9 / 11 / 02 / the-[]only-[]rule-[]about-[]giving-[]presentations-[]that-[]matte
-rs-[]is-[]the-[]rule-[]of-[]attention$[]| 
- []
-
-
-Overfull \hbox (11.00462pt too wide) in paragraph at lines 39--39
-[][][][]$\T1/lmtt/m/n/10 http : / / www . speakingaboutpresenting . com / conte
-nt / 7-[]ways-[]audience-[]attention-[]presentation$[]| 
- []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 60.
-)
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 44.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 44.
- [20]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 45.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 45.
- [21]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 45.
- (./monografia.bbl (./monografia.brf)
-\tf@brf=\write11
-\openout11 = `monografia.brf'.
+(babel)             in language  on input line 42.
+ (./monografia.bbl
+(./monografia.brf)
+\tf@brf=\write9
+\openout9 = `monografia.brf'.
 
 
 babelbib: Using the BibTeX style's default font for `name'.
@@ -1650,142 +1389,33 @@ babelbib: Using the BibTeX style's default font for `ISBN'.
 babelbib: Using the BibTeX style's default font for `ISSN'.
 babelbib: Using the BibTeX style's default font for `url'.
 babelbib: Using the BibTeX style's default font for `numeral'.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 40.
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 45.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 45.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 45.
- [22
-
-
-]
-Ap\^endice A.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 45.
-(./tex/Apendice_Fichamento.tex
-<doc/Fichamento.pdf, id=477, 597.50829pt x 845.0471pt>
-File: doc/Fichamento.pdf Graphic file (type pdf)
-
-<use doc/Fichamento.pdf>
-Package pdftex.def Info: doc/Fichamento.pdf used on input line 1.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-File: doc/Fichamento.pdf Graphic file (type pdf)
- <use doc/Fichamento.pdf>
-Package pdftex.def Info: doc/Fichamento.pdf used on input line 1.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-
-<doc/Fichamento.pdf, id=480, page=1, 597.50829pt x 845.0471pt>
-File: doc/Fichamento.pdf Graphic file (type pdf)
-
-<use doc/Fichamento.pdf, page 1>
-Package pdftex.def Info: doc/Fichamento.pdf, page1 used on input line 1.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-File: doc/Fichamento.pdf Graphic file (type pdf)
- <use doc/Fichamento.pdf, page 1>
-Package pdftex.def Info: doc/Fichamento.pdf, page1 used on input line 1.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
- [23
-
-]
-File: doc/Fichamento.pdf Graphic file (type pdf)
-
-<use doc/Fichamento.pdf, page 1>
-Package pdftex.def Info: doc/Fichamento.pdf, page1 used on input line 1.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: doc/Fichamento.pdf Graphic file (type pdf)
- <use doc/Fichamento.pdf, page 1>
-Package pdftex.def Info: doc/Fichamento.pdf, page1 used on input line 1.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-File: doc/Fichamento.pdf Graphic file (type pdf)
-
-<use doc/Fichamento.pdf, page 1>
-Package pdftex.def Info: doc/Fichamento.pdf, page1 used on input line 1.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
- [24 <./doc/Fichamento.pdf>]
-<doc/Fichamento.pdf, id=526, page=2, 597.50829pt x 845.0471pt>
-File: doc/Fichamento.pdf Graphic file (type pdf)
-
-<use doc/Fichamento.pdf, page 2>
-Package pdftex.def Info: doc/Fichamento.pdf, page2 used on input line 1.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: doc/Fichamento.pdf Graphic file (type pdf)
- <use doc/Fichamento.pdf, page 2>
-Package pdftex.def Info: doc/Fichamento.pdf, page2 used on input line 1.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-File: doc/Fichamento.pdf Graphic file (type pdf)
-
-<use doc/Fichamento.pdf, page 2>
-Package pdftex.def Info: doc/Fichamento.pdf, page2 used on input line 1.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
- [25 <./doc/Fichamento.pdf>]
-<doc/Fichamento.pdf, id=536, page=3, 597.50829pt x 845.0471pt>
-File: doc/Fichamento.pdf Graphic file (type pdf)
-
-<use doc/Fichamento.pdf, page 3>
-Package pdftex.def Info: doc/Fichamento.pdf, page3 used on input line 1.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: doc/Fichamento.pdf Graphic file (type pdf)
- <use doc/Fichamento.pdf, page 3>
-Package pdftex.def Info: doc/Fichamento.pdf, page3 used on input line 1.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-File: doc/Fichamento.pdf Graphic file (type pdf)
-
-<use doc/Fichamento.pdf, page 3>
-Package pdftex.def Info: doc/Fichamento.pdf, page3 used on input line 1.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
- [26 <./doc/Fichamento.pdf>])
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 46.
-
-Anexo I.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 46.
-(./tex/Anexo1.tex
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 51.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 51.
- [27
-
-]
-Overfull \hbox (10.4033pt too wide) in paragraph at lines 51--51
-[]\T1/lmtt/m/n/10.95 %%                               "doutorado", "ppginf", e 
-"ppca" para identificar[] 
+Underfull \hbox (badness 1033) in paragraph at lines 103--103
+[]\T1/lmr/m/n/12 Pritchett, Dan: \T1/lmr/m/it/12 Base: An acid al-ter-na-tive\T
+1/lmr/m/n/12 .  Queue, 6(3):48--55, []maio []2008,
  []
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
+[10
+
+
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 47.
- [28]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
+(babel)             in language  on input line 42.
+ [11]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
  (./monografia.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 42.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 42.
 Package rerunfilecheck Info: File `monografia.out' has not changed.
-(rerunfilecheck)             Checksum: CCDF1CD502836F0BB3C2017C9CE9DC2F;2072.
+(rerunfilecheck)             Checksum: 8F23AA17C8EC03641A9CB731B0B03C96;1377.
 Package rerunfilecheck Info: File `monografia.brf' has not changed.
-(rerunfilecheck)             Checksum: 36E22C812FED9D85E5B4FCAC52CBE95A;246.
+(rerunfilecheck)             Checksum: 3B3ADADFFBF6300AC668995508281022;916.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1794,50 +1424,30 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
  )
 (\end occurred when \iffalse on line 120 was incomplete) 
 Here is how much of TeX's memory you used:
- 14416 strings out of 493029
- 215577 string characters out of 6136234
- 400994 words of memory out of 5000000
- 17425 multiletter control sequences out of 15000+600000
- 79739 words of font info for 58 fonts, out of 8000000 for 9000
+ 14232 strings out of 493029
+ 213012 string characters out of 6136234
+ 398833 words of memory out of 5000000
+ 17340 multiletter control sequences out of 15000+600000
+ 48854 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,18n,69p,1940b,611s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): 
-name{glo:CTAN} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{glo:UnB} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{glo:CIC} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{glo:BCE} has been referenced but does not exist, re
-placed by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/
-dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/t
-exmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/cm-supe
-r/cm-super-t1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-r12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/font
-s/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></u
-sr/share/texmf/fonts/type1/public/cm-super/sfrm2074.pfb>
-Output written on monografia.pdf (38 pages, 408187 bytes).
+ 53i,6n,69p,1940b,597s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts
+/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/us
+r/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/fonts/
+type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf/fonts/type1/public/
+cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm2074.pf
+b>
+Output written on monografia.pdf (18 pages, 189892 bytes).
 PDF statistics:
- 633 PDF objects out of 1000 (max. 8388607)
- 561 compressed objects within 6 object streams
- 128 named destinations out of 1000 (max. 500000)
- 313 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 315 PDF objects out of 1000 (max. 8388607)
+ 283 compressed objects within 3 object streams
+ 66 named destinations out of 1000 (max. 500000)
+ 182 words of extra memory for PDF output out of 10000 (max. 10000000)
 

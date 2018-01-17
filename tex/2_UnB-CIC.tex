@@ -11,484 +11,112 @@
 #1\end{minipage}}%
 \\\vspace{\baselineskip}}%
 
-
-Este capítulo descreve a classe \unbcic, e demonstra os comandos disponíveis. A
-última versão foi atualizada pelo Prof. Ralha, em 2008 (vide \refAnexo{Anexo1}).
-A melhor forma de entender o funcionamento é observar o arquivo principal deste
-documento (\texttt{monografia.tex}).
+Este capítulo descreve toda a fundamentação teórica por trás das tecnologias utilizadas na implementação do estudo de caso. Inicialmente, explico os conceitos gerais relacionados a teoria de grafos, em seguida, aponto as principais características e utilidades dos SGBDs NoSQL. Posteriormente, aponto as características e particularidades de um SGBD orientado a grafos, junto com uma explicação acerca do SGBD escolhido para o trabalho que é o OrientDB. Por fim, explico um pouco sobre a tecnologia REST utilizada para a comunicação entre o sistema desenvolvido e o OrientDB.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Gerando o PDF}
-
-Para gerar corretamente as referências cruzadas, é necessário processar os arquivos
-mais de uma vez com a seguinte sequência de comandos (supondo que o arquivo
-principal seja \texttt{monografia.tex}).
-
-\begin{verbatim}
-pdflatex monografia
-bibtex monografia
-makeglossaries monografia
-pdflatex monografia
-\end{verbatim}
-
-O primeiro comando processa os arquivos, indicando quais referências foram citadas
-no texto (bibliográficas ou cruzadas), o segundo comando processa o arquivo
-\texttt{.bib} que contém as informações bibliográficas, o terceiro gera o índice
-de siglas/abreviaturas, e o último comando junta todas estas informações,
-produzindo um texto com referências cruzadas funcionais.
+\section{Teoria de Grafos}
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Opções}
-O documento é gerado em função do curso dado como opção [obrigatória] a classe.
-Os cursos disponíveis são:
-\begin{description}
-  \item[bacharelado] Bacharelado em Ciência da Computação
-  \item[licenciatura] Licenciatura em Computação
-  \item[engenharia] Engenharia de Computação
-  \item[mestrado, ppginf] Mestrado em Informática
-  \item[doutorado, ppginf] Doutorado em Informática
-  \item[mestrado, ppca] Mestrado Profissional em Computação Aplicada
-\end{description}
+\section{SGBD NoSQL}
+	Essa seção aborda a categoria de bancos de dados não relacionais. Inicialmente, realizo uma introdução sobre o assunto, para em seguida explicitar as principais características e categorias dentro desse grupo de bancos de dados.
+	
+\subsection{Introdução}
+	O termo NoSQL foi utilizado na literatura pela primeira vez por Carlo Strozzi em 1998 como o nome de um banco de dados que ele estava desenvolvendo na época \cite{FirstNoSQL}. Curiosamente, é um banco relacional que não possuia interface SQL, portanto, NoSQL. Entre o período dos anos de 2000 e 2005 o universo dos SGBD NoSQL começou a aumentar bastante, o SGBD baseado em grafo Neo4j começou a ser desenvolvido no ano de 2000, o SGBD da Google BigTable\cite{Chang:2008:BDS:1365815.1365816} começa em 2004 e em seguida o CouchDB se inicia por volta de 2005. Porém, todas essas tecnologias não eram na época categorizadas como NoSQL, somente em 2009 o termo foi reintroduzido por Johan Oskarsson ao organizar um evento para discutir sobre banco de dados não relacionais, distribuídos e de código aberto, e a partir desse momento o termo passa a ser usado para categorizar os bancos de dados não relacionais.
+	
+	O termo NoSQL gera muita confusão pois leva a entender que os bancos de dados nessa categoria não utilizam a linguagem SQL. Porém, o termo costuma ser utilizado como \textit{Not only SQL}, e demonstra que tais sistemas podem suportar também linguagens de consultas baseadas em SQL. O aspecto mais importante por trás dos SGBD NoSQL é o motivo de seus surgimentos. No início dos anos 2000, a forma como os usuários começaram a interagir na internet começou a evoluir e consequentemente os sistemas e aplicações passaram a gerar e consumir cada vez mais dados e informações. Esse crescimento na geração e consumo de dados foi enorme, e por isso os especialistas necessitavam de tecnologias que atendessem melhor suas necessidades, desse cenário começaram a nascer os primeiros SGBD NoSQL como o BigTable da google e o Dynamo da Amazon\cite{DeCandia:2007:DAH:1323293.1294281}.
+	
+\subsection{Características de um SGBD NoSQL}
+	Como foi mencionado acima, por volta dos anos 2000 começou a nascer a necessidade de novas tecnologias na área de banco de dados. Os sistemas precisavam de boa escalabilidade horizontal para operações de forma distribuída, entre outras coisas. Vários aspectos relacionados a categoria dos SGBD NoSQL são ainda abertos e não possuem um consenso. O trabalho feito por Rick Cattell\cite{Cattell:2011:SSN:1978915.1978919} aglomerou algumas características que geralmente se encontram nesse tipo de banco de dados: 
+	\begin{itemize}
+		\item Habilidade de escalar horizontalmente operações simples através de vários servidores
+		\item Habilidade de replicar e distribuir os dados através de vários servidores
+		\item Um modelo de concorrência mais flexível que as transações ACID presentes em sistemas relacionais.
+		\item Uso eficiente de índices distribuidos e da memória RAM para armazenar os dados
+		\item Habilidade de adicionar dinamicamente novos atributos a um registro
+	\end{itemize}
+	
+	Porém, é importante ressaltar que nem todas essas características precisam ser atendidas para fazer parte dessa categoria. Sendo que também existem outras características importantes observadas em alguns sistemas como por exemplo, disponibilidade e consistência dos dados, níveis de flexibilidade para o esquema do banco de dados e etc.
 
-No caso dos cursos de pós-graduação, há o \emph{exame de qualificação} do
-discente, a qual deverá constar a definição, pertinência do projeto, a sua
-abrangência, comprovação da eficiência e eficácia da metodologia proposta, uma
-revisão bibliográfica detalhada e o cronograma para conclusão do projeto~\cite{ppginf}.
-Para gerar o documento referente a este exame, use a opção \textbf{qualificacao}.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Informações do Trabalho}%
-O passo seguinte é definir as informações do trabalho, identificando os autores
-e os membros da banca (atenção a definição do gênero!). Por exemplo, para este
-documento foram utilizadas as seguintes definições:
-
-\begin{verbatim}
-\orientador{\prof \dr Guilherme Novaes Ramos}{CIC/UnB}%
-%\coorientador{\prof \dr José Ralha}{CIC/UnB}
-\coordenador[a]{\prof[a] \dr[a] Ada Lovelace}{Bibliothèque universelle de Genève}%
-\diamesano{24}{dezembro}{2014}%
-
-\membrobanca{\prof \dr Donald Knuth}{Stanford University}%
-\membrobanca{\dr Leslie Lamport}{Microsoft Research}%
-
-\autor{Guilherme N.}{Ramos}%
-\end{verbatim}
-
-Sobre o texto, definiu-se:
-\begin{verbatim}
-\titulo{UnB-CIC: Uma classe em LaTeX para textos do Departamento de
-Ciência da Computação}%
-
-\palavraschave{LaTeX, metodologia científica}%
-\keywords{LaTeX, scientific method}%
-\end{verbatim}
-
-O título, apesar do tamanho reduzido, deveria apresentar uma ideia clara de todo
-o trabalho. As palavras-chave devem indicar os conceitos genéricos mais relevantes
-utilizados, e servem para indexação e busca de documentos que tratam os mesmos
-temas.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Arquivos}
-Os seguintes arquivos são exigidos:
-\begin{description}%
-    \item[tex/abstract.tex] Contém o \emph{abstract} do texto.%
-    \item[tex/agradecimentos.tex] Contém os agradecimentos do autor.%
-    \item[bibliografia.bib] Contém as referências bibliográficas no formato
-    ${\mathrm{B{\scriptstyle{IB}}T_{\displaystyle E}X}}$\footnote{\url{http://www.bibtex.org}}.%
-    %\item[tex/capitulo1.tex] Contém o primeiro capítulo.%
-    \item[tex/dedicatoria.tex] Contém a dedicatória do autor.%
-    \item[tex/siglas.tex] Contém as definições de siglas/abreviaturas.%
-    \item[tex/resumo.tex] Contém o resumo do texto.%
-\end{description}%
-
-Os alunos dos Programas de Pós-Graduação da Universidade de Brasília devem incluir a ficha catalográfica em seus documentos, gerada pela \acrfull{BCE}. Neste caso, o aluno deve substituir o arquivo PDF \textbf{doc/BDM.pdf} pelo fornecido pela \acrshort{BCE}. \emph{Atenção}, para que o arquivo seja incluido automaticamente pela classe, o nome deve ser \emph{obrigatoriamente} \textbf{BDM.pdf}.%
-
-Demais arquivos não são inseridos automaticamente, mas a classe oferece comandos
-para inclusão, facilitando a organização destes.
+\subsection{Gerenciamento de Transações} \label{manage_transaction}
+	Uma propriedade importante em qualquer SBGD é o controle de concorrência. Normalmente, vários usuários solicitam operações ao SGBD simultâneamente, sendo que esse sistema gerenciador de banco de dados precisa garantir aos usuários a integridades dos dados transacionados. A maioria dos bancos de dados relacionais utilizam transações ACID\cite{SistemaDeBd} para controlar essa concorrência, que impõe ao SGBD as seguintes propriedades:
+	\begin{itemize}
+		\item Atomicidade: Essa propriedade impôe que durante uma transação, todas as alterações feitas no banco de dados sejam efetivadas. Caso ocorra algum erro durante a transação o SGBD realiza um \textit{rollback} para o estado consistente anterior a transação.
+		\item Consistência: Essa propriedade impôe que ao término de uma transação o banco de dados está de forma consistente. Ou seja, a cada transação os dados devem estar consistentes e a garantia de que as restrições impostas aos dados não sejam violadas.
+		\item Isolamento: A propriedade de isolamento de uma transação, busca impor ao SGBD que cada transação seja independente das demais. Ou seja, garante que cada transação seja vista como uma unidade e impede que outras transações acessem dados que possam levar o bancos de dados a um estado inconsistente. 
+		\item Durabilidade: A durabilidade garante que as informações salvas após cada transação permaneçam no banco de dados. Os dados não podem desaparecer em nenhum momento e devem permanecer persistidos independente de qualquer falha.
+	\end{itemize}
+	
+	Esse formato é utilizado por bancos de dados relacionais, e atende bem uma boa parte de sistemas e aplicações nos dias de hoje, como é o caso de sistemas bancários por exemplo, que necessitam dessas propriedades para garantir a integridades das informações de seus clientes.
+	
+	O mais importante a se perceber aqui é que nem toda aplicação precisa necessariamente desse controle de concorrência elaborado. No caso de bancos é de suma importância esse tipo de controle, agora em uma aplicação de alta disponibilidade uma propriedade como a consistência pode ser um pouco mais fraca. Portanto, para atender a essas novas demandas, nasceu o modelo de transações BASE\cite{Pritchett:2008:BAA:1394127.1394128} que busca fornecer maior flexibilidade para esses novos sistemas. O BASE tem como característica em vez de exigir consistência após cada transação, é suficiente para o banco de dados estar eventualmente consistente. Existe um teorema famoso feito por Eric Brewer conhecido como Teorema CAP\cite{Brewer:2010:CFT:1835698.1835701}, que demonstra o trade-off entre consistência, disponibilidade e tolerância a particionamento. Eric diz que se for necessário essas três características, é necessário escolher somente duas delas. Portanto no modelo BASE é possíve escolher tolerância a particionamento e disponibilidade e abrir mão de uma alta consistência dos dados. O acrônimo BASE vem das três seguintes características:
+	\begin{itemize}
+		\item \textit{Basic Availability}: Essa propriedade no fundo quer dizer que o banco de dados aparenta funcionar a maior parte do tempo.
+		\item \textit{Soft state}: Essa propriedade quer dizer que as bases não precisam estar sempre consistentes, nem as réplicas precisam estar consistentes o tempo inteiro. Ou seja, o estado do sistema é volátil.
+		\item \textit{Eventual consistency}: Essa propriedade diz que as bases de dados vão ficar eventualmente consistentes no futuro. 
+	\end{itemize}
+	
+\subsection{Categorias de NoSQL}
+	Dentro do universo dos SGBD NoSQL, existem cinco grandes categorias que separam cada SGBD em relação a estratégia de armazenamento\cite{nayak2013type}. Tais categorias são:
+	
+\subsubsection{SGBD NoSQL por chave/valor}
+	Nessa categoria
+	
+\subsubsection{SGBD NoSQL orientado por colunas}
+	Nessa categoria
+	
+\subsubsection{SGBD NoSQL orientado a documentos}
+	Nessa categoria
+	
+\subsubsection{SGBD NoSQL orientado a grafos}
+	Nessa categoria
+	
+\subsubsection{SGBD NoSQL orientado a objetos}
+	Nessa categoria
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Documento}
-Todo documento em \LaTeX\ é delimitado pelo ambiente \emph{document}. O caso aqui
-não é diferente, mas a interação é simplificada. Basicamente, a classe \unbcic\
-funciona ``automagicamente'' em função dos comandos e dos nomes dos arquivos.
+\section{SGBD NoSQL orientado a grafos}%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Capítulos}
-O texto de cada capítulo deve estar em seu próprio arquivo, dentro do diretório
-correto \texttt{tex}. A inclusão do texto é feita pelo comando:
-\begin{verbatim}
-\capitulo{arquivo}{título}%
-\end{verbatim}
+\section{OrientDB}
 
-Os dois argumentos são:
-\begin{description}%
-\item[arquivo] argumento obrigatório que define o nome do arquivo que contém o
-texto do capítulo.
-\item[título] argumento obrigatório que define o título do capítulo.
-\end{description}%
-
-Por exemplo, este texto está no arquivo \texttt{2\_UnB-CIC.tex}, e para criar os
-dois capítulos vistos até agora, o documento seria:
-
-\begin{verbatim}
-\begin{document}%
-  \capitulo{1_Introducao}{Introdução}% inclui o arquivo 1_Introducao.tex
-  \capitulo{2_UnB-CIC}{A Classe \unbcic}% inclui o arquivo 2_UnB-CIC.tex
-\end{document}%
-\end{verbatim}
-
-Para incluir um terceiro capítulo neste texto, cujo conteúdo trata de trabalhos
-conclusão de curso, basta criar o arquivo \texttt{tex/3\_TCC.tex} e adicioná-lo
-com o comando descrito.
-
-No caso de apêndices ou anexos necessários, o texto de cada um deve estar em seu
-próprio arquivo, também dentro do diretório \texttt{tex/capitulos}. Para facilitar
-as referências cruzadas, estes devem ser inclusos com os seguintes comandos
-(respectivamente):
-\begin{verbatim}
-\apendice{arquivo}{título}%
-\anexo{arquivo}{título}%
-\end{verbatim}
-
-Os dois argumentos funcionam exatamente como \texCommand{capitulo}. Desta forma,
-o exemplo de um documento ``completo'' seria: %
-
-\begin{verbatim}
-\begin{document}%
-  \capitulo{1_Introducao}{Introdução}%
-  \capitulo{2_UnB-CIC}{A Classe \unbcic}%
-  \capitulo{3_TCC}{Trabalho de Conclusão de Curso}%
-
-  \apendice{Apendice_Fichamento}{Fichamento de Artigo Científico}%
-  \anexo{Anexo1}{Parte da Documentação Original}%
-\end{document}%
-\end{verbatim}
-
-Usando estes comandos, o rótulo de cada capítulo/apêndice/anexo é criado
-automaticamente a partir do nome do arquivo para posterior referência cruzada.
-Por exemplo, este capítulo pode ser referenciado com o comando
-\texCommand{ref\{2\_UnB-CIC\}} (cujo resultado é: \ref{2_UnB-CIC}), mas a classe
-oferece opções mais interessantes. Os comandos para referenciar çapítulos são:
-
-\begin{verbatim}
-\refCap{referência}%
-\refCaps{referência inicial}{referência final}%
-\end{verbatim}
-
-Onde os argumentos são:
-\begin{description}
-\item[referência] nome da referência do capítulo.
-\item[referência inicial] nome da referência do capítulo inicial da sequência de capítulos.
-\item[referência final] nome da referência do capítulo final da sequência de capítulos.
-\end{description}
-
-O \refCap{1_Introducao} é referenciado com o comando:
-\begin{verbatim}
-\refCap{1_Introducao}%
-\end{verbatim}
-
-Considerando  \refCap{1_Introducao} e também o \refCap{2_UnB-CIC}, é possível referenciar
-a \emph{sequência} de \refCaps{1_Introducao}{2_UnB-CIC} com o comando:
-\begin{verbatim}
-\refCaps{1_Introducao}{2_UnB-CIC}%
-\end{verbatim}
-
-Embora estes comandos não ``simplifiquem'' a inclusão de figuras, eles
-certamente facilitam a referência a elas com um padrão uniforme, e nada impede o
-uso dos comandos padrões.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Figuras}
-Para manter a organização dos arquivos de seu documento, as figuras devem ficar
-separadas no diretório \texttt{img}. As funções de inclusão de figuras permanecem
-as mesmas, mas a classe \unbcic\ oferece uma forma mais simples de inserir uma
-figura (e de referenciá-la). Basta executar o comando:
-
-\begin{verbatim}
-\figura[posição]{arquivo}{legenda}{referência}{tamanho}%
-\end{verbatim}
-
-Os 5 argumentos são:
-\begin{description}
-\item[posição] argumento [opcional] para posicionar a figura no texto\footnote{Mais
-informações na documentação do ambiente \emph{figure}, mas este é um bom começo: \url{http://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions}.}.
-\item[arquivo] nome do arquivo da imagem.
-\item[legenda] legenda da figura.
-\item[referência] nome da referência da figura para referências cruzadas.
-\item[tamanho] tamanho da imagem\footnote{Mais informações na documentação do comando
-\texCommand{includegraphics}.}.
-\end{description}
-
-Por exemplo, a \refFig{unbPB}, inserida com o seguinte comando:
-
-\begin{verbatim}
-\figura[!h]{contorno_preto}{Marca P/B}{unbPB}{width=0.5\textwidth}%
-\end{verbatim}
-
-\figura[!h]{contorno_preto}{Marca P/B}{unbPB}{width=0.5\textwidth}%
-
-Os comandos para referenciar figuras são:
-
-\begin{verbatim}
-\refFig{referência}%
-\refFigs{referência inicial}{referência final}%
-\end{verbatim}
-
-Onde os argumentos são:
-\begin{description}
-\item[referência] nome da referência da figura.
-\item[referência inicial] nome da referência da figura inicial da sequência de figuras.
-\item[referência final] nome da referência da figura final da sequência de figuras.
-\end{description}
-
-A \refFig{unbPB} é referenciada com o comando:
-\begin{verbatim}
-\refFig{unbPB}%
-\end{verbatim}
-
-\figura{positivo_cor}{Marca colorida}{unb}{width=0.25\textwidth}%
-
-Considerando a \refFig{unb} e também a \refFig{unb2}, é possível referenciar
-a \emph{sequência} de \refFigs{unbPB}{unb2} com o comando:
-\begin{verbatim}
-\refFigs{unbPB}{unb2}%
-\end{verbatim}
-
-Algumas vezes deseja-se usar a figura de uma das referências bibliográficas. Neste caso, utilize o comando:
-
-\begin{verbatim}
-\figuraBib[posição]{arquivo}{legenda}{bib}{referência}{tamanho}%
-\end{verbatim}
-
-Os argumentos são os mesmos do comando \texCommand{figura}, acrescidos de:
-\begin{description}
-\item[bib] nome da referência bibliográfica que originou a figura.
-\end{description}
-
-Por exemplo, a \refFig{latexvsword} foi gerada com o comando:
-\begin{verbatim}
-\figuraBib{miktex}{\LaTeX\ vs MS Word}
-{pinteric_latex_2004}{latexvsword}{width=.45\textwidth}%
-\end{verbatim}
-
-Embora estes comandos não ``simplifiquem'' a inclusão de figuras, eles
-certamente facilitam a referência a elas com um padrão uniforme, e nada impede o
-uso dos comandos padrões.
-
-\figura{positivo_cor}{Outra marca colorida}{unb2}{width=0.25\textwidth}%
-
+	Essa seção tem por objetivo especificar as características do SGBD OrientDB, e realizar uma comparação com outros SGBD orientado a grafos como o Neo4j.
+	
+\subsection{Introdução}
+	
+	O OrientDB, é um SGBD de código aberto sob a licensa Apache. Ele é o primeiro SGBD NoSQL multi modelo, com suporte a uma arquitetura distribuída e orientado a grafos. Sendo assim o OrientDB suporta operações com documentos, chave/valor e grafos. Essa característica garante uma enorme flexibilidade para manipular os dados dentro do OrientDB, sendo possível armazenar os dados tanto como grafos ou como documentos no mesmo banco de dados \cite{OrientDB}. 
+	
+	O OrientDB é implementado utilizando a linguagem java, tendo sua primeira versão disponível no ano de 2010. Ele possui alta flexibilidade para definir o esquema do banco de dados, podendo ser \textit{Schema-free}, \textit{Schema-hybrid} ou \textit{Schema-full}. A sua linguagem de consulta é derivada do SQL o que é bastante vantajoso para aqueles que possuem experiência com bancos de dados relacionais, e além disso ele utiliza o modelo de transações ACID que como foi mencionado na seção \ref{manage_transaction} é algo mais comum no grupo dos SGBD relacionais, isso demonstra que o OrientDB presa pela integridade dos dados ao mesmo tempo que também fornece um suporte a particionamento dos dados \cite{OrientDB}.
+	
+	Todas essas características fazem com que o OrientDB seja um SGBD bastante flexível e confiável para se utilizar em diversas aplicações. As operações utilizando grafos em específico, vem ganhando bastante visibilidade pois funciona muito bem em certos domínios de aplicação. Como foi mencionado no capítulo \ref{chap:1} e nesse artigo feito por Matthias Gelbmann \cite{Graphpopularity} a popularidade dos SGBD orientados a grafos vem crescendo bastante nos últimos anos, e essas características ajudam a explicar o porque de banco de dados como o OrientDB e Neo4j estarem crescendo tanto em popularidade.
+	
+\subsection{Performance}
+	O OrientDB possui uma ótima performance em operações utilizando grafos. Um aspecto técnico que ajuda nessa qualidade é que o OrientDB trabalha cada registro como um objeto e o \textit{link} entre esses objetos não é feito por referência, e sim por \textit{link} direto. Ou seja, é salvo um ponteiro que aponta diretamente para o objeto referenciado. Isso faz com que a velocidade para recuperar informações seja muito mais rápido em comparação com os joins utilizados nos SGBD relacionais. Portanto, não existem operações de joins dentro do OrientDB para obter as relações entre os registros, sendo que ele consegue salvar certa de 120 mil registro por segundo.
+	
+	O OrientDB utiliza mecanismos de indexação baseados em árvores-B e hash extendido, esses mecanismos garantem uma complexidade constante para obter relacionamentos entre um registro para muitos registros. Um estudo feito pelo instituto de tecnologia de tokio e pela IBM, mostra que o OrientDB chega a ser 10 vezes mais rápido que o seu maior concorrente que é o Neo4j \cite{dayarathna2012xgdbench}.
+	
+\subsection{Arquitetura Distribuída}
+	Em relação ao suporte a uma arquitetura distribuída, o OrientDB trabalha com um método de particionamento conhecido como \textit{sharding}, e um método de replicação conhecido como \textit{Multi-master replication}. Esse modelo de replicão, permite que qualquer membro do cluster possa persistir dados no banco de dados. Isso evitar gargalos como occore no modelo \textit{Master-slave replication} e permite uma maior escalabilidade em aplicações.
+	
+\subsection{Orientação a Objetos}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Equações}
-As funções de inclusão de equações permanecem as mesmas, mas a classe \unbcic\
-oferece uma forma mais simples de inserir uma equação (e de referenciá-la). Basta
-executar o comando:
-
-\begin{verbatim}
-\equacao{referência}{fórmula}%
-\end{verbatim}
-
-Os 2 argumentos são:
-\begin{description}
-\item[referência] nome da referência da equação para referências cruzadas.
-\item[fórmula] a equação em si.
-\end{description}
-
-Por exemplo, a \refEq{pitagoras}, inserida com o seguinte comando:
-\begin{verbatim}
-\equacao{pitagoras}{a^2 + b^2 = c^2}%
-\end{verbatim}
-
-\equacao{pitagoras}{a^2 + b^2 = c^2}%
-
-Além disso, é possível quebrar em linhas, como na \refEq{pit2}, com o mesmo comando:
-\begin{verbatim}
-\equacao{pit2}{a = (x+y)^2\\b= (x*y)^2}%
-\end{verbatim}
-
-\equacao{pit2}{a = (x+y)^2\\b= (x*y)^2}%
-
-Os comandos para referenciar equações são:
-
-\begin{verbatim}
-\refEq{referência}%
-\refEqs{referência inicial}{referência final}%
-\end{verbatim}
-
-Onde os argumentos são:
-\begin{description}
-\item[referência] nome da referência da equação.
-\item[referência inicial] nome da referência da equação inicial da sequência de equações.
-\item[referência final] nome da referência da equação final da sequência de equações.
-\end{description}
-
-Considerando a \refEq{pitagoras} e também a \refEq{eq}, é possível referenciar
-a \emph{sequência} de \refEqs{pitagoras}{eq} com o comando:
-\begin{verbatim}
-\refEqs{pitagoras}{eq}%
-\end{verbatim}
-
-Embora estes comandos não ``simplifiquem'' a inclusão de equações, eles
-certamente facilitam a referência a elas com um padrão uniforme e nada impede o
-uso dos comandos padrões.
-
-\equacao{eq}{d=c^3 - \frac{a}{b}}%
+\section{REST}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Tabelas}
-As funções de inclusão de tabelas permanecem as mesmas, mas a classe \unbcic\
-oferece uma forma mais simples de inserir uma tabela (e de referenciá-la). Basta
-executar o comando:
-
-\begin{verbatim}
-\tabela{legenda}{referência}{especificações}{tabela}%
-\end{verbatim}
-
-Os 4 argumentos são:
-\begin{description}
-\item[legenda] legenda da tabela.
-\item[referência] nome da referência da tabela para referências cruzadas.
-\item[especificações] alinhamento de cada coluna da tabela.
-\item[tabela] o conteúdo da tabela\footnote{Mais informações na documentação do
-ambiente \emph{\href{http://en.wikibooks.org/wiki/LaTeX/Tables}{tabular}}.}.
-\end{description}
-
-Por exemplo, a \refTab{exemplo}, inserida com o seguinte comando:
-\begin{verbatim}
-\tabela{Exemplo de tabela}{exemplo}{| c | c |}%
-  {\hline
-  \textbf{Item} & \textbf{Descrição} \\\hline
-  1 & Descrição 1 \\\hline
-  2 & Descrição 2 \\\hline
-  3 & Descrição 3 \\\hline}%
-\end{verbatim}
-
-\tabela{Exemplo de tabela}{exemplo}{| c | c |}%
-  {\hline
-  \textbf{Item} & \textbf{Descrição} \\\hline
-  1 & Descrição 1 \\\hline
-  2 & Descrição 2 \\\hline
-  3 & Descrição 3 \\\hline}%
-
-Os comandos para referenciar tabelas são:
-
-\begin{verbatim}
-\refTab{referência}%
-\refTabs{referência inicial}{referência final}%
-\end{verbatim}
-
-Onde os argumentos são:
-\begin{description}
-\item[referência] nome da referência da tabela.
-\item[referência inicial] nome da referência da tabela inicial da sequência de tabelas.
-\item[referência final] nome da referência da tabela final da sequência de tabelas.
-\end{description}
-
-Considerando a \refTab{exemplo} e também a \refTab{exemplo2}, é possível referenciar
-a \emph{sequência} de \refTabs{exemplo}{exemplo2} com o comando:
-\begin{verbatim}
-\refTabs{exemplo}{exemplo2}%
-\end{verbatim}
-
-Algumas vezes deseja-se usar a tabela de uma das referências bibliográficas. Neste caso, utilize o comando:
-
-\begin{verbatim}
-\tabelaBib{legenda}{bib}{referência}{especificações}{tabela}%
-\end{verbatim}
-
-Os argumentos são os mesmos do comando \texCommand{tabela}, acrescidos de:
-\begin{description}
-\item[bib] nome da referência bibliográfica que originou a tabela.
-\end{description}
-
-\tabelaBib{Matriz de Decisão de Eisenhower}
-{covey_first_1995}{EisenhowerTable}{ r | c | c }{
-                        & \textbf{Urgente} & \textbf{Não Urgente} \\\hline%
-\textbf{Importante}     & Crises       & Planejamentos \\\hline%
-\textbf{Não importante} & Interrupções & Distrações%
-}%
-
-Por exemplo, a \refTab{EisenhowerTable}\footnote{Vale a pena assistir o vídeo da palestra \emph{Time Management} de Randy Pausch: \url{http://www.cs.virginia.edu/~robins/Randy/}} foi gerada com o comando:
-\begin{verbatim}
-\tabelaBib{Matriz de Decisão de Eisenhower}
-{covey_first_1995}{EisenhowerTable}{ r | c | c }{%
-                    & \textbf{Urgente} & \textbf{Não Urgente} \\\hline%
-\textbf{Importante}     & Crises       & Planejamentos \\\hline%
-\textbf{Não importante} & Interrupções & Distrações%
-}%
-\end{verbatim}
-
-Embora estes comandos não ``simplifiquem'' a inclusão de tabelas, eles
-certamente facilitam a referência a elas com um padrão uniforme, e nada impede o
-uso dos comandos padrões.
-
-\tabela{Outro exemplo de tabela}{exemplo2}{| r | c | c | l |}%
-  {\hline
-  \textbf{\#} & \textbf{A} & \textbf{B} & \textbf{Comentário} \\\hline
-  1 & $a_1$ & $b_1$ & comentário 1\\
-  2 & $a_2$ & $b_2$ & comentário 2\\
-  3 & $a_3$ & $b_3$ & comentário 3\\\hline}%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Abreviaturas e Siglas}
-Abreviaturas e siglas devem ser definidas no arquivo \texttt{tex/siglas.tex}, e
-a inserção feita com o comando:
-
-\begin{verbatim}
-\sigla{sigla}{descrição}%
-\end{verbatim}
-
-Onde os argumentos são:
-\begin{description}
-\item[sigla] a própria sigla/abreviatura.
-\item[descrição] definição completa do que representa a sigla/abreviatura.
-\end{description}
-
-Por exemplo:
-
-\begin{verbatim}
-\sigla{CIC}{Departamento de Ciência da Computação}%
-\end{verbatim}
-
-A inserção de uma sigla/abreviatura no texto é simples, e pode ser feita de três
-formas diferentes:
-
-\begin{minipage}[t]{.3\textwidth}%
-\begin{verbatim}
-\acrshort{CIC}
-\acrlong{CIC}
-\acrfull{CIC}
-\end{verbatim}
-\end{minipage}%
-\begin{minipage}[t]{.6\textwidth}%
-\acrshort{CIC}\\
-\acrlong{CIC}\\
-\acrfull{CIC}
-\end{minipage}%

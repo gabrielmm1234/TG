@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
   \providebibliographyfont{name}{}%
   \providebibliographyfont{lastname}{}%
   \providebibliographyfont{title}{\emph}%
@@ -38,20 +38,111 @@
 \newblock \url{https://db-engines.com/en/ranking_categories}.
 \newblock Acessado em setembro de 2017.
 
-\bibitem {ppginf}
-\btxnamefont {\btxlastnamefont {PPGI/UnB}}\btxauthorcolon\ \btxtitlefont
-  {\btxifchangecase {Regimento do programa de p\'{o}s-gradua\c{c}\~{a}o em
-  inform\'{a}tica da universidade de bras\'{i}lia}{Regimento do Programa de
-  P\'{o}s-gradua\c{c}\~{a}o em Inform\'{a}tica da Universidade de
-  Bras\'{i}lia}}.
-\newblock http://ppgi.unb.br/normatives, 2013.
+\bibitem {FirstNoSQL}
+\btxnamefont {\btxlastnamefont {Strozzi}, Carlo}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Nosql a relational database management system}{NoSQL A
+  Relational Database Management System}}.
+\newblock \url{http://www.strozzi.it/cgi-bin/CSA/tw7/I/en_US/nosql}.
+\newblock Acessado em janeiro de 2018.
 
-\bibitem {covey_first_1995}
-\btxnamefont {\btxlastnamefont {Covey}, Stephen\btxfnamespacelong R},
-  \btxnamefont {A\btxfnamespacelong Roger \btxlastnamefont
-  {Merrill}}\btxandcomma {} \btxandlong {}\ \btxnamefont
-  {Rebecca\btxfnamespacelong R \btxlastnamefont {Merrill}}\btxauthorcolon\
-  \btxtitlefont {First things first}.
-\newblock \btxpublisherfont {Simon and Schuster}, 1995.
+\bibitem {Chang:2008:BDS:1365815.1365816}
+\btxnamefont {\btxlastnamefont {Chang}, Fay}, \btxnamefont {Jeffrey
+  \btxlastnamefont {Dean}}, \btxnamefont {Sanjay \btxlastnamefont {Ghemawat}},
+  \btxnamefont {Wilson\btxfnamespacelong C. \btxlastnamefont {Hsieh}},
+  \btxnamefont {Deborah\btxfnamespacelong A. \btxlastnamefont {Wallach}},
+  \btxnamefont {Mike \btxlastnamefont {Burrows}}, \btxnamefont {Tushar
+  \btxlastnamefont {Chandra}}, \btxnamefont {Andrew \btxlastnamefont
+  {Fikes}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {Robert\btxfnamespacelong E. \btxlastnamefont {Gruber}}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {Bigtable: A distributed storage system for
+  structured data}{Bigtable: A Distributed Storage System for Structured
+  Data}}.
+\newblock \btxjournalfont {ACM Trans. Comput. Syst.}, 26(2):4:1--4:26,
+  \btxprintmonthyear{.}{6}{2008}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0734-2071}}}.
+\newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/1365815.1365816}}.
+
+\bibitem {DeCandia:2007:DAH:1323293.1294281}
+\btxnamefont {\btxlastnamefont {DeCandia}, Giuseppe}, \btxnamefont {Deniz
+  \btxlastnamefont {Hastorun}}, \btxnamefont {Madan \btxlastnamefont
+  {Jampani}}, \btxnamefont {Gunavardhan \btxlastnamefont {Kakulapati}},
+  \btxnamefont {Avinash \btxlastnamefont {Lakshman}}, \btxnamefont {Alex
+  \btxlastnamefont {Pilchin}}, \btxnamefont {Swaminathan \btxlastnamefont
+  {Sivasubramanian}}, \btxnamefont {Peter \btxlastnamefont
+  {Vosshall}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Werner
+  \btxlastnamefont {Vogels}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase
+  {Dynamo: Amazon's highly available key-value store}{Dynamo: Amazon's Highly
+  Available Key-value Store}}.
+\newblock \btxjournalfont {SIGOPS Oper. Syst. Rev.}, 41(6):205--220,
+  \btxprintmonthyear{.}{10}{2007}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0163-5980}}}.
+\newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/1323293.1294281}}.
+
+\bibitem {Cattell:2011:SSN:1978915.1978919}
+\btxnamefont {\btxlastnamefont {Cattell}, Rick}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Scalable sql and nosql data stores}{Scalable SQL and NoSQL
+  Data Stores}}.
+\newblock \btxjournalfont {SIGMOD Rec.}, 39(4):12--27,
+  \btxprintmonthyear{.}{5}{2011}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0163-5808}}}.
+\newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/1978915.1978919}}.
+
+\bibitem {SistemaDeBd}
+\btxnamefont {\btxlastnamefont {Ramez~Elmasri}, Shamkant\btxfnamespacelong
+  B\btxfnamespacelong Navathe}\btxauthorcolon\ \btxtitlefont {Sistemas de banco
+  de dados}.
+\newblock \btxpublisherfont {Pearson Addison Wesley}, 2005.
+
+\bibitem {Pritchett:2008:BAA:1394127.1394128}
+\btxnamefont {\btxlastnamefont {Pritchett}, Dan}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Base: An acid alternative}{BASE: An Acid Alternative}}.
+\newblock \btxjournalfont {Queue}, 6(3):48--55,
+  \btxprintmonthyear{.}{5}{2008}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {1542-7730}}}.
+\newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/1394127.1394128}}.
+
+\bibitem {Brewer:2010:CFT:1835698.1835701}
+\btxnamefont {\btxlastnamefont {Brewer}, Eric}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {A certain freedom: Thoughts on the cap theorem}{A Certain
+  Freedom: Thoughts on the CAP Theorem}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 29th ACM
+  SIGACT-SIGOPS Symposium on Principles of Distributed Computing}, PODC '10,
+  \btxpageslong {}\ 335--335, New York, NY, USA, 2010. \btxpublisherfont
+  {ACM}\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {978-1-60558-888-9}}}.
+\newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/1835698.1835701}}.
+
+\bibitem {nayak2013type}
+\btxnamefont {\btxlastnamefont {Nayak}, Ameya}, \btxnamefont {Anil
+  \btxlastnamefont {Poriya}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {Dikshay \btxlastnamefont {Poojary}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Type of nosql databases and its comparison with relational
+  databases}{Type of NOSQL databases and its comparison with relational
+  databases}}.
+\newblock \btxjournalfont {International Journal of Applied Information
+  Systems}, 5(4):16--19, 2013.
+
+\bibitem {OrientDB}
+\btxnamefont {\btxlastnamefont {engines}~db}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Orientdb system properties.}{OrientDB System Properties.}}
+\newblock \url{https://db-engines.com/en/system/OrientDB}.
+\newblock Acessado em janeiro de 2018.
+
+\bibitem {Graphpopularity}
+\btxnamefont {\btxlastnamefont {Gelbmann}, Matthias}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Graph dbmss are gaining in popularity faster
+  than any other database category.}{Graph DBMSs are gaining in popularity
+  faster than any other database category.}}
+\newblock \url{https://db-engines.com/en/blog_post/26}.
+\newblock Acessado em janeiro de 2018.
+
+\bibitem {dayarathna2012xgdbench}
+\btxnamefont {\btxlastnamefont {Dayarathna}, Miyuru} \btxandlong {}\
+  \btxnamefont {Toyotaro \btxlastnamefont {Suzumura}}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Xgdbench: A benchmarking platform for graph
+  stores in exascale clouds}{XGDBench: A benchmarking platform for graph stores
+  in exascale clouds}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Cloud Computing Technology and Science
+  (CloudCom), 2012 IEEE 4th International Conference on}, \btxpageslong {}\
+  363--370. IEEE, 2012.
 
 \end{thebibliography}

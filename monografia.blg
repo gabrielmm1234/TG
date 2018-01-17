@@ -6,45 +6,45 @@ Database file #1: bibliografia.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty language in abramo2000relaccoes
 Warning--there's a number but no volume in abramo2000relaccoes
-You've used 5 entries,
+You've used 14 entries,
             2465 wiz_defined-function locations,
-            611 strings with 6337 characters,
-and the built_in function-call counts, 1223 in all, are:
-= -- 97
-> -- 27
-< -- 0
-+ -- 12
-- -- 7
-* -- 114
-:= -- 164
-add.period$ -- 11
-call.type$ -- 5
-change.case$ -- 4
+            685 strings with 8477 characters,
+and the built_in function-call counts, 4399 in all, are:
+= -- 363
+> -- 117
+< -- 2
++ -- 47
+- -- 33
+* -- 526
+:= -- 559
+add.period$ -- 39
+call.type$ -- 14
+change.case$ -- 13
 chr.to.int$ -- 0
-cite$ -- 7
-duplicate$ -- 69
-empty$ -- 157
-format.name$ -- 17
-if$ -- 273
+cite$ -- 16
+duplicate$ -- 249
+empty$ -- 510
+format.name$ -- 89
+if$ -- 971
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 6
-newline$ -- 37
-num.names$ -- 5
-pop$ -- 37
+int.to.str$ -- 14
+missing$ -- 18
+newline$ -- 81
+num.names$ -- 14
+pop$ -- 79
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 20
+skip$ -- 85
 stack$ -- 0
-substring$ -- 44
-swap$ -- 24
-text.length$ -- 0
+substring$ -- 218
+swap$ -- 114
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 9
-width$ -- 6
-write$ -- 63
+while$ -- 34
+width$ -- 16
+write$ -- 173
 (There were 2 warnings)
