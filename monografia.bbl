@@ -127,6 +127,12 @@
 \newblock \url{https://db-engines.com/en/system/OrientDB}.
 \newblock Acessado em janeiro de 2018.
 
+\bibitem {vschart}
+\btxnamefont {\btxlastnamefont {chart}~vs}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Orientdb compare}{OrientDB compare}}.
+\newblock \url{http://vschart.com/compare/orientdb}.
+\newblock Acessado em janeiro de 2018.
+
 \bibitem {Graphpopularity}
 \btxnamefont {\btxlastnamefont {Gelbmann}, Matthias}\btxauthorcolon\
   \btxtitlefont {\btxifchangecase {Graph dbmss are gaining in popularity faster
@@ -144,5 +150,20 @@
 \newblock \Btxinlong {}\ \btxtitlefont {Cloud Computing Technology and Science
   (CloudCom), 2012 IEEE 4th International Conference on}, \btxpageslong {}\
   363--370. IEEE, 2012.
+
+\bibitem {kauremerging}
+\btxnamefont {\btxlastnamefont {Kaur}, Amrinder} \btxandlong {}\ \btxnamefont
+  {Rakesh \btxlastnamefont {Kumar}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Emerging no-sql technologies for big data
+  processing}{Emerging No-SQL Technologies for Big Data Processing}}.
+
+\bibitem {mdgnosql}
+\btxnamefont {\btxlastnamefont {Erven}, Gustavo\btxfnamespacelong
+  C.\btxfnamespacelong Galvão~van}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Mdg-nosql: modelo de dados para bancos nosql baseados em
+  grafos}{MDG-NoSQL: modelo de dados para bancos NoSQL baseados em grafos}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Dissertação (Mestrado Profissional em
+  Computação Aplicada)—Universidade de Brasília}. Universidade de
+  Brasília, 2015.
 
 \end{thebibliography}

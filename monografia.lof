@@ -3,11 +3,12 @@
 \select@language {brazil}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Possibilidade de registros no OrientDB}}{8}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Exemplo de uma arquitetura \textit {Master-slave}}}{10}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Exemplo de uma arquitetura \textit {Multi-master}}}{10}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Exemplo de heran\IeC {\c c}a no \textit {schema} do OrientDB }}{12}{figure.2.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Classe Customer mapeada para dois clusters diferentes}}{12}{figure.2.5}
 \select@language {american}
 \select@language {american}
 \select@language {american}
 \select@language {brazil}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
