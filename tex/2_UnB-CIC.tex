@@ -65,13 +65,33 @@ Este capítulo descreve toda a fundamentação teórica por trás das tecnologia
 	Dentro do universo dos SGBD NoSQL, existem cinco grandes categorias que separam cada SGBD em relação a estratégia de armazenamento\cite{nayak2013type}. Tais categorias são:
 	
 \subsubsection{SGBD NoSQL por chave/valor}
-	Nessa categoria
+	Os SGBD dessa categoria são de certa forma bem simples, mas bastante eficientes. O dado armazenado é composto por uma \textit{string} que representa a chave, e o dado de fato a ser referenciado pela chave que é o valor, portanto, se cria um par chave/valor \cite{nayak2013type}\cite{kauremerging}.
+	
+	Os SGBD NoSQL por chave e valor, costuma valorizar uma maior escalabilidade em troca de consistência, tal característica é mecionada na seção \ref{manage_transaction}. O seu uso é bastante eficiente para situações como guardar seções de usuário, ou gerenciar um carrinho de compras online \cite{nayak2013type}. Um exemplo de SGBD dessa categoria é o DynamoDB \cite{DeCandia:2007:DAH:1323293.1294281}. A figura abaixo mostra o formato de um dado nesse SGBD em contraste com o formato de SGBD relacional e de SGBD orientado a documentos.
+	
+\begin{figure}[h]
+	\centering
+    \includegraphics[width=0.8\textwidth]{key-value}
+    \caption{Exemplos de estrura relacional, chave/valor e orientada a documentos}
+    \label{fig:key-value}
+\end{figure}
 	
 \subsubsection{SGBD NoSQL orientado por colunas}
-	Nessa categoria
+	Os SGBD dessa categoria, podem ser confundidos de certa forma com um SGBD relacional por serem orientado a colunas. Mas na verdade um SGBD NoSQL orientado por colunas tem um formato híbrido entre linha e coluna. Apesar de compartilharem do conceito de armazenamento por colunas, esses SGBD não armazenam os dados em tabelas, e sim em grandes arquitetura distribuídas. Nessa categoria, cada chave é associada com uma ou mais colunas, chamada de atributos. Esse armazenamento é feito de forma que o dado seja agregado mais rapidamente e com menos processamento de entrada e saída \cite{nayak2013type}.
+	
+	Ou seja, esses banco de dados contém uma coluna extensível de dados fortemente relacionados, em vez de conjuntos de informação em uma estrutura rígida de tabela com linha e colunas como no modelo relacional\cite{kauremerging}. Esse tipo de NoSQL é bastante útil para operações de mineração de dados e aplicações de análise \cite{nayak2013type}. Dois grandes representantes dessa categoria são o BigTable da google \cite{Chang:2008:BDS:1365815.1365816} e o Cassandra. A figura abaixo exemplifica a diferença da estrutura orientada a colunas e orientada a documentos:
+	
+\begin{figure}[h]
+	\centering
+    \includegraphics[width=0.8\textwidth]{columnnosql}
+    \caption{Exemplo de estrutura de um NoSQL orientado a colunas.}
+    \label{fig:columnnosql}
+\end{figure}
 	
 \subsubsection{SGBD NoSQL orientado a documentos}
-	Nessa categoria
+	Nessa categoria, os dados são armazenados em forma de documentos. Um documento dentro desse tipo de SGBD pode ser comparado a um registro dentro de um SGBD relacional, mas nos SGBD NoSQL existe uma flexibilidade maior pois é permitido uma estrutura \textit{Schema-less}. Normalmente, esses documentos seguem algum formato padrão como \textit{JSON} ou \textit{XML} por exemplo. Uma diferença com o formato dos bancos relacionais, é que um campo de um registro dentro de um SGBD relacional que não está preenchido, necessariamente ficará vazio, já num SGBD NoSQL orientado a documentos, cada documento pode ter dados similares ou não tão similares, ou seja, um campo sem informação não precisa aparecer como vazio para o usuário, demonstrando a flexibilidade que esses SGBD proporcionam \cite{nayak2013type}.
+	
+	Cada documento é endereçado por uma chave, da mesma forma que em SGBD NoSQL orientado a chave/valor. Esses SGBD são úteis em aplicações em que os dados não precisam ser armazenados em tabelas com campos uniformes, mas sim armazenados em documentos com características especiais. Normalmente, não é recomendado para dados com muitos relacionamentos ou normalização. Dois representantes dessa categoria são o MongoDB e o CouchDB \cite{nayak2013type}. A figura \ref{fig:columnnosql} mostra um exemplo da estrutura de um SGBD orientado a documentos em contraste com um SGBD orientado a colunas.
 	
 \subsubsection{SGBD NoSQL orientado a grafos}
 	Nessa categoria

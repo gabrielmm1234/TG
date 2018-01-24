@@ -13,18 +13,18 @@
 \contentsline {subsection}{\numberline {2.2.3}Gerenciamento de Transa\IeC {\c c}\IeC {\~o}es}{6}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Categorias de NoSQL}{7}{subsection.2.2.4}
 \contentsline {subsubsection}{SGBD NoSQL por chave/valor}{7}{section*.7}
-\contentsline {subsubsection}{SGBD NoSQL orientado por colunas}{7}{section*.8}
-\contentsline {subsubsection}{SGBD NoSQL orientado a documentos}{7}{section*.9}
-\contentsline {subsubsection}{SGBD NoSQL orientado a grafos}{7}{section*.10}
-\contentsline {subsubsection}{SGBD NoSQL orientado a objetos}{7}{section*.11}
-\contentsline {section}{\numberline {2.3}SGBD NoSQL orientado a grafos}{8}{section.2.3}
-\contentsline {section}{\numberline {2.4}OrientDB}{8}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Introdu\IeC {\c c}\IeC {\~a}o}{8}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Performance}{9}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Arquitetura Distribu\IeC {\'\i }da}{9}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Orienta\IeC {\c c}\IeC {\~a}o a Objetos}{11}{subsection.2.4.4}
-\contentsline {section}{\numberline {2.5}REST}{12}{section.2.5}
-\contentsline {chapter}{Refer\^encias}{13}{section*.12}
+\contentsline {subsubsection}{SGBD NoSQL orientado por colunas}{8}{section*.8}
+\contentsline {subsubsection}{SGBD NoSQL orientado a documentos}{8}{section*.9}
+\contentsline {subsubsection}{SGBD NoSQL orientado a grafos}{9}{section*.10}
+\contentsline {subsubsection}{SGBD NoSQL orientado a objetos}{9}{section*.11}
+\contentsline {section}{\numberline {2.3}SGBD NoSQL orientado a grafos}{9}{section.2.3}
+\contentsline {section}{\numberline {2.4}OrientDB}{9}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Introdu\IeC {\c c}\IeC {\~a}o}{9}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Performance}{10}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Arquitetura Distribu\IeC {\'\i }da}{11}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Orienta\IeC {\c c}\IeC {\~a}o a Objetos}{12}{subsection.2.4.4}
+\contentsline {section}{\numberline {2.5}REST}{14}{section.2.5}
+\contentsline {chapter}{Refer\^encias}{15}{section*.12}
 \select@language {american}
 \select@language {american}
 \select@language {american}

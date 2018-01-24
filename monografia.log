@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.26)  22 JAN 2018 23:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.26)  23 JAN 2018 23:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1297,6 +1297,16 @@ text indent by \l@... (lof, 1):  27.02464pt
 number indent by parent (lof, 1):  17.62474pt
 text indent calculated (lof, 1): 20.88887pt
 number indent calculated (lof, 1): 17.62474pt
+number indent by \l@... (lof, 1):  17.62474pt
+text indent by \l@... (lof, 1):  27.02464pt
+number indent by parent (lof, 1):  17.62474pt
+text indent calculated (lof, 1): 20.88887pt
+number indent calculated (lof, 1): 17.62474pt
+number indent by \l@... (lof, 1):  17.62474pt
+text indent by \l@... (lof, 1):  27.02464pt
+number indent by parent (lof, 1):  17.62474pt
+text indent calculated (lof, 1): 20.88887pt
+number indent calculated (lof, 1): 17.62474pt
 )
 \tf@lof=\write8
 \openout8 = `monografia.lof'.
@@ -1390,90 +1400,115 @@ Package babel Info: Redefining portuges shorthand "|
  [6]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 64.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 85.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 91.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 95.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 95.
- [7]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 95.
 
-<img/orientdbmodel.png, id=234, 722.7pt x 542.025pt>
-File: img/orientdbmodel.png Graphic file (type png)
+<img/key-value.jpg, id=232, 707.64375pt x 294.09875pt>
+File: img/key-value.jpg Graphic file (type jpg)
+ <use img/key-value.jpg>
+Package pdftex.def Info: img/key-value.jpg used on input line 74.
+(pdftex.def)             Requested size: 364.19667pt x 151.36157pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 81.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 81.
 
-<use img/orientdbmodel.png>
-Package pdftex.def Info: img/orientdbmodel.png used on input line 101.
-(pdftex.def)             Requested size: 364.19667pt x 273.14565pt.
+[7 <./img/key-value.jpg>] <img/columnnosql.png, id=244, 404.712pt x 228.855pt>
+File: img/columnnosql.png Graphic file (type png)
+
+<use img/columnnosql.png>
+Package pdftex.def Info: img/columnnosql.png used on input line 86.
+(pdftex.def)             Requested size: 364.19667pt x 205.95361pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 107.
+(babel)             in language  on input line 93.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 107.
- [8 <./img/orientdbmodel.png>]
+(babel)             in language  on input line 93.
+ [8 <./img/columnnosql.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 110.
+(babel)             in language  on input line 105.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 111.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 115.
 
-<img/master-slave.png, id=249, 281.05pt x 145.54375pt>
+<img/orientdbmodel.png, id=255, 722.7pt x 542.025pt>
+File: img/orientdbmodel.png Graphic file (type png)
+
+<use img/orientdbmodel.png>
+Package pdftex.def Info: img/orientdbmodel.png used on input line 121.
+(pdftex.def)             Requested size: 364.19667pt x 273.14565pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 127.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 127.
+[9]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 130.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 132.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 132.
+ [10 <./img/orientdbmodel.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 135.
+
+<img/master-slave.png, id=278, 281.05pt x 145.54375pt>
 File: img/master-slave.png Graphic file (type png)
 
 <use img/master-slave.png>
-Package pdftex.def Info: img/master-slave.png used on input line 122.
+Package pdftex.def Info: img/master-slave.png used on input line 142.
 (pdftex.def)             Requested size: 227.62206pt x 117.87645pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 125.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 125.
- [9]
-<img/orientdb-the-2nd-generation-of-multimodel-nosql-44-638.png, id=258, 640.39
+
+<img/orientdb-the-2nd-generation-of-multimodel-nosql-44-638.png, id=279, 640.39
 25pt x 360.34625pt>
 File: img/orientdb-the-2nd-generation-of-multimodel-nosql-44-638.png Graphic fi
 le (type png)
 
 <use img/orientdb-the-2nd-generation-of-multimodel-nosql-44-638.png>
 Package pdftex.def Info: img/orientdb-the-2nd-generation-of-multimodel-nosql-44
--638.png used on input line 133.
+-638.png used on input line 153.
 (pdftex.def)             Requested size: 227.62206pt x 128.0805pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 139.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 139.
- [10 <./img/master-slave.png> <./img/orientdb-the-2nd-generation-of-multimodel-
-nosql-44-638.png>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 140.
-Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 156.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 156.
- [11]
-<img/teleporter-inheritance-orientdb-schema.png, id=273, 924.45375pt x 433.62pt
+ [11 <./img/master-slave.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 160.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 168.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 168.
+ [12 <./img/orientdb-the-2nd-generation-of-multimodel-nosql-44-638.png>]
+<img/teleporter-inheritance-orientdb-schema.png, id=296, 924.45375pt x 433.62pt
 >
 File: img/teleporter-inheritance-orientdb-schema.png Graphic file (type png)
  <use img/teleporter-inheritance-orientdb-schema.png>
 Package pdftex.def Info: img/teleporter-inheritance-orientdb-schema.png used on
- input line 159.
+ input line 179.
 (pdftex.def)             Requested size: 227.62206pt x 106.76384pt.
 
-<img/class-clusters.png, id=274, 401.5pt x 142.5325pt>
+<img/class-clusters.png, id=297, 401.5pt x 142.5325pt>
 File: img/class-clusters.png Graphic file (type png)
 
 <use img/class-clusters.png>
-Package pdftex.def Info: img/class-clusters.png used on input line 167.
+Package pdftex.def Info: img/class-clusters.png used on input line 187.
 (pdftex.def)             Requested size: 227.62206pt x 80.8072pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 191.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 191.
+ [13 <./img/teleporter-inheritance-orientdb-schema.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 195.
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 42.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 42.
- [12 <./img/teleporter-inheritance-orientdb-schema.png> <./img/class-clusters.p
-ng>]
+ [14 <./img/class-clusters.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 42.
  (./monografia.bbl (./monografia.brf)
@@ -1501,7 +1536,7 @@ Underfull \hbox (badness 1033) in paragraph at lines 103--103
 1/lmr/m/n/12 .  Queue, 6(3):48--55, []maio []2008,
  []
 
-[13
+[15
 
 
 ])
@@ -1510,7 +1545,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 42.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 42.
- [14]
+ [16]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
  (./monografia.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 42.
@@ -1518,7 +1553,7 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 42.
 Package rerunfilecheck Info: File `monografia.out' has not changed.
 (rerunfilecheck)             Checksum: CBEB2C570FF547DE7D40668954B2B53C;1457.
 Package rerunfilecheck Info: File `monografia.brf' has not changed.
-(rerunfilecheck)             Checksum: 536D7E1DA08FF79EBAEC5888BB9EF748;1055.
+(rerunfilecheck)             Checksum: F326F080DC00915DA4DF6C261F6E3E7A;1595.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1534,10 +1569,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
  )
 (\end occurred when \iffalse on line 120 was incomplete) 
 Here is how much of TeX's memory you used:
- 14325 strings out of 493029
- 215350 string characters out of 6136234
- 399324 words of memory out of 5000000
- 17406 multiletter control sequences out of 15000+600000
+ 14344 strings out of 493029
+ 215652 string characters out of 6136234
+ 399497 words of memory out of 5000000
+ 17416 multiletter control sequences out of 15000+600000
  48854 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,7n,69p,1940b,597s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1550,10 +1585,10 @@ blic/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/sha
 re/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf/fonts/type1/public/
 cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm2074.pf
 b>
-Output written on monografia.pdf (22 pages, 446919 bytes).
+Output written on monografia.pdf (24 pages, 574734 bytes).
 PDF statistics:
- 376 PDF objects out of 1000 (max. 8388607)
- 330 compressed objects within 4 object streams
- 80 named destinations out of 1000 (max. 500000)
- 215 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 408 PDF objects out of 1000 (max. 8388607)
+ 358 compressed objects within 4 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 225 words of extra memory for PDF output out of 10000 (max. 10000000)
 
