@@ -16,7 +16,7 @@ Este capítulo descreve toda a fundamentação teórica por trás das tecnologia
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Teoria de Grafos}
+\section{Teoria de Grafos} \label{graph_theory}
 
 
 
@@ -94,15 +94,33 @@ Este capítulo descreve toda a fundamentação teórica por trás das tecnologia
 	Cada documento é endereçado por uma chave, da mesma forma que em SGBD NoSQL orientado a chave/valor. Esses SGBD são úteis em aplicações em que os dados não precisam ser armazenados em tabelas com campos uniformes, mas sim armazenados em documentos com características especiais. Normalmente, não é recomendado para dados com muitos relacionamentos ou normalização. Dois representantes dessa categoria são o MongoDB e o CouchDB \cite{nayak2013type}. A figura \ref{fig:columnnosql} mostra um exemplo da estrutura de um SGBD orientado a documentos em contraste com um SGBD orientado a colunas.
 	
 \subsubsection{SGBD NoSQL orientado a grafos}
-	Nessa categoria
+	Os SGBD NoSQL orientado a grafos armazenam os dados em uma estrutura de grafo. As características e informações acerca da estrutura de um grafo são abordadas em maiores detalhes na seção \ref{graph_theory}. Resumidamente, um grafo é um conjunto de nós e arestas, em que os nós são os objetos e as arestas representam o relacionamente entre dois objetos (nós). Esses SGBD usam a técnica conhecida como  \textit{index free adjacency}, em que cada nó possui um ponteiro diretamente para nós adjacentes. Essa técnica permite que uma grande quantidade de nós seja percorrida de forma eficiente \cite{nayak2013type}. A figura abaixo exemplifica o formato de um grafo no SGBD NoSQL OrientDB.
+
+\begin{figure}[h]
+	\centering
+    \includegraphics[width=0.8\textwidth]{orient_graph}
+    \caption{Exemplo da estrutura de um grafo no SGBD OrientDB}
+    \label{fig:graph_orientdb}
+\end{figure}
+	
+	As consultas são feitas seguindo a ideia de percorrimento do grafo, o que torna esses SGBD mais eficientes que SGBD relacionais. O seu uso varia de aplicações para redes sociais, bioinformática, software de recomendação e etc \cite{nayak2013type}. O principal ponto de seu uso é em dados que são bastante relacionados entre si, pois a estrutura de um grafo expõe naturalmente os relacionamentos entre os objetos. O maior representando dessa categoria de SGBD é o Neo4j seguido pelo OrientDB e AllegroGraph.
 	
 \subsubsection{SGBD NoSQL orientado a objetos}
-	Nessa categoria
+	Um SGBD orientado a objetos, armazena os dados e informações em objetos, similares aos objetos presentes no paradigma de orientação a objetos. Portanto, essa categoria de SGBD pode ser vista como uma combinação entre os princípios de programação orientada a objetos e banco de dados. Esses banco de dados oferecem todas as característica da programação orientada a objetos tais como: Encapsulamento de dados, polimorfismo e herança. É possível fazer um paralelo entre classe, objeto e atributos da classe com tabela, tupla e colunas em uma tupla dos banco de dados relacionais respectivamente \cite{nayak2013type}.
+	
+	Cada objeto nessa estrutura possui um identificador único que o representa. O acesso nessa estrutura é mais rápido pois cada objeto pode ser acessado através de ponteiros. O seu uso auxilia no processo de desenvolvimento de software, sendo útil também em aplicações envolvendo relacionamentos complexos entre objetos. Esse tipo de SGBD vem sendo usando em pesquisas científicas, telecomunicações e outras aplicações. Essa categoria tem a desvantagem de estar associada a um tipo específico de linguagem de programação e por possuir dificuldades de escalabilidade, uma vez que o tamanho da memória física é excedido \cite{nayak2013type}. Um grande representante dessa categoria é o db4o, o trabalho de Kulshrestha, Sudhanshu and Sachdeva e Shelly \cite{kulshrestha2014performance} faz uma comparação de performance entre SGBD relacionais e o db4o. A figura abaixo exemplifica como um objeto é dividído para ser armazenado em tabelas em uma estrutura relaciona, já na estrutura orientada a objetos, o objeto é armazenado sem essa divisão \cite{edlich2006definitive}.
+	
+\begin{figure}[h]
+	\centering
+    \includegraphics[width=0.8\textwidth]{Banco_Dados_Relacional_X_db4o_ver2}
+    \caption{Contraste entre estrutura relaciona e orientada a objetos}
+    \label{fig:db4o}
+\end{figure} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{SGBD NoSQL orientado a grafos}%
+\section{Comparação entre SGBD NoSQL orientado a grafos}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -120,7 +138,7 @@ Este capítulo descreve toda a fundamentação teórica por trás das tecnologia
 	\centering
     \includegraphics[width=0.8\textwidth]{orientdbmodel}
     \caption{Possibilidade de registros no OrientDB}
-    \label{fig:mesh1}
+    \label{fig:orientdbpossibilities}
 \end{figure}
 	
 	O OrientDB é implementado utilizando a linguagem java, tendo sua primeira versão disponível no ano de 2010. Ele possui alta flexibilidade para definir o esquema do banco de dados, podendo ser \textit{Schema-free}, \textit{Schema-hybrid} ou \textit{Schema-full}. A sua linguagem de consulta é derivada do SQL o que é bastante vantajoso para aqueles que possuem experiência com bancos de dados relacionais, e além disso ele utiliza o modelo de transações ACID que como foi mencionado na seção \ref{manage_transaction} é algo mais comum no grupo dos SGBD relacionais, isso demonstra que o OrientDB presa pela integridade dos dados ao mesmo tempo que também fornece um suporte a particionamento dos dados \cite{OrientDB} \cite{vschart}.
@@ -178,7 +196,7 @@ Este capítulo descreve toda a fundamentação teórica por trás das tecnologia
 	\centering
     \includegraphics[width=0.5\textwidth]{teleporter-inheritance-orientdb-schema}
     \caption{Exemplo de herança no \textit{schema} do OrientDB }
-    \label{fig:mesh1}
+    \label{fig:inheritance-orient}
 \end{figure}
 	
 	Para finalizar é importante mencionar que as classes tem um papel importante ao se utilizar a arquitetura distribuída no OrientDB, pois para cada classe criada, o SGBD cria um cluster automaticamente para armazenar instâncias dessas classes. Essa funcionalidade auxilía bastante na organização do particionamento dos dados em um ambiente distribuído. Todos os registros de uma classe são armazenados juntos no mesmo cliuster que tem o mesmo nome da classe. No OrientDB é possível criar até trinta e dois mil setecentos e setenta e sete clusters. Compreender bem os conceitos de classes nesse SGBD, permite que o usuário tenha vantagem ao fazer o \textit{design} do banco de dados. Vale lembrar que uma classe pode ser mapeada para n clusters como mostra a figura a seguir:
@@ -186,7 +204,7 @@ Este capítulo descreve toda a fundamentação teórica por trás das tecnologia
 	\centering
     \includegraphics[width=0.5\textwidth]{class-clusters}
     \caption{Classe Customer mapeada para dois clusters diferentes}
-    \label{fig:mesh1}
+    \label{fig:class-cluster}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
