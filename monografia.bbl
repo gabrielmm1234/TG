@@ -173,6 +173,56 @@
   (CloudCom), 2012 IEEE 4th International Conference on}, \btxpageslong {}\
   363--370. IEEE, 2012.
 
+\bibitem {dudley2010translational}
+\btxnamefont {\btxlastnamefont {Dudley}, Joel\btxfnamespacelong T},
+  \btxnamefont {Yannick \btxlastnamefont {Pouliot}}, \btxnamefont {Rong
+  \btxlastnamefont {Chen}}, \btxnamefont {Alexander\btxfnamespacelong A
+  \btxlastnamefont {Morgan}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {Atul\btxfnamespacelong J \btxlastnamefont {Butte}}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {Translational bioinformatics in the cloud:
+  an affordable alternative}{Translational bioinformatics in the cloud: an
+  affordable alternative}}.
+\newblock \btxjournalfont {Genome medicine}, 2(8):51, 2010.
+
+\bibitem {ekins2010chemical}
+\btxnamefont {\btxlastnamefont {Ekins}, Sean}, \btxnamefont
+  {Rishi\btxfnamespacelong R \btxlastnamefont {Gupta}}, \btxnamefont {Eric
+  \btxlastnamefont {Gifford}}, \btxnamefont {Barry\btxfnamespacelong A
+  \btxlastnamefont {Bunin}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {Chris\btxfnamespacelong L \btxlastnamefont {Waller}}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {Chemical space: missing pieces in
+  cheminformatics}{Chemical space: missing pieces in cheminformatics}}.
+\newblock \btxjournalfont {Pharmaceutical research}, 27(10):2035--2039, 2010.
+
+\bibitem {allegro}
+\btxnamefont {\btxlastnamefont {F.}~inc}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Fuseki: serving rdf data over http}{Fuseki: serving RDF
+  data over HTTP}}.
+\newblock \url{https://franz.com/agraph/allegrograph/}.
+\newblock Acessado em janeiro de 2018.
+
+\bibitem {fuseki}
+\btxnamefont {\btxlastnamefont {apache}~fuseki}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Allegrograph rdf store for web 3.0's
+  database}{AllegroGraph rdf store for web 3.0's database}}.
+\newblock \url{https://jena.apache.org/documentation/serving_data/ }.
+\newblock Acessado em janeiro de 2018.
+
+\bibitem {neo4j-site}
+\btxnamefont {\btxlastnamefont {neo4j.org}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Neo4j: the world's leading graph database}{Neo4j: the
+  world's leading graph database}}.
+\newblock \url{https://neo4j.com/}.
+\newblock Acessado em janeiro de 2018.
+
+\bibitem {orientdb-site}
+\btxnamefont {\btxlastnamefont {O.}~technologies}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Orientdb - the world's first distributed multi-model nosql
+  database with a graph database engine}{OrientDB - The World's First
+  Distributed Multi-Model NoSQL Database with a Graph Database Engine}}.
+\newblock \url{http://orientdb.com/orientdb/}.
+\newblock Acessado em janeiro de 2018.
+
 \bibitem {mdgnosql}
 \btxnamefont {\btxlastnamefont {Erven}, Gustavo\btxfnamespacelong
   C.\btxfnamespacelong Galvão~van}\btxauthorcolon\ \btxtitlefont

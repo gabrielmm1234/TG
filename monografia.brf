@@ -30,5 +30,15 @@
 \backcite {vschart}{{12}{2.4.1}{figure.2.5}}
 \backcite {Graphpopularity}{{12}{2.4.1}{figure.2.5}}
 \backcite {dayarathna2012xgdbench}{{12}{2.4.2}{subsection.2.4.2}}
-\backcite {kauremerging}{{12}{2.4.3}{subsection.2.4.3}}
-\backcite {mdgnosql}{{14}{2.4.4}{subsection.2.4.4}}
+\backcite {dayarathna2012xgdbench}{{12}{2.4.2}{subsection.2.4.2}}
+\backcite {dudley2010translational}{{12}{2.4.2}{subsection.2.4.2}}
+\backcite {ekins2010chemical}{{12}{2.4.2}{subsection.2.4.2}}
+\backcite {dayarathna2012xgdbench}{{13}{2.4.2}{subsection.2.4.2}}
+\backcite {dayarathna2012xgdbench}{{13}{2.4.2}{subsection.2.4.2}}
+\backcite {allegro}{{13}{2.4.2}{subsection.2.4.2}}
+\backcite {fuseki}{{13}{2.4.2}{subsection.2.4.2}}
+\backcite {neo4j-site}{{13}{2.4.2}{subsection.2.4.2}}
+\backcite {orientdb-site}{{13}{2.4.2}{subsection.2.4.2}}
+\backcite {dayarathna2012xgdbench}{{13}{2.4.2}{subsection.2.4.2}}
+\backcite {kauremerging}{{13}{2.4.3}{subsection.2.4.3}}
+\backcite {mdgnosql}{{15}{2.4.4}{subsection.2.4.4}}

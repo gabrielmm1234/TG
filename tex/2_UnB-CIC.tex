@@ -150,6 +150,21 @@ Este capítulo descreve toda a fundamentação teórica por trás das tecnologia
 	
 	O OrientDB utiliza mecanismos de indexação baseados em árvores-B e hash extendido, esses mecanismos garantem uma complexidade constante para obter relacionamentos entre um registro para muitos registros. Um estudo feito pelo instituto de tecnologia de tokio e pela IBM, mostra que o OrientDB chega a ser 10 vezes mais rápido que o seu maior concorrente que é o Neo4j \cite{dayarathna2012xgdbench}.
 	
+	O trabalho feito po Toyotaro Suzumura e Miyuru Dayarathna \cite{dayarathna2012xgdbench}, aponta como a estrutura de grafos vem crescendo em sistemas na nuvem, devido ao crescimento de aplicações que produzem dados em formato de grafos, como aplicações de web semântica, sistemas de informação geográfico (GIS), aplicação de bioinformática \cite{dudley2010translational} e química informática \cite{ekins2010chemical}. Sendo que históricamente, dados com estrutura de grafos eram modelados com relacionamentos e armazenados em bases relacionais. Toda a lógica de percorrimento de grafos ficava para outras camadas da aplicação. Entretanto, percebe-se que o armazenamento desse tipo de dado e a análise feita em cima dessa estrurura feita nos SGBD são mais eficientes, uma vez que fornecem uma performance otimizada e produtividade na especificação de consultas \cite{dayarathna2012xgdbench}.
+	
+	Um dos objetivos desse artigo \cite{dayarathna2012xgdbench} é realizar um benchmark e estudar a performance de quatro grandes SGBD orientado a grafos em ambiente de nuvem. Os SGBD são AllegroGraph \cite{allegro}, Fuseki \cite{fuseki}, Neo4j \cite{neo4j-site} e o OrientDB \cite{orientdb-site}. Eles utilizaram o XGDBench que é uma extensão do conhecido Yahoo! Cloud Serving Benchmark (YCSB). O YCSB é um framework de benchmark para sistemas na nuvem. Foram criados cinco \textit{Workloads} para realizar os testes:
+
+\begin{itemize}
+	\item  \textit{Update heavy}: 50/50 entre leitura e atualizações
+	\item  \textit{Read mostly}: 95/5 entre leitura e atualizações
+	\item  \textit{Read only}: 100 por cento de leituras
+	\item  \textit{Read latest}: esse \textit{Workload} insere novos vértices ao grafo
+	\item  \textit{Short Ranges}: esse \textit{Workload} lê todos os vizinhos e seus atributos de um dado vértice A.
+\end{itemize}
+
+	Em todos os workloads, levando em conta a arquitetura e o hardware utilizado no ambiente de nuvem, o OrientDB teve um desempenho melhor que os demais SGBD \cite{dayarathna2012xgdbench}.
+	
+	
 \subsection{Arquitetura Distribuída}
 	Em relação ao suporte a uma arquitetura distribuída, o OrientDB trabalha com um método de particionamento conhecido como \textit{sharding}, e um método de replicação conhecido como \textit{Multi-master replication}. Esse modelo de replicação, permite que qualquer membro do cluster possa ler e escrever no banco de dados. Essa arquitetura permite que exista uma escalabilidade horizontal sem gargalos, como ocorre em algumas outras soluções de SGBD NoSQL \cite{kauremerging}.
 	
