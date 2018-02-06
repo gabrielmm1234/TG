@@ -232,4 +232,19 @@
   Computação Aplicada)—Universidade de Brasília}. Universidade de
   Brasília, 2015.
 
+\bibitem {fielding2000architectural}
+\btxnamefont {\btxlastnamefont {Fielding}, Roy\btxfnamespacelong T} \btxandlong
+  {}\ \btxnamefont {Richard\btxfnamespacelong N \btxlastnamefont
+  {Taylor}}\btxauthorcolon\ \btxtitlefont {Architectural styles and the design
+  of network-based software architectures}, \btxvolumelong {}~\btxvolumefont
+  {7}.
+\newblock \btxpublisherfont {University of California, Irvine Doctoral
+  dissertation}, 2000.
+
+\bibitem {acident-rest}
+\btxnamefont {\btxlastnamefont {Baker}, Mark}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Accidentally restful}{Accidentally RESTful}}.
+\newblock \url{http://www.markbaker.ca/blog/2005/04/accidentally-restful/}.
+\newblock Acessado em fevereiro de 2018.
+
 \end{thebibliography}

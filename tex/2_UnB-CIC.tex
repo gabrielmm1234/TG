@@ -126,7 +126,7 @@ Este capítulo descreve toda a fundamentação teórica por trás das tecnologia
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{OrientDB}
+\section{OrientDB} \label{OrientDBMain}
 
 	Essa seção tem por objetivo especificar as características do SGBD OrientDB, e realizar uma comparação com outros SGBD orientado a grafos como o Neo4j.
 	
@@ -225,9 +225,69 @@ Este capítulo descreve toda a fundamentação teórica por trás das tecnologia
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{REST}
+\section{\textit{REST}}
+
+\subsection{Introdução} \label{rest_intro}
+
+	O termo \textit{REST} significa \textit{Representational State Transfer}, em português Transferência de Estado Representacional, e foi introduzido por Roy Fielding em sua tese de doutorado \cite{fielding2000architectural}. Como Roy Fielding afirma em sua tese, a complexidade dos sistemas de \textit{software} modernos fazem necessário uma ênfase maior  em sistemas componentizados, em que a implementação é dividida em componentes independentes que se comunicam para realizar uma tarefa desejada \cite{fielding2000architectural}.
+	
+	Ainda em sua tese, Roy Fielding explora o encontro entre duas discplinas da área de ciência da computação: \textit{software} e \textit{networking}. Ele afirma que as pesquisas de softwares se preocupavam em categorizar o \textit{desing} de \textit{software}, e desenvolver novas metodologias de \textit{desing}, em vez de avaliar o impacto das decisões de \textit{design} no comportamento de um sistema. Enquanto as pesquisas de \textit{networking}, foca nos detalhes da comunicação genérica entre sistemas e em melhorar a performance de uma técnica de comunicação específica, muitas vezes ignorando o fato de que mudar o estilo de interação de uma aplicação pode gerar mais impacto na performance, do que quais protocolos de comunicação são usados nessa interação \cite{fielding2000architectural}.
+	
+	Portanto, nesse contexto, o trabalho de Roy Fielding tinha como objetivo entender e avaliar o \textit{design} arquitetural de uma aplicação de software baseada na rede através do uso de restrições arquiteturais, dessa forma obtendo as propriedades sociais, performáticas e funcionais que se espera de uma arquitetura \cite{fielding2000architectural}. Dessa forma, o \textit{REST} é um estilo de arquitetura para sistemas hipermídia distribuídos. O \textit{REST} provê um conjunto de restrições arquiteturais que ao serem aplicadas, enfatizam a escalabilidade das interações entre componentes, generalidade de interfaces, \textit{deploy} independente dos componentes e componentes intermediários para reduzir a latência nas interações, reforçar a segurança e encapsular sistemas legados \cite{fielding2000architectural}.
+	
+\subsection{Princípios do estilo arquitetural \textit{REST}}
+
+	A característica principal que diferencia o \textit{REST} de outros estilos baseados em rede, é a ênfase em uma interface uniforme entre os componentes. Dessa forma, a arquitetura geral do sistema é simplificada e a visibilidade das interações e melhorada. Entretanto, um problema nesse princípio é que a eficiência se torna pior. Isso ocorre, pois, a informação é transferida de forma padronizada, em vez de um formato específico a necessidade das aplicações \cite{fielding2000architectural}.
+	
+	Como foi dito na seção \ref{rest_intro}, o estilo arquitetural \textit{REST} impõe uma série de restrições ao sistema. Portanto, o \textit{REST} possui alguns princípios que os sistemas devem adotar para serem considerados \textit{RESTful}, que são: 
+
+\begin{itemize}
+	\item Todos os componentes do sistema se comunicam através de interfaces com métodos bem definidos e código dinâmico. A comunicação entre os componentes utiliza o protocolo \textit{HTTP}.
+	\item Cada componente é unicamente identificado por um link hipermídia (URL)
+	\item Uma arquitetura cliente/servidor \textit{stateless} é seguida.
+	\item A arquitetura possui camadas, e os dados podem ser cacheados em qualquer camada.
+\end{itemize}
+
+	Atualmente, vários serviços na web fornecem interfaces \textit{REST}, para que interessados possam consumir os dados, tais como a Amazon, eBay, Yahoo. A câmara dos deputados também utiliza o estilo arquitetural \textit{REST} para fornecer algumas informações. Além disso, o framework \textit{ruby on rails}, que foi utilizado para desenvolver o sistema do estudo de caso, suporta aplicações \textit{REST} utilizando o padrão MVC.
+	
+	Um ponto interessante a ser colocado, é que nem todas essas aplicações mencionadas são puramente \textit{REST}, pois não respeitam todas as restrições destacadas por Roy Fielding em sua tese \cite{fielding2000architectural}. Esses serviços, seguem os princípios mais importantes, principalmente a interface uniforme. Tais aplicações são conhecidas como "acidentalmente \textit{RESTful}" \cite{acident-rest}.
+
+	A figura abaixo exemplifica o estilo arquitetural \textit{REST}:
+
+\begin{figure}[h]
+	\centering
+    \includegraphics[width=0.5\textwidth]{rest}
+    \caption{Estilo arquitetural \textit{REST}}
+    \label{fig:rest-style}
+\end{figure}
 
 
+\subsection{Interface \textit{REST} no OrientDB}
+	O SGBD orientado a grafos utilizado no estudo de caso foi o OrientDB, descrito em mais detalhes na seção \ref{OrientDBMain}. O OrientDB fornece uma interface \textit{REST} de forma que as aplicações se comuniquem com o SGBD de forma eficiente e escalável. Essa interface utiliza os métodos do protocolo \textit{HTTP} para realizar operações nos dados, como descrito abaixo:
+	
+\begin{itemize}
+	\item Método GET: Utilizado para recuperar dados do banco de dados. É uma operação idempotente, isso significa que nenhuma mudança no banco de dados é feita.
+	\item Método POST: Utilizado para persistir dados no banco de dados.
+	\item Método PUT: Utilizado para atualizar dados já persistidos no banco de dados.
+	\item Método DELETE: Utilizado para deletar dados já persistidos no banco de dados.
+\end{itemize}
+
+	Dessa forma, uma aplicação que deseja se conectar ao SGBD utilizando a interface \textit{REST}, realizaria o seguinte comando: 
+	
+\begin{lstlisting}
+GET http://{{server}}:{{port}}/connect/{{database}}
+\end{lstlisting}
+
+	Esse método se conecta com um servidor remoto usando o formato de autenticação básica. Basta fornecer o endereço e porta do servidor e o nome do banco de dados. Se tudo ocorrer corretamente uma resposta 204 OK é retornada.
+	
+	Se a aplicação deseja, por exemplo, obter todos os parlamentares persistidos no banco de dados, realizaria o seguinte comando:
+	
+\begin{lstlisting}
+GET http://{{server}}:{{port}}/query/{{database}}/{{language}}/SELECT 
+from Parlamentar
+\end{lstlisting}
+
+	Nesse caso, ao fornecer o endereço e porta do servidor, o nome do banco de dados e especificar a linguagem como sendo "sql", o SGBD retorna no formato JSON todos os parlamentares disponíveis no banco de dados.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

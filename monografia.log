@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.26)  27 JAN 2018 11:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.26)  5 FEB 2018 22:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -934,24 +934,49 @@ File: pppdftex.def 2015/09/18 v0.5d Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count155
 \AM@templatesizebox=\box36
 )
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count156
+\lst@gtempboxa=\box37
+\lst@token=\toks34
+\lst@length=\count157
+\lst@currlwidth=\dimen143
+\lst@column=\count158
+\lst@pos=\count159
+\lst@lostspace=\dimen144
+\lst@width=\dimen145
+\lst@newlines=\count160
+\lst@lineno=\count161
+\lst@maxwidth=\dimen146
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count162
+\lst@skipnumbers=\count163
+\lst@framebox=\box38
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
 (./monografia.aux)
 \openout1 = `monografia.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 46.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -970,17 +995,17 @@ babelbib: Load BibTeX extensions \bibsamerican for american
 babelbib: Set language for keywords in the bibliography fixed to american
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count156
-\scratchdimen=\dimen143
-\scratchbox=\box37
-\nofMPsegments=\count157
-\nofMParguments=\count158
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count159
-\MPscratchDim=\dimen144
-\MPnumerator=\count160
-\makeMPintoPDFobject=\count161
-\everyMPtoPDFconversion=\toks35
+\scratchcounter=\count164
+\scratchdimen=\dimen147
+\scratchbox=\box39
+\nofMPsegments=\count165
+\nofMParguments=\count166
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count167
+\MPscratchDim=\dimen148
+\MPnumerator=\count168
+\makeMPintoPDFobject=\count169
+\everyMPtoPDFconversion=\toks36
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1030,60 +1055,60 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box38
-Package hyperref Info: Link coloring OFF on input line 39.
+\AtBeginShipoutBox=\box40
+Package hyperref Info: Link coloring OFF on input line 46.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count162
+\c@section@level=\count170
 )
-LaTeX Info: Redefining \ref on input line 39.
-LaTeX Info: Redefining \pageref on input line 39.
-LaTeX Info: Redefining \nameref on input line 39.
+LaTeX Info: Redefining \ref on input line 46.
+LaTeX Info: Redefining \pageref on input line 46.
+LaTeX Info: Redefining \nameref on input line 46.
 
 (./monografia.out) (./monografia.out)
 \@outlinefile=\write6
 \openout6 = `monografia.out'.
 
  (./monografia.glsdefs)
-Package tocstyle Info: prepare \l@part for redefinition on input line 39.
-Package tocstyle Info: prepare \l@chapter for redefinition on input line 39.
-Package tocstyle Info: prepare \l@section for redefinition on input line 39.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 39.
+Package tocstyle Info: prepare \l@part for redefinition on input line 46.
+Package tocstyle Info: prepare \l@chapter for redefinition on input line 46.
+Package tocstyle Info: prepare \l@section for redefinition on input line 46.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 46.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 39.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 46.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 39.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 46.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 39.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 46.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 39.
+(Font)              <12> on input line 46.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 39.
+(Font)              <8> on input line 46.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 39.
-Package tocstyle Info: prepare \l@subsection for redefinition on input line 39.
+(Font)              <6> on input line 46.
+Package tocstyle Info: prepare \l@subsection for redefinition on input line 46.
 
-Package tocstyle Info: prepare \l@table for redefinition on input line 39.
-Package tocstyle Info: prepare \l@figure for redefinition on input line 39.
+Package tocstyle Info: prepare \l@table for redefinition on input line 46.
+Package tocstyle Info: prepare \l@figure for redefinition on input line 46.
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/hypcap.sty
 Package: hypcap 2011/02/16 v1.11 Adjusting the anchors of captions (HO)
@@ -1091,26 +1116,26 @@ Package: hypcap 2011/02/16 v1.11 Adjusting the anchors of captions (HO)
 \len@brasiliaw=\skip63
 \len@uadesch=\skip64
 \len@uacaph=\skip65
-LaTeX Font Info:    Try loading font information for T1+ua1 on input line 39.
-LaTeX Font Info:    No file T1ua1.fd. on input line 39.
+LaTeX Font Info:    Try loading font information for T1+ua1 on input line 46.
+LaTeX Font Info:    No file T1ua1.fd. on input line 46.
 
 
 LaTeX Font Warning: Font shape `T1/ua1/bx/n' undefined
-(Font)              using `T1/cmr/m/n' instead on input line 39.
+(Font)              using `T1/cmr/m/n' instead on input line 46.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <20> not available
-(Font)              size <20.74> substituted on input line 39.
+(Font)              size <20.74> substituted on input line 46.
 
 
 LaTeX Font Warning: Font shape `T1/ua1/bx/n' in size <20> not available
-(Font)              size <20.74> substituted on input line 39.
+(Font)              size <20.74> substituted on input line 46.
 
-<img/positivo_cor.pdf, id=96, 119.44624pt x 60.225pt>
+<img/positivo_cor.pdf, id=108, 119.44624pt x 60.225pt>
 File: img/positivo_cor.pdf Graphic file (type pdf)
 
 <use img/positivo_cor.pdf>
-Package pdftex.def Info: img/positivo_cor.pdf used on input line 39.
+Package pdftex.def Info: img/positivo_cor.pdf used on input line 46.
 (pdftex.def)             Requested size: 61.76747pt x 31.14256pt.
 \len@lskipoffset=\skip66
 \len@lskipoffset=\skip67
@@ -1126,7 +1151,7 @@ Package pdftex.def Info: img/positivo_cor.pdf used on input line 39.
 \len@uacaph=\skip70
 File: img/positivo_cor.pdf Graphic file (type pdf)
  <use img/positivo_cor.pdf>
-Package pdftex.def Info: img/positivo_cor.pdf used on input line 39.
+Package pdftex.def Info: img/positivo_cor.pdf used on input line 46.
 (pdftex.def)             Requested size: 61.76747pt x 31.14256pt.
 \len@lskipoffset=\skip71
 \len@lskipoffset=\skip72
@@ -1147,14 +1172,14 @@ Package pdftex.def Info: img/positivo_cor.pdf used on input line 39.
 
 Package babel Warning: You haven't loaded the language english yet
 (babel)                I'll proceed, but expect unexpected results.
-(babel)                Reported on input line 39.
+(babel)                Reported on input line 46.
 
 (./tex/abstract.tex)
 babelbib: Set language for keywords in the bibliography fixed to brazil
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 46.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 46.
 [6
 
 
@@ -1249,6 +1274,21 @@ text indent by \l@... (toc, 1):  27.02464pt
 number indent by parent (toc, 1):  13.5pt
 text indent calculated (toc, 1): 20.88887pt
 number indent calculated (toc, 1): 13.5pt
+number indent by \l@... (toc, 2):  44.64938pt
+text indent by \l@... (toc, 2):  37.59943pt
+number indent by parent (toc, 2):  34.38887pt
+text indent calculated (toc, 2): 30.02785pt
+number indent calculated (toc, 2): 34.38887pt
+number indent by \l@... (toc, 2):  44.64938pt
+text indent by \l@... (toc, 2):  37.59943pt
+number indent by parent (toc, 2):  34.38887pt
+text indent calculated (toc, 2): 30.02785pt
+number indent calculated (toc, 2): 34.38887pt
+number indent by \l@... (toc, 2):  44.64938pt
+text indent by \l@... (toc, 2):  37.59943pt
+number indent by parent (toc, 2):  34.38887pt
+text indent calculated (toc, 2): 30.02785pt
+number indent calculated (toc, 2): 34.38887pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  17.62474pt
 number indent by parent (toc, 0):  0.0pt
@@ -1259,56 +1299,61 @@ number indent calculated (toc, 0): 0.0pt
 \openout7 = `monografia.toc'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 46.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 46.
  [7
 
 ] (./monografia.lof
 number indent by \l@... (lof, 1):  17.62474pt
 text indent by \l@... (lof, 1):  27.02464pt
 number indent by parent (lof, 1):  17.62474pt
-text indent calculated (lof, 1): 20.88887pt
+text indent calculated (lof, 1): 26.76385pt
 number indent calculated (lof, 1): 17.62474pt
 number indent by \l@... (lof, 1):  17.62474pt
 text indent by \l@... (lof, 1):  27.02464pt
 number indent by parent (lof, 1):  17.62474pt
-text indent calculated (lof, 1): 20.88887pt
+text indent calculated (lof, 1): 26.76385pt
 number indent calculated (lof, 1): 17.62474pt
 number indent by \l@... (lof, 1):  17.62474pt
 text indent by \l@... (lof, 1):  27.02464pt
 number indent by parent (lof, 1):  17.62474pt
-text indent calculated (lof, 1): 20.88887pt
+text indent calculated (lof, 1): 26.76385pt
 number indent calculated (lof, 1): 17.62474pt
 number indent by \l@... (lof, 1):  17.62474pt
 text indent by \l@... (lof, 1):  27.02464pt
 number indent by parent (lof, 1):  17.62474pt
-text indent calculated (lof, 1): 20.88887pt
+text indent calculated (lof, 1): 26.76385pt
 number indent calculated (lof, 1): 17.62474pt
 number indent by \l@... (lof, 1):  17.62474pt
 text indent by \l@... (lof, 1):  27.02464pt
 number indent by parent (lof, 1):  17.62474pt
-text indent calculated (lof, 1): 20.88887pt
+text indent calculated (lof, 1): 26.76385pt
 number indent calculated (lof, 1): 17.62474pt
 number indent by \l@... (lof, 1):  17.62474pt
 text indent by \l@... (lof, 1):  27.02464pt
 number indent by parent (lof, 1):  17.62474pt
-text indent calculated (lof, 1): 20.88887pt
+text indent calculated (lof, 1): 26.76385pt
 number indent calculated (lof, 1): 17.62474pt
 number indent by \l@... (lof, 1):  17.62474pt
 text indent by \l@... (lof, 1):  27.02464pt
 number indent by parent (lof, 1):  17.62474pt
-text indent calculated (lof, 1): 20.88887pt
+text indent calculated (lof, 1): 26.76385pt
 number indent calculated (lof, 1): 17.62474pt
 number indent by \l@... (lof, 1):  17.62474pt
 text indent by \l@... (lof, 1):  27.02464pt
 number indent by parent (lof, 1):  17.62474pt
-text indent calculated (lof, 1): 20.88887pt
+text indent calculated (lof, 1): 26.76385pt
 number indent calculated (lof, 1): 17.62474pt
 number indent by \l@... (lof, 1):  17.62474pt
 text indent by \l@... (lof, 1):  27.02464pt
 number indent by parent (lof, 1):  17.62474pt
-text indent calculated (lof, 1): 20.88887pt
+text indent calculated (lof, 1): 26.76385pt
+number indent calculated (lof, 1): 17.62474pt
+number indent by \l@... (lof, 1):  17.62474pt
+text indent by \l@... (lof, 1):  27.02464pt
+number indent by parent (lof, 1):  17.62474pt
+text indent calculated (lof, 1): 26.76385pt
 number indent calculated (lof, 1): 17.62474pt
 )
 \tf@lof=\write8
@@ -1321,9 +1366,9 @@ number indent calculated (lof, 1): 17.62474pt
 )
 No file monografia.acr.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 46.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 46.
 [8
 
 ] (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
@@ -1334,9 +1379,11 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 )
+\c@lstlisting=\count171
+
 Cap\'{\i }tulo 1.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 47.
 (./tex/1_Introducao.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 8.
@@ -1365,14 +1412,14 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 27.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 41.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 41.
+(babel)             in language  on input line 48.
 
 [3]
 Cap\'{\i }tulo 2.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 41.
+(babel)             in language  on input line 48.
 (./tex/2_UnB-CIC.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 19.
@@ -1404,7 +1451,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 64.
 
-<img/key-value.jpg, id=236, 707.64375pt x 294.09875pt>
+<img/key-value.jpg, id=253, 707.64375pt x 294.09875pt>
 File: img/key-value.jpg Graphic file (type jpg)
  <use img/key-value.jpg>
 Package pdftex.def Info: img/key-value.jpg used on input line 74.
@@ -1414,7 +1461,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 81.
 
-[7 <./img/key-value.jpg>] <img/columnnosql.png, id=248, 404.712pt x 228.855pt>
+[7 <./img/key-value.jpg>] <img/columnnosql.png, id=265, 404.712pt x 228.855pt>
 File: img/columnnosql.png Graphic file (type png)
 
 <use img/columnnosql.png>
@@ -1425,7 +1472,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 93.
  [8 <./img/columnnosql.png>]
-<img/orient_graph.png, id=260, 1371.1225pt x 770.88pt>
+<img/orient_graph.png, id=277, 1371.1225pt x 770.88pt>
 File: img/orient_graph.png Graphic file (type png)
 
 <use img/orient_graph.png>
@@ -1436,7 +1483,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 107.
  [9 <./img/orient_graph.png>]
-<img/Banco_Dados_Relacional_X_db4o_ver2.png, id=271, 179.4705pt x 45.5301pt>
+<img/Banco_Dados_Relacional_X_db4o_ver2.png, id=288, 179.4705pt x 45.5301pt>
 File: img/Banco_Dados_Relacional_X_db4o_ver2.png Graphic file (type png)
 
 <use img/Banco_Dados_Relacional_X_db4o_ver2.png>
@@ -1460,7 +1507,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 133.
 
-<img/orientdbmodel.png, id=280, 722.7pt x 542.025pt>
+<img/orientdbmodel.png, id=298, 722.7pt x 542.025pt>
 File: img/orientdbmodel.png Graphic file (type png)
 
 <use img/orientdbmodel.png>
@@ -1481,7 +1528,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 168.
 
-<img/master-slave.png, id=316, 281.05pt x 145.54375pt>
+<img/master-slave.png, id=333, 281.05pt x 145.54375pt>
 File: img/master-slave.png Graphic file (type png)
 
 <use img/master-slave.png>
@@ -1496,7 +1543,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 183.
 [13]
-<img/orientdb-the-2nd-generation-of-multimodel-nosql-44-638.png, id=325, 640.39
+<img/orientdb-the-2nd-generation-of-multimodel-nosql-44-638.png, id=342, 640.39
 25pt x 360.34625pt>
 File: img/orientdb-the-2nd-generation-of-multimodel-nosql-44-638.png Graphic fi
 le (type png)
@@ -1513,7 +1560,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 196.
  [14 <./img/master-slave.png> <./img/orientdb-the-2nd-generation-of-multimodel-
 nosql-44-638.png>]
-<img/teleporter-inheritance-orientdb-schema.png, id=334, 924.45375pt x 433.62pt
+<img/teleporter-inheritance-orientdb-schema.png, id=351, 924.45375pt x 433.62pt
 >
 File: img/teleporter-inheritance-orientdb-schema.png Graphic file (type png)
  <use img/teleporter-inheritance-orientdb-schema.png>
@@ -1524,7 +1571,7 @@ Package pdftex.def Info: img/teleporter-inheritance-orientdb-schema.png used on
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/class-clusters.png, id=335, 401.5pt x 142.5325pt>
+<img/class-clusters.png, id=352, 401.5pt x 142.5325pt>
 File: img/class-clusters.png Graphic file (type png)
 
 <use img/class-clusters.png>
@@ -1537,15 +1584,45 @@ Package babel Info: Redefining portuges shorthand "|
  [15]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 228.
-)
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 230.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 235.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 235.
  [16 <./img/teleporter-inheritance-orientdb-schema.png> <./img/class-clusters.p
 ng>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 238.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 254.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 254.
+ [17]
+<img/rest.png, id=380, 451.6875pt x 244.915pt>
+File: img/rest.png Graphic file (type png)
+ <use img/rest.png>
+Package pdftex.def Info: img/rest.png used on input line 259.
+(pdftex.def)             Requested size: 227.62206pt x 123.4251pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 265.
+
+Overfull \hbox (31.20294pt too wide) in paragraph at lines 286--287
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 290.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 290.
+[18 <./img/rest.png>])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 49.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 49.
+ [19]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 49.
  (./monografia.bbl (./monografia.brf)
 \tf@brf=\write10
 \openout10 = `monografia.brf'.
@@ -1571,7 +1648,7 @@ Underfull \hbox (badness 1033) in paragraph at lines 103--103
 1/lmr/m/n/12 .  Queue, 6(3):48--55, []maio []2008,
  []
 
-[17
+[20
 
 
 ]
@@ -1580,21 +1657,21 @@ Underfull \hbox (badness 2435) in paragraph at lines 203--203
 /lmr/m/n/12 .  []$\T1/lmtt/m/n/12 https : / / franz . com / agraph /
  []
 
-[18])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
+[21])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 49.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 42.
- [19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
+(babel)             in language  on input line 49.
+ [22]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
  (./monografia.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 42.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 42.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
 Package rerunfilecheck Info: File `monografia.out' has not changed.
-(rerunfilecheck)             Checksum: 0F60DE7884D8FEAE6AE4F3ACF07F1331;1480.
+(rerunfilecheck)             Checksum: 8A0CCF3B7C3601D42E62B5F6111212FB;1725.
 Package rerunfilecheck Info: File `monografia.brf' has not changed.
-(rerunfilecheck)             Checksum: 853DBE90E099098DA8E0F77CD17FDDB9;2530.
+(rerunfilecheck)             Checksum: 07840AD408BCD740E57EF7261CC426F3;3069.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1603,30 +1680,30 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
  )
 (\end occurred when \iffalse on line 120 was incomplete) 
 Here is how much of TeX's memory you used:
- 14406 strings out of 493029
- 216946 string characters out of 6136234
- 401102 words of memory out of 5000000
- 17461 multiletter control sequences out of 15000+600000
- 48854 words of font info for 39 fonts, out of 8000000 for 9000
+ 16039 strings out of 493029
+ 238491 string characters out of 6136234
+ 419938 words of memory out of 5000000
+ 19065 multiletter control sequences out of 15000+600000
+ 57396 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,7n,69p,1940b,599s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,7n,69p,1940b,995s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts
 /enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/us
 r/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/fonts/
-type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></
-usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm2074.pf
-b>
-Output written on monografia.pdf (27 pages, 763923 bytes).
+type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr
+/share/texmf/fonts/type1/public/cm-super/sfrm2074.pfb>
+Output written on monografia.pdf (30 pages, 791793 bytes).
 PDF statistics:
- 472 PDF objects out of 1000 (max. 8388607)
- 416 compressed objects within 5 object streams
- 97 named destinations out of 1000 (max. 500000)
- 235 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 533 PDF objects out of 1000 (max. 8388607)
+ 471 compressed objects within 5 object streams
+ 111 named destinations out of 1000 (max. 500000)
+ 264 words of extra memory for PDF output out of 10000 (max. 10000000)
 

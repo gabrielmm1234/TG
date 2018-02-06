@@ -23,8 +23,11 @@
 \contentsline {subsection}{\numberline {2.4.2}Performance}{12}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}Arquitetura Distribu\IeC {\'\i }da}{13}{subsection.2.4.3}
 \contentsline {subsection}{\numberline {2.4.4}Orienta\IeC {\c c}\IeC {\~a}o a Objetos}{14}{subsection.2.4.4}
-\contentsline {section}{\numberline {2.5}REST}{16}{section.2.5}
-\contentsline {chapter}{Refer\^encias}{17}{section*.12}
+\contentsline {section}{\numberline {2.5}\textit {REST}}{16}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Introdu\IeC {\c c}\IeC {\~a}o}{16}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Princ\IeC {\'\i }pios do estilo arquitetural \textit {REST}}{17}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Interface \textit {REST} no OrientDB}{18}{subsection.2.5.3}
+\contentsline {chapter}{Refer\^encias}{20}{section*.12}
 \select@language {american}
 \select@language {american}
 \select@language {american}
