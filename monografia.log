@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.26)  5 FEB 2018 22:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.26)  9 FEB 2018 00:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -934,49 +934,97 @@ File: pppdftex.def 2015/09/18 v0.5d Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count155
 \AM@templatesizebox=\box36
 )
+(/usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen143
+\extrarowheight=\dimen144
+\NC@list=\toks34
+\extratabsurround=\skip63
+\backup@length=\skip64
+)
+\rotheadsize=\dimen145
+\c@nlinenum=\count156
+\TeXr@lab=\toks35
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count157
+\float@exts=\toks36
+\float@box=\box37
+\@float@everytoks=\toks37
+\@floatcapt=\box38
+)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count156
-\lst@gtempboxa=\box37
-\lst@token=\toks34
-\lst@length=\count157
-\lst@currlwidth=\dimen143
-\lst@column=\count158
-\lst@pos=\count159
-\lst@lostspace=\dimen144
-\lst@width=\dimen145
-\lst@newlines=\count160
-\lst@lineno=\count161
-\lst@maxwidth=\dimen146
+\lst@mode=\count158
+\lst@gtempboxa=\box39
+\lst@token=\toks38
+\lst@length=\count159
+\lst@currlwidth=\dimen146
+\lst@column=\count160
+\lst@pos=\count161
+\lst@lostspace=\dimen147
+\lst@width=\dimen148
+\lst@newlines=\count162
+\lst@lineno=\count163
+\lst@maxwidth=\dimen149
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count162
-\lst@skipnumbers=\count163
-\lst@framebox=\box38
+\c@lstnumber=\count164
+\lst@skipnumbers=\count165
+\lst@framebox=\box40
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen150
+\captionmargin@=\dimen151
+\captionwidth=\dimen152
+\caption@tempdima=\dimen153
+\caption@indent=\dimen154
+\caption@parindent=\dimen155
+\caption@hangindent=\dimen156
+)
+\c@ContinuedFloat=\count166
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
+)
 (./monografia.aux)
 \openout1 = `monografia.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 49.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -995,17 +1043,17 @@ babelbib: Load BibTeX extensions \bibsamerican for american
 babelbib: Set language for keywords in the bibliography fixed to american
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count164
-\scratchdimen=\dimen147
-\scratchbox=\box39
-\nofMPsegments=\count165
-\nofMParguments=\count166
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count167
-\MPscratchDim=\dimen148
-\MPnumerator=\count168
-\makeMPintoPDFobject=\count169
-\everyMPtoPDFconversion=\toks36
+\scratchcounter=\count167
+\scratchdimen=\dimen157
+\scratchbox=\box41
+\nofMPsegments=\count168
+\nofMParguments=\count169
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count170
+\MPscratchDim=\dimen158
+\MPnumerator=\count171
+\makeMPintoPDFobject=\count172
+\everyMPtoPDFconversion=\toks40
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1055,90 +1103,90 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box40
-Package hyperref Info: Link coloring OFF on input line 46.
+\AtBeginShipoutBox=\box42
+Package hyperref Info: Link coloring OFF on input line 49.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count170
+\c@section@level=\count173
 )
-LaTeX Info: Redefining \ref on input line 46.
-LaTeX Info: Redefining \pageref on input line 46.
-LaTeX Info: Redefining \nameref on input line 46.
+LaTeX Info: Redefining \ref on input line 49.
+LaTeX Info: Redefining \pageref on input line 49.
+LaTeX Info: Redefining \nameref on input line 49.
 
 (./monografia.out) (./monografia.out)
 \@outlinefile=\write6
 \openout6 = `monografia.out'.
 
  (./monografia.glsdefs)
-Package tocstyle Info: prepare \l@part for redefinition on input line 46.
-Package tocstyle Info: prepare \l@chapter for redefinition on input line 46.
-Package tocstyle Info: prepare \l@section for redefinition on input line 46.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 46.
+Package tocstyle Info: prepare \l@part for redefinition on input line 49.
+Package tocstyle Info: prepare \l@chapter for redefinition on input line 49.
+Package tocstyle Info: prepare \l@section for redefinition on input line 49.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 49.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 46.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 49.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 46.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 49.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 46.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 49.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 46.
+(Font)              <12> on input line 49.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 46.
+(Font)              <8> on input line 49.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 46.
-Package tocstyle Info: prepare \l@subsection for redefinition on input line 46.
+(Font)              <6> on input line 49.
+Package tocstyle Info: prepare \l@subsection for redefinition on input line 49.
 
-Package tocstyle Info: prepare \l@table for redefinition on input line 46.
-Package tocstyle Info: prepare \l@figure for redefinition on input line 46.
+Package tocstyle Info: prepare \l@table for redefinition on input line 49.
+Package tocstyle Info: prepare \l@figure for redefinition on input line 49.
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/hypcap.sty
 Package: hypcap 2011/02/16 v1.11 Adjusting the anchors of captions (HO)
 )
-\len@brasiliaw=\skip63
-\len@uadesch=\skip64
-\len@uacaph=\skip65
-LaTeX Font Info:    Try loading font information for T1+ua1 on input line 46.
-LaTeX Font Info:    No file T1ua1.fd. on input line 46.
+\len@brasiliaw=\skip65
+\len@uadesch=\skip66
+\len@uacaph=\skip67
+LaTeX Font Info:    Try loading font information for T1+ua1 on input line 49.
+LaTeX Font Info:    No file T1ua1.fd. on input line 49.
 
 
 LaTeX Font Warning: Font shape `T1/ua1/bx/n' undefined
-(Font)              using `T1/cmr/m/n' instead on input line 46.
+(Font)              using `T1/cmr/m/n' instead on input line 49.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <20> not available
-(Font)              size <20.74> substituted on input line 46.
+(Font)              size <20.74> substituted on input line 49.
 
 
 LaTeX Font Warning: Font shape `T1/ua1/bx/n' in size <20> not available
-(Font)              size <20.74> substituted on input line 46.
+(Font)              size <20.74> substituted on input line 49.
 
-<img/positivo_cor.pdf, id=108, 119.44624pt x 60.225pt>
+<img/positivo_cor.pdf, id=116, 119.44624pt x 60.225pt>
 File: img/positivo_cor.pdf Graphic file (type pdf)
 
 <use img/positivo_cor.pdf>
-Package pdftex.def Info: img/positivo_cor.pdf used on input line 46.
+Package pdftex.def Info: img/positivo_cor.pdf used on input line 49.
 (pdftex.def)             Requested size: 61.76747pt x 31.14256pt.
-\len@lskipoffset=\skip66
-\len@lskipoffset=\skip67
+\len@lskipoffset=\skip68
+\len@lskipoffset=\skip69
  [1
 
 \openout3 = `monografia.ist'.
@@ -1146,15 +1194,15 @@ Package pdftex.def Info: img/positivo_cor.pdf used on input line 46.
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/positivo_cor.pdf>]
-\len@brasiliaw=\skip68
-\len@uadesch=\skip69
-\len@uacaph=\skip70
+\len@brasiliaw=\skip70
+\len@uadesch=\skip71
+\len@uacaph=\skip72
 File: img/positivo_cor.pdf Graphic file (type pdf)
  <use img/positivo_cor.pdf>
-Package pdftex.def Info: img/positivo_cor.pdf used on input line 46.
+Package pdftex.def Info: img/positivo_cor.pdf used on input line 49.
 (pdftex.def)             Requested size: 61.76747pt x 31.14256pt.
-\len@lskipoffset=\skip71
-\len@lskipoffset=\skip72
+\len@lskipoffset=\skip73
+\len@lskipoffset=\skip74
  [2
 
 ]
@@ -1172,14 +1220,14 @@ Package pdftex.def Info: img/positivo_cor.pdf used on input line 46.
 
 Package babel Warning: You haven't loaded the language english yet
 (babel)                I'll proceed, but expect unexpected results.
-(babel)                Reported on input line 46.
+(babel)                Reported on input line 49.
 
 (./tex/abstract.tex)
 babelbib: Set language for keywords in the bibliography fixed to brazil
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 46.
+(babel)             in language  on input line 49.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 46.
+(babel)             in language  on input line 49.
 [6
 
 
@@ -1244,6 +1292,16 @@ text indent by \l@... (toc, 1):  27.02464pt
 number indent by parent (toc, 1):  13.5pt
 text indent calculated (toc, 1): 20.88887pt
 number indent calculated (toc, 1): 13.5pt
+number indent by \l@... (toc, 2):  44.64938pt
+text indent by \l@... (toc, 2):  37.59943pt
+number indent by parent (toc, 2):  34.38887pt
+text indent calculated (toc, 2): 30.02785pt
+number indent calculated (toc, 2): 34.38887pt
+number indent by \l@... (toc, 2):  44.64938pt
+text indent by \l@... (toc, 2):  37.59943pt
+number indent by parent (toc, 2):  34.38887pt
+text indent calculated (toc, 2): 30.02785pt
+number indent calculated (toc, 2): 34.38887pt
 number indent by \l@... (toc, 1):  17.62474pt
 text indent by \l@... (toc, 1):  27.02464pt
 number indent by parent (toc, 1):  13.5pt
@@ -1299,12 +1357,22 @@ number indent calculated (toc, 0): 0.0pt
 \openout7 = `monografia.toc'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 46.
+(babel)             in language  on input line 49.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 46.
+(babel)             in language  on input line 49.
  [7
 
 ] (./monografia.lof
+number indent by \l@... (lof, 1):  17.62474pt
+text indent by \l@... (lof, 1):  27.02464pt
+number indent by parent (lof, 1):  17.62474pt
+text indent calculated (lof, 1): 26.76385pt
+number indent calculated (lof, 1): 17.62474pt
+number indent by \l@... (lof, 1):  17.62474pt
+text indent by \l@... (lof, 1):  27.02464pt
+number indent by parent (lof, 1):  17.62474pt
+text indent calculated (lof, 1): 26.76385pt
+number indent calculated (lof, 1): 17.62474pt
 number indent by \l@... (lof, 1):  17.62474pt
 text indent by \l@... (lof, 1):  27.02464pt
 number indent by parent (lof, 1):  17.62474pt
@@ -1359,17 +1427,33 @@ number indent calculated (lof, 1): 17.62474pt
 \tf@lof=\write8
 \openout8 = `monografia.lof'.
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 49.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 49.
+ [8
+
+] (./monografia.lot
+number indent by \l@... (lot, 1):  17.62474pt
+text indent by \l@... (lot, 1):  27.02464pt
+number indent by parent (lot, 1):  17.62474pt
+text indent calculated (lot, 1): 20.88887pt
+number indent calculated (lot, 1): 17.62474pt
+)
+\tf@lot=\write9
+\openout9 = `monografia.lot'.
+
  (./tex/siglas.tex
-\@gls@deffile=\write9
-\openout9 = `monografia.glsdefs'.
+\@gls@deffile=\write10
+\openout10 = `monografia.glsdefs'.
 
 )
 No file monografia.acr.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 46.
+(babel)             in language  on input line 49.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 46.
-[8
+(babel)             in language  on input line 49.
+[9
 
 ] (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
@@ -1379,11 +1463,14 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 )
-\c@lstlisting=\count171
+\c@lstlisting=\count174
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hypcap package is loaded.
+Package caption Info: End \AtBeginDocument code.
 
 Cap\'{\i }tulo 1.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 47.
+(babel)             in language  on input line 50.
 (./tex/1_Introducao.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 8.
@@ -1412,14 +1499,14 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 27.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 51.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 51.
 
 [3]
 Cap\'{\i }tulo 2.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 51.
 (./tex/2_UnB-CIC.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 19.
@@ -1451,7 +1538,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 64.
 
-<img/key-value.jpg, id=253, 707.64375pt x 294.09875pt>
+<img/key-value.jpg, id=274, 707.64375pt x 294.09875pt>
 File: img/key-value.jpg Graphic file (type jpg)
  <use img/key-value.jpg>
 Package pdftex.def Info: img/key-value.jpg used on input line 74.
@@ -1461,7 +1548,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 81.
 
-[7 <./img/key-value.jpg>] <img/columnnosql.png, id=265, 404.712pt x 228.855pt>
+[7 <./img/key-value.jpg>] <img/columnnosql.png, id=287, 404.712pt x 228.855pt>
 File: img/columnnosql.png Graphic file (type png)
 
 <use img/columnnosql.png>
@@ -1472,7 +1559,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 93.
  [8 <./img/columnnosql.png>]
-<img/orient_graph.png, id=277, 1371.1225pt x 770.88pt>
+<img/orient_graph.png, id=300, 1371.1225pt x 770.88pt>
 File: img/orient_graph.png Graphic file (type png)
 
 <use img/orient_graph.png>
@@ -1483,149 +1570,168 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 107.
  [9 <./img/orient_graph.png>]
-<img/Banco_Dados_Relacional_X_db4o_ver2.png, id=288, 179.4705pt x 45.5301pt>
+<img/Banco_Dados_Relacional_X_db4o_ver2.png, id=313, 179.4705pt x 45.5301pt>
 File: img/Banco_Dados_Relacional_X_db4o_ver2.png Graphic file (type png)
 
 <use img/Banco_Dados_Relacional_X_db4o_ver2.png>
 Package pdftex.def Info: img/Banco_Dados_Relacional_X_db4o_ver2.png used on inp
 ut line 115.
 (pdftex.def)             Requested size: 364.19667pt x 92.39384pt.
-
-Overfull \hbox (3.42148pt too wide) in paragraph at lines 123--123
-[]\T1/lmr/bx/n/17.28 Comparação en-tre SGBD NoSQL ori-en-tado a gra-
- []
-
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 123.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 129.
+(babel)             in language  on input line 125.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 128.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 133.
-[10 <./img/Banco_Dados_Relacional_X_db4o_ver2.png>]
+(babel)             in language  on input line 128.
+ [10 <./img/Banco_Dados_Relacional_X_db4o_ver2.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 131.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 150.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 150.
+ [11]
+<img/queryPolling.png, id=348, 601.24625pt x 334.24875pt>
+File: img/queryPolling.png Graphic file (type png)
 
-<img/orientdbmodel.png, id=298, 722.7pt x 542.025pt>
+<use img/queryPolling.png>
+Package pdftex.def Info: img/queryPolling.png used on input line 153.
+(pdftex.def)             Requested size: 364.19667pt x 202.47357pt.
+
+<img/liveQuery.png, id=350, 632.3625pt x 335.2525pt>
+File: img/liveQuery.png Graphic file (type png)
+ <use img/liveQuery.png>
+Package pdftex.def Info: img/liveQuery.png used on input line 160.
+(pdftex.def)             Requested size: 364.19667pt x 193.08585pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 170.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 170.
+
+[12 <./img/queryPolling.png> <./img/liveQuery.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 170.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 174.
+
+<img/orientdbmodel.png, id=363, 722.7pt x 542.025pt>
 File: img/orientdbmodel.png Graphic file (type png)
 
 <use img/orientdbmodel.png>
-Package pdftex.def Info: img/orientdbmodel.png used on input line 139.
+Package pdftex.def Info: img/orientdbmodel.png used on input line 180.
 (pdftex.def)             Requested size: 364.19667pt x 273.14565pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 145.
+(babel)             in language  on input line 186.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 145.
- [11 <./img/orientdbmodel.png>]
+(babel)             in language  on input line 186.
+ [13 <./img/orientdbmodel.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 148.
+(babel)             in language  on input line 189.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 197.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 155.
- [12]
+(babel)             in language  on input line 197.
+ [14]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 168.
+(babel)             in language  on input line 209.
 
-<img/master-slave.png, id=333, 281.05pt x 145.54375pt>
+<img/master-slave.png, id=396, 281.05pt x 145.54375pt>
 File: img/master-slave.png Graphic file (type png)
 
 <use img/master-slave.png>
-Package pdftex.def Info: img/master-slave.png used on input line 175.
+Package pdftex.def Info: img/master-slave.png used on input line 216.
 (pdftex.def)             Requested size: 227.62206pt x 117.87645pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 183.
+(babel)             in language  on input line 222.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 183.
-[13]
-<img/orientdb-the-2nd-generation-of-multimodel-nosql-44-638.png, id=342, 640.39
+(babel)             in language  on input line 222.
+ [15 <./img/master-slave.png>]
+<img/orientdb-the-2nd-generation-of-multimodel-nosql-44-638.png, id=406, 640.39
 25pt x 360.34625pt>
 File: img/orientdb-the-2nd-generation-of-multimodel-nosql-44-638.png Graphic fi
 le (type png)
 
 <use img/orientdb-the-2nd-generation-of-multimodel-nosql-44-638.png>
 Package pdftex.def Info: img/orientdb-the-2nd-generation-of-multimodel-nosql-44
--638.png used on input line 186.
+-638.png used on input line 227.
 (pdftex.def)             Requested size: 227.62206pt x 128.0805pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 193.
+(babel)             in language  on input line 234.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 196.
+(babel)             in language  on input line 237.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 196.
- [14 <./img/master-slave.png> <./img/orientdb-the-2nd-generation-of-multimodel-
-nosql-44-638.png>]
-<img/teleporter-inheritance-orientdb-schema.png, id=351, 924.45375pt x 433.62pt
+(babel)             in language  on input line 237.
+ [16 <./img/orientdb-the-2nd-generation-of-multimodel-nosql-44-638.png>]
+<img/teleporter-inheritance-orientdb-schema.png, id=415, 924.45375pt x 433.62pt
 >
 File: img/teleporter-inheritance-orientdb-schema.png Graphic file (type png)
  <use img/teleporter-inheritance-orientdb-schema.png>
 Package pdftex.def Info: img/teleporter-inheritance-orientdb-schema.png used on
- input line 212.
+ input line 253.
 (pdftex.def)             Requested size: 227.62206pt x 106.76384pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/class-clusters.png, id=352, 401.5pt x 142.5325pt>
+<img/class-clusters.png, id=416, 401.5pt x 142.5325pt>
 File: img/class-clusters.png Graphic file (type png)
 
 <use img/class-clusters.png>
-Package pdftex.def Info: img/class-clusters.png used on input line 220.
+Package pdftex.def Info: img/class-clusters.png used on input line 261.
 (pdftex.def)             Requested size: 227.62206pt x 80.8072pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 224.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 224.
- [15]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 228.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 230.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 235.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 235.
- [16 <./img/teleporter-inheritance-orientdb-schema.png> <./img/class-clusters.p
-ng>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 238.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 254.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 254.
- [17]
-<img/rest.png, id=380, 451.6875pt x 244.915pt>
-File: img/rest.png Graphic file (type png)
- <use img/rest.png>
-Package pdftex.def Info: img/rest.png used on input line 259.
-(pdftex.def)             Requested size: 227.62206pt x 123.4251pt.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 265.
+ [17]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 269.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 271.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 278.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 278.
+ [18 <./img/teleporter-inheritance-orientdb-schema.png> <./img/class-clusters.p
+ng>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 279.
 
-Overfull \hbox (31.20294pt too wide) in paragraph at lines 286--287
+<img/rest.png, id=439, 451.6875pt x 244.915pt>
+File: img/rest.png Graphic file (type png)
+ <use img/rest.png>
+Package pdftex.def Info: img/rest.png used on input line 300.
+(pdftex.def)             Requested size: 227.62206pt x 123.4251pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 303.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 303.
+ [19]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 306.
+
+Overfull \hbox (31.20294pt too wide) in paragraph at lines 327--328
 [][][][][][][][][][][][][][][][][][] 
  []
 
+)
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 290.
+(babel)             in language  on input line 52.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 290.
-[18 <./img/rest.png>])
+(babel)             in language  on input line 52.
+ [20 <./img/rest.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 52.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 49.
- [19]
+(babel)             in language  on input line 52.
+ [21]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 52.
  (./monografia.bbl (./monografia.brf)
-\tf@brf=\write10
-\openout10 = `monografia.brf'.
+\tf@brf=\write11
+\openout11 = `monografia.brf'.
 
 
 babelbib: Using the BibTeX style's default font for `name'.
@@ -1648,31 +1754,54 @@ Underfull \hbox (badness 1033) in paragraph at lines 103--103
 1/lmr/m/n/12 .  Queue, 6(3):48--55, []maio []2008,
  []
 
-[20
+[22
 
 
 ]
-Underfull \hbox (badness 2435) in paragraph at lines 203--203
+Underfull \hbox (badness 2635) in paragraph at lines 212--212
+[]\T1/lmr/m/n/12 Neo4j: \T1/lmr/m/it/12 3.5. schema\T1/lmr/m/n/12 .  []$\T1/lmt
+t/m/n/12 https : / / neo4j . com / docs / developer-[]manual / current /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
+[]\T1/lmr/m/n/12 OrientDB: \T1/lmr/m/it/12 Sql - cre-ate prop-erty\T1/lmr/m/n/1
+2 .  []$\T1/lmtt/m/n/12 http : / / orientdb . com / docs / last /
+ []
+
+[23]
+Underfull \hbox (badness 2435) in paragraph at lines 282--282
 []\T1/lmr/m/n/12 F. inc: \T1/lmr/m/it/12 Fuseki: serv-ing rdf data over http\T1
 /lmr/m/n/12 .  []$\T1/lmtt/m/n/12 https : / / franz . com / agraph /
  []
 
-[21])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 52.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 52.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 49.
- [22]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
+(babel)             in language  on input line 52.
+ [24]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 52.
  (./monografia.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
-Package rerunfilecheck Info: File `monografia.out' has not changed.
-(rerunfilecheck)             Checksum: 8A0CCF3B7C3601D42E62B5F6111212FB;1725.
-Package rerunfilecheck Info: File `monografia.brf' has not changed.
-(rerunfilecheck)             Checksum: 07840AD408BCD740E57EF7261CC426F3;3069.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 52.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 52.
 
+
+Package rerunfilecheck Warning: File `monografia.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `monografia.out':
+(rerunfilecheck)             Before: 7A1BE96C858A2357A0690C0161D7C23A;1876
+(rerunfilecheck)             After:  ADF44B21F7F35B45E5C98433C9DFE409;1876.
+
+Package rerunfilecheck Warning: File `monografia.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `monografia.brf':
+(rerunfilecheck)             Before: 23DB972798417F7175D035D9B7B20274;3798
+(rerunfilecheck)             After:  1E6E7D99FFF36DDC06721850D27B8548;3795.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.74pt have occurred.
@@ -1680,30 +1809,54 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 52.
  )
 (\end occurred when \iffalse on line 120 was incomplete) 
 Here is how much of TeX's memory you used:
- 16039 strings out of 493029
- 238491 string characters out of 6136234
- 419938 words of memory out of 5000000
- 19065 multiletter control sequences out of 15000+600000
+ 17430 strings out of 493029
+ 262996 string characters out of 6136234
+ 445366 words of memory out of 5000000
+ 20405 multiletter control sequences out of 15000+600000
  57396 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,7n,69p,1940b,995s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts
-/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/us
-r/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/fonts/
-type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr
-/share/texmf/fonts/type1/public/cm-super/sfrm2074.pfb>
-Output written on monografia.pdf (30 pages, 791793 bytes).
+ 53i,15n,92p,1940b,995s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): 
+name{table.caption.18} has been referenced but does not exist, replaced by a fi
+xed one
+
+pdfTeX warning (dest): name{figure.caption.26} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.17} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.15} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.12} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.10} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.27} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvip
+s/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}<
+/usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-s
+uper/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm2074.pfb>
+Output written on monografia.pdf (33 pages, 919292 bytes).
 PDF statistics:
- 533 PDF objects out of 1000 (max. 8388607)
- 471 compressed objects within 5 object streams
- 111 named destinations out of 1000 (max. 500000)
- 264 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 620 PDF objects out of 1000 (max. 8388607)
+ 550 compressed objects within 6 object streams
+ 137 named destinations out of 1000 (max. 500000)
+ 290 words of extra memory for PDF output out of 10000 (max. 10000000)
 

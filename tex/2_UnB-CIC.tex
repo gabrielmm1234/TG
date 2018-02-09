@@ -120,8 +120,49 @@ Este capítulo descreve toda a fundamentação teórica por trás das tecnologia
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Comparação entre SGBD NoSQL orientado a grafos}
+\section{Comparação qualitativa entre OrientDB e Neo4j}
 
+\subsection{Introdução}
+
+	Hoje no mercado existem diversos SGBD orientado a grafos, tais são: OrientDB, Neo4j, AllegroGraph, FlockDB entre outros. Dentre esses, sem dúvida o mais popular é o SGBD NoSQL neo4j. Como foi mencionado no capítulo \ref{chap:1}, os SGBD orientado a grafos vem obtendo um grande número de novos usuários \cite{Dbmspopularity}, registrando a maior taxa de mudança de popularidade entre 2013 e 2017. Hoje o Neo4j se encontra na primeira posição segundo o seguinte ranking \cite{neo4jprimeiro}, e por esse motivo o seguinte capítulo realiza uma comparação entre o OrientDB e o Neo4j.
+	
+	Trabalhos como o de Jouili \cite{jouili2013empirical}, Kolomivcenko \cite{kolomivcenko2013experimental} e Kovacs \cite{kovacs2016cassandra}, realizam comparações entre os dois SGBD. Nessas comparações são levados em conta aspectos como performance, licensa comercial ou \textit{open source}, linguagem de consulta e etc. Além desses trabalhos, artigos como o de Barmpis \cite{barmpis2014evaluation} e Labute \cite{labute2014review} reforçam o fato do crescimento tanto no uso comercial quanto em pesquisas acadêmicas em banco de dados orientado a grafos.
+	
+\subsection{Comparação qualitativa}
+
+	O trabalho feito por Angles \cite{angles2012comparison} em 2012 compara alguns SGBD orientado a grafos. Foi identificado três características comuns entre todos os modelos que são: O esquema e as instâncias são modelados como grafos, operações orientada a grafos e um conjunto de regras de integridade. Dessa forma, a tabela abaixo representa uma comparação entre os modelos de dados do OrientDB e Neo4j:
+	
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+SGBD                        & OrientDB                                                                        & Neo4j \\ \hline
+Modelo de banco de dados    & \textit{multi-model DBMS}                                                       & \textit{Graph DBMS}  \\ \hline
+Modelos de esquema          & \makecell{\textit{Schema-full},\\ \textit{Schema-less},\\ \textit{Schema-hybrid}} & \textit{schema-free} e \textit{schema-optional} \\ \hline
+Tipos de dados customizados & Sim                                                                             & Não \\ \hline
+Modelo Reativo              & Sim                                                                             & Não \\ \hline
+\end{tabular}
+\caption{Comparação qualitativa entre modelo de dados do OrientDB e Neo4j}
+\label{table:1}
+\end{table}
+
+	Portanto podemos observar que o OrientDB é um SGBD multi modelo, pois suporta operações com documentos, chave/valor e grafos. Já o Neo4j trabalha somente com o modelo de grafos. Além disso, o OrientDB possui suporte para diferentes modelos de esquema podendo usar um esquema completo, nenhum esquema ou um esquema híbrido para modelar os dados. O Neo4j se utiliza nenhum esquema na modelagem ou um esquema opcional, baseado no conceito de labels. Nesse esquema opcional, os labels são usados na especificação de índices, e para definir restrições no grafo, juntos ambos formam o esquema do grafo no Neo4j \cite{neo4jschemaoptional}. O OrientDB permite que o usuário crie tipo de dados customizados no esquema, basta que a classe da propriedade já exista no banco de dados \cite{orientdbcreateproperty}, enquanto no Neo4j isso não é possível. Finalmente, uma característica interessante que o OrientDB fornece é a de modelo reativo. Essa propriedade é chamada de \textit{live query} \cite{orientdblivequery}, e é utilizada para construir aplicações em tempo real. Em uma abordagem tradicional, é inviável que o cliente da aplicação fique o tempo inteiro para obter novas atualizações, pois isso gera um grande desperdício de recursos. A imagem \ref{fig:orientdbReativo} resume a situação:
+	
+\begin{figure}[H]
+	\centering
+    \includegraphics[width=0.8\textwidth]{queryPolling}
+    \caption{Exemplo de tentativa de aplicação reativa}
+    \label{fig:orientdbReativo}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+    \includegraphics[width=0.8\textwidth]{liveQuery}
+    \caption{Exemplo do uso de \textit{live queries}}
+    \label{fig:orientDBLiveQuery}
+\end{figure}
+
+Com o uso das \textit{live queries}, esse tipo de problema é resolvido e não há mais desperdício de recursos, como mostra a figura \ref{fig:orientDBLiveQuery}:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

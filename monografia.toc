@@ -12,22 +12,24 @@
 \contentsline {subsection}{\numberline {2.2.2}Caracter\IeC {\'\i }sticas de um SGBD NoSQL}{5}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Gerenciamento de Transa\IeC {\c c}\IeC {\~o}es}{6}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Categorias de NoSQL}{7}{subsection.2.2.4}
-\contentsline {subsubsection}{SGBD NoSQL por chave/valor}{7}{section*.7}
-\contentsline {subsubsection}{SGBD NoSQL orientado por colunas}{8}{section*.8}
-\contentsline {subsubsection}{SGBD NoSQL orientado a documentos}{8}{section*.9}
-\contentsline {subsubsection}{SGBD NoSQL orientado a grafos}{9}{section*.10}
-\contentsline {subsubsection}{SGBD NoSQL orientado a objetos}{10}{section*.11}
-\contentsline {section}{\numberline {2.3}Compara\IeC {\c c}\IeC {\~a}o entre SGBD NoSQL orientado a grafos}{11}{section.2.3}
-\contentsline {section}{\numberline {2.4}OrientDB}{11}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Introdu\IeC {\c c}\IeC {\~a}o}{11}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Performance}{12}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Arquitetura Distribu\IeC {\'\i }da}{13}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Orienta\IeC {\c c}\IeC {\~a}o a Objetos}{14}{subsection.2.4.4}
-\contentsline {section}{\numberline {2.5}\textit {REST}}{16}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Introdu\IeC {\c c}\IeC {\~a}o}{16}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Princ\IeC {\'\i }pios do estilo arquitetural \textit {REST}}{17}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Interface \textit {REST} no OrientDB}{18}{subsection.2.5.3}
-\contentsline {chapter}{Refer\^encias}{20}{section*.12}
+\contentsline {subsubsection}{SGBD NoSQL por chave/valor}{7}{section*.8}
+\contentsline {subsubsection}{SGBD NoSQL orientado por colunas}{8}{section*.10}
+\contentsline {subsubsection}{SGBD NoSQL orientado a documentos}{8}{section*.12}
+\contentsline {subsubsection}{SGBD NoSQL orientado a grafos}{9}{section*.13}
+\contentsline {subsubsection}{SGBD NoSQL orientado a objetos}{10}{section*.15}
+\contentsline {section}{\numberline {2.3}Compara\IeC {\c c}\IeC {\~a}o qualitativa entre OrientDB e Neo4j}{11}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Introdu\IeC {\c c}\IeC {\~a}o}{11}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Compara\IeC {\c c}\IeC {\~a}o qualitativa}{11}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}OrientDB}{13}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Introdu\IeC {\c c}\IeC {\~a}o}{13}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Performance}{14}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Arquitetura Distribu\IeC {\'\i }da}{15}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Orienta\IeC {\c c}\IeC {\~a}o a Objetos}{16}{subsection.2.4.4}
+\contentsline {section}{\numberline {2.5}\textit {REST}}{18}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Introdu\IeC {\c c}\IeC {\~a}o}{18}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Princ\IeC {\'\i }pios do estilo arquitetural \textit {REST}}{19}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Interface \textit {REST} no OrientDB}{20}{subsection.2.5.3}
+\contentsline {chapter}{Refer\^encias}{22}{section*.26}
 \select@language {american}
 \select@language {american}
 \select@language {american}

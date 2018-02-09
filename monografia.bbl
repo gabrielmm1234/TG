@@ -143,6 +143,85 @@
   definitive guide to db4o}.
 \newblock \btxpublisherfont {Springer}, 2006.
 
+\bibitem {neo4jprimeiro}
+\btxnamefont {\btxlastnamefont {engines}~db}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Db-engines ranking of graph dbms}{DB-Engines Ranking of
+  Graph DBMS}}.
+\newblock \url{https://db-engines.com/en/ranking/graph+dbms}.
+\newblock Acessado em fevereiro de 2018.
+
+\bibitem {jouili2013empirical}
+\btxnamefont {\btxlastnamefont {Jouili}, Salim} \btxandlong {}\ \btxnamefont
+  {Valentin \btxlastnamefont {Vansteenberghe}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {An empirical comparison of graph databases}{An empirical
+  comparison of graph databases}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Social Computing (SocialCom), 2013
+  International Conference on}, \btxpageslong {}\ 708--715. IEEE, 2013.
+
+\bibitem {kolomivcenko2013experimental}
+\btxnamefont {\btxlastnamefont {Kolomi{\v{c}}enko}, Vojt{\v{e}}ch},
+  \btxnamefont {Martin \btxlastnamefont {Svoboda}}\btxandcomma {} \btxandlong
+  {}\ \btxnamefont {Irena\btxfnamespacelong Holubov{\'a} \btxlastnamefont
+  {Ml{\`y}nkov{\'a}}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase
+  {Experimental comparison of graph databases}{Experimental comparison of graph
+  databases}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of International Conference
+  on Information Integration and Web-based Applications \& Services},
+  \btxpagelong {}\ 115. ACM, 2013.
+
+\bibitem {kovacs2016cassandra}
+\btxnamefont {\btxlastnamefont {Kovacs}, Kristof}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {Cassandra vs mongodb vs couchdb vs redis vs
+  riak vs hbase vs couchbase vs orientdb vs aerospike vs neo4j vs hypertable vs
+  elasticsearch vs accumulo vs voltdb vs scalaris comparison}{Cassandra vs
+  MongoDB vs CouchDB vs Redis vs Riak vs HBase vs Couchbase vs OrientDB vs
+  Aerospike vs Neo4j vs Hypertable vs ElasticSearch vs Accumulo vs VoltDB vs
+  Scalaris comparison}}.
+\newblock \btxjournalfont {Sitio web de Kristof Kovacs}, 2016.
+
+\bibitem {barmpis2014evaluation}
+\btxnamefont {\btxlastnamefont {Barmpis}, Konstantinos} \btxandlong {}\
+  \btxnamefont {Dimitrios\btxfnamespacelong S \btxlastnamefont
+  {Kolovos}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Evaluation of
+  contemporary graph databases for efficient persistence of large-scale
+  models.}{Evaluation of Contemporary Graph Databases for Efficient Persistence
+  of Large-Scale Models.}}
+\newblock \btxjournalfont {Journal of Object Technology}, 13(3):3--1, 2014.
+
+\bibitem {labute2014review}
+\btxnamefont {\btxlastnamefont {Labute}, MX} \btxandlong {}\ \btxnamefont {MJ
+  \btxlastnamefont {Dombroski}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase
+  {Review of graph databases for big data dynamic entity scoring}{Review of
+  graph databases for big data dynamic entity scoring}}.
+\newblock \btxtechreplong {}, Lawrence Livermore National Laboratory (LLNL),
+  Livermore, CA, 2014.
+
+\bibitem {angles2012comparison}
+\btxnamefont {\btxlastnamefont {Angles}, Renzo}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {A comparison of current graph database models}{A
+  comparison of current graph database models}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Data Engineering Workshops (ICDEW),
+  2012 IEEE 28th International Conference on}, \btxpageslong {}\ 171--177.
+  IEEE, 2012.
+
+\bibitem {neo4jschemaoptional}
+\btxnamefont {\btxlastnamefont {Neo4j}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {3.5. schema}{3.5. Schema}}.
+\newblock \url{https://neo4j.com/docs/developer-manual/current/cypher/schema/}.
+\newblock Acessado em fevereiro de 2018.
+
+\bibitem {orientdbcreateproperty}
+\btxnamefont {\btxlastnamefont {OrientDB}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Sql - create property}{SQL - CREATE PROPERTY}}.
+\newblock \url{http://orientdb.com/docs/last/SQL-Create-Property.html}.
+\newblock Acessado em fevereiro de 2018.
+
+\bibitem {orientdblivequery}
+\btxnamefont {\btxlastnamefont {OrientDB}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Live query}{Live Query}}.
+\newblock \url{http://orientdb.com/docs/last/Live-Query.html}.
+\newblock Acessado em fevereiro de 2018.
+
 \bibitem {OrientDB}
 \btxnamefont {\btxlastnamefont {engines}~db}\btxauthorcolon\ \btxtitlefont
   {\btxifchangecase {Orientdb system properties.}{OrientDB System Properties.}}
