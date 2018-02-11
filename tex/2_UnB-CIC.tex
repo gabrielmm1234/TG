@@ -130,7 +130,7 @@ Este capítulo descreve toda a fundamentação teórica por trás das tecnologia
 	
 \subsection{Comparação qualitativa}
 
-	O trabalho feito por Angles \cite{angles2012comparison} em 2012 compara alguns SGBD orientado a grafos. Foi identificado três características comuns entre todos os modelos que são: O esquema e as instâncias são modelados como grafos, operações orientada a grafos e um conjunto de regras de integridade. Dessa forma, a tabela abaixo representa uma comparação entre os modelos de dados do OrientDB e Neo4j:
+	O trabalho feito por Angles \cite{angles2012comparison} em 2012 compara alguns SGBD orientado a grafos. Foi identificado três características comuns entre todos os modelos que são: O esquema e as instâncias são modelados como grafos, operações orientada a grafos e um conjunto de regras de integridade. Dessa forma, a tabela \ref{table:1} representa uma comparação entre os modelos de dados do OrientDB e Neo4j:
 	
 \begin{table}[h!]
 \centering
@@ -146,7 +146,7 @@ Modelo Reativo              & Sim                                               
 \label{table:1}
 \end{table}
 
-	Portanto podemos observar que o OrientDB é um SGBD multi modelo, pois suporta operações com documentos, chave/valor e grafos. Já o Neo4j trabalha somente com o modelo de grafos. Além disso, o OrientDB possui suporte para diferentes modelos de esquema podendo usar um esquema completo, nenhum esquema ou um esquema híbrido para modelar os dados. O Neo4j se utiliza nenhum esquema na modelagem ou um esquema opcional, baseado no conceito de labels. Nesse esquema opcional, os labels são usados na especificação de índices, e para definir restrições no grafo, juntos ambos formam o esquema do grafo no Neo4j \cite{neo4jschemaoptional}. O OrientDB permite que o usuário crie tipo de dados customizados no esquema, basta que a classe da propriedade já exista no banco de dados \cite{orientdbcreateproperty}, enquanto no Neo4j isso não é possível. Finalmente, uma característica interessante que o OrientDB fornece é a de modelo reativo. Essa propriedade é chamada de \textit{live query} \cite{orientdblivequery}, e é utilizada para construir aplicações em tempo real. Em uma abordagem tradicional, é inviável que o cliente da aplicação fique o tempo inteiro para obter novas atualizações, pois isso gera um grande desperdício de recursos. A imagem \ref{fig:orientdbReativo} resume a situação:
+	Portanto, podemos observar que o OrientDB é um SGBD multi modelo, pois suporta operações com documentos, chave/valor e grafos. Já o Neo4j trabalha somente com o modelo de grafos. Além disso, o OrientDB possui suporte para diferentes modelos de esquema podendo usar um esquema completo, nenhum esquema ou um esquema híbrido para modelar os dados. O Neo4j se utiliza nenhum esquema na modelagem ou um esquema opcional, baseado no conceito de labels. Nesse esquema opcional, os labels são usados na especificação de índices, e para definir restrições no grafo, juntos ambos formam o esquema do grafo no Neo4j \cite{neo4jschemaoptional}. O OrientDB permite que o usuário crie tipo de dados customizados no esquema, basta que a classe da propriedade já exista no banco de dados \cite{orientdbcreateproperty}, enquanto no Neo4j isso não é possível. Finalmente, uma característica interessante que o OrientDB fornece é a de modelo reativo. Essa propriedade é chamada de \textit{live query} \cite{orientdblivequery}, e é utilizada para construir aplicações em tempo real. Em uma abordagem tradicional, é inviável que o cliente da aplicação fique o tempo inteiro realizando consultas para obter novas atualizações, pois isso gera um grande desperdício de recursos. A imagem \ref{fig:orientdbReativo} resume a situação:
 	
 \begin{figure}[H]
 	\centering
@@ -162,7 +162,46 @@ Modelo Reativo              & Sim                                               
     \label{fig:orientDBLiveQuery}
 \end{figure}
 
-Com o uso das \textit{live queries}, esse tipo de problema é resolvido e não há mais desperdício de recursos, como mostra a figura \ref{fig:orientDBLiveQuery}:
+	Com o uso das \textit{live queries}, esse tipo de problema é resolvido e não há mais desperdício de recursos, como mostra a figura \ref{fig:orientDBLiveQuery}.
+
+	Apesar de várias diferenças, os dois SGBD possuem características em comum. A tabela \ref{table:2} demonstra comparações de características gerais, entre o OrientDB e o Neo4j:
+	
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+SGBD                       & OrientDB                                    & Neo4j \\ \hline
+Transações ACID            & Sim                                         & Sim \\ \hline
+Suporte a dados espaciais  & Sim                                         & Sim \\ \hline
+Licensa de uso             & Apache versão 2                             & GPL versão 3 \\ \hline
+Linguagem implementada     & Java, Scala                                 & Java \\ \hline
+Linguagem de consulta      & \makecell{Linguagem derivada do SQL,\\ sem uso de joins} & Cypher \\ \hline
+Métodos de particionamento & Sharding                                    & Não \\ \hline
+Metodos de replicação      & Multi-master replication                    & \makecell{Causal Clustering \\ using Raft protocol} \\ \hline
+Suporte a MapReduce        & Sim                                         & Não \\ \hline
+Concorrência               & Sim                                         & Sim \\ \hline
+\end{tabular}
+\caption{Comparação qualitativa de características gerais entre OrientDB e Neo4j}
+\label{table:2}
+\end{table}
+
+	A partir da tabela \ref{table:2}, é possível observar algumas características em comum entre os SGBD, por exemplo, ambos trabalham com o modelo de transações ACID, que foi discutido em detalhes na seção \ref{manage_transaction}. Além disso, os dois suportam o uso de dados e consultas espaciais para trabalhar com dados geográficos, cada um possui uma versão open source, mesmo que sob licensas diferentes. É importante pontuar também que ambos possuem suporte a acessos concorrentes e foram desenvolvidos utilizando a linguagem de programação Java.
+	
+	Uma diferença importante entre os dois SGBD é em relaçao a linguagem de consulta utilizada. O OrientDB possui uma linguagem de consulta derivada da linguagem SQL, isso é bastante vantajoso para aqueles que vem do universo de SGBD relacional, enquanto o Neo4j utiliza uma linguagem de consulta própria conhecida como cypher. O código abaixo exemplifica uma consulta no OrientDB e sua semelhanças com consultas de bancos de dados relacionais:
+	
+\begin{lstlisting}
+	SELECT FROM Person WHERE name LIKE 'Luk%'
+\end{lstlisting}
+
+	A consulta acima retorna todas as instâncias da classe Person onde o atributo name começa com a \textit{string} 'Luk'. Finalmente, no que diz respeito a arquitetura distribuída, o OrientDB possui suporte em sua versão open source, enquanto o Neo4j possui suporte somente na licensa comercial. O OrientDB utiliza o método de \textit{sharding} para separar os dados em clusters diferentes, enquanto o Neo4j não possui suporte para esse tipo de funcionalidade. Em relação aos métodos de replicação o OrientDB trabalha com o modelo multi-master, discutido em detalhes na seção \ref{orient_distributed}, e o Neo4j utiliza o método \textit{Causal Clustering using Raft protocol} \cite{neo4jcausal}. Por possuir suporte a funcionalidade de \textit{sharding}, o OrientDB também suporta operações de MapReduce sem o uso de tecnologias como o Hadoop ou Spark. Essa funcionalidade é totalmente transparente para o desenvolvedor, de forma que quando uma consulta envolve múltiplos clusters, o SGBD executa a query sobre cada nó (Operação de Map) e em seguida realiza o \textit{merge} dos resultados (Operação de reduce) \cite{orientMapReduce}.
+	
+\subsection{Conclusão}
+
+	Portanto, em vista dos fatos mencionados, o OrientDB possui uma quantidade de funcionalidades maior que o Neo4j, principalmente em sua versão comunitária, ou open-source. Funcionalidades importantes como o uso de uma arquitetura distribuída, estão presentes somente na versão comercial do Neo4j, o que fez com que o OrientDB fosse escolhido para uso no estudo de caso. O fato de possuir uma linguagem próxima ao SQL, também pesou na escolha, pois proporciona uma produtividade maior para aqueles acostumados com a linguagem de consulta SQL.
+	
+	Outra característica pouco pontuada, mas bastante importante, é a presença de uma comunidade por trás da tecnologia para auxiliar os desenvolvedores. A comunidade por trás do OrientDB é grande e bastante presente em sites como o \textit{StackOverflow} \cite{orientStack} e \textit{Linkedin}, inclusive com presença do próprio \textit{CEO} da empresa em ambos os \textit{sites}. Contudo, é inquestionável que o Neo4j é mais popular entre desenvolvedores e possui uma comunidade maior que a do OrientDB, o que sem dúvida é uma vantagem competitiva.
+	
+	Uma conclusão em relação a qual tecnologia é melhor, seria que no geral ambas são igualmente boas com pontos positivos e negativos para cada lado. O fato do Neo4j possuir uma comunidade maior é bastante importante, mas o fato de poder utilizar um SGBD com arquitetura distribuída gratuitamente também tem sua importância. A escolha entre um ou outro deve ser ponderada de projeto a projeto, e para esse trabalho foi escolhido o OrientDB pelo motivos pontuados no início dessa seção.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -206,7 +245,7 @@ Com o uso das \textit{live queries}, esse tipo de problema é resolvido e não h
 	Em todos os workloads, levando em conta a arquitetura e o hardware utilizado no ambiente de nuvem, o OrientDB teve um desempenho melhor que os demais SGBD \cite{dayarathna2012xgdbench}.
 	
 	
-\subsection{Arquitetura Distribuída}
+\subsection{Arquitetura Distribuída} \label{orient_distributed}
 	Em relação ao suporte a uma arquitetura distribuída, o OrientDB trabalha com um método de particionamento conhecido como \textit{sharding}, e um método de replicação conhecido como \textit{Multi-master replication}. Esse modelo de replicação, permite que qualquer membro do cluster possa ler e escrever no banco de dados. Essa arquitetura permite que exista uma escalabilidade horizontal sem gargalos, como ocorre em algumas outras soluções de SGBD NoSQL \cite{kauremerging}.
 	
 	No ano de 2012 o OrientDB trabalhava com uma arquitetura diferente, conhecida como \textit{Master-slave replication}. A figura a seguir exemplifica o formato dessa arquitetura.

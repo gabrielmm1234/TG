@@ -222,6 +222,25 @@
 \newblock \url{http://orientdb.com/docs/last/Live-Query.html}.
 \newblock Acessado em fevereiro de 2018.
 
+\bibitem {neo4jcausal}
+\btxnamefont {\btxlastnamefont {Neo4j}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Causal cluster lifecycle}{Causal Cluster lifecycle}}.
+\newblock
+  \url{https://neo4j.com/docs/operations-manual/current/clustering/causal-clustering/lifecycle/}.
+\newblock Acessado em fevereiro de 2018.
+
+\bibitem {orientMapReduce}
+\btxnamefont {\btxlastnamefont {OrientDB}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Sharding}{Sharding}}.
+\newblock \url{https://orientdb.com/docs/2.2/Distributed-Sharding.html}.
+\newblock Acessado em fevereiro de 2018.
+
+\bibitem {orientStack}
+\btxtitlefont {\btxifchangecase {Orientdb tagged questions}{OrientDB tagged
+  questions}}.
+\newblock \url{https://stackoverflow.com/questions/tagged/orientdb}.
+\newblock Acessado em fevereiro de 2018.
+
 \bibitem {OrientDB}
 \btxnamefont {\btxlastnamefont {engines}~db}\btxauthorcolon\ \btxtitlefont
   {\btxifchangecase {Orientdb system properties.}{OrientDB System Properties.}}
