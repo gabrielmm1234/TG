@@ -17,9 +17,50 @@ Este capítulo descreve toda a fundamentação teórica por trás das tecnologia
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Teoria de Grafos} \label{graph_theory}
+	Essa seção, aborda a teoria por trás da estrutura de um grafo, necessária para a compreensão do funcionamento de um SGBD orientado a grafos. Qualquer SGBD orientado a grafos utiliza algum dos conceitos aqui descritos para a construção do banco de dados.
 
+\subsection{Definição de um grafo}
+	A definição formal de um grafo pode ser feita da seguinte forma: Um grafo \(G\) é uma tripla ordenada \((V(G), E(G), \psi g)\), que consiste de um conjunto não vazio \(V(G)\) de vértices, um conjunto \(E(G)\), disjunto do conjunto \(V(G)\), de arestas, e uma função de incidência \(\psi g\) que associa cada aresta de \(G\) um par não ordenado (não necessáriamente distinto) de vértices de \(G\). Dessa forma, se \(e\) é uma aresta e \(u\) e \(v\) são vértices, de tal modo que \(\psi g(e) = uv\), então, diz-se que \(e\) faz a união de \(u\) e \(v\); Os vértices \(u\) e \(v\) são chamados de extremidades de \(e\) \cite{bondy1976graph}.
+	
+	A figura \ref{graph_definition} esclarece a definição fornecida no parágrafo acima:
+	
+\begin{figure}[H]
+	\centering
+    \includegraphics[width=0.4\textwidth]{simple_graph}
+    \caption{Exemplo de uma estrutura de grafo}
+    \label{graph_definition}
+\end{figure}
 
+	Portanto, o conjunto \(V(G)\) de vértices é não vazio e composto por três vértices, \(V(G)=\{a,b,c\}\). Já o conjunto \(E(G)\) de arestas é composto por três arestas, \(E(G)=\{e1,e2,e3\}\). De forma que a função de incidência \(\psi g\) é definida da seguinte maneira: \(\psi g(e1)= ab\), \(\psi g(e2)= ac\) e \(\psi g(e3)= bc\). Portanto, a definição formal do grafo acima é \((\{a,b,c\}, \{e1,e2,e3\}, \psi g(e1)= ab\), \(\psi g(e2)= ac\) \(\psi g(e3)= bc)\).
+	
+\subsection{Propriedades de um grafo}
+	Um grafo possui essa nomenclatura pois pode ser representado graficamente, e a partir dessa representação é possível observar algumas propriedades importantes. Como mostra a figura \ref{graph_definition}, cada vértice é representado por um ponto, e cada aresta é representada por uma linha, juntando dois pontos \cite{bondy1976graph}. Todo grafo possui as propriedades de ordem e tamanho. A ordem de um grafo se refere ao número de vértices, ou seja, a quantidade de elementos no conjunto \(V(G)\), enquanto o tamanho de um grafo é referente ao número de arestas, ou seja, a quantidade de elementos no conjunto \(E(G)\).
+	
+	Boa parte da teoria de grafos é baseada em uma categoria específica que é a categoria de grafos simples. Antes de definir um grafo como simples, é necessário definir o que é um laço em um grafo. Intuitivamente, um laço é quando a aresta sai de um vértice e termina no próprio vértice. A figura \ref{graph_loop} exemplifica um laço em grafo: 
 
+\begin{figure}[H]
+	\centering
+    \includegraphics[width=0.4\textwidth]{graph_loop}
+    \caption{Exemplo de uma estrutura de grafo com presença de laço}
+    \label{graph_loop}
+\end{figure}
+
+	Dessa forma, um grafo é definido como simples se não possui laços nem duas ou mais arestas ligando dois vértices \cite{bondy1976graph}. Portanto, o grafo \ref{graph_loop} não é um grafo simples, enquanto o grafo \ref{graph_definition} é um grafo simples. Uma propriedade básica de um vértice é o seu grau. O grau de um vértice é a quantidade de aretas incidentes nele. Por exemplo, no grafo \ref{graph_definition} o vértice \(a\) possui grau 2.
+	
+	O grafo \ref{graph_definition}, mostra uma categoria de grafos que não faz distinção entre a orientação das arestas. Um grafo que evidencia a orientação das arestas é dito grafo orientado, como mostra a figura a seguir:
+	
+\begin{figure}[H]
+	\centering
+    \includegraphics[width=0.4\textwidth]{direction}
+    \caption{Exemplo de uma estrutura de grafo direcionado}
+    \label{graph_direction}
+\end{figure}
+
+	O OrientDB utiliza grafos orientados para representar os dados. Alguns relacionamentos exigem que a direção da aresta aponte para os dois lados, o OrientDB representa essa característica com somente uma aresta e uma seta em cada extremidade, mas é importante ressaltar que o correto é representar com duas arestas, uma em cada sentido, como mostra a figura \ref{graph_direction} nas arestas 1 e 2.
+	
+	Dentro do universo de teoria de grafos, existem ainda diversas outras propriedades tais como: Isomorfismo entre grafos, subgrafos, caminho, caminho fechado e etc. Essas propriedades fornecem a base para a compreensão e resolução de problemas importantes para a computação, como o problema de menor caminho, que busca encontrar o menor caminho entre dois vértices em um grafo com pesos. O SGBD utilizado nesse trabalho o OrientDB, fornece uma solução para o problema de menor caminho, e conhecer a teoria por trás do problema faz com que o usuário possa usar da melhor maneira essa solução \cite{orientShortestPath}.
+	
+\subsection{Grafos em SGBD NoSQL}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

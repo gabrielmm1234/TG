@@ -38,6 +38,21 @@
 \newblock \url{https://db-engines.com/en/ranking_categories}.
 \newblock Acessado em setembro de 2017.
 
+\bibitem {bondy1976graph}
+\btxnamefont {\btxlastnamefont {Bondy}, John\btxfnamespacelong Adrian},
+  \btxnamefont {Uppaluri\btxfnamespacelong Siva\btxfnamespacelong Ramachandra
+  \btxlastnamefont {Murty}}\btxandcomma {} \btxetalfont {\btxetalshort
+  {.}}\btxauthorcolon\ \btxtitlefont {Graph theory with applications},
+  \btxvolumelong {}\ \btxvolumefont {290}.
+\newblock \btxpublisherfont {Citeseer}, 1976.
+
+\bibitem {orientShortestPath}
+\btxnamefont {\btxlastnamefont {OrientDB}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Shotest path}{Shotest Path}}.
+\newblock
+  \url{https://orientdb.com/docs/3.0.x/gettingstarted/demodb/queries/DemoDB-Queries-Shortest-Paths.html}.
+\newblock Acessado em fevereiro de 2018.
+
 \bibitem {FirstNoSQL}
 \btxnamefont {\btxlastnamefont {Strozzi}, Carlo}\btxauthorcolon\ \btxtitlefont
   {\btxifchangecase {Nosql a relational database management system}{NoSQL A

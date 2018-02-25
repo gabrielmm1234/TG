@@ -8,22 +8,28 @@
 \BOOKMARK [1][-]{section.1.3}{Estrutura do Trabalho}{chapter.1}% 8
 \BOOKMARK [0][-]{chapter.2}{Fundamenta\347\343o Te\363rica}{}% 9
 \BOOKMARK [1][-]{section.2.1}{Teoria de Grafos}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.2}{SGBD NoSQL}{chapter.2}% 11
-\BOOKMARK [2][-]{subsection.2.2.1}{Introdu\347\343o}{section.2.2}% 12
-\BOOKMARK [2][-]{subsection.2.2.2}{Caracter\355sticas de um SGBD NoSQL}{section.2.2}% 13
-\BOOKMARK [2][-]{subsection.2.2.3}{Gerenciamento de Transa\347\365es}{section.2.2}% 14
-\BOOKMARK [2][-]{subsection.2.2.4}{Categorias de NoSQL}{section.2.2}% 15
-\BOOKMARK [1][-]{section.2.3}{Compara\347\343o qualitativa entre OrientDB e Neo4j}{chapter.2}% 16
-\BOOKMARK [2][-]{subsection.2.3.1}{Introdu\347\343o}{section.2.3}% 17
-\BOOKMARK [2][-]{subsection.2.3.2}{Compara\347\343o qualitativa}{section.2.3}% 18
-\BOOKMARK [2][-]{subsection.2.3.3}{Conclus\343o}{section.2.3}% 19
-\BOOKMARK [1][-]{section.2.4}{OrientDB}{chapter.2}% 20
-\BOOKMARK [2][-]{subsection.2.4.1}{Introdu\347\343o}{section.2.4}% 21
-\BOOKMARK [2][-]{subsection.2.4.2}{Performance}{section.2.4}% 22
-\BOOKMARK [2][-]{subsection.2.4.3}{Arquitetura Distribu\355da}{section.2.4}% 23
-\BOOKMARK [2][-]{subsection.2.4.4}{Orienta\347\343o a Objetos}{section.2.4}% 24
-\BOOKMARK [1][-]{section.2.5}{REST}{chapter.2}% 25
-\BOOKMARK [2][-]{subsection.2.5.1}{Introdu\347\343o}{section.2.5}% 26
-\BOOKMARK [2][-]{subsection.2.5.2}{Princ\355pios do estilo arquitetural REST}{section.2.5}% 27
-\BOOKMARK [2][-]{subsection.2.5.3}{Interface REST no OrientDB}{section.2.5}% 28
-\BOOKMARK [0][-]{section*.27}{Refer\352ncias}{}% 29
+\BOOKMARK [2][-]{subsection.2.1.1}{Defini\347\343o de um grafo}{section.2.1}% 11
+\BOOKMARK [2][-]{subsection.2.1.2}{Propriedades de um grafo}{section.2.1}% 12
+\BOOKMARK [2][-]{subsection.2.1.3}{Grafos em SGBD NoSQL}{section.2.1}% 13
+\BOOKMARK [1][-]{section.2.2}{SGBD NoSQL}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.1}{Introdu\347\343o}{section.2.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.2}{Caracter\355sticas de um SGBD NoSQL}{section.2.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.3}{Gerenciamento de Transa\347\365es}{section.2.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.4}{Categorias de NoSQL}{section.2.2}% 18
+\BOOKMARK [1][-]{section.2.3}{Compara\347\343o qualitativa entre OrientDB e Neo4j}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.3.1}{Introdu\347\343o}{section.2.3}% 20
+\BOOKMARK [2][-]{subsection.2.3.2}{Compara\347\343o qualitativa}{section.2.3}% 21
+\BOOKMARK [2][-]{subsection.2.3.3}{Conclus\343o}{section.2.3}% 22
+\BOOKMARK [1][-]{section.2.4}{OrientDB}{chapter.2}% 23
+\BOOKMARK [2][-]{subsection.2.4.1}{Introdu\347\343o}{section.2.4}% 24
+\BOOKMARK [2][-]{subsection.2.4.2}{Performance}{section.2.4}% 25
+\BOOKMARK [2][-]{subsection.2.4.3}{Arquitetura Distribu\355da}{section.2.4}% 26
+\BOOKMARK [2][-]{subsection.2.4.4}{Orienta\347\343o a Objetos}{section.2.4}% 27
+\BOOKMARK [1][-]{section.2.5}{REST}{chapter.2}% 28
+\BOOKMARK [2][-]{subsection.2.5.1}{Introdu\347\343o}{section.2.5}% 29
+\BOOKMARK [2][-]{subsection.2.5.2}{Princ\355pios do estilo arquitetural REST}{section.2.5}% 30
+\BOOKMARK [2][-]{subsection.2.5.3}{Interface REST no OrientDB}{section.2.5}% 31
+\BOOKMARK [0][-]{chapter.3}{CEAP: Detec\347\343o de fraudes com o uso de SGBD orientado a grafos}{}% 32
+\BOOKMARK [0][-]{chapter.4}{CEAP: An\341lise dos resultados obtidos}{}% 33
+\BOOKMARK [0][-]{chapter.5}{Conclus\343o}{}% 34
+\BOOKMARK [0][-]{section*.30}{Refer\352ncias}{}% 35
