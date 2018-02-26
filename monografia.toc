@@ -10,33 +10,38 @@
 \contentsline {subsection}{\numberline {2.1.1}Defini\IeC {\c c}\IeC {\~a}o de um grafo}{4}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Propriedades de um grafo}{5}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}Grafos em SGBD NoSQL}{7}{subsection.2.1.3}
-\contentsline {section}{\numberline {2.2}SGBD NoSQL}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Introdu\IeC {\c c}\IeC {\~a}o}{7}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Caracter\IeC {\'\i }sticas de um SGBD NoSQL}{8}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Gerenciamento de Transa\IeC {\c c}\IeC {\~o}es}{8}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Categorias de NoSQL}{9}{subsection.2.2.4}
-\contentsline {subsubsection}{SGBD NoSQL por chave/valor}{10}{section*.11}
-\contentsline {subsubsection}{SGBD NoSQL orientado por colunas}{10}{section*.13}
-\contentsline {subsubsection}{SGBD NoSQL orientado a documentos}{11}{section*.15}
-\contentsline {subsubsection}{SGBD NoSQL orientado a grafos}{11}{section*.16}
-\contentsline {subsubsection}{SGBD NoSQL orientado a objetos}{12}{section*.18}
-\contentsline {section}{\numberline {2.3}Compara\IeC {\c c}\IeC {\~a}o qualitativa entre OrientDB e Neo4j}{13}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Introdu\IeC {\c c}\IeC {\~a}o}{13}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Compara\IeC {\c c}\IeC {\~a}o qualitativa}{14}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Conclus\IeC {\~a}o}{17}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}OrientDB}{17}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Introdu\IeC {\c c}\IeC {\~a}o}{17}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Performance}{18}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Arquitetura Distribu\IeC {\'\i }da}{20}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Orienta\IeC {\c c}\IeC {\~a}o a Objetos}{21}{subsection.2.4.4}
-\contentsline {section}{\numberline {2.5}\textit {REST}}{23}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Introdu\IeC {\c c}\IeC {\~a}o}{23}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Princ\IeC {\'\i }pios do estilo arquitetural \textit {REST}}{23}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Interface \textit {REST} no OrientDB}{24}{subsection.2.5.3}
-\contentsline {chapter}{\numberline {3}CEAP: Detec\IeC {\c c}\IeC {\~a}o de fraudes com o uso de SGBD orientado a grafos}{26}{chapter.3}
-\contentsline {chapter}{\numberline {4}CEAP: An\IeC {\'a}lise dos resultados obtidos}{27}{chapter.4}
-\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{28}{chapter.5}
-\contentsline {chapter}{Refer\^encias}{29}{section*.30}
+\contentsline {section}{\numberline {2.2}SGBD NoSQL}{8}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Introdu\IeC {\c c}\IeC {\~a}o}{8}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Caracter\IeC {\'\i }sticas de um SGBD NoSQL}{9}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Gerenciamento de Transa\IeC {\c c}\IeC {\~o}es}{9}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Categorias de NoSQL}{10}{subsection.2.2.4}
+\contentsline {subsubsection}{SGBD NoSQL por chave/valor}{11}{section*.11}
+\contentsline {subsubsection}{SGBD NoSQL orientado por colunas}{11}{section*.13}
+\contentsline {subsubsection}{SGBD NoSQL orientado a documentos}{12}{section*.15}
+\contentsline {subsubsection}{SGBD NoSQL orientado a grafos}{12}{section*.16}
+\contentsline {subsubsection}{SGBD NoSQL orientado a objetos}{13}{section*.18}
+\contentsline {section}{\numberline {2.3}Compara\IeC {\c c}\IeC {\~a}o qualitativa entre OrientDB e Neo4j}{14}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Introdu\IeC {\c c}\IeC {\~a}o}{14}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Compara\IeC {\c c}\IeC {\~a}o qualitativa}{15}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Conclus\IeC {\~a}o}{18}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}OrientDB}{18}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Introdu\IeC {\c c}\IeC {\~a}o}{18}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Performance}{19}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Arquitetura Distribu\IeC {\'\i }da}{21}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Orienta\IeC {\c c}\IeC {\~a}o a Objetos}{22}{subsection.2.4.4}
+\contentsline {section}{\numberline {2.5}\textit {REST}}{24}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Introdu\IeC {\c c}\IeC {\~a}o}{24}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Princ\IeC {\'\i }pios do estilo arquitetural \textit {REST}}{24}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Interface \textit {REST} no OrientDB}{25}{subsection.2.5.3}
+\contentsline {chapter}{\numberline {3}CEAP: Detec\IeC {\c c}\IeC {\~a}o de fraudes com o uso de SGBD orientado a grafos}{27}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introdu\IeC {\c c}\IeC {\~a}o}{27}{section.3.1}
+\contentsline {section}{\numberline {3.2}ETL}{27}{section.3.2}
+\contentsline {section}{\numberline {3.3}Consultas}{27}{section.3.3}
+\contentsline {section}{\numberline {3.4}Sistema Web}{27}{section.3.4}
+\contentsline {section}{\numberline {3.5}Conclus\IeC {\~a}o}{27}{section.3.5}
+\contentsline {chapter}{\numberline {4}CEAP: An\IeC {\'a}lise dos resultados obtidos}{28}{chapter.4}
+\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{29}{chapter.5}
+\contentsline {chapter}{Refer\^encias}{30}{section*.30}
 \select@language {american}
 \select@language {american}
 \select@language {american}

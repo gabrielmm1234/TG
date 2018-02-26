@@ -6,18 +6,18 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Exemplo de uma estrutura de grafo\relax }}{5}{figure.caption.8}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Exemplo de uma estrutura de grafo com presen\IeC {\c c}a de la\IeC {\c c}o\relax }}{6}{figure.caption.9}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Exemplo de uma estrutura de grafo direcionado\relax }}{6}{figure.caption.10}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Exemplos de estrura relacional, chave/valor e orientada a documentos\relax }}{10}{figure.caption.12}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Exemplo de estrutura de um NoSQL orientado a colunas.\relax }}{11}{figure.caption.14}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Exemplo da estrutura de um grafo no SGBD OrientDB\relax }}{12}{figure.caption.17}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Contraste entre estrutura relaciona e orientada a objetos\relax }}{13}{figure.caption.19}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Exemplo de tentativa de aplica\IeC {\c c}\IeC {\~a}o reativa\relax }}{15}{figure.caption.21}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Exemplo do uso de \textit {live queries}\relax }}{15}{figure.caption.22}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Possibilidade de registros no OrientDB\relax }}{18}{figure.caption.24}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Exemplo de uma arquitetura \textit {Master-slave}\relax }}{20}{figure.caption.25}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Exemplo de uma arquitetura \textit {Multi-master}\relax }}{21}{figure.caption.26}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Exemplo de heran\IeC {\c c}a no \textit {schema} do OrientDB \relax }}{22}{figure.caption.27}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Classe Customer mapeada para dois clusters diferentes\relax }}{22}{figure.caption.28}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Estilo arquitetural \textit {REST}\relax }}{24}{figure.caption.29}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Exemplos de estrura relacional, chave/valor e orientada a documentos\relax }}{11}{figure.caption.12}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Exemplo de estrutura de um NoSQL orientado a colunas.\relax }}{12}{figure.caption.14}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Exemplo da estrutura de um grafo no SGBD OrientDB\relax }}{13}{figure.caption.17}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Contraste entre estrutura relaciona e orientada a objetos\relax }}{14}{figure.caption.19}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Exemplo de tentativa de aplica\IeC {\c c}\IeC {\~a}o reativa\relax }}{16}{figure.caption.21}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Exemplo do uso de \textit {live queries}\relax }}{16}{figure.caption.22}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Possibilidade de registros no OrientDB\relax }}{19}{figure.caption.24}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Exemplo de uma arquitetura \textit {Master-slave}\relax }}{21}{figure.caption.25}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Exemplo de uma arquitetura \textit {Multi-master}\relax }}{22}{figure.caption.26}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Exemplo de heran\IeC {\c c}a no \textit {schema} do OrientDB \relax }}{23}{figure.caption.27}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Classe Customer mapeada para dois clusters diferentes\relax }}{23}{figure.caption.28}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Estilo arquitetural \textit {REST}\relax }}{25}{figure.caption.29}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

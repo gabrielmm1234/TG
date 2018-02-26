@@ -61,6 +61,32 @@ Este capítulo descreve toda a fundamentação teórica por trás das tecnologia
 	Dentro do universo de teoria de grafos, existem ainda diversas outras propriedades tais como: Isomorfismo entre grafos, subgrafos, caminho, caminho fechado e etc. Essas propriedades fornecem a base para a compreensão e resolução de problemas importantes para a computação, como o problema de menor caminho, que busca encontrar o menor caminho entre dois vértices em um grafo com pesos. O SGBD utilizado nesse trabalho o OrientDB, fornece uma solução para o problema de menor caminho, e conhecer a teoria por trás do problema faz com que o usuário possa usar da melhor maneira essa solução \cite{orientShortestPath}.
 	
 \subsection{Grafos em SGBD NoSQL}
+	A teoria de grafos é um campo vasto na ciência da computação, e ao utilizar essa estrutura para armazenar dados, cada SGBD escolhe a estrutura mais adequada para atingir os objetivos definidos. O trabalho realizado por Angles \cite{angles2012comparison}, e citado por Gustavo \cite{mdgnosql} mostra que os SGBD NoSQL orientado a grafos podem ser classificados de acordo com as características de seus vértices, arestas e do próprio grafo: 
+	
+	Classificação pelas características do grafo:
+\begin{itemize}
+		\item Grafo simples: Nesse formato, cada vértice e aresta possui somente um rótulo que os identifica.
+		\item Hipergrafo: Nesse formato, é permitido que suas arestas apontem para mais de dois vértices.
+		\item Grafo com atributos: Nesse formato, é permitido que os vértices possuam atributos, tais atributos representam a informação de um certo dado armazenado.
+		\item Grafo aninhado: Nesse formato, o grafo permite que um vértice seja outro grafo.
+\end{itemize}
+
+	Classificação pelas características do vértice:
+\begin{itemize}
+		\item Vértice rotulado: Nesse formato, cada vértice possui somente um rótulo que o identifica.
+		\item Vértice com atributo: Nesse formato, o vértice possui atributos como um par chave-valor, por exemplo.
+\end{itemize}
+
+	Classificação pelas características da aresta:
+\begin{itemize}
+		\item Aresta rotulada(direcionada ou não): Nesse formato, cada aresta possui somente um rótulo que o identifica e expressa uma informação, como o relacionamento.
+		\item Aresta com atributo(direcionada ou não): Nesse formato, cada aresta possui atributos sobre o vínculo.
+\end{itemize}
+
+	De acordo com essas classificações, tanto o Neo4j quanto o OrientDB utilizam a estrutura de vértices e arestas com atributos para organizar o armazenamento de dados. Conforme Gustavo \cite{mdgnosql} aponta em sua tese de mestrado, essa estrutura facilita o acesso as informações do vértice, uma vez que os atributos podem ser armazenados junto com os próprios vértices e arestas. Entranto, é importante tratar com cuidado essa propriedade, pois ao adicionar uma informação como atributo, em vez de adicionar como vértice, podem surgir problemas de identificação de relacionamentos compartilhados, pois o atributo vai estar repetido em outra instância, e para identificar esse relacionamento se faz necessário uma consulta parecida com a de um SGBD relacional \cite{mdgnosql}.
+	
+	Uma comparação entre o Neo4j e OrientDB é feita em mais detalhes na seção \ref{comparison_graph_nosql}, levando em conta outros aspectos além do formato de grafo utilizado para o armazenamento dos dados.
+	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -161,7 +187,7 @@ Este capítulo descreve toda a fundamentação teórica por trás das tecnologia
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Comparação qualitativa entre OrientDB e Neo4j}
+\section{Comparação qualitativa entre OrientDB e Neo4j} \label{comparison_graph_nosql}
 
 \subsection{Introdução}
 
