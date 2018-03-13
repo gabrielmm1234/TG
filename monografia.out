@@ -30,11 +30,10 @@
 \BOOKMARK [2][-]{subsection.2.5.2}{Princ\355pios do estilo arquitetural REST}{section.2.5}% 30
 \BOOKMARK [2][-]{subsection.2.5.3}{Interface REST no OrientDB}{section.2.5}% 31
 \BOOKMARK [0][-]{chapter.3}{CEAP: Detec\347\343o de fraudes com o uso de SGBD orientado a grafos}{}% 32
-\BOOKMARK [1][-]{section.3.1}{Introdu\347\343o}{chapter.3}% 33
-\BOOKMARK [1][-]{section.3.2}{ETL}{chapter.3}% 34
-\BOOKMARK [1][-]{section.3.3}{Consultas}{chapter.3}% 35
-\BOOKMARK [1][-]{section.3.4}{Sistema Web}{chapter.3}% 36
-\BOOKMARK [1][-]{section.3.5}{Conclus\343o}{chapter.3}% 37
-\BOOKMARK [0][-]{chapter.4}{CEAP: An\341lise dos resultados obtidos}{}% 38
-\BOOKMARK [0][-]{chapter.5}{Conclus\343o}{}% 39
-\BOOKMARK [0][-]{section*.30}{Refer\352ncias}{}% 40
+\BOOKMARK [1][-]{section.3.1}{ETL e modelo do banco de dados}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.2}{Consultas para detec\347\343o de fraudes}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.3}{Sistema Web}{chapter.3}% 35
+\BOOKMARK [1][-]{section.3.4}{Conclus\343o}{chapter.3}% 36
+\BOOKMARK [0][-]{chapter.4}{CEAP: An\341lise dos resultados obtidos}{}% 37
+\BOOKMARK [0][-]{chapter.5}{Conclus\343o}{}% 38
+\BOOKMARK [0][-]{section*.31}{Refer\352ncias}{}% 39

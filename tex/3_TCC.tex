@@ -1,8 +1,34 @@
-\section{Introdução}
+	Esse capítulo tem como objetivo, descrever todo o processo de desenvolvimento realizado para detectar possíveis fraudes na CEAP. Inicialmente descrevo em detalhes como foi desenvolvido um ETL para extrair os dados da CEAP, fornecidos pela câmara dos deputados, e carregá-los no OrientDB, além de explicar a modelagem feita para o armazenamento dos dados. Em seguida, explico o funcionamento das consultas realizadas para a detecção de fraudes. Finalmente, apresento a arquitetura do sistema web, e como o sistema se comunica com o OrientDB e apresenta informações relevantes sobre os dados.
 
-\section{ETL}
+\section{ETL e modelo do banco de dados}
 
-\section{Consultas}
+	O termo ETL vem do inglês \textit{Extract Transform Load}, e corresponde a \textit{softwares} que tem como função:
+\begin{itemize}
+		\item Extrair os dados de uma determinada fonte.
+		\item Transformar os dados de forma que atendam os requisitos da aplicação.
+		\item Carregar os dados no banco de dados.
+\end{itemize}
+	
+	A câmara dos deputados fornece todos os dados referentes a CEAP através desse link \href{http://www2.camara.leg.br/transparencia/cota-para-exercicio-da-atividade-parlamentar/dados-abertos-cota-parlamentar}{dados CEAP}. Os dados estão presentes em diferentes formatos: \textit{XML}, \textit{JSON}, \textit{CSV} e \textit{XLSX}. Nesse trabalho foi utilizado o formato \textit{CSV} do ano de 2017. Nesse arquivo \textit{CSV}, os dados estão organizados da seguinte forma:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|l}
+\cline{1-4}
+txNomeParlamentar                                 & idecadastro                                       & nuCarteiraParlamentar                             & ... &  \\ \cline{1-4}
+ABEL MESQUITA JR.                                 & 178957                                            & 1                                                 & ... &  \\ \cline{1-4}
+\begin{tabular}[c]{@{}l@{}}.\\ .\\ .\end{tabular} & \begin{tabular}[c]{@{}l@{}}.\\ .\\ .\end{tabular} & \begin{tabular}[c]{@{}l@{}}.\\ .\\ .\end{tabular} & ... &  \\ \cline{1-4}
+ADAIL CARNEIRO                                    & 178864                                            & 92                                                & ... &  \\ \cline{1-4}
+\end{tabular}
+\caption{Organização dos dados da CEAP}
+\label{CEAP-ORG}
+\end{table}
+
+	Os dados estão dispostos em linhas e colunas, cada linha representa uma transação diferente para um certo parlamentar. Dentre as colunas disponibilizadas, foram utilizadas as seguintes informações para a fase de extração: TxtDescricao, TxtDescricaoEspecificacao, VlrDocumento, TxNomeParlamentar, IdeCadastro, NumCarteiraParlamentar, SgUF, SgPartido, TxtFornecedor e TxtCNPJCPF.
+	
+	A partir desses dados, foi desenvolvido um ETL utilizando a linguagem Java, que na fase de extração, lê esses atributos citados acima, linha a linha e instancia um objeto que representa uma transação de um parlamentar com todas as suas informações. Não foi feita nenhuma transformação nos dados antes de carregar para o banco de dados. Por fim, na fase de carregamento, só se fez necessário verificar antes de adicionar um parlamentar ou uma empresa fornecedora, se esse parlamentar ou empresa já estão persistidos; Se estiver persistido, não é criada uma nova instância no banco de dados, e uma referência para o vértice é retornada para que os relacionamentos sejam persistidos em cima dessas refêrencias.
+
+\section{Consultas para detecção de fraudes}
 
 \section{Sistema Web}
 
