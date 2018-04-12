@@ -38,7 +38,7 @@ Os demais relacionamentos, como "socio-de" e "parente-de" tem por objetivo ident
 		\item Carregar os dados no banco de dados.
 \end{itemize}
 	
-	A câmara dos deputados fornece todos os dados referentes a CEAP através desse link \href{http://www2.camara.leg.br/transparencia/cota-para-exercicio-da-atividade-parlamentar/dados-abertos-cota-parlamentar}{dados CEAP}. Os dados estão presentes em diferentes formatos: \textit{XML}, \textit{JSON}, \textit{CSV} e \textit{XLSX}. Nesse trabalho foi utilizado o formato \textit{CSV} do ano de 2017. Nesse arquivo \textit{CSV}, os dados estão organizados da seguinte forma:
+	Os dados estão presentes em diferentes formatos: \textit{XML}, \textit{JSON}, \textit{CSV} e \textit{XLSX}. Nesse trabalho foi utilizado o formato \textit{CSV} do ano de 2017. Nesse arquivo \textit{CSV}, os dados estão organizados da seguinte forma:
 
 \begin{table}[H]
 \centering
@@ -53,9 +53,22 @@ ADAIL CARNEIRO                                    & 178864                      
 \label{CEAP-ORG}
 \end{table}
 
-	Os dados estão dispostos em linhas e colunas, cada linha representa uma transação diferente para um certo parlamentar. Dentre as colunas disponibilizadas, foram utilizadas as seguintes informações para a fase de extração: TxtDescricao, TxtDescricaoEspecificacao, VlrDocumento, TxNomeParlamentar, IdeCadastro, NumCarteiraParlamentar, SgUF, SgPartido, TxtFornecedor e TxtCNPJCPF.
+	Os dados estão dispostos em linhas e colunas, cada linha representa uma transação diferente para um certo parlamentar. Dentre as colunas disponibilizadas, foram utilizadas as seguintes informações para a fase de extração: TxtDescricao, TxtDescricaoEspecificacao, VlrDocumento, TxNomeParlamentar, IdeCadastro, NumCarteiraParlamentar, SgUF, SgPartido, TxtFornecedor e TxtCNPJCPF. Após o desenvolvimento do modelo de dados, foi desenvolvido um ETL utilizando a linguagem java, para extrair, transformar e carregar os dados para o OrientDB. O OrientDB foi desenvolvido na linguagem java, e executa portanto na JVM. Por esse motivo, o ETL foi feito em java, uma vez que, o OrientDB possui uma boa interface com essa linguagem. O ETL pode ser acessado por meio desse link no github\footnote{https://github.com/gabrielmm1234/CEAP-ETL}.
 	
-	A partir desses dados, foi desenvolvido um ETL utilizando a linguagem Java, que na fase de extração, lê esses atributos citados acima, linha a linha e instancia um objeto que representa uma transação de um parlamentar com todas as suas informações. Não foi feita nenhuma transformação nos dados antes de carregar para o banco de dados. Por fim, na fase de carregamento, só se fez necessário verificar antes de adicionar um parlamentar ou uma empresa fornecedora, se esse parlamentar ou empresa já estão persistidos; Se estiver persistido, não é criada uma nova instância no banco de dados, e uma referência para o vértice é retornada para que os relacionamentos sejam persistidos em cima dessas refêrencias.
+	O fluxo do ETL é exemplificado na Figura \ref{fig:etlfluxo}. Dessa forma o fluxo se organiza em ler linha a linha do csv fornecido pela Câmara dos Deputados, e criar os vértices e arestas com base em certas condições. Por exemplo, não se pode ter mais de um vértice representando um parlamentar, mas no arquivo fornecido existem diversas transações para um mesmo deputado. Ao ler uma nova linha é preciso saber se estamos tratando de um parlamentar já persistido ou de um novo parlamentar antes de criar o vértice que o representa. O mesmo pensamento ocorre no caso de empresas fornecedoras, uma vez que não se pode ter dois vértices representando uma mesma empresa.
+	
+\begin{figure}[H]
+\centering
+\includegraphics[width=.5\textwidth]{etlfluxo.png}
+\caption{Fluxo de extração, transformação e carregamento para o OrientDB}
+\label{fig:etlfluxo}
+\end{figure}
+
+O ponto chave desse processo são as associações entre os parlamentares com as transações e as empresas que forneceram o serviço. Criando esse vínculo, é possível por meio de consultas de casamento de padrões identificar possíveis fraudes ou padrões de transação e doação envolvendo um mesmo parlamentar e uma mesma empresa. A estrutura de um grafo fornece naturalmente os relacionamentos de forma simples e intuitiva, sendo uma ótima alternativa a estrutura relacional, que é muito comum atualmente. Além disso, a visualização da informação se torna mais clara e objetiva o que é uma ótima característica ao se tratar de transparência em dados governamentais.
+
+O arquivo de dados da CEAP no ano de 2017 possui um total de 209496 transações, o carregamento total dessas transações levou cerca de 16 horas em um notebook com Ubuntu 16-04 LTS, Intel Core i5-5200U CPU 2.20GHz * 4 e 6 Gb de memória RAM. Esse tempo poderia ser otimizado, pois da forma que o ETL foi feito sempre é feito uma busca no banco de dados para saber se um parlamentar ou empresa já estão persistidos. Como o tempo de carga não é um objetivo prioritário no escopo do projeto essa melhora no tempo de carregamento não foi feita.
+
+Já o arquivo das doações passou por um processo de filtragem, para obter somente os dados referentes aos deputados federais dos estados de Minas Gerais e Distrito Federal. Esse filtro para obter deputados federais dos dois estados foi feito para validar mais rapidamente a arquitetura e proposta de solução, no futuro demais estados serão adicionados no banco de dados. O arquivo já filtrado possui um total de 19302 doações de empresas a candidatura de diversos deputados. Claramente, somente alguns desses deputados foram de fato eleitos, e portanto deputados que não se encontravam na base da CEAP foram ignorados. O tempo total de processamento desse arquivo foi de 5 horas, podendo ser melhorado nos mesmos princípios dos dados da CEAP.
 
 \section{Consultas para detecção de fraudes}
 
