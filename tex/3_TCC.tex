@@ -72,6 +72,22 @@ Já o arquivo das doações passou por um processo de filtragem, para obter some
 
 \section{Consultas para detecção de fraudes}
 
+Finalizado a obtenção e carregamento dos dados no OrientDB, foram feitas consultas em busca dos relacionamentos entre as empresas doadoras e os deputados de Minas Geras e Distrito Federal que utilizaram a CEAP com essas mesmas empresas. O OrientDB possui uma linguagem de consulta baseada na linguagem SQL, diferentemente de outros SGBD orientado a grafos como o Neo4J, que possui uma linguagem própria conhecida como Cypher.
+	
+	A consulta feita para obter os resultados esperados, é baseada no conceito de casamento de padrão, muito comum em linguagens funcionais. Dessa forma, para obter um certo padrão dentro do grafo o OrientDB fornece a função MATCH, como mostra a Consulta \ref{lst:label}.
+
+\begin{lstlisting}[label={lst:label}, caption={Consulta de relacionamento de doações entre deputados e empresas},captionpos=b, language=sql]
+MATCH 
+  {class:Parlamentar, as:p} -RealizaTransacao-> 
+  	{class:Transacao, as:t} 
+       -FornecidaPor-> {class:EmpresaFornecedora, as:e},
+  {as:e} -RealizaTransacao-> {class:Transacao, as:t2} 
+  	   -FornecidaPara-> {as:p}
+RETURN $elements
+\end{lstlisting}
+
+A Consulta \ref{lst:label} busca um certo padrão dentro do banco de dados. Esse padrão é definido por parlamentares chamados de "p", que realizam transações da CEAP "t", fornecidas por uma certa empresa "e". Além disso essa mesma empresa "e", realiza uma transação de doação "t2", que é fornecida para o mesmo parlamentar "p" definido no início da sentença.
+
 \section{Sistema Web}
 
 \section{Conclusão}
