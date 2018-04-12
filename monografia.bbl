@@ -53,6 +53,23 @@
   \url{https://orientdb.com/docs/3.0.x/gettingstarted/demodb/queries/DemoDB-Queries-Shortest-Paths.html}.
 \newblock Acessado em fevereiro de 2018.
 
+\bibitem {angles2012comparison}
+\btxnamefont {\btxlastnamefont {Angles}, Renzo}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {A comparison of current graph database models}{A
+  comparison of current graph database models}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Data Engineering Workshops (ICDEW),
+  2012 IEEE 28th International Conference on}, \btxpageslong {}\ 171--177.
+  IEEE, 2012.
+
+\bibitem {mdgnosql}
+\btxnamefont {\btxlastnamefont {Erven}, Gustavo\btxfnamespacelong
+  C.\btxfnamespacelong Galvão~van}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Mdg-nosql: modelo de dados para bancos nosql baseados em
+  grafos}{MDG-NoSQL: modelo de dados para bancos NoSQL baseados em grafos}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Dissertação (Mestrado Profissional em
+  Computação Aplicada)—Universidade de Brasília}. Universidade de
+  Brasília, 2015.
+
 \bibitem {FirstNoSQL}
 \btxnamefont {\btxlastnamefont {Strozzi}, Carlo}\btxauthorcolon\ \btxtitlefont
   {\btxifchangecase {Nosql a relational database management system}{NoSQL A
@@ -211,14 +228,6 @@
 \newblock \btxtechreplong {}, Lawrence Livermore National Laboratory (LLNL),
   Livermore, CA, 2014.
 
-\bibitem {angles2012comparison}
-\btxnamefont {\btxlastnamefont {Angles}, Renzo}\btxauthorcolon\ \btxtitlefont
-  {\btxifchangecase {A comparison of current graph database models}{A
-  comparison of current graph database models}}.
-\newblock \Btxinlong {}\ \btxtitlefont {Data Engineering Workshops (ICDEW),
-  2012 IEEE 28th International Conference on}, \btxpageslong {}\ 171--177.
-  IEEE, 2012.
-
 \bibitem {neo4jschemaoptional}
 \btxnamefont {\btxlastnamefont {Neo4j}}\btxauthorcolon\ \btxtitlefont
   {\btxifchangecase {3.5. schema}{3.5. Schema}}.
@@ -336,15 +345,6 @@
 \newblock \url{http://orientdb.com/orientdb/}.
 \newblock Acessado em janeiro de 2018.
 
-\bibitem {mdgnosql}
-\btxnamefont {\btxlastnamefont {Erven}, Gustavo\btxfnamespacelong
-  C.\btxfnamespacelong Galvão~van}\btxauthorcolon\ \btxtitlefont
-  {\btxifchangecase {Mdg-nosql: modelo de dados para bancos nosql baseados em
-  grafos}{MDG-NoSQL: modelo de dados para bancos NoSQL baseados em grafos}}.
-\newblock \Btxinlong {}\ \btxtitlefont {Dissertação (Mestrado Profissional em
-  Computação Aplicada)—Universidade de Brasília}. Universidade de
-  Brasília, 2015.
-
 \bibitem {fielding2000architectural}
 \btxnamefont {\btxlastnamefont {Fielding}, Roy\btxfnamespacelong T} \btxandlong
   {}\ \btxnamefont {Richard\btxfnamespacelong N \btxlastnamefont
@@ -359,5 +359,21 @@
   {\btxifchangecase {Accidentally restful}{Accidentally RESTful}}.
 \newblock \url{http://www.markbaker.ca/blog/2005/04/accidentally-restful/}.
 \newblock Acessado em fevereiro de 2018.
+
+\bibitem {graphed}
+\btxnamefont {\btxlastnamefont {Van~Erven}, Gustavo}, \btxnamefont {Waldeyr
+  \btxlastnamefont {Silva}}, \btxnamefont {Rommel \btxlastnamefont
+  {Carvalho}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Maristela
+  \btxlastnamefont {Holanda}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase
+  {Graphed: A graph description diagram for graph databases}{GRAPHED: A Graph
+  Description Diagram for Graph Databases}}.
+\newblock \Btxinlong {}\ \btxnamefont {\btxlastnamefont {Rocha}, {\'A}lvaro},
+  \btxnamefont {Hojjat \btxlastnamefont {Adeli}}, \btxnamefont
+  {Lu{\'i}s\btxfnamespacelong Paulo \btxlastnamefont {Reis}}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {Sandra \btxlastnamefont {Costanzo}}\
+  (\btxeditorslong {}): \btxtitlefont {Trends and Advances in Information
+  Systems and Technologies}, \btxpageslong {}\ 1141--1151, Cham, 2018.
+  \btxpublisherfont {Springer International Publishing}\ifbtxprintISBN {,
+  \mbox{\btxISBN~\btxISBNfont {978-3-319-77703-0}}}.
 
 \end{thebibliography}

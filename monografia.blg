@@ -8,45 +8,45 @@ Warning--empty language in abramo2000relaccoes
 Warning--there's a number but no volume in abramo2000relaccoes
 Warning--empty journal in kauremerging
 Warning--empty year in kauremerging
-You've used 42 entries,
+You've used 43 entries,
             2465 wiz_defined-function locations,
-            810 strings with 12580 characters,
-and the built_in function-call counts, 11402 in all, are:
-= -- 932
-> -- 297
-< -- 8
-+ -- 122
-- -- 80
-* -- 1143
-:= -- 1434
-add.period$ -- 113
-call.type$ -- 42
-change.case$ -- 38
+            820 strings with 12932 characters,
+and the built_in function-call counts, 12081 in all, are:
+= -- 985
+> -- 325
+< -- 9
++ -- 131
+- -- 88
+* -- 1239
+:= -- 1509
+add.period$ -- 116
+call.type$ -- 43
+change.case$ -- 39
 chr.to.int$ -- 0
-cite$ -- 46
-duplicate$ -- 691
-empty$ -- 1431
-format.name$ -- 214
-if$ -- 2640
+cite$ -- 47
+duplicate$ -- 734
+empty$ -- 1495
+format.name$ -- 238
+if$ -- 2788
 int.to.chr$ -- 0
-int.to.str$ -- 42
-missing$ -- 39
-newline$ -- 206
-num.names$ -- 41
-pop$ -- 332
+int.to.str$ -- 43
+missing$ -- 40
+newline$ -- 210
+num.names$ -- 44
+pop$ -- 338
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 253
+skip$ -- 272
 stack$ -- 0
-substring$ -- 370
-swap$ -- 305
-text.length$ -- 8
+substring$ -- 410
+swap$ -- 335
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
-while$ -- 76
-width$ -- 44
-write$ -- 450
+while$ -- 81
+width$ -- 45
+write$ -- 463
 (There were 4 warnings)
