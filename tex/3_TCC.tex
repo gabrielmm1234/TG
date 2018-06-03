@@ -86,7 +86,43 @@ MATCH
 RETURN $elements
 \end{lstlisting}
 
-A Consulta \ref{lst:label} busca um certo padrão dentro do banco de dados. Esse padrão é definido por parlamentares chamados de "p", que realizam transações da CEAP "t", fornecidas por uma certa empresa "e". Além disso essa mesma empresa "e", realiza uma transação de doação "t2", que é fornecida para o mesmo parlamentar "p" definido no início da sentença.
+A Consulta \ref{lst:label} busca um certo padrão dentro do banco de dados. Esse padrão é definido por parlamentares chamados de "p", que realizam transações da CEAP "t", fornecidas por uma certa empresa "e". Além disso essa mesma empresa "e", realiza uma transação de doação "t2", que é fornecida para o mesmo parlamentar "p" definido no início da sentença. O resultado dessa consulta nos deputados de Minas Gerais e Distrito federal é apresentado na Figura \ref{fig:ceap_tse_graph}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.85\textwidth]{ceap_tse_graph.png}
+\caption{Resultado do cruzamento entre dados da CEAP e do TSE.}
+\label{fig:ceap_tse_graph}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.85\textwidth]{padrao_ceap_tse.png}
+\caption{Padrão de relacionamento entre dados da CEAP e do TSE.}
+\label{fig:padrao_ceap_tse}
+\end{figure}
+
+O padrão definido foi encontrado para um total de sete parlamentares todos em Minas Gerais. A Figura \ref{fig:padrao_ceap_tse} mostra em mais detalhes como o padrão é definido.A partir da orientação das setas, é possível perceber que o parlamentar representado pelo vértice marrom claro e com o ícone de uma pessoa, realizou três transações, representadas pelo vértice roxo claro, com uma certa empresa representada pelo vértice marrom escuro. Sendo que essa empresa fez uma doação para esse parlamentar. No total, foram 44 transações registradas na CEAP, e 96 doações registradas pelo TSE que estão seguindo esse padrão.
+
+Foi feita uma consulta para obter os padrões que podem ser considerados fraudes na CEAP, e testada com dados fictícios. No caso a consulta busca por deputados que usaram a CEAP com empresas das quais são sócios, como apresentada na consulta \ref{lst:label2}.
+
+\begin{lstlisting}[label={lst:label2}, caption={Consulta de relacionamento de uso da CEAP entre deputados e empresas nas quais o deputado é sócio.},captionpos=b, language=sql]
+MATCH 
+  {class:Parlamentar, as:p} -RealizaTransacao-> 
+  	{class:Transacao, as:t} 
+    	-FornecidaPor-> {class:EmpresaFornecedora, as:e},
+  {as:p} -Socio_De-> {as:e}
+RETURN $elements
+\end{lstlisting}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.85\textwidth]{socios.png}
+\caption{Padrão de uma transação fraudulenta com dados fictícios.}
+\label{fig:socios}
+\end{figure}
+
+Como mostra a Figura \ref{fig:socios}, a consulta consegue localizar um padrão de transações efetuadas entre um deputado e uma empresa, na qual o deputado faz parte do quadro de sócios. A forma com que o grafo é apresentado visualmente, pode facilitar bastante o entendimento dos relacionamentos, de forma que fica claro que um deputado, representado pelo círculo com o ícone de uma pessoa, é sócio de uma empresa que prestou serviços com o dinheiro da CEAP. Dessa forma, a visualização gráfica, é uma das vantagens de um SGBD orientado a grafos, pois, a visualização dos vínculos em um grafo é mais simples e intuitiva do que uma estrutura de tabela utilizada nos SGBD relacionais.
 
 \section{Sistema Web}
 
