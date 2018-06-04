@@ -44,7 +44,7 @@
 \contentsline {subsection}{\numberline {3.3.2}Comunica\IeC {\c c}\IeC {\~a}o com o OrientDB}{35}{subsection.3.3.2}
 \contentsline {chapter}{\numberline {4}CEAP: An\IeC {\'a}lise dos resultados obtidos}{36}{chapter.4}
 \contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{37}{chapter.5}
-\contentsline {chapter}{Refer\^encias}{38}{section*.36}
+\contentsline {chapter}{Refer\^encias}{38}{section*.37}
 \select@language {american}
 \select@language {american}
 \select@language {american}

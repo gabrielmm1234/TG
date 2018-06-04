@@ -132,5 +132,16 @@ Como mostra a Figura \ref{fig:socios}, a consulta consegue localizar um padrão 
 
 \subsection{MVC} \label{mvc-subsection}
 
-\subsection{Comunicação com o OrientDB} \label{mvc-subsection}
+	O padrão arquitetural MVC, no qual o \textit{framework} Ruby on Rails é baseado, divide a aplicação em três entidades: os modelos (\textit{models}), as visões (\textit{views}) e as controladoras (\textit{controllers}). Resumidamente, um \textit{model} representa uma certa entidade, e armazena os dados dessa entidade. Um \textit{controller} gerencia chamadas aos \textit{models} e as \textit{views}. As \textit{views}, por sua vez, representam a camada de apresentação dos dados. A figura \ref{fig:mvc} exemplifica a comunicação entre esses elementos.
+	
+\begin{figure}[H]
+\centering
+\includegraphics[width=.55\textwidth]{mvc-architecture.png}
+\caption{Comunicação entre os elementos do padrão MVC.}
+\label{fig:mvc}
+\end{figure}
+
+Portanto, no sistema desenvolvido as \textit{views} enviam requisições aos \textit{controllers}, que por sua vez vão se comunicar com o OrientDB e recuperar ou alterar o estado dos dados armazenados. Em seguida os \textit{controllers} renderizam as \textit{views} com as informações necessárias.
+
+\subsection{Comunicação com o OrientDB} \label{orient-communication}
 
