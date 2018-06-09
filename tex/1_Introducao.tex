@@ -1,15 +1,17 @@
 \label{chap:1}
 
-	O Brasil é reconhecido mundialmente por seus aspectos culturais, por ser membro do grupo de países BRICS e por ser líder da américa latina. Porém, nosso país também é bastante conhecido por ser um país corrupto, e por possuir um cenário político conturbado. Um estudo feito por Abramo ~\cite{abramo2000relaccoes} compara as relações entre índices de percepção de corrupção e outros indicadores de alguns países latino americanos, e o Brasil se encontra na 49ª (quadragésima nona) posição em um ranking de corrupção dentre 90 países. Já o estudo feito por Filgueiras~\cite{filgueiras2009tolerancia} mostra que de acordo com a percepção dos brasileiros, a Câmara dos vereadores e a Câmara dos deputados são as instituições com maior presença de corrupção. 
-	
-	Atualmente, operações como a Lava Jato, mostram que o país vive um período político muito sensível, que acabam causando vários problemas nos mais diversos setores do país e principalmente na economia. Dessa forma, o objetivo geral deste trabalho é utilizar a tecnologia de banco de dados orientado a grafos, para auxiliar na detecção de possíveis fraudes em um determinado conjunto de dados. Como foi mencionado acima, a câmara dos deputados está entre as instituições com maior presença de corrupção no país, portanto, o conjunto de dados utilizado neste trabalho é a Cota para o Exercício da Atividade Parlamentar – CEAP (antiga verba indenizatória), que é uma cota única mensal destinada a custear os gastos dos deputados exclusivamente vinculados ao exercício da atividade parlamentar.
+	A política de transparência no Brasil surgiu há alguns anos em nossa sociedade, e tem como principal objetivo auxiliar na confiança da população sobre os serviços prestados pelo governo. O Brasil recentemente passou por um grande caso de corrupção, que foi a lava jato, e políticas de transparência também tem suas vertentes no combate a corrupção como é apresentado no trabalho feito por Bruna, Cappelli e Claudia \cite{diirrcombate}. O estudo feito por Abramo \cite{abramo2000relaccoes} compara as relações entre índices de percepção de corrupção
+e outros indicadores de alguns países latino americanos, e o Brasil se encontra na quadragésima nona posição em um ranking de corrupção dentre 90 países. Em um estudo feito por Filgueiras \cite{filgueiras2009tolerancia}, é feita uma pesquisa de opinião, na qual a Câmara dos Vereadores e a Câmara dos Deputados são as instituições com maior percepção de
+corrupção.
+
+	Dessa forma, o objetivo geral deste trabalho é utilizar a tecnologia de banco de dados orientado a grafos, para auxiliar na detecção de possíveis fraudes em um determinado conjunto de dados. Como foi mencionado no estudo acima, a câmara dos deputados está entre as instituições com maior percepção de corrupção, portanto, o conjunto de dados utilizado neste trabalho é a Cota para o Exercício da Atividade Parlamentar – CEAP (antiga verba indenizatória), que é uma cota única mensal destinada a custear os gastos dos deputados exclusivamente vinculados ao exercício da atividade parlamentar.
 	
 	O \href{http://www2.camara.leg.br/legin/int/atomes/2009/atodamesa-43-21-maio-2009-588364-norma-cd-mesa.html}{Ato da Mesa nº 43 de 2009}, detalha as regras para o uso da CEAP, entretanto um deputado pode realizar algumas transações que não são observadas facilmente pelos responsáveis em fiscalizar essas transações. Por exemplo, o artigo 4, parágrafo 13 do Ato da Mesa nº 43 de 2009, diz: \textit{Não se admitirá a utilização da Cota para ressarcimento de despesas relativas  a bens fornecidos ou serviços prestados por empresa ou entidade da qual o proprietário ou detentor de qualquer participação seja o Deputado ou parente seu até terceiro grau}. Dessa forma, o Deputado pode realizar transações que violam essa regra, sendo inviável verificar as relações de parentesco de cada Deputado em cada transação, especialmente se utilizarem tecnologias inadequadas.
 	
 	Portanto, justifica-se o uso de um banco de dados orientado a grafo para identificar os relacionamentos envolvendo cada transação de um Deputado. Um banco de dados relacional também consegue resolver esse problema, entretanto, com um custo e complexidade bem maior em relação a um banco de dados orientado a grafo. Isso se deve porque os relacionamentos são evidenciados na estrutura de um grafo de forma muito mais natural e simples, onde cada entidade é representada como um nó do grafo e se relaciona com outras entidades por meio de arestas. Devido a essas particularidades, os bancos de dados em grafo vem ganhando bastante popularidade ultimamente \cite{Dbmspopularity}, registrando a maior taxa de mudança de popularidade de 2013 até 2017.
 	
 \section{Objetivos}
-	O objetivo geral deste trabalho é utilizar o SGBD OrientDB para evidenciar relacionamentos nas transações dos Deputados que violam o artigo 4, parágrafo 13 do Ato da Mesa nº 43 de 2009, que regula a CEAP. Para essa análise, será feito um sistema web que expõe essas informações a população de forma mais simples e clara. Além de estudar como essas tecnologias impactam a política brasileira.
+	O objetivo geral deste trabalho é utilizar o SGBD OrientDB para evidenciar relacionamentos nas transações dos Deputados que violam o artigo 4, parágrafo 13 do Ato da Mesa nº 43 de 2009, que regula a CEAP. Para essa análise, será feito um sistema web que expõe essas informações a população de forma mais simples e clara.
 	
 	Os objetivos específicos deste trabalho são:
 	\begin{itemize}
@@ -17,12 +19,12 @@
 		\item Executar consultas que evidenciem relacionamentos fraudulentos.
 		\item Identificar vantagens e desvantagens no uso de banco de dados orientado a grafo para a detecção de fraudes em conjuntos de dados genéricos.
 		\item Desenvolver um sistema web para expor informações a respeito dos dados.
-		\item Estudar o impacto dessas tecnologias na política e sociedade brasileira.
+		\item Estudar o impacto dessas tecnologias nas políticas de transparência no Brasil.
 	\end{itemize}
 
 \section{Metodologia}
 
-	Este trabalho foi dividido em duas partes, a primeira teórica e a segunda prática. Na parte teórica foi realizado um estudo baseado em livros, artigos e páginas da \textit{web} sobre os assuntos relacionados a banco de dados, SGBD orientado a grafo, NoSQL, as leis que regem a CEAP e os impactos dessas iniciativas na politica. Já na parte prática foi desenvolvido um ETL para ler os arquivos que contém os dados das transações e popular o banco, em seguida foram realizadas consultas que buscam evidenciar os relacionamentos atrelados a cada transação, posteriormente foi desenvolvido um sistema web de forma que forneça as informações claramente a todos. Por fim, foi realizado uma análise dos resultados obtidos e conclusões finais.
+	Este trabalho foi dividido em duas partes, a primeira teórica e a segunda prática. Na parte teórica foi realizado um estudo baseado em livros, artigos e páginas da \textit{web} sobre os assuntos relacionados a banco de dados, SGBD orientado a grafo, NoSQL e etc. Já na parte prática foi desenvolvido um ETL para ler os arquivos que contém os dados das transações e popular o banco de dados, em seguida foram realizadas consultas que buscam evidenciar os relacionamentos atrelados a cada transação, posteriormente foi desenvolvido um sistema web de forma que forneça as informações claramente a todos. Por fim, foi realizado uma análise dos resultados obtidos e conclusões finais.
 
 \section{Estrutura do Trabalho}
 	Este trabalho está dividido nos seguintes capítulos:
@@ -30,6 +32,6 @@
 	\begin{itemize}
 		\item Capítulo 2: Introduzo os conceitos relacionados a grafos, necessários para a compreensão de um SGBD orientado a grafo. Forneço uma visão geral de SGBD NoSQL, apontando suas principais características e utilidades. Finalmente explico as características de um SGBD orientado a grafo e sua evolução.
 		\item Capítulo 3: Nesse capítulo apresento os meios utilizados para resolver o problema, e uma explicação mais detalhada de todo o processo de desenvolvimento e como as tecnologias auxiliaram nessa resolução.
-		\item Capítulo 4: Apresento a análise dos resultados obtidos ao realizar as consultas e do sistema desenvolvido para fornecer as informações. Essa análise abrange tanto os resultados das consultas, ou seja, se foi possível identificar uma transação ilícita, quanto o impacto da divulgação desse tipo de informação na política brasileira.
+		\item Capítulo 4: Apresento a análise dos resultados obtidos ao realizar as consultas e do sistema desenvolvido para fornecer as informações. Essa análise abrange tanto os resultados das consultas, ou seja, se foi possível identificar uma transação ilícita, quanto o impacto da divulgação desse tipo de informação nas políticas de transparência no Brasil.
 		\item Capítulo 5: Finalmente, apresento minhas conclusões do trabalho realizado e sugestões para trabalhos futuros relacionados com a área.
 	\end{itemize}

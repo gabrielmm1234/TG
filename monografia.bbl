@@ -13,6 +13,15 @@
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 
 \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem {diirrcombate}
+\btxnamefont {\btxlastnamefont {Diirr}, Bruna} \btxandlong {}\ \btxnamefont
+  {Claudia \btxlastnamefont {Cappelli}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Combate {\`a} corrup{\c{c}}{\~a}o atrav{\'e}s de
+  relacionamentos interorganizacionais transparentes}{Combate {\`a}
+  corrup{\c{c}}{\~a}o atrav{\'e}s de relacionamentos interorganizacionais
+  transparentes}}.
+\newblock 2017.
+
 \bibitem {abramo2000relaccoes}
 \btxnamefont {\btxlastnamefont {Abramo}, Cl{\'a}udio\btxfnamespacelong
   Weber}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Rela{\c{c}}{\~o}es

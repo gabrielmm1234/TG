@@ -4,49 +4,50 @@ The top-level auxiliary file: monografia.aux
 The style file: babunsrt.bst
 Database file #1: bibliografia.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Warning--empty language in abramo2000relaccoes
+Warning--empty language in diirrcombate
+Warning--empty journal in diirrcombate
 Warning--there's a number but no volume in abramo2000relaccoes
 Warning--empty journal in kauremerging
 Warning--empty year in kauremerging
-You've used 43 entries,
+You've used 44 entries,
             2465 wiz_defined-function locations,
-            820 strings with 12932 characters,
-and the built_in function-call counts, 12081 in all, are:
-= -- 985
-> -- 325
+            824 strings with 13081 characters,
+and the built_in function-call counts, 12295 in all, are:
+= -- 999
+> -- 333
 < -- 9
-+ -- 131
-- -- 88
-* -- 1239
-:= -- 1509
-add.period$ -- 116
-call.type$ -- 43
-change.case$ -- 39
++ -- 134
+- -- 90
+* -- 1262
+:= -- 1538
+add.period$ -- 118
+call.type$ -- 44
+change.case$ -- 40
 chr.to.int$ -- 0
-cite$ -- 47
-duplicate$ -- 734
-empty$ -- 1495
-format.name$ -- 238
-if$ -- 2788
+cite$ -- 49
+duplicate$ -- 749
+empty$ -- 1520
+format.name$ -- 244
+if$ -- 2834
 int.to.chr$ -- 0
-int.to.str$ -- 43
-missing$ -- 40
-newline$ -- 210
-num.names$ -- 44
-pop$ -- 338
+int.to.str$ -- 44
+missing$ -- 42
+newline$ -- 214
+num.names$ -- 45
+pop$ -- 345
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 272
+skip$ -- 278
 stack$ -- 0
 substring$ -- 410
-swap$ -- 335
+swap$ -- 340
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 81
-width$ -- 45
-write$ -- 463
-(There were 4 warnings)
+warning$ -- 5
+while$ -- 82
+width$ -- 46
+write$ -- 471
+(There were 5 warnings)

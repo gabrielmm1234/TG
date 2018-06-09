@@ -1,3 +1,4 @@
+\backcite {diirrcombate}{{1}{1}{chapter.1}}
 \backcite {abramo2000relaccoes}{{1}{1}{chapter.1}}
 \backcite {filgueiras2009tolerancia}{{1}{1}{chapter.1}}
 \backcite {Dbmspopularity}{{2}{1}{chapter.1}}
@@ -44,8 +45,8 @@
 \backcite {neo4jschemaoptional}{{15}{2.3.2}{table.caption.20}}
 \backcite {orientdbcreateproperty}{{15}{2.3.2}{table.caption.20}}
 \backcite {orientdblivequery}{{15}{2.3.2}{table.caption.20}}
-\backcite {neo4jcausal}{{17}{2.3.2}{lstnumber.-1.1}}
-\backcite {orientMapReduce}{{17}{2.3.2}{lstnumber.-1.1}}
+\backcite {neo4jcausal}{{17}{2.3.2}{lstnumber.2.1.1}}
+\backcite {orientMapReduce}{{17}{2.3.2}{lstnumber.2.1.1}}
 \backcite {orientStack}{{18}{2.3.3}{subsection.2.3.3}}
 \backcite {OrientDB}{{18}{2.4.1}{subsection.2.4.1}}
 \backcite {OrientDB}{{19}{2.4.1}{figure.caption.24}}

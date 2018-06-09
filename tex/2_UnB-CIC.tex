@@ -26,7 +26,7 @@ Este capítulo descreve toda a fundamentação teórica por trás das tecnologia
 	
 \begin{figure}[H]
 	\centering
-    \includegraphics[width=0.4\textwidth]{simple_graph}
+    \includegraphics[width=0.8\textwidth]{simple_graph}
     \caption{Exemplo de uma estrutura de grafo}
     \label{graph_definition}
 \end{figure}
@@ -47,7 +47,7 @@ Este capítulo descreve toda a fundamentação teórica por trás das tecnologia
 
 	Dessa forma, um grafo é definido como simples se não possui laços nem duas ou mais arestas ligando dois vértices \cite{bondy1976graph}. Portanto, o grafo \ref{graph_loop} não é um grafo simples, enquanto o grafo \ref{graph_definition} é um grafo simples. Uma propriedade básica de um vértice é o seu grau. O grau de um vértice é a quantidade de aretas incidentes nele. Por exemplo, no grafo \ref{graph_definition} o vértice \(a\) possui grau 2.
 	
-	O grafo \ref{graph_definition}, mostra uma categoria de grafos que não faz distinção entre a orientação das arestas. Um grafo que evidencia a orientação das arestas é dito grafo orientado, como mostra a figura a seguir:
+	O grafo \ref{graph_definition}, mostra uma categoria de grafos que não faz distinção entre a orientação das arestas. Um grafo que evidencia a orientação das arestas é dito grafo orientado, como mostra a Figura \ref{graph_direction}:
 	
 \begin{figure}[H]
 	\centering
@@ -256,8 +256,8 @@ Concorrência               & Sim                                         & Sim 
 	
 	Uma diferença importante entre os dois SGBD é em relaçao a linguagem de consulta utilizada. O OrientDB possui uma linguagem de consulta derivada da linguagem SQL, isso é bastante vantajoso para aqueles que vem do universo de SGBD relacional, enquanto o Neo4j utiliza uma linguagem de consulta própria conhecida como cypher. O código abaixo exemplifica uma consulta no OrientDB e sua semelhanças com consultas de bancos de dados relacionais:
 	
-\begin{lstlisting}
-	SELECT FROM Person WHERE name LIKE 'Luk%'
+\begin{lstlisting}[label={lst:labelSQL}, caption={Exemplo de consulta no SGBD OrientDB},captionpos=b, language=sql]
+SELECT FROM Person WHERE name LIKE 'Luk%'
 \end{lstlisting}
 
 	A consulta acima retorna todas as instâncias da classe Person onde o atributo name começa com a \textit{string} 'Luk'. Finalmente, no que diz respeito a arquitetura distribuída, o OrientDB possui suporte em sua versão open source, enquanto o Neo4j possui suporte somente na licensa comercial. O OrientDB utiliza o método de \textit{sharding} para separar os dados em clusters diferentes, enquanto o Neo4j não possui suporte para esse tipo de funcionalidade. Em relação aos métodos de replicação o OrientDB trabalha com o modelo multi-master, discutido em detalhes na seção \ref{orient_distributed}, e o Neo4j utiliza o método \textit{Causal Clustering using Raft protocol} \cite{neo4jcausal}. Por possuir suporte a funcionalidade de \textit{sharding}, o OrientDB também suporta operações de MapReduce sem o uso de tecnologias como o Hadoop ou Spark. Essa funcionalidade é totalmente transparente para o desenvolvedor, de forma que quando uma consulta envolve múltiplos clusters, o SGBD executa a query sobre cada nó (Operação de Map) e em seguida realiza o \textit{merge} dos resultados (Operação de reduce) \cite{orientMapReduce}.
