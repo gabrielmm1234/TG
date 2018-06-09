@@ -41,10 +41,10 @@
 \contentsline {section}{\numberline {3.2}Consultas para detec\IeC {\c c}\IeC {\~a}o de fraudes}{32}{section.3.2}
 \contentsline {section}{\numberline {3.3}Sistema Web}{34}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}MVC}{35}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Comunica\IeC {\c c}\IeC {\~a}o com o OrientDB}{35}{subsection.3.3.2}
-\contentsline {chapter}{\numberline {4}CEAP: An\IeC {\'a}lise dos resultados obtidos}{36}{chapter.4}
-\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{37}{chapter.5}
-\contentsline {chapter}{Refer\^encias}{38}{section*.37}
+\contentsline {subsection}{\numberline {3.3.2}Comunica\IeC {\c c}\IeC {\~a}o com o OrientDB}{36}{subsection.3.3.2}
+\contentsline {chapter}{\numberline {4}CEAP: An\IeC {\'a}lise dos resultados obtidos}{37}{chapter.4}
+\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{38}{chapter.5}
+\contentsline {chapter}{Refer\^encias}{39}{section*.37}
 \select@language {american}
 \select@language {american}
 \select@language {american}

@@ -409,7 +409,7 @@ SELECT FROM Person WHERE name LIKE 'Luk%'
 \end{figure}
 
 
-\subsection{Interface \textit{REST} no OrientDB}
+\subsection{Interface \textit{REST} no OrientDB} \label{rest_orient_db}
 	O SGBD orientado a grafos utilizado no estudo de caso foi o OrientDB, descrito em mais detalhes na seção \ref{OrientDBMain}. O OrientDB fornece uma interface \textit{REST} de forma que as aplicações se comuniquem com o SGBD de forma eficiente e escalável. Essa interface utiliza os métodos do protocolo \textit{HTTP} para realizar operações nos dados, como descrito abaixo:
 	
 \begin{itemize}
@@ -421,7 +421,7 @@ SELECT FROM Person WHERE name LIKE 'Luk%'
 
 	Dessa forma, uma aplicação que deseja se conectar ao SGBD utilizando a interface \textit{REST}, realizaria o seguinte comando: 
 	
-\begin{lstlisting}
+\begin{lstlisting}[label={lst:label_rest_get}, caption={Exemplo de conexão com o OrientDB utilizando o protocolo HTTP.},captionpos=b]
 GET http://{{server}}:{{port}}/connect/{{database}}
 \end{lstlisting}
 
@@ -429,7 +429,7 @@ GET http://{{server}}:{{port}}/connect/{{database}}
 	
 	Se a aplicação deseja, por exemplo, obter todos os parlamentares persistidos no banco de dados, realizaria o seguinte comando:
 	
-\begin{lstlisting}
+\begin{lstlisting}[label={lst:label_rest_get_parlamentar}, caption={Exemplo de consulta no OrientDB utilizando o protocolo HTTP.},captionpos=b]
 GET http://{{server}}:{{port}}/query/{{database}}/{{language}}/SELECT 
 from Parlamentar
 \end{lstlisting}

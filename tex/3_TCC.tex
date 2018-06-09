@@ -128,7 +128,7 @@ Como mostra a Figura \ref{fig:socios}, a consulta consegue localizar um padrão 
 
 	O sistema web desenvolvido tem dois importantes objetivos, que são fornecer informações a respeito dos dados do TSE e da CEAP, e criar um meio que a sociedade possa contribuir com dados que não são disponibilizados publicamente pelo governo e orgãos brasileiros. A partir desses dados fornecidos, será possível verificar se algum deputado realizou ou não transações seguindo padrões fraudulentos como os da consulta \ref{lst:label2}.
 	
-	O sistema foi desenvolvido utilizando o \textit{framework} Ruby on Rails, sendo um software \textit{open source} que é baseado no padrão de arquitetura \textit{MVC (Model-View-Controller)}.
+	O sistema foi desenvolvido utilizando o \textit{framework} Ruby on Rails, sendo um software \textit{open source} que é baseado no padrão de arquitetura \textit{MVC (Model-View-Controller)}. O código do sistema desenvolvido também pode ser encontrado no github\footnote{https://github.com/gabrielmm1234/ceap}.
 
 \subsection{MVC} \label{mvc-subsection}
 
@@ -144,4 +144,18 @@ Como mostra a Figura \ref{fig:socios}, a consulta consegue localizar um padrão 
 Portanto, no sistema desenvolvido as \textit{views} enviam requisições aos \textit{controllers}, que por sua vez vão se comunicar com o OrientDB e recuperar ou alterar o estado dos dados armazenados. Em seguida os \textit{controllers} renderizam as \textit{views} com as informações necessárias.
 
 \subsection{Comunicação com o OrientDB} \label{orient-communication}
+
+	Como foi mencionado na seção \ref{rest_orient_db}, o OrientDB fornece uma interface \textit{REST} de forma que as aplicações se comuniquem com o SGBD de forma eficiente e escalável. Dessa forma, o sistema web desenvolvido se comunica com o OrientBD utilizando o protocolo HTTP e seguindo estilo arquitetural REST.
+	
+	Em geral, o fluxo de informação no sistema se desenvolve da seguinte forma: Na camada de apresentação (\textit{view}), é enviado uma requisição de alguma informação para uma certa controladora. A controladora, se comunica com o OrientDB por meio do protocolo HTTP, como mostra a consulta \ref{lst:http_rails_orient_db}:
+
+\begin{lstlisting}[label={lst:http_rails_orient_db}, caption={Exemplo de consulta no OrientDB para retornar informações da classe de empresas fornecedoras.},captionpos=b]
+response = HTTParty.get('http://localhost:2481/class/
+			CotasParlamentares/EmpresaFornecedora', 
+			basic_auth: auth)
+\end{lstlisting}
+
+A consulta \ref{lst:http_rails_orient_db}, mostra uma requisição HTTP feita ao OrientDB, que está rodando na máquina local na porta 2481. Essa consulta é feita buscando informações da classe "EmpresaFornecedora" do banco de dados "CotasParlamentares". Além disso é necessário fornecer informações de autenticação para consultar esses dados.
+
+Ao receber a resposta no formato \textit{JSON}, a controladora renderiza uma nova tela na camada de apresentação com as informações obtidas por meio da consulta \ref{lst:http_rails_orient_db}, por exemplo. Vale ressaltar, que depois de receber a resposta do OrientDB e renderizar uma nova tela com informações, são feitos processamentos sobre os dados da resposta para que a informação esteja disponível em um formato adequado para ser apresentada.
 
