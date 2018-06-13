@@ -46,7 +46,8 @@
 \contentsline {section}{\numberline {4.1}Consultas CEAP - TSE}{37}{section.4.1}
 \contentsline {section}{\numberline {4.2}Consultas CEAP para detectar fraudes}{41}{section.4.2}
 \contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{42}{chapter.5}
-\contentsline {chapter}{Refer\^encias}{43}{section*.42}
+\contentsline {section}{\numberline {5.1}Trabalhos Futuros}{43}{section.5.1}
+\contentsline {chapter}{Refer\^encias}{44}{section*.42}
 \select@language {american}
 \select@language {american}
 \select@language {american}
