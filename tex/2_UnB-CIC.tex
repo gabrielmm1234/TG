@@ -11,101 +11,95 @@
 #1\end{minipage}}%
 \\\vspace{\baselineskip}}%
 
-Este capítulo descreve toda a fundamentação teórica por trás das tecnologias utilizadas na implementação do estudo de caso. Inicialmente, explico os conceitos gerais relacionados a teoria de grafos, em seguida, aponto as principais características e utilidades dos SGBDs NoSQL. Posteriormente, aponto as características e particularidades de um SGBD orientado a grafos, junto com uma explicação acerca do SGBD escolhido para o trabalho que é o OrientDB. Por fim, explico um pouco sobre a tecnologia REST utilizada para a comunicação entre o sistema desenvolvido e o OrientDB.
+Este capítulo descreve a fundamentação teórica por trás das tecnologias utilizadas na implementação desta monografia. Inicialmente, são apresentados os conceitos gerais relacionados a teoria de grafos, em seguida, aponto as principais características e utilidades dos SGBDs NoSQL. Posteriormente, apontam-se as características e particularidades de um SGBD orientado a grafos, junto com uma explicação acerca do SGBD escolhido para o trabalho que é o OrientDB. Por fim, explica-se um pouco sobre a tecnologia REST utilizada para a comunicação entre o sistema desenvolvido e o OrientDB.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Teoria de Grafos} \label{graph_theory}
-	Essa seção, aborda a teoria por trás da estrutura de um grafo, necessária para a compreensão do funcionamento de um SGBD orientado a grafos. Qualquer SGBD orientado a grafos utiliza algum dos conceitos aqui descritos para a construção do banco de dados.
+	Esta seção, aborda a teoria por trás da estrutura de um grafo, necessária para a compreensão do funcionamento de um SGBD orientado a grafos. Qualquer SGBD orientado a grafos utiliza algum dos conceitos aqui descritos para a construção do banco de dados.
 
-\subsection{Definição de um grafo}
-	A definição formal de um grafo pode ser feita da seguinte forma: Um grafo \(G\) é uma tripla ordenada \((V(G), E(G), \psi g)\), que consiste de um conjunto não vazio \(V(G)\) de vértices, um conjunto \(E(G)\), disjunto do conjunto \(V(G)\), de arestas, e uma função de incidência \(\psi g\) que associa cada aresta de \(G\) um par não ordenado (não necessáriamente distinto) de vértices de \(G\). Dessa forma, se \(e\) é uma aresta e \(u\) e \(v\) são vértices, de tal modo que \(\psi g(e) = uv\), então, diz-se que \(e\) faz a união de \(u\) e \(v\); Os vértices \(u\) e \(v\) são chamados de extremidades de \(e\) \cite{bondy1976graph}.
-	
-	A figura \ref{graph_definition} esclarece a definição fornecida no parágrafo acima:
+\subsection{Definição de um Grafo}
+	A definição formal de um grafo pode ser feita da seguinte forma: um grafo \(G\) é uma tripla ordenada \((V(G), E(G), \psi g)\), que consiste de um conjunto não vazio \(V(G)\) de vértices, um conjunto \(E(G)\), disjunto do conjunto \(V(G)\), de arestas, e uma função de incidência \(\psi g\) que associa cada aresta de \(G\) um par não ordenado (não necessáriamente distinto) de vértices de \(G\). Dessa forma, se \(e\) é uma aresta, \(u\) e \(v\) são vértices, de tal modo que \(\psi g(e) = uv\), então, diz-se que \(e\) faz a união de \(u\) e \(v\); Os vértices \(u\) e \(v\) são chamados de extremidades de \(e\) \cite{bondy1976graph}. A Figura \ref{graph_definition} apresenta um exemplo de um grafo:
 	
 \begin{figure}[H]
 	\centering
     \includegraphics[width=0.8\textwidth]{simple_graph}
-    \caption{Exemplo de uma estrutura de grafo}
+    \caption{Exemplo de uma estrutura de grafo.}
     \label{graph_definition}
 \end{figure}
 
-	Portanto, o conjunto \(V(G)\) de vértices é não vazio e composto por três vértices, \(V(G)=\{a,b,c\}\). Já o conjunto \(E(G)\) de arestas é composto por três arestas, \(E(G)=\{e1,e2,e3\}\). De forma que a função de incidência \(\psi g\) é definida da seguinte maneira: \(\psi g(e1)= ab\), \(\psi g(e2)= ac\) e \(\psi g(e3)= bc\). Portanto, a definição formal do grafo acima é \((\{a,b,c\}, \{e1,e2,e3\}, \psi g(e1)= ab\), \(\psi g(e2)= ac\) \(\psi g(e3)= bc)\).
+	Portanto, o conjunto \(V(G)\) de vértices é não vazio e composto por três vértices, \(V(G)=\{a,b,c\}\). Já o conjunto \(E(G)\) de arestas é composto por três arestas, \(E(G)=\{e1,e2,e3\}\). De forma que a função de incidência \(\psi g\) é definida da seguinte maneira: \(\psi g(e1)= ab\), \(\psi g(e2)= ac\) e \(\psi g(e3)= bc\). Portanto, a definição formal do grafo da Figura \ref{graph_definition} é \((\{a,b,c\}, \{e1,e2,e3\}, \psi g(e1)= ab\), \(\psi g(e2)= ac\) \(\psi g(e3)= bc)\).
 	
-\subsection{Propriedades de um grafo}
-	Um grafo possui essa nomenclatura pois pode ser representado graficamente, e a partir dessa representação é possível observar algumas propriedades importantes. Como mostra a figura \ref{graph_definition}, cada vértice é representado por um ponto, e cada aresta é representada por uma linha, juntando dois pontos \cite{bondy1976graph}. Todo grafo possui as propriedades de ordem e tamanho. A ordem de um grafo se refere ao número de vértices, ou seja, a quantidade de elementos no conjunto \(V(G)\), enquanto o tamanho de um grafo é referente ao número de arestas, ou seja, a quantidade de elementos no conjunto \(E(G)\).
+\subsection{Propriedades de um Grafo}
+	Como ilustrado na Figura \ref{graph_definition}, cada vértice é representado por um ponto, e cada aresta é representada por uma linha, juntando dois pontos \cite{bondy1976graph}. Todo grafo possui as propriedades de ordem e tamanho. A ordem de um grafo se refere ao número de vértices, ou seja, a quantidade de elementos no conjunto \(V(G)\), enquanto o tamanho de um grafo é referente ao número de arestas, ou seja, a quantidade de elementos no conjunto \(E(G)\).
 	
-	Boa parte da teoria de grafos é baseada em uma categoria específica que é a categoria de grafos simples. Antes de definir um grafo como simples, é necessário definir o que é um laço em um grafo. Intuitivamente, um laço é quando a aresta sai de um vértice e termina no próprio vértice. A figura \ref{graph_loop} exemplifica um laço em grafo: 
+	Uma parte da teoria de grafos é baseada em uma categoria específica que é a categoria de grafos simples. Antes de definir um grafo como simples, é necessário definir o que é um laço em um grafo. Intuitivamente, um laço é quando a aresta sai de um vértice e termina no próprio vértice. A Figura \ref{graph_loop} exemplifica um laço em grafo.
 
 \begin{figure}[H]
 	\centering
     \includegraphics[width=0.4\textwidth]{graph_loop}
-    \caption{Exemplo de uma estrutura de grafo com presença de laço}
+    \caption{Exemplo de uma estrutura de grafo com presença de laço.}
     \label{graph_loop}
 \end{figure}
 
-	Dessa forma, um grafo é definido como simples se não possui laços nem duas ou mais arestas ligando dois vértices \cite{bondy1976graph}. Portanto, o grafo \ref{graph_loop} não é um grafo simples, enquanto o grafo \ref{graph_definition} é um grafo simples. Uma propriedade básica de um vértice é o seu grau. O grau de um vértice é a quantidade de aretas incidentes nele. Por exemplo, no grafo \ref{graph_definition} o vértice \(a\) possui grau 2.
+	Dessa forma, um grafo é definido como simples se não possui laços nem duas ou mais arestas ligando dois vértices \cite{bondy1976graph}. Portanto, o grafo ilustrado na Figura \ref{graph_loop} não é um grafo simples, enquanto o grafo apresentado na Figura \ref{graph_definition} é um grafo simples. Uma propriedade básica de um vértice é o seu grau. O grau de um vértice é a quantidade de aretas incidentes nele. Por exemplo, no grafo da Figura \ref{graph_definition} o vértice \(a\) possui grau 2.
 	
-	O grafo \ref{graph_definition}, mostra uma categoria de grafos que não faz distinção entre a orientação das arestas. Um grafo que evidencia a orientação das arestas é dito grafo orientado, como mostra a Figura \ref{graph_direction}:
+	O grafo da Figura \ref{graph_definition}, mostra uma categoria de grafos que não faz distinção entre a orientação das arestas. Um grafo que evidencia a orientação das arestas é dito grafo orientado, como mostra a Figura \ref{graph_direction}.
 	
 \begin{figure}[H]
 	\centering
     \includegraphics[width=0.4\textwidth]{direction}
-    \caption{Exemplo de uma estrutura de grafo direcionado}
+    \caption{Exemplo de uma estrutura de grafo direcionado.}
     \label{graph_direction}
 \end{figure}
 
-	O OrientDB utiliza grafos orientados para representar os dados. Alguns relacionamentos exigem que a direção da aresta aponte para os dois lados, o OrientDB representa essa característica com somente uma aresta e uma seta em cada extremidade, mas é importante ressaltar que o correto é representar com duas arestas, uma em cada sentido, como mostra a figura \ref{graph_direction} nas arestas 1 e 2.
+	O OrientDB utiliza grafos orientados para representar os dados. Alguns relacionamentos exigem que a direção da aresta aponte para os dois lados, o OrientDB representa essa característica com somente uma aresta e uma seta em cada extremidade, mas é importante ressaltar que o é mais comum representar com duas arestas, uma em cada sentido, como mostra a Figura \ref{graph_direction} nas arestas 1 e 2.
 	
 	Dentro do universo de teoria de grafos, existem ainda diversas outras propriedades tais como: Isomorfismo entre grafos, subgrafos, caminho, caminho fechado e etc. Essas propriedades fornecem a base para a compreensão e resolução de problemas importantes para a computação, como o problema de menor caminho, que busca encontrar o menor caminho entre dois vértices em um grafo com pesos. O SGBD utilizado nesse trabalho o OrientDB, fornece uma solução para o problema de menor caminho, e conhecer a teoria por trás do problema faz com que o usuário possa usar da melhor maneira essa solução \cite{orientShortestPath}.
 	
 \subsection{Grafos em SGBD NoSQL}
-	A teoria de grafos é um campo vasto na ciência da computação, e ao utilizar essa estrutura para armazenar dados, cada SGBD escolhe a estrutura mais adequada para atingir os objetivos definidos. O trabalho realizado por Angles \cite{angles2012comparison}, e citado por Gustavo \cite{mdgnosql} mostra que os SGBD NoSQL orientado a grafos podem ser classificados de acordo com as características de seus vértices, arestas e do próprio grafo: 
-	
-	Classificação pelas características do grafo:
+	A teoria de grafos é um campo vasto na ciência da computação, e ao utilizar essa estrutura para armazenar dados, cada SGBD escolhe a estrutura mais adequada para atingir os objetivos definidos. O trabalho realizado por Angles \cite{angles2012comparison}, e citado por Gustavo \cite{mdgnosql} mostra que os SGBD NoSQL orientado a grafos podem ser classificados de acordo com as características de seus vértices, arestas e do próprio grafo, como:
 \begin{itemize}
-		\item Grafo simples: Nesse formato, cada vértice e aresta possui somente um rótulo que os identifica.
-		\item Hipergrafo: Nesse formato, é permitido que suas arestas apontem para mais de dois vértices.
-		\item Grafo com atributos: Nesse formato, é permitido que os vértices possuam atributos, tais atributos representam a informação de um certo dado armazenado.
-		\item Grafo aninhado: Nesse formato, o grafo permite que um vértice seja outro grafo.
+		\item Grafo simples: cada vértice e aresta possui somente um rótulo que os identifica.
+		\item Hipergrafo: é permitido que suas arestas apontem para mais de dois vértices.
+		\item Grafo com atributos: é permitido que os vértices possuam atributos, tais atributos representam a informação de um certo dado armazenado.
+		\item Grafo aninhado: o grafo permite que um vértice seja outro grafo.
 \end{itemize}
 
-	Classificação pelas características do vértice:
+	Os grafos também pode ser classificados pelas características do vértice:
 \begin{itemize}
-		\item Vértice rotulado: Nesse formato, cada vértice possui somente um rótulo que o identifica.
-		\item Vértice com atributo: Nesse formato, o vértice possui atributos como um par chave-valor, por exemplo.
+		\item Vértice rotulado: cada vértice possui somente um rótulo que o identifica.
+		\item Vértice com atributo: o vértice possui atributos como um par chave-valor, por exemplo.
 \end{itemize}
 
-	Classificação pelas características da aresta:
+	Por fim os grafos pode ser classificados pelas suas aresta como:
 \begin{itemize}
-		\item Aresta rotulada(direcionada ou não): Nesse formato, cada aresta possui somente um rótulo que o identifica e expressa uma informação, como o relacionamento.
-		\item Aresta com atributo(direcionada ou não): Nesse formato, cada aresta possui atributos sobre o vínculo.
+		\item Aresta rotulada(direcionada ou não): cada aresta possui somente um rótulo que o identifica e expressa uma informação, como o relacionamento.
+		\item Aresta com atributo(direcionada ou não): cada aresta possui atributos sobre o vínculo.
 \end{itemize}
 
-	De acordo com essas classificações, tanto o Neo4j quanto o OrientDB utilizam a estrutura de vértices e arestas com atributos para organizar o armazenamento de dados. Conforme Gustavo \cite{mdgnosql} aponta em sua tese de mestrado, essa estrutura facilita o acesso as informações do vértice, uma vez que os atributos podem ser armazenados junto com os próprios vértices e arestas. Entranto, é importante tratar com cuidado essa propriedade, pois ao adicionar uma informação como atributo, em vez de adicionar como vértice, podem surgir problemas de identificação de relacionamentos compartilhados, pois o atributo vai estar repetido em outra instância, e para identificar esse relacionamento se faz necessário uma consulta parecida com a de um SGBD relacional \cite{mdgnosql}.
-	
-	Uma comparação entre o Neo4j e OrientDB é feita em mais detalhes na seção \ref{comparison_graph_nosql}, levando em conta outros aspectos além do formato de grafo utilizado para o armazenamento dos dados.
+	De acordo com essas classificações, o OrientDB utiliza a estrutura de vértices e arestas com atributos para organizar o armazenamento de dados. Conforme Gustavo em \cite{mdgnosql}, essa estrutura facilita o acesso as informações do vértice, uma vez que os atributos podem ser armazenados junto com os próprios vértices e arestas. Uma comparação entre o Neo4j e OrientDB é feita em mais detalhes na Seção \ref{comparison_graph_nosql}, levando em conta outros aspectos além do formato de grafo utilizado para o armazenamento dos dados.
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{SGBD NoSQL}
-	Essa seção aborda a categoria de bancos de dados não relacionais. Inicialmente, realizo uma introdução sobre o assunto, para em seguida explicitar as principais características e categorias dentro desse grupo de bancos de dados.
+	Esta seção aborda a categoria de bancos de dados não relacionais, chamados de NoSQL (Not only SQL). Inicialmente, é feita uma introdução sobre o assunto, para em seguida explicitar as principais características e categorias dentro desse grupo de bancos de dados.
 	
 \subsection{Introdução}
-	O termo NoSQL foi utilizado na literatura pela primeira vez por Carlo Strozzi em 1998 como o nome de um banco de dados que ele estava desenvolvendo na época \cite{FirstNoSQL}. Curiosamente, é um banco relacional que não possuia interface SQL, portanto, NoSQL. Entre o período dos anos de 2000 e 2005 o universo dos SGBD NoSQL começou a aumentar bastante, o SGBD baseado em grafo Neo4j começou a ser desenvolvido no ano de 2000, o SGBD da Google BigTable\cite{Chang:2008:BDS:1365815.1365816} começa em 2004 e em seguida o CouchDB se inicia por volta de 2005. Porém, todas essas tecnologias não eram na época categorizadas como NoSQL, somente em 2009 o termo foi reintroduzido por Johan Oskarsson ao organizar um evento para discutir sobre banco de dados não relacionais, distribuídos e de código aberto, e a partir desse momento o termo passa a ser usado para categorizar os bancos de dados não relacionais.
+	O termo NoSQL foi utilizado na literatura pela primeira vez por Carlo Strozzi em 1998 como o nome de um banco de dados que ele estava desenvolvendo na época \cite{FirstNoSQL}. Curiosamente, é um banco relacional que não possuia interface SQL, portanto, NoSQL. Entre o período dos anos de 2000 e 2005 o número dos SGBD NoSQL começou a aumentar, o SGBD baseado em grafo Neo4j começou a ser desenvolvido no ano de 2000, o SGBD da Google BigTable\cite{Chang:2008:BDS:1365815.1365816} começa em 2004 e em seguida o CouchDB se inicia por volta de 2005. Porém, todas essas tecnologias não eram na época categorizadas como NoSQL, somente em 2009 o termo foi reintroduzido por Eric Evans, em um evento organizado por Johan Oskarsson, para discutir sobre banco de dados não relacionais, distribuídos e de código aberto, e a partir desse momento o termo passou a ser usado para categorizar os bancos de dados não relacionais.
 	
 	O termo NoSQL gera muita confusão pois leva a entender que os bancos de dados nessa categoria não utilizam a linguagem SQL. Porém, o termo costuma ser utilizado como \textit{Not only SQL}, e demonstra que tais sistemas podem suportar também linguagens de consultas baseadas em SQL. O aspecto mais importante por trás dos SGBD NoSQL é o motivo de seus surgimentos. No início dos anos 2000, a forma como os usuários começaram a interagir na internet começou a evoluir e consequentemente os sistemas e aplicações passaram a gerar e consumir cada vez mais dados e informações. Esse crescimento na geração e consumo de dados foi enorme, e por isso os especialistas necessitavam de tecnologias que atendessem melhor suas necessidades, desse cenário começaram a nascer os primeiros SGBD NoSQL como o BigTable da google e o Dynamo da Amazon\cite{DeCandia:2007:DAH:1323293.1294281}.
 	
 \subsection{Características de um SGBD NoSQL}
-	Como foi mencionado acima, por volta dos anos 2000 começou a nascer a necessidade de novas tecnologias na área de banco de dados. Os sistemas precisavam de boa escalabilidade horizontal para operações de forma distribuída, entre outras coisas. Vários aspectos relacionados a categoria dos SGBD NoSQL são ainda abertos e não possuem um consenso. O trabalho feito por Rick Cattell\cite{Cattell:2011:SSN:1978915.1978919} aglomerou algumas características que geralmente se encontram nesse tipo de banco de dados: 
+	Como foi mencionado anteriormente, por volta dos anos 2000 começou a nascer a necessidade de novas tecnologias na área de banco de dados. Os sistemas precisavam de boa escalabilidade horizontal para operações de forma distribuída, entre outras características. Vários aspectos relacionados a categoria dos SGBD NoSQL são ainda abertos e não possuem um consenso. O trabalho feito por Rick Cattell\cite{Cattell:2011:SSN:1978915.1978919} aglomerou algumas características que geralmente se encontram nesse tipo de banco de dados: 
 	\begin{itemize}
-		\item Habilidade de escalar horizontalmente operações simples através de vários servidores
-		\item Habilidade de replicar e distribuir os dados através de vários servidores
-		\item Um modelo de concorrência mais flexível que as transações ACID presentes em sistemas relacionais.
-		\item Uso eficiente de índices distribuidos e da memória RAM para armazenar os dados
-		\item Habilidade de adicionar dinamicamente novos atributos a um registro
+		\item Habilidade de escalar horizontalmente operações simples através de vários servidores;
+		\item Habilidade de replicar e distribuir os dados através de vários servidores;
+		\item Um modelo de concorrência mais flexível que as transações ACID presentes em sistemas relacionais;
+		\item Uso eficiente de índices distribuidos e da memória RAM para armazenar os dados;
+		\item Habilidade de adicionar dinamicamente novos atributos a um registro;
 	\end{itemize}
 	
 	Porém, é importante ressaltar que nem todas essas características precisam ser atendidas para fazer parte dessa categoria. Sendo que também existem outras características importantes observadas em alguns sistemas como por exemplo, disponibilidade e consistência dos dados, níveis de flexibilidade para o esquema do banco de dados e etc.
@@ -119,12 +113,12 @@ Este capítulo descreve toda a fundamentação teórica por trás das tecnologia
 		\item Durabilidade: A durabilidade garante que as informações salvas após cada transação permaneçam no banco de dados. Os dados não podem desaparecer em nenhum momento e devem permanecer persistidos independente de qualquer falha.
 	\end{itemize}
 	
-	Esse formato é utilizado por bancos de dados relacionais, e atende bem uma boa parte de sistemas e aplicações nos dias de hoje, como é o caso de sistemas bancários por exemplo, que necessitam dessas propriedades para garantir a integridades das informações de seus clientes.
+	O ACID é utilizado por bancos de dados relacionais, e atende bem uma boa parte de sistemas e aplicações nos dias de hoje, como é o caso de sistemas bancários por exemplo, que necessitam dessas propriedades para garantir a integridades das informações de seus clientes.
 	
-	O mais importante a se perceber aqui é que nem toda aplicação precisa necessariamente desse controle de concorrência elaborado. No caso de bancos é de suma importância esse tipo de controle, agora em uma aplicação de alta disponibilidade uma propriedade como a consistência pode ser um pouco mais fraca. Portanto, para atender a essas novas demandas, nasceu o modelo de transações BASE\cite{Pritchett:2008:BAA:1394127.1394128} que busca fornecer maior flexibilidade para esses novos sistemas. O BASE tem como característica em vez de exigir consistência após cada transação, é suficiente para o banco de dados estar eventualmente consistente. Existe um teorema famoso feito por Eric Brewer conhecido como Teorema CAP\cite{Brewer:2010:CFT:1835698.1835701}, que demonstra o trade-off entre consistência, disponibilidade e tolerância a particionamento. Eric diz que se for necessário essas três características, é necessário escolher somente duas delas. Portanto no modelo BASE é possíve escolher tolerância a particionamento e disponibilidade e abrir mão de uma alta consistência dos dados. O acrônimo BASE vem das três seguintes características:
+	Todavia, nem toda aplicação precisa necessariamente desse controle de concorrência das propriedades ACID. No caso de transações financeiras é de suma importância esse tipo de controle, agora em uma aplicação de alta disponibilidade uma propriedade como a consistência pode ser um pouco mais fraca. Portanto, para atender a essas novas demandas, nasceu o modelo de transações BASE\cite{Pritchett:2008:BAA:1394127.1394128} que busca fornecer maior flexibilidade para esses novos sistemas. O BASE tem como característica em vez de exigir consistência após cada transação, é suficiente para o banco de dados estar eventualmente consistente. O Teorema CAP\cite{Brewer:2010:CFT:1835698.1835701}, demonstra o trade-off entre consistência, disponibilidade e tolerância a particionamento. Eric Brewer, autor deste teorema, diz que em um sistema distribuído dentre essas três características, só é possível escolher duas delas. Portanto no modelo BASE é possível escolher tolerância a particionamento e disponibilidade e abrir mão de uma alta consistência dos dados. O acrônimo BASE vem das três seguintes características:
 	\begin{itemize}
-		\item \textit{Basic Availability}: Essa propriedade no fundo quer dizer que o banco de dados aparenta funcionar a maior parte do tempo.
-		\item \textit{Soft state}: Essa propriedade quer dizer que as bases não precisam estar sempre consistentes, nem as réplicas precisam estar consistentes o tempo inteiro. Ou seja, o estado do sistema é volátil.
+		\item \textit{Basic Availability}: Essa propriedade quer dizer que o banco de dados aparenta funcionar a maior parte do tempo.
+		\item \textit{Soft state}: significa que as bases não precisam estar sempre consistentes, nem as réplicas precisam estar consistentes o tempo inteiro. Ou seja, o estado do sistema é volátil.
 		\item \textit{Eventual consistency}: Essa propriedade diz que as bases de dados vão ficar eventualmente consistentes no futuro. 
 	\end{itemize}
 	
@@ -134,14 +128,19 @@ Este capítulo descreve toda a fundamentação teórica por trás das tecnologia
 \subsubsection{SGBD NoSQL por chave/valor}
 	Os SGBD dessa categoria são de certa forma bem simples, mas bastante eficientes. O dado armazenado é composto por uma \textit{string} que representa a chave, e o dado de fato a ser referenciado pela chave que é o valor, portanto, se cria um par chave/valor \cite{nayak2013type}\cite{kauremerging}.
 	
-	Os SGBD NoSQL por chave e valor, costuma valorizar uma maior escalabilidade em troca de consistência, tal característica é mecionada na seção \ref{manage_transaction}. O seu uso é bastante eficiente para situações como guardar seções de usuário, ou gerenciar um carrinho de compras online \cite{nayak2013type}. Um exemplo de SGBD dessa categoria é o DynamoDB \cite{DeCandia:2007:DAH:1323293.1294281}. A figura abaixo mostra o formato de um dado nesse SGBD em contraste com o formato de SGBD relacional e de SGBD orientado a documentos.
+	Os SGBD NoSQL por chave e valor, costuma valorizar uma maior escalabilidade em troca de consistência, tal característica é mecionada na Seção \ref{manage_transaction}. O seu uso é bastante eficiente para situações como guardar seções de usuário, ou gerenciar um carrinho de compras online \cite{nayak2013type}. Um exemplo de SGBD dessa categoria é o DynamoDB \cite{DeCandia:2007:DAH:1323293.1294281}. A Tabela \ref{table:keyvalue} mostra o formato de um dado nesse tipo de SGBD.
 	
-\begin{figure}[h]
-	\centering
-    \includegraphics[width=0.8\textwidth]{key-value}
-    \caption{Exemplos de estrura relacional, chave/valor e orientada a documentos}
-    \label{fig:key-value}
-\end{figure}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Chave1 & Valor1 \\ \hline
+1 & "Gabriel" \\ \hline
+2 & 22 \\ \hline
+\end{tabular}
+\caption{Exemplo de dado armazenado em SGBD NoSQL por chave/valor}
+\label{table:keyvalue}
+\end{table}
 	
 \subsubsection{SGBD NoSQL orientado por colunas}
 	Os SGBD dessa categoria, podem ser confundidos de certa forma com um SGBD relacional por serem orientado a colunas. Mas na verdade um SGBD NoSQL orientado por colunas tem um formato híbrido entre linha e coluna. Apesar de compartilharem do conceito de armazenamento por colunas, esses SGBD não armazenam os dados em tabelas, e sim em grandes arquitetura distribuídas. Nessa categoria, cada chave é associada com uma ou mais colunas, chamada de atributos. Esse armazenamento é feito de forma que o dado seja agregado mais rapidamente e com menos processamento de entrada e saída \cite{nayak2013type}.
@@ -158,14 +157,26 @@ Este capítulo descreve toda a fundamentação teórica por trás das tecnologia
 \subsubsection{SGBD NoSQL orientado a documentos}
 	Nessa categoria, os dados são armazenados em forma de documentos. Um documento dentro desse tipo de SGBD pode ser comparado a um registro dentro de um SGBD relacional, mas nos SGBD NoSQL existe uma flexibilidade maior pois é permitido uma estrutura \textit{Schema-less}. Normalmente, esses documentos seguem algum formato padrão como \textit{JSON} ou \textit{XML} por exemplo. Uma diferença com o formato dos bancos relacionais, é que um campo de um registro dentro de um SGBD relacional que não está preenchido, necessariamente ficará vazio, já num SGBD NoSQL orientado a documentos, cada documento pode ter dados similares ou não tão similares, ou seja, um campo sem informação não precisa aparecer como vazio para o usuário, demonstrando a flexibilidade que esses SGBD proporcionam \cite{nayak2013type}.
 	
-	Cada documento é endereçado por uma chave, da mesma forma que em SGBD NoSQL orientado a chave/valor. Esses SGBD são úteis em aplicações em que os dados não precisam ser armazenados em tabelas com campos uniformes, mas sim armazenados em documentos com características especiais. Normalmente, não é recomendado para dados com muitos relacionamentos ou normalização. Dois representantes dessa categoria são o MongoDB e o CouchDB \cite{nayak2013type}. A figura \ref{fig:columnnosql} mostra um exemplo da estrutura de um SGBD orientado a documentos em contraste com um SGBD orientado a colunas.
+	Cada documento é endereçado por uma chave, da mesma forma que em SGBD NoSQL orientado a chave/valor. Esses SGBD são úteis em aplicações em que os dados não precisam ser armazenados em tabelas com campos uniformes, mas sim armazenados em documentos com características especiais. Normalmente, não é recomendado para dados com muitos relacionamentos ou normalização. Dois representantes dessa categoria são o MongoDB e o CouchDB \cite{nayak2013type}. A Tabela \ref{table:documents} mostra um exemplo da estrutura de um SGBD orientado a documentos.
+	
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Documento & Valor \\ \hline
+Documento1 & \{\ name: "Gabriel" \}\ \\ \hline
+Documento2 & \{\ idade: 22 \}\ \\ \hline
+\end{tabular}
+\caption{Exemplo de dado armazenado em SGBD NoSQL orientado a documentos}
+\label{table:documents}
+\end{table}
 	
 \subsubsection{SGBD NoSQL orientado a grafos}
-	Os SGBD NoSQL orientado a grafos armazenam os dados em uma estrutura de grafo. As características e informações acerca da estrutura de um grafo são abordadas em maiores detalhes na seção \ref{graph_theory}. Resumidamente, um grafo é um conjunto de nós e arestas, em que os nós são os objetos e as arestas representam o relacionamente entre dois objetos (nós). Esses SGBD usam a técnica conhecida como  \textit{index free adjacency}, em que cada nó possui um ponteiro diretamente para nós adjacentes. Essa técnica permite que uma grande quantidade de nós seja percorrida de forma eficiente \cite{nayak2013type}. A figura abaixo exemplifica o formato de um grafo no SGBD NoSQL OrientDB.
+	Os SGBD NoSQL orientado a grafos armazenam os dados em uma estrutura de grafo. As características e informações acerca da estrutura de um grafo são abordadas em maiores detalhes na seção \ref{graph_theory}. Resumidamente, um grafo é um conjunto de nós e arestas, em que os nós são os objetos e as arestas representam o relacionamente entre dois objetos (nós). Esses SGBD usam a técnica conhecida como  \textit{index free adjacency}, em que cada nó possui um ponteiro diretamente para nós adjacentes. Essa técnica permite que uma grande quantidade de nós seja percorrida de forma eficiente \cite{nayak2013type}. A figura \ref{fig:graph_orientdb} exemplifica o formato de um grafo no SGBD NoSQL OrientDB.
 
 \begin{figure}[h]
 	\centering
-    \includegraphics[width=0.8\textwidth]{orient_graph}
+    \includegraphics[width=0.8\textwidth]{padrao_ceap_tse}
     \caption{Exemplo da estrutura de um grafo no SGBD OrientDB}
     \label{fig:graph_orientdb}
 \end{figure}

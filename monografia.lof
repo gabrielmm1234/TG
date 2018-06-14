@@ -3,34 +3,33 @@
 \select@language {brazil}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Exemplo de uma estrutura de grafo\relax }}{5}{figure.caption.8}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Exemplo de uma estrutura de grafo com presen\IeC {\c c}a de la\IeC {\c c}o\relax }}{6}{figure.caption.9}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Exemplo de uma estrutura de grafo direcionado\relax }}{6}{figure.caption.10}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Exemplos de estrura relacional, chave/valor e orientada a documentos\relax }}{11}{figure.caption.12}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Exemplo de estrutura de um NoSQL orientado a colunas.\relax }}{12}{figure.caption.14}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Exemplo da estrutura de um grafo no SGBD OrientDB\relax }}{13}{figure.caption.17}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Contraste entre estrutura relaciona e orientada a objetos\relax }}{14}{figure.caption.19}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Exemplo de tentativa de aplica\IeC {\c c}\IeC {\~a}o reativa\relax }}{16}{figure.caption.21}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Exemplo do uso de \textit {live queries}\relax }}{16}{figure.caption.22}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Possibilidade de registros no OrientDB\relax }}{19}{figure.caption.24}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Exemplo de uma arquitetura \textit {Master-slave}\relax }}{21}{figure.caption.25}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Exemplo de uma arquitetura \textit {Multi-master}\relax }}{22}{figure.caption.26}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Exemplo de heran\IeC {\c c}a no \textit {schema} do OrientDB \relax }}{23}{figure.caption.27}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Classe Customer mapeada para dois clusters diferentes\relax }}{23}{figure.caption.28}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Estilo arquitetural \textit {REST}\relax }}{25}{figure.caption.29}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Exemplo de uma estrutura de grafo.\relax }}{5}{figure.caption.8}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Exemplo de uma estrutura de grafo com presen\IeC {\c c}a de la\IeC {\c c}o.\relax }}{6}{figure.caption.9}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Exemplo de uma estrutura de grafo direcionado.\relax }}{6}{figure.caption.10}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Exemplo de estrutura de um NoSQL orientado a colunas.\relax }}{11}{figure.caption.14}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Exemplo da estrutura de um grafo no SGBD OrientDB\relax }}{13}{figure.caption.18}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Contraste entre estrutura relaciona e orientada a objetos\relax }}{14}{figure.caption.20}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Exemplo de tentativa de aplica\IeC {\c c}\IeC {\~a}o reativa\relax }}{15}{figure.caption.22}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Exemplo do uso de \textit {live queries}\relax }}{16}{figure.caption.23}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Possibilidade de registros no OrientDB\relax }}{19}{figure.caption.25}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Exemplo de uma arquitetura \textit {Master-slave}\relax }}{21}{figure.caption.26}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Exemplo de uma arquitetura \textit {Multi-master}\relax }}{21}{figure.caption.27}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Exemplo de heran\IeC {\c c}a no \textit {schema} do OrientDB \relax }}{23}{figure.caption.28}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Classe Customer mapeada para dois clusters diferentes\relax }}{23}{figure.caption.29}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Estilo arquitetural \textit {REST}\relax }}{25}{figure.caption.30}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Modelo de dados seguindo o formato GRAPHED\relax }}{29}{figure.caption.30}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Fluxo de extra\IeC {\c c}\IeC {\~a}o, transforma\IeC {\c c}\IeC {\~a}o e carregamento para o OrientDB\relax }}{31}{figure.caption.32}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Resultado do cruzamento entre dados da CEAP e do TSE.\relax }}{33}{figure.caption.33}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Padr\IeC {\~a}o de relacionamento entre dados da CEAP e do TSE.\relax }}{33}{figure.caption.34}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Padr\IeC {\~a}o de uma transa\IeC {\c c}\IeC {\~a}o fraudulenta com dados fict\IeC {\'\i }cios.\relax }}{34}{figure.caption.35}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Comunica\IeC {\c c}\IeC {\~a}o entre os elementos do padr\IeC {\~a}o MVC.\relax }}{35}{figure.caption.36}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Modelo de dados seguindo o formato GRAPHED\relax }}{29}{figure.caption.31}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Fluxo de extra\IeC {\c c}\IeC {\~a}o, transforma\IeC {\c c}\IeC {\~a}o e carregamento para o OrientDB\relax }}{31}{figure.caption.33}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Resultado do cruzamento entre dados da CEAP e do TSE.\relax }}{33}{figure.caption.34}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Padr\IeC {\~a}o de relacionamento entre dados da CEAP e do TSE.\relax }}{33}{figure.caption.35}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Padr\IeC {\~a}o de uma transa\IeC {\c c}\IeC {\~a}o fraudulenta com dados fict\IeC {\'\i }cios.\relax }}{34}{figure.caption.36}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Comunica\IeC {\c c}\IeC {\~a}o entre os elementos do padr\IeC {\~a}o MVC.\relax }}{35}{figure.caption.37}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Tela inicial do sistema "CEAP Colaborativo"\relax }}{37}{figure.caption.37}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Tela de informa\IeC {\c c}\IeC {\~o}es gerais do sistema "CEAP Colaborativo"\relax }}{38}{figure.caption.38}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Distribui\IeC {\c c}\IeC {\~a}o de deputados que utilizaram a CEAP por partido\relax }}{38}{figure.caption.39}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces 10 deputados que mais fizeram transa\IeC {\c c}\IeC {\~o}es no ano de 2017\relax }}{39}{figure.caption.40}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces 15 empresas fornecedoras que mais forneceram servi\IeC {\c c}os aos deputados em 2017\relax }}{40}{figure.caption.41}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Tela inicial do sistema "CEAP Colaborativo"\relax }}{37}{figure.caption.38}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Tela de informa\IeC {\c c}\IeC {\~o}es gerais do sistema "CEAP Colaborativo"\relax }}{38}{figure.caption.39}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Distribui\IeC {\c c}\IeC {\~a}o de deputados que utilizaram a CEAP por partido\relax }}{38}{figure.caption.40}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces 10 deputados que mais fizeram transa\IeC {\c c}\IeC {\~o}es no ano de 2017\relax }}{39}{figure.caption.41}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces 15 empresas fornecedoras que mais forneceram servi\IeC {\c c}os aos deputados em 2017\relax }}{40}{figure.caption.42}
 \addvspace {10\p@ }
 \select@language {american}
 \select@language {american}
