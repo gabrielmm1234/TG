@@ -117,6 +117,13 @@ Ao clicar no link fraudes, o sistema redireciona o usuário para uma tela que co
 
 O grafo acima mostra um deputado apresentado pelo vértice em azul, que realizou transações representadas pelos vértices laranjas, fornecidas pela empresa representada pelo vértice em vermelho. Entretanto o deputado está relacionado com a empresa o que caracteriza uma fraude. Dessa forma esse grafo, confirma que a modelagem proposta nesta monografia é capaz de identificar fraudes nos dados da CEAP. Diferente do que foi feito na Figura \ref{fig:sigma}, não será apresentado uma tabela com o relacionamento entre um deputado e a empresa, uma vez que esse relacionamento foi criado para validar o modelo proposto.
 
-Por fim foi feita uma consulta que busca transações feitas com a CEAP para empresas na qual parentes do deputado fazem parte do quadro societário.A figura abaixo apresenta os resultados.
+Por fim foi feita uma consulta que busca transações feitas com a CEAP para empresas na qual parentes do deputado fazem parte do quadro societário. Esse padrão foi apresentado na Figura \ref{fig:familia_socio}. A Figura \ref{fig:familia_grafo} apresenta o mesmo padrão mas feito na camada de apresentação.
 
-imagem....
+\begin{figure}[H]
+\centering
+\includegraphics[width=.75\textwidth]{familia.png}
+\caption{Grafo na camada de apresentação com padrão de fraude apresentado na Figura \ref{fig:familia_socio}}
+\label{fig:familia_grafo}
+\end{figure}
+
+Dessa forma, é possível perceber que um parlamentar representado em azul é parente de uma pessoa apresentada em verde, e essa pessoa é sócia de uma empresa apresentada em vermelho. Entretanto, o parlamentar fez transações com a CEAP fornecidas pela empresa o que caracteriza fraude. Novamente, esse grafo confirma que a modelagem proposta nesta monografia é capaz de identificar fraudes nos dados da CEAP. 
