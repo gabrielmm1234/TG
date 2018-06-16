@@ -45,9 +45,9 @@
 \contentsline {chapter}{\numberline {4}CEAP: An\IeC {\'a}lise dos resultados obtidos}{37}{chapter.4}
 \contentsline {section}{\numberline {4.1}Consultas CEAP - TSE}{37}{section.4.1}
 \contentsline {section}{\numberline {4.2}Consultas CEAP para detectar fraudes}{41}{section.4.2}
-\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{42}{chapter.5}
-\contentsline {section}{\numberline {5.1}Trabalhos Futuros}{43}{section.5.1}
-\contentsline {chapter}{Refer\^encias}{44}{section*.43}
+\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{43}{chapter.5}
+\contentsline {section}{\numberline {5.1}Trabalhos Futuros}{44}{section.5.1}
+\contentsline {chapter}{Refer\^encias}{45}{section*.45}
 \select@language {american}
 \select@language {american}
 \select@language {american}

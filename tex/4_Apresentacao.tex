@@ -70,9 +70,33 @@ order by servicos desc limit 15
 
 A partir do gráfico \ref{fig:chart_3}, percebe-se que as quatro primeiras empresas que mais forneceram serviços com a verba da CEAP são do ramo de aviação. Um dos propósitos da CEAP é justamente para a compra de passagens de avião, principalmente entre deputados de outros estados que não sejam o Distrito Federal. A Cia Aérea GOL lidera essa estatística com um total de 23529 transações. A consulta \ref{lst:consulta_chart_3} também possui elementos específicos do OrientDB, agora no caso a função "in". Nessa consulta são selecionados da classe "EmpresaFornecedora", o nome do fornecedor e a quantidade de arestas de classe "FornecidaPor" que entram no vértice. Em seguida é ordenada de forma decrescente pela quantidade de arestas mencionada e limitada para obter as 15 primeiras empresas.
 
-Finalmente a última consulta busca identificar no formato de um grafo parlamentares que usaram a CEAP com empresas que fizeram doações para a campanha desse parlamentar em 2014. Esse resultado foi mostrado no formato de grafo na Figura \ref{fig:ceap_tse_graph}, mas esse resultado utiliza a ferramenta gráfica presente no OrientDB. Nesse caso a consulta foi feita e a partir do \textit{JSON} obtido foi construído um grafo na camada de apresentação do sistema desenvolvido. A Figura abaixo apresenta o resultado.
+Finalmente a última consulta busca identificar no formato de um grafo parlamentares que usaram a CEAP com empresas que fizeram doações para a campanha desse parlamentar em 2014. Esse resultado foi mostrado no formato de grafo na Figura \ref{fig:ceap_tse_graph}, mas esse resultado utiliza a ferramenta gráfica presente no OrientDB. Nesse caso a consulta foi feita e a partir do \textit{JSON} obtido foi construído um grafo na camada de apresentação do sistema desenvolvido. A Figura \ref{fig:sigma} apresenta o resultado.
 
-imagem....
+\begin{figure}[H]
+\centering
+\includegraphics[width=.75\textwidth]{sigma.png}
+\caption{Grafo na camada de apresentação com dados do cruzamento entre as bases da CEAP e do TSE.}
+\label{fig:sigma}
+\end{figure}
+
+O gráfico utilizado na camada de apresentação possui algumas limitações, e não é robusto como o grafo apresentado pelo OrientDB. De ambas as formas foi possível encontrar o seguinte relacionamento entre deputados e empresas fornecedoras.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Deputado & Empresa Fornecedora \\ \hline
+AELTON FREITAS & Auto Posto Cortez Ltda \\ \hline
+DIEGO ANDRADE & Grafica Mundial LTDA-ME \\ \hline
+MARCELO ARO & SEMPRE EDITORA LTDA. \\ \hline
+WELITON PRADO & SEMPRE EDITORA LTDA. \\ \hline
+TONINHO PINHEIRO & SEMPRE EDITORA LTDA. \\ \hline
+MARCUS PESTANA & SOLAR COMUNICAÇÕES S.A \\ \hline
+EROS BIONDINI & TARGET RENT A CAR LTDA \\ \hline
+\end{tabular}
+\caption{Relacionamento entre deputados e empresas fornecedoras}
+\label{table:relation_deputies_companies}
+\end{table}
 
 \section{Consultas CEAP para detectar fraudes}
 
