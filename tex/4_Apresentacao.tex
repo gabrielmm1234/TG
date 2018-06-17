@@ -100,13 +100,18 @@ EROS BIONDINI & TARGET RENT A CAR LTDA \\ \hline
 
 \section{Consultas CEAP para detectar fraudes}
 
-O "CEAP Colaborativo" tem com um dos objetivos permitir que a população contribua com informações que podem ajudar na detecção de fraudes da CEAP. Tais informações podem ser em relação a parentes dos deputados e quadros de sócios das empresas fornecedoras. Portanto ao clicar no link "Contribuir" na barra de navegação, o usuário é redirecionado para uma tela com formulários que permitem que as informações sejam submetidas. A Figura abaixo apresenta a tela em questão.
+O "CEAP Colaborativo" tem com um dos objetivos permitir que a população contribua com informações que podem ajudar na detecção de fraudes da CEAP. Tais informações podem ser em relação a parentes dos deputados e quadros de sócios das empresas fornecedoras. Portanto ao clicar no link "Colabore" na tela inicial, o usuário é redirecionado para uma tela com formulários que permitem que as informações sejam submetidas. A Figura \ref{fig:collaborate} apresenta a tela em questão.
 
-imagem....
+\begin{figure}[H]
+\centering
+\includegraphics[width=.75\textwidth]{collaborate.png}
+\caption{Tela que permite a população contribuir com informações sobre os deputados.}
+\label{fig:collaborate}
+\end{figure}
 
-Ao fornecer os dados, não é feita a persistência imediatamente. Usuários administradores precisam analisar se a informação fornecida é verídica. Após essa verificação, o dado pode ser aceito ou rejeitado.
+Ao fornecer os dados, não é feita a persistência imediatamente. Usuários administradores precisam analisar se a informação fornecida é verídica. Após essa verificação, o dado pode ser aceito ou rejeitado. Nessa tela é possível informar se um deputado é sócio de uma empresa, se um deputado é parente de uma pessoa, e se algum dos parentes já cadastrados são sócios de alguma empresa cadastrada. Com essas informações, caso seja uma informação verídica, as consultas apresentadas nesta monografia irão detectar caso um padrão de fraude seja construído, e fornece os resultados nas demais telas apresentadas.
 
-Ao clicar no link fraudes, o sistema redireciona o usuário para uma tela que contém consultas com o objetivo de encontrar padrões que violam as regras da CEAP. Para fins de validação, foram utilizados dados fictícios para testar as consultas realizadas. A primeira análise apresentada, refere-se a consulta \ref{fig:socios} que consegue localizar um padrão de transações efetuadas entre um deputado e uma empresa, na qual o deputado faz parte do quadro de sócios. A figura abaixo apresenta os resultados.
+Ao clicar no link fraudes, o sistema redireciona o usuário para uma tela que contém consultas com o objetivo de encontrar padrões que violam as regras da CEAP. Para fins de validação, foram utilizados dados fictícios para testar as consultas realizadas. A primeira análise apresentada, refere-se a consulta \ref{fig:socios} que consegue localizar um padrão de transações efetuadas entre um deputado e uma empresa, na qual o deputado faz parte do quadro de sócios. A figura \ref{fig:partner} apresenta os resultados.
 
 \begin{figure}[H]
 \centering
