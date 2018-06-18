@@ -132,86 +132,76 @@ Este capítulo descreve a fundamentação teórica por trás das tecnologias uti
 	
 \begin{table}[h!]
 \centering
+\caption{Exemplo de dado armazenado em SGBD NoSQL por chave/valor}
 \begin{tabular}{|l|l|l|l|l|}
 \hline
 Chave1 & Valor1 \\ \hline
 1 & "Gabriel" \\ \hline
 2 & 22 \\ \hline
 \end{tabular}
-\caption{Exemplo de dado armazenado em SGBD NoSQL por chave/valor}
 \label{table:keyvalue}
 \end{table}
 	
 \subsubsection{SGBD NoSQL orientado por colunas}
-	Os SGBD dessa categoria, podem ser confundidos de certa forma com um SGBD relacional por serem orientado a colunas. Mas na verdade um SGBD NoSQL orientado por colunas tem um formato híbrido entre linha e coluna. Apesar de compartilharem do conceito de armazenamento por colunas, esses SGBD não armazenam os dados em tabelas, e sim em grandes arquitetura distribuídas. Nessa categoria, cada chave é associada com uma ou mais colunas, chamada de atributos. Esse armazenamento é feito de forma que o dado seja agregado mais rapidamente e com menos processamento de entrada e saída \cite{nayak2013type}.
+	Os SGBD dessa categoria, podem ser confundidos de certa forma com um SGBD relacional por serem orientado a colunas. Mas de fato um SGBD NoSQL orientado por colunas tem um formato híbrido entre linha e coluna. Apesar de compartilharem do conceito de armazenamento por colunas, esses SGBD não armazenam os dados em tabelas, e sim em grandes arquitetura distribuídas. Nessa categoria, cada chave é associada com uma ou mais colunas, chamada de atributos. Esse armazenamento é feito de forma que o dado seja agregado mais rapidamente e com menos processamento de entrada e saída \cite{nayak2013type}.
 	
-	Ou seja, esses banco de dados contém uma coluna extensível de dados fortemente relacionados, em vez de conjuntos de informação em uma estrutura rígida de tabela com linha e colunas como no modelo relacional\cite{kauremerging}. Esse tipo de NoSQL é bastante útil para operações de mineração de dados e aplicações de análise \cite{nayak2013type}. Dois grandes representantes dessa categoria são o BigTable da google \cite{Chang:2008:BDS:1365815.1365816} e o Cassandra. A figura abaixo exemplifica a diferença da estrutura orientada a colunas e orientada a documentos:
+	Ou seja, esses banco de dados contém uma coluna extensível de dados fortemente relacionados, em vez de conjuntos de informação em uma estrutura rígida de tabela com linha e colunas como no modelo relacional\cite{kauremerging}. Esse tipo de NoSQL é bastante útil para operações de mineração de dados e aplicações de análise \cite{nayak2013type}. Dois grandes representantes dessa categoria são o BigTable da google \cite{Chang:2008:BDS:1365815.1365816} e o Cassandra. A figura \ref{fig:columnnosql} exemplifica a estrutura orientada a colunas.
 	
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-    \includegraphics[width=0.8\textwidth]{columnnosql}
+    \includegraphics[width=0.6\textwidth]{columnnosql}
     \caption{Exemplo de estrutura de um NoSQL orientado a colunas.}
     \label{fig:columnnosql}
 \end{figure}
 	
 \subsubsection{SGBD NoSQL orientado a documentos}
-	Nessa categoria, os dados são armazenados em forma de documentos. Um documento dentro desse tipo de SGBD pode ser comparado a um registro dentro de um SGBD relacional, mas nos SGBD NoSQL existe uma flexibilidade maior pois é permitido uma estrutura \textit{Schema-less}. Normalmente, esses documentos seguem algum formato padrão como \textit{JSON} ou \textit{XML} por exemplo. Uma diferença com o formato dos bancos relacionais, é que um campo de um registro dentro de um SGBD relacional que não está preenchido, necessariamente ficará vazio, já num SGBD NoSQL orientado a documentos, cada documento pode ter dados similares ou não tão similares, ou seja, um campo sem informação não precisa aparecer como vazio para o usuário, demonstrando a flexibilidade que esses SGBD proporcionam \cite{nayak2013type}.
+	Nessa categoria, os dados são armazenados em forma de documentos. Um documento dentro desse tipo de SGBD pode ser comparado a um registro dentro de um SGBD relacional, mas nos SGBD NoSQL existe uma flexibilidade maior pois é permitido uma estrutura de esquema flexível. Normalmente, esses documentos seguem algum formato padrão como \textit{JSON} ou \textit{XML} por exemplo. Uma diferença com o formato dos bancos relacionais, é que um campo de um registro dentro de um SGBD relacional que não está preenchido, necessariamente ficará vazio, já num SGBD NoSQL orientado a documentos, cada documento pode ter dados similares ou não tão similares, ou seja, um campo sem informação não precisa aparecer como vazio para o usuário, demonstrando a flexibilidade que esses SGBD proporcionam \cite{nayak2013type}.
 	
 	Cada documento é endereçado por uma chave, da mesma forma que em SGBD NoSQL orientado a chave/valor. Esses SGBD são úteis em aplicações em que os dados não precisam ser armazenados em tabelas com campos uniformes, mas sim armazenados em documentos com características especiais. Normalmente, não é recomendado para dados com muitos relacionamentos ou normalização. Dois representantes dessa categoria são o MongoDB e o CouchDB \cite{nayak2013type}. A Tabela \ref{table:documents} mostra um exemplo da estrutura de um SGBD orientado a documentos.
 	
 \begin{table}[h!]
 \centering
+\caption{Exemplo de dado armazenado em SGBD NoSQL orientado a documentos}
 \begin{tabular}{|l|l|l|l|l|}
 \hline
 Documento & Valor \\ \hline
 Documento1 & \{\ name: "Gabriel" \}\ \\ \hline
 Documento2 & \{\ idade: 22 \}\ \\ \hline
 \end{tabular}
-\caption{Exemplo de dado armazenado em SGBD NoSQL orientado a documentos}
 \label{table:documents}
 \end{table}
 	
 \subsubsection{SGBD NoSQL orientado a grafos}
-	Os SGBD NoSQL orientado a grafos armazenam os dados em uma estrutura de grafo. As características e informações acerca da estrutura de um grafo são abordadas em maiores detalhes na seção \ref{graph_theory}. Resumidamente, um grafo é um conjunto de nós e arestas, em que os nós são os objetos e as arestas representam o relacionamente entre dois objetos (nós). Esses SGBD usam a técnica conhecida como  \textit{index free adjacency}, em que cada nó possui um ponteiro diretamente para nós adjacentes. Essa técnica permite que uma grande quantidade de nós seja percorrida de forma eficiente \cite{nayak2013type}. A figura \ref{fig:graph_orientdb} exemplifica o formato de um grafo no SGBD NoSQL OrientDB.
+	Os SGBD NoSQL orientado a grafos armazenam os dados em uma estrutura de grafo. As características e informações acerca da estrutura de um grafo são abordadas em maiores detalhes na Seção \ref{graph_theory}. Resumidamente, um grafo é um conjunto de nós e arestas, em que os nós são os objetos e as arestas representam o relacionamente entre dois objetos (nós). Esses SGBD usam a técnica conhecida como  \textit{index free adjacency}, em que cada nó possui um ponteiro diretamente para nós adjacentes. Essa técnica permite que uma grande quantidade de nós seja percorrida de forma eficiente \cite{nayak2013type}. A figura \ref{fig:graph_orientdb} exemplifica o formato de um grafo no SGBD NoSQL OrientDB.
 
 \begin{figure}[h]
 	\centering
     \includegraphics[width=0.8\textwidth]{padrao_ceap_tse}
-    \caption{Exemplo da estrutura de um grafo no SGBD OrientDB}
+    \caption{Exemplo da estrutura de um grafo no SGBD OrientDB.}
     \label{fig:graph_orientdb}
 \end{figure}
 	
-	As consultas são feitas seguindo a ideia de percorrimento do grafo, o que torna esses SGBD mais eficientes que SGBD relacionais. O seu uso varia de aplicações para redes sociais, bioinformática, software de recomendação e etc \cite{nayak2013type}. O principal ponto de seu uso é em dados que são bastante relacionados entre si, pois a estrutura de um grafo expõe naturalmente os relacionamentos entre os objetos. O maior representando dessa categoria de SGBD é o Neo4j seguido pelo OrientDB e AllegroGraph.
+	O seu uso varia de aplicações para redes sociais, bioinformática, software de recomendação e etc \cite{nayak2013type}. O principal ponto de seu uso é em dados que são bastante relacionados entre si, pois a estrutura de um grafo expõe naturalmente os relacionamentos entre os objetos. O maior representando dessa categoria de SGBD é o Neo4j seguido pelo OrientDB e AllegroGraph.
 	
 \subsubsection{SGBD NoSQL orientado a objetos}
-	Um SGBD orientado a objetos, armazena os dados e informações em objetos, similares aos objetos presentes no paradigma de orientação a objetos. Portanto, essa categoria de SGBD pode ser vista como uma combinação entre os princípios de programação orientada a objetos e banco de dados. Esses banco de dados oferecem todas as característica da programação orientada a objetos tais como: Encapsulamento de dados, polimorfismo e herança. É possível fazer um paralelo entre classe, objeto e atributos da classe com tabela, tupla e colunas em uma tupla dos banco de dados relacionais respectivamente \cite{nayak2013type}.
-	
-	Cada objeto nessa estrutura possui um identificador único que o representa. O acesso nessa estrutura é mais rápido pois cada objeto pode ser acessado através de ponteiros. O seu uso auxilia no processo de desenvolvimento de software, sendo útil também em aplicações envolvendo relacionamentos complexos entre objetos. Esse tipo de SGBD vem sendo usando em pesquisas científicas, telecomunicações e outras aplicações. Essa categoria tem a desvantagem de estar associada a um tipo específico de linguagem de programação e por possuir dificuldades de escalabilidade, uma vez que o tamanho da memória física é excedido \cite{nayak2013type}. Um grande representante dessa categoria é o db4o, o trabalho de Kulshrestha, Sudhanshu and Sachdeva e Shelly \cite{kulshrestha2014performance} faz uma comparação de performance entre SGBD relacionais e o db4o. A figura abaixo exemplifica como um objeto é dividído para ser armazenado em tabelas em uma estrutura relaciona, já na estrutura orientada a objetos, o objeto é armazenado sem essa divisão \cite{edlich2006definitive}.
-	
-\begin{figure}[h]
-	\centering
-    \includegraphics[width=0.8\textwidth]{Banco_Dados_Relacional_X_db4o_ver2}
-    \caption{Contraste entre estrutura relaciona e orientada a objetos}
-    \label{fig:db4o}
-\end{figure} 
+	Um SGBD orientado a objetos, armazena os dados e informações em objetos, similares aos objetos presentes no paradigma de orientação a objetos. Portanto, essa categoria de SGBD pode ser vista como uma combinação entre os princípios de programação orientada a objetos e banco de dados. Esses banco de dados oferecem todas as característica da programação orientada a objetos tais como: Encapsulamento de dados, polimorfismo e herança. É possível fazer um paralelo entre classe, objeto e atributos da classe com tabela, tupla e colunas em uma tupla dos banco de dados relacionais respectivamente \cite{nayak2013type}. Cada objeto nessa estrutura possui um identificador único que o representa, assim o acesso nessa estrutura é mais rápido pois cada objeto pode ser acessado através de ponteiros
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Comparação qualitativa entre OrientDB e Neo4j} \label{comparison_graph_nosql}
 
-\subsection{Introdução}
-
-	Hoje no mercado existem diversos SGBD orientado a grafos, tais são: OrientDB, Neo4j, AllegroGraph, FlockDB entre outros. Dentre esses, sem dúvida o mais popular é o SGBD NoSQL neo4j. Como foi mencionado no capítulo \ref{chap:1}, os SGBD orientado a grafos vem obtendo um grande número de novos usuários \cite{Dbmspopularity}, registrando a maior taxa de mudança de popularidade entre 2013 e 2017. Hoje o Neo4j se encontra na primeira posição segundo o seguinte ranking \cite{neo4jprimeiro}, e por esse motivo o seguinte capítulo realiza uma comparação entre o OrientDB e o Neo4j.
+	Hoje no mercado existem diversos SGBD orientado a grafos, tais são: OrientDB, Neo4j, AllegroGraph, FlockDB entre outros. Dentre esses, o mais popular é o SGBD NoSQL Neo4j \cite{neo4j-site}. Como foi mencionado no Capítulo \ref{chap:1}, os SGBD orientado a grafos vem obtendo um grande número de novos usuários \cite{Dbmspopularity}, registrando a maior taxa de mudança de popularidade entre 2013 e 2017. Hoje o Neo4j se encontra na primeira posição segundo o ranking Db-engines \cite{neo4jprimeiro}, e por esse motivo o seguinte capítulo realiza uma comparação entre o OrientDB e o Neo4j.
 	
 	Trabalhos como o de Jouili \cite{jouili2013empirical}, Kolomivcenko \cite{kolomivcenko2013experimental} e Kovacs \cite{kovacs2016cassandra}, realizam comparações entre os dois SGBD. Nessas comparações são levados em conta aspectos como performance, licensa comercial ou \textit{open source}, linguagem de consulta e etc. Além desses trabalhos, artigos como o de Barmpis \cite{barmpis2014evaluation} e Labute \cite{labute2014review} reforçam o fato do crescimento tanto no uso comercial quanto em pesquisas acadêmicas em banco de dados orientado a grafos.
 	
-\subsection{Comparação qualitativa}
+\subsection{Comparação Qualitativa}
 
-	O trabalho feito por Angles \cite{angles2012comparison} em 2012 compara alguns SGBD orientado a grafos. Foi identificado três características comuns entre todos os modelos que são: O esquema e as instâncias são modelados como grafos, operações orientada a grafos e um conjunto de regras de integridade. Dessa forma, a tabela \ref{table:1} representa uma comparação entre os modelos de dados do OrientDB e Neo4j:
+	O trabalho feito por Angles \cite{angles2012comparison} em 2012 compara alguns SGBD orientado a grafos. Foi identificado três características comuns entre todos os modelos que são: O esquema e as instâncias são modelados como grafos, operações orientada a grafos e um conjunto de regras de integridade. Dessa forma, a Tabela \ref{table:1} representa uma comparação entre os modelos de dados do OrientDB e Neo4j.
 	
 \begin{table}[h!]
 \centering
+\caption{Comparação qualitativa entre modelo de dados do OrientDB e Neo4j}
 \begin{tabular}{|l|l|l|l|l|}
 \hline
 SGBD                        & OrientDB                                                                        & Neo4j \\ \hline
@@ -220,32 +210,14 @@ Modelos de esquema          & \makecell{\textit{Schema-full},\\ \textit{Schema-l
 Tipos de dados customizados & Sim                                                                             & Não \\ \hline
 Modelo Reativo              & Sim                                                                             & Não \\ \hline
 \end{tabular}
-\caption{Comparação qualitativa entre modelo de dados do OrientDB e Neo4j}
 \label{table:1}
 \end{table}
 
-	Portanto, podemos observar que o OrientDB é um SGBD multi modelo, pois suporta operações com documentos, chave/valor e grafos. Já o Neo4j trabalha somente com o modelo de grafos. Além disso, o OrientDB possui suporte para diferentes modelos de esquema podendo usar um esquema completo, nenhum esquema ou um esquema híbrido para modelar os dados. O Neo4j se utiliza nenhum esquema na modelagem ou um esquema opcional, baseado no conceito de labels. Nesse esquema opcional, os labels são usados na especificação de índices, e para definir restrições no grafo, juntos ambos formam o esquema do grafo no Neo4j \cite{neo4jschemaoptional}. O OrientDB permite que o usuário crie tipo de dados customizados no esquema, basta que a classe da propriedade já exista no banco de dados \cite{orientdbcreateproperty}, enquanto no Neo4j isso não é possível. Finalmente, uma característica interessante que o OrientDB fornece é a de modelo reativo. Essa propriedade é chamada de \textit{live query} \cite{orientdblivequery}, e é utilizada para construir aplicações em tempo real. Em uma abordagem tradicional, é inviável que o cliente da aplicação fique o tempo inteiro realizando consultas para obter novas atualizações, pois isso gera um grande desperdício de recursos. A imagem \ref{fig:orientdbReativo} resume a situação:
+	Portanto, pode-se observar que o OrientDB é um SGBD multi modelo, pois suporta operações com documentos, chave/valor e grafos. Já o Neo4j trabalha somente com o modelo de grafos. Além disso, o OrientDB possui suporte para diferentes modelos de esquema podendo usar um esquema completo, nenhum esquema ou um esquema híbrido para modelar os dados. Com o Neo4j não é necessário utilizar um esquema para a modelagem, mas existe um esquema opcional, baseado no conceito de \textit{labels}. Nesse esquema opcional, os \textit{labels} são usados na especificação de índices, e para definir restrições no grafo, juntos ambos formam o esquema do grafo no Neo4j \cite{neo4jschemaoptional}. O OrientDB permite que o usuário crie tipo de dados customizados no esquema, basta que a classe da propriedade já exista no banco de dados \cite{orientdbcreateproperty}, enquanto no Neo4j isso não é possível. Finalmente, uma característica interessante que o OrientDB fornece é a de modelo reativo. Essa propriedade é chamada de \textit{live query} \cite{orientdblivequery}, e é utilizada para construir aplicações em tempo real. Em uma abordagem tradicional, é inviável que o cliente da aplicação fique o tempo inteiro realizando consultas para obter novas atualizações, pois isso gera um grande desperdício de recursos.
 	
-\begin{figure}[H]
-	\centering
-    \includegraphics[width=0.8\textwidth]{queryPolling}
-    \caption{Exemplo de tentativa de aplicação reativa}
-    \label{fig:orientdbReativo}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-    \includegraphics[width=0.8\textwidth]{liveQuery}
-    \caption{Exemplo do uso de \textit{live queries}}
-    \label{fig:orientDBLiveQuery}
-\end{figure}
-
-	Com o uso das \textit{live queries}, esse tipo de problema é resolvido e não há mais desperdício de recursos, como mostra a figura \ref{fig:orientDBLiveQuery}.
-
-	Apesar de várias diferenças, os dois SGBD possuem características em comum. A tabela \ref{table:2} demonstra comparações de características gerais, entre o OrientDB e o Neo4j:
-	
-\begin{table}[h!]
+\begin{table}[H]
 \centering
+\caption{Comparação qualitativa de características gerais entre OrientDB e Neo4j}
 \begin{tabular}{|l|l|l|l|l|}
 \hline
 SGBD                       & OrientDB                                    & Neo4j \\ \hline
@@ -259,23 +231,20 @@ Metodos de replicação      & Multi-master replication                    & \ma
 Suporte a MapReduce        & Sim                                         & Não \\ \hline
 Concorrência               & Sim                                         & Sim \\ \hline
 \end{tabular}
-\caption{Comparação qualitativa de características gerais entre OrientDB e Neo4j}
 \label{table:2}
 \end{table}
-
-	A partir da tabela \ref{table:2}, é possível observar algumas características em comum entre os SGBD, por exemplo, ambos trabalham com o modelo de transações ACID, que foi discutido em detalhes na seção \ref{manage_transaction}. Além disso, os dois suportam o uso de dados e consultas espaciais para trabalhar com dados geográficos, cada um possui uma versão open source, mesmo que sob licensas diferentes. É importante pontuar também que ambos possuem suporte a acessos concorrentes e foram desenvolvidos utilizando a linguagem de programação Java.
 	
-	Uma diferença importante entre os dois SGBD é em relaçao a linguagem de consulta utilizada. O OrientDB possui uma linguagem de consulta derivada da linguagem SQL, isso é bastante vantajoso para aqueles que vem do universo de SGBD relacional, enquanto o Neo4j utiliza uma linguagem de consulta própria conhecida como cypher. O código abaixo exemplifica uma consulta no OrientDB e sua semelhanças com consultas de bancos de dados relacionais:
+	Apesar de várias diferenças, os dois SGBD possuem características em comum. A Tabela \ref{table:2} demonstra comparações de características gerais, entre o OrientDB e o Neo4j. A partir da tabela \ref{table:2}, é possível observar algumas características em comum entre os SGBD, por exemplo, ambos trabalham com o modelo de transações ACID, que foi discutido em detalhes na Seção \ref{manage_transaction}. Além disso, os dois suportam o uso de dados e consultas espaciais para trabalhar com dados geográficos, cada um possui uma versão \textit{open source}, mesmo que sob licensas diferentes. É importante pontuar também que ambos possuem suporte a acessos concorrentes e foram desenvolvidos utilizando a linguagem de programação Java.
+	
+	Uma diferença importante entre os dois SGBD é em relaçao a linguagem de consulta utilizada. O OrientDB possui uma linguagem de consulta derivada da linguagem SQL, isso é bastante vantajoso para aqueles que vem do universo de SGBD relacional, enquanto o Neo4j utiliza uma linguagem de consulta própria conhecida como cypher. O código \ref{lst:labelSQL} exemplifica uma consulta no OrientDB e sua semelhanças com consultas de bancos de dados relacionais.
 	
 \begin{lstlisting}[label={lst:labelSQL}, caption={Exemplo de consulta no SGBD OrientDB},captionpos=b, language=sql]
 SELECT FROM Person WHERE name LIKE 'Luk%'
 \end{lstlisting}
 
-	A consulta acima retorna todas as instâncias da classe Person onde o atributo name começa com a \textit{string} 'Luk'. Finalmente, no que diz respeito a arquitetura distribuída, o OrientDB possui suporte em sua versão open source, enquanto o Neo4j possui suporte somente na licensa comercial. O OrientDB utiliza o método de \textit{sharding} para separar os dados em clusters diferentes, enquanto o Neo4j não possui suporte para esse tipo de funcionalidade. Em relação aos métodos de replicação o OrientDB trabalha com o modelo multi-master, discutido em detalhes na seção \ref{orient_distributed}, e o Neo4j utiliza o método \textit{Causal Clustering using Raft protocol} \cite{neo4jcausal}. Por possuir suporte a funcionalidade de \textit{sharding}, o OrientDB também suporta operações de MapReduce sem o uso de tecnologias como o Hadoop ou Spark. Essa funcionalidade é totalmente transparente para o desenvolvedor, de forma que quando uma consulta envolve múltiplos clusters, o SGBD executa a query sobre cada nó (Operação de Map) e em seguida realiza o \textit{merge} dos resultados (Operação de reduce) \cite{orientMapReduce}.
-	
-\subsection{Conclusão}
+	A consulta apresentada retorna todas as instâncias da classe Person onde o atributo name começa com a \textit{string} 'Luk'. Finalmente, no que diz respeito a arquitetura distribuída, o OrientDB possui suporte em sua versão \textit{open source}, enquanto o Neo4j possui suporte somente na licensa comercial. O OrientDB utiliza o método de \textit{sharding} para separar os dados em \textit{clusters} diferentes, enquanto o Neo4j não possui suporte para esse tipo de funcionalidade. Em relação aos métodos de replicação o OrientDB trabalha com o modelo multi-master, discutido em detalhes na Seção \ref{orient_distributed}, e o Neo4j utiliza o método \textit{Causal Clustering using Raft protocol} \cite{neo4jcausal}. Por possuir suporte a funcionalidade de \textit{sharding}, o OrientDB também suporta operações de MapReduce sem o uso de tecnologias como o Hadoop ou Spark. Essa funcionalidade é totalmente transparente para o desenvolvedor, de forma que quando uma consulta envolve múltiplos \textit{clusters}, o SGBD executa a \textit{query} sobre cada nó (Operação de Map) e em seguida realiza o \textit{merge} dos resultados (Operação de reduce) \cite{orientMapReduce}.	
 
-	Portanto, em vista dos fatos mencionados, o OrientDB possui uma quantidade de funcionalidades maior que o Neo4j, principalmente em sua versão comunitária, ou open-source. Funcionalidades importantes como o uso de uma arquitetura distribuída, estão presentes somente na versão comercial do Neo4j, o que fez com que o OrientDB fosse escolhido para uso no estudo de caso. O fato de possuir uma linguagem próxima ao SQL, também pesou na escolha, pois proporciona uma produtividade maior para aqueles acostumados com a linguagem de consulta SQL.
+	Portanto, em vista dos fatos mencionados, o OrientDB possui uma quantidade de funcionalidades maior que o Neo4j, principalmente em sua versão comunitária, ou \textit{open source}. Funcionalidades importantes como o uso de uma arquitetura distribuída, estão presentes somente na versão comercial do Neo4j, o que fez com que o OrientDB fosse escolhido para uso no estudo de caso. O fato de possuir uma linguagem próxima ao SQL, também pesou na escolha, pois proporciona uma produtividade maior para aqueles acostumados com a linguagem de consulta SQL.
 	
 	Outra característica pouco pontuada, mas bastante importante, é a presença de uma comunidade por trás da tecnologia para auxiliar os desenvolvedores. A comunidade por trás do OrientDB é grande e bastante presente em sites como o \textit{StackOverflow} \cite{orientStack} e \textit{Linkedin}, inclusive com presença do próprio \textit{CEO} da empresa em ambos os \textit{sites}. Contudo, é inquestionável que o Neo4j é mais popular entre desenvolvedores e possui uma comunidade maior que a do OrientDB, o que sem dúvida é uma vantagem competitiva.
 	
@@ -285,12 +254,8 @@ SELECT FROM Person WHERE name LIKE 'Luk%'
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{OrientDB} \label{OrientDBMain}
-
-	Essa seção tem por objetivo especificar as características do SGBD OrientDB, e realizar uma comparação com outros SGBD orientado a grafos como o Neo4j.
 	
-\subsection{Introdução}
-	
-	O OrientDB, é um SGBD de código aberto sob a licensa Apache. Ele é o primeiro SGBD NoSQL multi modelo, com suporte a uma arquitetura distribuída e orientado a grafos. Sendo assim o OrientDB suporta operações com documentos, chave/valor e grafos. Essa característica garante uma enorme flexibilidade para manipular os dados dentro do OrientDB, sendo possível armazenar os dados tanto como grafos ou como documentos no mesmo banco de dados \cite{OrientDB}. A figura a seguir resume as possibilidades de registros no OrientDB:
+	O OrientDB é um SGBD de código aberto sob a licensa Apache. Ele é o primeiro SGBD NoSQL multi modelo, com suporte a uma arquitetura distribuída e orientado a grafos. Sendo assim o OrientDB suporta operações com documentos, chave/valor e grafos. Essa característica garante uma flexibilidade para manipular os dados dentro do OrientDB, sendo possível armazenar os dados tanto como grafos ou como documentos no mesmo banco de dados \cite{OrientDB}. A Figura \ref{fig:orientdbpossibilities} a seguir resume as possibilidades de registros no OrientDB.
 	
 \begin{figure}[h]
 	\centering
@@ -299,14 +264,14 @@ SELECT FROM Person WHERE name LIKE 'Luk%'
     \label{fig:orientdbpossibilities}
 \end{figure}
 	
-	O OrientDB é implementado utilizando a linguagem java, tendo sua primeira versão disponível no ano de 2010. Ele possui alta flexibilidade para definir o esquema do banco de dados, podendo ser \textit{Schema-free}, \textit{Schema-hybrid} ou \textit{Schema-full}. A sua linguagem de consulta é derivada do SQL o que é bastante vantajoso para aqueles que possuem experiência com bancos de dados relacionais, e além disso ele utiliza o modelo de transações ACID que como foi mencionado na seção \ref{manage_transaction} é algo mais comum no grupo dos SGBD relacionais, isso demonstra que o OrientDB presa pela integridade dos dados ao mesmo tempo que também fornece um suporte a particionamento dos dados \cite{OrientDB} \cite{vschart}.
+	O OrientDB é implementado utilizando a linguagem java, tendo sua primeira versão disponível no ano de 2010. Ele possui alta flexibilidade para definir o esquema do banco de dados, podendo ser \textit{Schema-free}, \textit{Schema-hybrid} ou \textit{Schema-full}. A sua linguagem de consulta é derivada do SQL o que é bastante vantajoso para aqueles que possuem experiência com bancos de dados relacionais, e além disso ele utiliza o modelo de transações ACID que como foi mencionado na Seção \ref{manage_transaction} é algo mais comum no grupo dos SGBD relacionais, isso demonstra que o OrientDB presa pela integridade dos dados ao mesmo tempo que também fornece um suporte a particionamento dos dados \cite{OrientDB} \cite{vschart}.
 	
-	Todas essas características fazem com que o OrientDB seja um SGBD bastante flexível e confiável para se utilizar em diversas aplicações. As operações utilizando grafos em específico, vem ganhando bastante visibilidade pois funciona muito bem em certos domínios de aplicação. Como foi mencionado no capítulo \ref{chap:1} e nesse artigo feito por Matthias Gelbmann \cite{Graphpopularity} a popularidade dos SGBD orientados a grafos vem crescendo bastante nos últimos anos, e essas características ajudam a explicar o porque de banco de dados como o OrientDB e Neo4j estarem crescendo tanto em popularidade.
+	Todas essas características fazem com que o OrientDB seja um SGBD bastante flexível e confiável para se utilizar em diversas aplicações. As operações utilizando grafos em específico, vem ganhando bastante visibilidade pois funciona muito bem em certos domínios de aplicação. Como foi mencionado no Capítulo \ref{chap:1} e nesse artigo feito por Matthias Gelbmann \cite{Graphpopularity} a popularidade dos SGBD orientados a grafos vem crescendo bastante nos últimos anos, e essas características ajudam a explicar o porque de banco de dados como o OrientDB e Neo4j estarem crescendo tanto em popularidade.
 	
 \subsection{Performance} \label{orient_performance}
-	O OrientDB possui uma ótima performance em operações utilizando grafos. Um aspecto técnico que ajuda nessa qualidade é que o OrientDB trabalha cada registro como um objeto e o \textit{link} entre esses objetos não é feito por referência, e sim por \textit{link} direto. Ou seja, é salvo um ponteiro que aponta diretamente para o objeto referenciado. Isso faz com que a velocidade para recuperar informações seja muito mais rápido em comparação com os joins utilizados nos SGBD relacionais. Portanto, não existem operações de joins dentro do OrientDB para obter as relações entre os registros, sendo que ele consegue salvar certa de 120 mil registro por segundo.
+	O OrientDB possui uma ótima performance em operações utilizando grafos. Um aspecto técnico que ajuda nessa qualidade é que o OrientDB trabalha cada registro como um objeto e o \textit{link} entre esses objetos não é feito por referência, e sim por \textit{link} direto. Ou seja, é salvo um ponteiro que aponta diretamente para o objeto referenciado. Isso faz com que a velocidade para recuperar informações seja mais rápido em comparação com os \textit{joins} utilizados nos SGBD relacionais. Portanto, não existem operações de \textit{joins} dentro do OrientDB para obter as relações entre os registros, sendo que ele consegue salvar cerca de 120 mil registro por segundo.
 	
-	O OrientDB utiliza mecanismos de indexação baseados em árvores-B e hash extendido, esses mecanismos garantem uma complexidade constante para obter relacionamentos entre um registro para muitos registros. Um estudo feito pelo instituto de tecnologia de tokio e pela IBM, mostra que o OrientDB chega a ser 10 vezes mais rápido que o seu maior concorrente que é o Neo4j \cite{dayarathna2012xgdbench}.
+	O OrientDB utiliza mecanismos de indexação baseados em árvores-B e \textit{hash} extendido, esses mecanismos garantem uma complexidade constante para obter relacionamentos entre um registro para muitos registros. Um estudo feito pelo instituto de tecnologia de Tokio e pela IBM, mostra que o OrientDB chega a ser 10 vezes mais rápido que o seu maior concorrente que é o Neo4j \cite{dayarathna2012xgdbench}.
 	
 	O trabalho feito po Toyotaro Suzumura e Miyuru Dayarathna \cite{dayarathna2012xgdbench}, aponta como a estrutura de grafos vem crescendo em sistemas na nuvem, devido ao crescimento de aplicações que produzem dados em formato de grafos, como aplicações de web semântica, sistemas de informação geográfico (GIS), aplicação de bioinformática \cite{dudley2010translational} e química informática \cite{ekins2010chemical}. Sendo que históricamente, dados com estrutura de grafos eram modelados com relacionamentos e armazenados em bases relacionais. Toda a lógica de percorrimento de grafos ficava para outras camadas da aplicação. Entretanto, percebe-se que o armazenamento desse tipo de dado e a análise feita em cima dessa estrurura feita nos SGBD são mais eficientes, uma vez que fornecem uma performance otimizada e produtividade na especificação de consultas \cite{dayarathna2012xgdbench}.
 	
