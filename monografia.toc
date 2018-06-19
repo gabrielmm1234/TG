@@ -29,21 +29,21 @@
 \contentsline {section}{\numberline {2.5}\textit {REST}}{21}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Princ\IeC {\'\i }pios do Estilo Arquitetural \textit {REST}}{22}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}Interface \textit {REST} no OrientDB}{23}{subsection.2.5.2}
-\contentsline {chapter}{\numberline {3}CEAP: Detec\IeC {\c c}\IeC {\~a}o de fraudes com o uso de SGBD orientado a grafos}{25}{chapter.3}
-\contentsline {section}{\numberline {3.1}ETL e modelo do banco de dados}{25}{section.3.1}
+\contentsline {chapter}{\numberline {3}CEAP: Detec\IeC {\c c}\IeC {\~a}o de Fraudes Com o Uso de SGBD Orientado a Grafos}{25}{chapter.3}
+\contentsline {section}{\numberline {3.1}ETL e Modelo do Banco de Dados}{25}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Dados Abertos}{25}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Modelo de dados}{26}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.2}Modelo de Dados}{26}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}ETL}{27}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}Consultas para detec\IeC {\c c}\IeC {\~a}o de fraudes}{30}{section.3.2}
+\contentsline {section}{\numberline {3.2}Consultas para Detec\IeC {\c c}\IeC {\~a}o de Fraudes}{29}{section.3.2}
 \contentsline {section}{\numberline {3.3}Sistema Web}{33}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}MVC}{34}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.1}MVC}{33}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Comunica\IeC {\c c}\IeC {\~a}o com o OrientDB}{34}{subsection.3.3.2}
 \contentsline {chapter}{\numberline {4}CEAP: An\IeC {\'a}lise dos resultados obtidos}{36}{chapter.4}
 \contentsline {section}{\numberline {4.1}Consultas CEAP - TSE}{36}{section.4.1}
 \contentsline {section}{\numberline {4.2}Consultas CEAP para detectar fraudes}{40}{section.4.2}
 \contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{44}{chapter.5}
 \contentsline {section}{\numberline {5.1}Trabalhos Futuros}{45}{section.5.1}
-\contentsline {chapter}{Refer\^encias}{46}{section*.45}
+\contentsline {chapter}{Refer\^encias}{46}{section*.44}
 \select@language {american}
 \select@language {american}
 \select@language {american}
