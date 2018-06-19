@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.26)  19 JUN 2018 00:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.26)  19 JUN 2018 00:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2025,19 +2025,19 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 140.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 140.
- [33 <./img/familia_socio.png>] <img/mvc-architecture.png, id=709, 249.18094pt 
-x 205.5178pt>
+ [33 <./img/familia_socio.png>] <img/mvc-architecture.png, id=709, 722.7pt x 54
+2.025pt>
 File: img/mvc-architecture.png Graphic file (type png)
 
 <use img/mvc-architecture.png>
 Package pdftex.def Info: img/mvc-architecture.png used on input line 143.
-(pdftex.def)             Requested size: 250.38564pt x 206.51767pt.
+(pdftex.def)             Requested size: 318.66948pt x 239.0045pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 150.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 160.
  [34 <./img/mvc-architecture.png>])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 53.
@@ -2270,7 +2270,7 @@ fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.p
 fb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm100
 0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm2074.pfb>
-Output written on monografia.pdf (60 pages, 1900685 bytes).
+Output written on monografia.pdf (60 pages, 1919267 bytes).
 PDF statistics:
  1039 PDF objects out of 1200 (max. 8388607)
  913 compressed objects within 10 object streams
