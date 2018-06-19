@@ -273,9 +273,9 @@ SELECT FROM Person WHERE name LIKE 'Luk%'
 	
 	O OrientDB utiliza mecanismos de indexação baseados em árvores-B e \textit{hash} extendido, esses mecanismos garantem uma complexidade constante para obter relacionamentos entre um registro para muitos registros. Um estudo feito pelo instituto de tecnologia de Tokio e pela IBM, mostra que o OrientDB chega a ser 10 vezes mais rápido que o seu maior concorrente que é o Neo4j \cite{dayarathna2012xgdbench}.
 	
-	O trabalho feito po Toyotaro Suzumura e Miyuru Dayarathna \cite{dayarathna2012xgdbench}, aponta como a estrutura de grafos vem crescendo em sistemas na nuvem, devido ao crescimento de aplicações que produzem dados em formato de grafos, como aplicações de web semântica, sistemas de informação geográfico (GIS), aplicação de bioinformática \cite{dudley2010translational} e química informática \cite{ekins2010chemical}. Sendo que históricamente, dados com estrutura de grafos eram modelados com relacionamentos e armazenados em bases relacionais. Toda a lógica de percorrimento de grafos ficava para outras camadas da aplicação. Entretanto, percebe-se que o armazenamento desse tipo de dado e a análise feita em cima dessa estrurura feita nos SGBD são mais eficientes, uma vez que fornecem uma performance otimizada e produtividade na especificação de consultas \cite{dayarathna2012xgdbench}.
+	O trabalho feito por Toyotaro Suzumura e Miyuru Dayarathna \cite{dayarathna2012xgdbench}, aponta como a estrutura de grafos vem crescendo em sistemas na nuvem, devido ao crescimento de aplicações que produzem dados em formato de grafos, como aplicações de web semântica, sistemas de informação geográfico (GIS), aplicação de bioinformática \cite{dudley2010translational} e química informática \cite{ekins2010chemical}. Sendo que históricamente, dados com estrutura de grafos eram modelados com relacionamentos e armazenados em bases relacionais. Toda a lógica de percorrimento de grafos ficava para outras camadas da aplicação. Entretanto, percebe-se que o armazenamento desse tipo de dado e a análise feita em cima dessa estrurura presente nos SGBD são mais eficientes, uma vez que fornecem uma performance otimizada e produtividade na especificação de consultas \cite{dayarathna2012xgdbench}.
 	
-	Um dos objetivos desse artigo \cite{dayarathna2012xgdbench} é realizar um benchmark e estudar a performance de quatro grandes SGBD orientado a grafos em ambiente de nuvem. Os SGBD são AllegroGraph \cite{allegro}, Fuseki \cite{fuseki}, Neo4j \cite{neo4j-site} e o OrientDB \cite{orientdb-site}. Eles utilizaram o XGDBench que é uma extensão do conhecido Yahoo! Cloud Serving Benchmark (YCSB). O YCSB é um framework de benchmark para sistemas na nuvem. Foram criados cinco \textit{Workloads} para realizar os testes:
+	Um dos objetivos do trabalho de Toyotaro Suzumura e Miyuru Dayarathna \cite{dayarathna2012xgdbench} é realizar um \textit{benchmark} e estudar a performance de quatro grandes SGBD orientado a grafos em ambiente de nuvem. Os SGBD são AllegroGraph \cite{allegro}, Fuseki \cite{fuseki}, Neo4j \cite{neo4j-site} e o OrientDB \cite{orientdb-site}. Eles utilizaram o XGDBench que é uma extensão do conhecido Yahoo! Cloud Serving Benchmark (YCSB). O YCSB é um \textit{framework} de \textit{benchmark} para sistemas na nuvem. Foram criados cinco \textit{Workloads} para realizar os testes:
 
 \begin{itemize}
 	\item  \textit{Update heavy}: 50/50 entre leitura e atualizações
@@ -285,37 +285,37 @@ SELECT FROM Person WHERE name LIKE 'Luk%'
 	\item  \textit{Short Ranges}: esse \textit{Workload} lê todos os vizinhos e seus atributos de um dado vértice A.
 \end{itemize}
 
-	Em todos os workloads, levando em conta a arquitetura e o hardware utilizado no ambiente de nuvem, o OrientDB teve um desempenho melhor que os demais SGBD \cite{dayarathna2012xgdbench}.
+	Em todos os \textit{workloads}, levando em conta a arquitetura e o hardware utilizado no ambiente de nuvem, o OrientDB teve um desempenho melhor que os demais SGBD \cite{dayarathna2012xgdbench}.
 	
 	
 \subsection{Arquitetura Distribuída} \label{orient_distributed}
-	Em relação ao suporte a uma arquitetura distribuída, o OrientDB trabalha com um método de particionamento conhecido como \textit{sharding}, e um método de replicação conhecido como \textit{Multi-master replication}. Esse modelo de replicação, permite que qualquer membro do cluster possa ler e escrever no banco de dados. Essa arquitetura permite que exista uma escalabilidade horizontal sem gargalos, como ocorre em algumas outras soluções de SGBD NoSQL \cite{kauremerging}.
+	Em relação ao suporte a uma arquitetura distribuída, o OrientDB trabalha com um método de particionamento conhecido como \textit{sharding}, e um método de replicação conhecido como \textit{multi-master replication}. Esse modelo de replicação, permite que qualquer membro do \textit{cluster} possa ler e escrever no banco de dados. Essa arquitetura permite que exista uma escalabilidade horizontal sem gargalos, como ocorre em algumas outras soluções de SGBD NoSQL \cite{kauremerging}.
 	
-	No ano de 2012 o OrientDB trabalhava com uma arquitetura diferente, conhecida como \textit{Master-slave replication}. A figura a seguir exemplifica o formato dessa arquitetura.
+	No ano de 2012 o OrientDB trabalhava com uma arquitetura diferente, conhecida como \textit{master-slave replication}. A Figura \ref{fig:master-slave} exemplifica o formato dessa arquitetura.
 	
 \begin{figure}[h]
 	\centering
     \includegraphics[width=0.5\textwidth]{master-slave}
-    \caption{Exemplo de uma arquitetura \textit{Master-slave}}
+    \caption{Exemplo de uma arquitetura \textit{master-slave}.}
     \label{fig:master-slave}
 \end{figure}
 
-	Esse tipo de arquitetura é eficiente para escalar as operações de leituras, mas também é importante conseguir escalar as operações de escrita no banco de dados. Como é possível ver na imagem acima, um nó (\textit{Master}) é responsável por receber as requisições de leitura e distribuir essa operações entre os demais nós \textit{Slaves}. Porém, ao projetar dessa forma o nó \textit{Master} se torna um gargalo para a aplicação, de forma que, ao receber muitas requisições o nó passa a ficar sobrecarregado.
+	Esse tipo de arquitetura é eficiente para escalar as operações de leituras, mas também é importante conseguir escalar as operações de escrita no banco de dados. Como é possível ver na Figura \ref{fig:master-slave}, um nó (\textit{master}) é responsável por receber as requisições de leitura e distribuir essa operações entre os demais nós \textit{slaves}. Porém, ao projetar dessa forma o nó \textit{master} se torna um gargalo para a aplicação, de forma que, ao receber muitas requisições o nó passa a ficar sobrecarregado.
 	
-	Uma vantagem dessa arquitetura, é sua facilidade de implementação, pois basta realizar o roteamento das requisições entre os nós \textit{Slaves}. Como desvantagens temos o fato do nó \textit{Master} ser o gargalo nas operações de escrita, e a característica de que não adianta aumentar a quantidade de servidores para aumentar a vazão, pois a vazão é inevitavelmente limitada pelo nó \textit{Master}.
+	Uma vantagem dessa arquitetura, é sua facilidade de implementação, pois basta realizar o roteamento das requisições entre os nós \textit{slaves}. Como desvantagens tem-se o fato do nó \textit{master} ser o gargalo nas operações de escrita, e a característica de que não adianta aumentar a quantidade de servidores para aumentar a vazão, pois a vazão é inevitavelmente limitada pelo nó \textit{master}.
 	
 \begin{figure}[h]
 	\centering
     \includegraphics[width=0.5\textwidth]{orientdb-the-2nd-generation-of-multimodel-nosql-44-638}
-    \caption{Exemplo de uma arquitetura \textit{Multi-master}}
+    \caption{Exemplo de uma arquitetura \textit{multi-master}.}
     \label{fig:multi-master}
 \end{figure}
 	
-	Nesse cenário, o SGBD evoluiu para a arquitetura \textit{Multi-master} representada pela figura acima. Nesse formato, todos os nós de um cluster aceitam operações de escrita. Além desse formato, o SGBD passou a adotar o método de particionamento conhecido como \textit{sharding}, em que os dados são divididos em múltiplas partições. Como é mencionado na seção \ref{orient_object}, o conceito de classes é bastante útil na arquitetura distribuída, uma vez que por padrão para cada classe criada o SGBD cria um cluster para que suas instâncias sejam armazenadas. Combinando essas técnicas, o OrientDB proporciona uma escalabilidade tanto em leituras quanto em escritas. Uma vantagem desse modelo é que se um nó \textit{Master} falhar, os demais podem continuar a operar normalmente.
+	Nesse cenário, o SGBD evoluiu para a arquitetura \textit{multi-master} representada pela Figura \ref{fig:multi-master}. Nesse formato, todos os nós de um \textit{cluster} aceitam operações de escrita. Além desse formato, o SGBD passou a adotar o método de particionamento conhecido como \textit{sharding}, em que os dados são divididos em múltiplas partições. Como é mencionado na Seção \ref{orient_object}, o conceito de classes é bastante útil na arquitetura distribuída, uma vez que por padrão para cada classe criada o SGBD cria um cluster para que suas instâncias sejam armazenadas. Combinando essas técnicas, o OrientDB proporciona uma escalabilidade tanto em leituras quanto em escritas. Uma vantagem desse modelo é que se um nó \textit{master} falhar, os demais podem continuar a operar normalmente.
 
 \subsection{Orientação a Objetos} \label{orient_object}
 
-	Uma das características mais interessantes do OrientDB é o suporte que ele da para que o usuário organize os seus dados seguindo padrões de orientação a objetos. Como foi mencionado na seção \ref{orient_performance}, o OrientDB considera cada registro como um objeto, dessa forma é possível criar classes que representam a estrutura dos dados. Por exemplo, no capítulo 3 eu explico um pouco mais sobre como fiz a modelagem dos dados seguindo o modelo MDG-NoSQL proposto por Gustavo C. Galvão Van Erven\cite{mdgnosql}. Nessa modelagem eu identifiquei as seguintes classes Transação, Empresa fornecedora, Parlamentar e Pessoa. O OrientDB permite que eu crie essas classes e ao inserir um vértice eu especifique que esse vértice é de uma classe específica, isso facilita bastante na hora de escrever as consultas pois basta utilizar o nome da classe que todos os vértices pertencentes a essa classe serão obtidos. O conceito de classe também se aplica as arestas, e tudo isso facilita na organização dos dados e na escrita de consultas ao banco de dados.
+	Uma das características mais interessantes do OrientDB é o suporte que ele da para que o usuário organize os seus dados seguindo padrões de orientação a objetos. Como foi mencionado na Seção \ref{orient_performance}, o OrientDB considera cada registro como um objeto, dessa forma é possível criar classes que representam a estrutura dos dados. O OrientDB permite que sejam criadas classes, e ao inserir um vértice, especifique que esse vértice é de uma certa classe, isso facilita bastante na hora de escrever as consultas pois basta utilizar o nome da classe que todos os vértices pertencentes a essa classe serão obtidos. O conceito de classe também se aplica as arestas, e tudo isso facilita na organização dos dados e na escrita de consultas ao banco de dados.
 	
 	Um registro é a menor unidade que é possível salvar e obter no banco de dados do OrientDB, ele pode ser obtido de quatro formas:
 	
@@ -326,18 +326,18 @@ SELECT FROM Person WHERE name LIKE 'Luk%'
 		\item Aresta
 	\end{itemize}
 	
-	Dessa forma, uma classe para esse tipo de registro, é o conceito mais próximo de tabela existente no OrientDB. O conceito de herança, muito utilizado no paradigma orientado a objetos, também possui suporte no OrientDB, sendo que classes podem herdar atributos e propriedades de uma classe pai. Por exemplo, a classe pessoa mencionada acima, pode ser a classe pai da classe parlamentar, assim um parlamentar herda atributos de pessoa. Além disso, ao realizar uma consulta utilizando a classe pessoa, automaticamente todos os parlamentares também serão utilizados. Outra funcionalidade atrelada a esse assunto, é o suporte a classes abstratas utilizadas para definir outras classes. Uma classe abstrata não possui instâncias no banco de dados, bastante similar com os conceitos em orientação a objetos. 
+	Dessa forma, uma classe para esse tipo de registro, é o conceito mais próximo de tabela existente no OrientDB. O conceito de herança, muito utilizado no paradigma orientado a objetos, também possui suporte no OrientDB, sendo que classes podem herdar atributos e propriedades de uma classe pai. Por exemplo, a classe Pessoa, pode ser a classe pai da classe Parlamentar, assim um Parlamentar herda atributos de Pessoa. Além disso, ao realizar uma consulta utilizando a classe Pessoa, automaticamente todos os parlamentares também serão utilizados. Outra funcionalidade atrelada a esse assunto, é o suporte a classes abstratas utilizadas para definir outras classes. Uma classe abstrata não possui instâncias no banco de dados, bastante similar com os conceitos em orientação a objetos. 
 	
-	A figura a seguir exemplifica a herança presente no OrientDB, no caso é possível criar três classes para armazenar as instâncias dos vértices, que são: \textit{Employee}, \textit{Regular employee} e \textit{Contract employee}. As duas últimas classes herdam os atributos id e name da classe pai, sendo que ao realizar uma busca por todos as instâncias de \textit{Employee}, tanto \textit{Regular employee} quanto \textit{Contract employee} serão retornados.
+	A Figura \ref{fig:inheritance-orient}  exemplifica a herança presente no OrientDB, no caso é possível criar três classes para armazenar as instâncias dos vértices, que são: \textit{Employee}, \textit{Regular employee} e \textit{Contract employee}. As duas últimas classes herdam os atributos id e name da classe pai, sendo que ao realizar uma busca por todos as instâncias de \textit{Employee}, tanto \textit{Regular employee} quanto \textit{Contract employee} serão retornados.
 	
 \begin{figure}[h]
 	\centering
     \includegraphics[width=0.5\textwidth]{teleporter-inheritance-orientdb-schema}
-    \caption{Exemplo de herança no \textit{schema} do OrientDB }
+    \caption{Exemplo de herança no \textit{schema} do OrientDB. }
     \label{fig:inheritance-orient}
 \end{figure}
 	
-	Para finalizar é importante mencionar que as classes tem um papel importante ao se utilizar a arquitetura distribuída no OrientDB, pois para cada classe criada, o SGBD cria um cluster automaticamente para armazenar instâncias dessas classes. Essa funcionalidade auxilía bastante na organização do particionamento dos dados em um ambiente distribuído. Todos os registros de uma classe são armazenados juntos no mesmo cliuster que tem o mesmo nome da classe. No OrientDB é possível criar até trinta e dois mil setecentos e setenta e sete clusters. Compreender bem os conceitos de classes nesse SGBD, permite que o usuário tenha vantagem ao fazer o \textit{design} do banco de dados. Vale lembrar que uma classe pode ser mapeada para n clusters como mostra a figura a seguir:
+	Para finalizar é importante mencionar que as classes tem um papel importante ao se utilizar a arquitetura distribuída no OrientDB, pois para cada classe criada, o SGBD cria um \textit{cluster} automaticamente para armazenar instâncias dessas classes. Essa funcionalidade auxilía na organização do particionamento dos dados em um ambiente distribuído. Todos os registros de uma classe são armazenados juntos no mesmo \textit{cluster} que tem o mesmo nome da classe. No OrientDB é possível criar até trinta e dois mil setecentos e setenta e sete \textit{clusters}. Compreender bem os conceitos de classes nesse SGBD, permite que o usuário tenha vantagem ao fazer o \textit{design} do banco de dados. Vale lembrar que uma classe pode ser mapeada para n \textit{clusters} como mostra a Figura \ref{fig:class-cluster}:
 \begin{figure}[h]
 	\centering
     \includegraphics[width=0.5\textwidth]{class-clusters}
@@ -350,43 +350,31 @@ SELECT FROM Person WHERE name LIKE 'Luk%'
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\textit{REST}}
 
-\subsection{Introdução} \label{rest_intro}
-
 	O termo \textit{REST} significa \textit{Representational State Transfer}, em português Transferência de Estado Representacional, e foi introduzido por Roy Fielding em sua tese de doutorado \cite{fielding2000architectural}. Como Roy Fielding afirma em sua tese, a complexidade dos sistemas de \textit{software} modernos fazem necessário uma ênfase maior  em sistemas componentizados, em que a implementação é dividida em componentes independentes que se comunicam para realizar uma tarefa desejada \cite{fielding2000architectural}.
 	
 	Ainda em sua tese, Roy Fielding explora o encontro entre duas discplinas da área de ciência da computação: \textit{software} e \textit{networking}. Ele afirma que as pesquisas de softwares se preocupavam em categorizar o \textit{desing} de \textit{software}, e desenvolver novas metodologias de \textit{desing}, em vez de avaliar o impacto das decisões de \textit{design} no comportamento de um sistema. Enquanto as pesquisas de \textit{networking}, foca nos detalhes da comunicação genérica entre sistemas e em melhorar a performance de uma técnica de comunicação específica, muitas vezes ignorando o fato de que mudar o estilo de interação de uma aplicação pode gerar mais impacto na performance, do que quais protocolos de comunicação são usados nessa interação \cite{fielding2000architectural}.
 	
 	Portanto, nesse contexto, o trabalho de Roy Fielding tinha como objetivo entender e avaliar o \textit{design} arquitetural de uma aplicação de software baseada na rede através do uso de restrições arquiteturais, dessa forma obtendo as propriedades sociais, performáticas e funcionais que se espera de uma arquitetura \cite{fielding2000architectural}. Dessa forma, o \textit{REST} é um estilo de arquitetura para sistemas hipermídia distribuídos. O \textit{REST} provê um conjunto de restrições arquiteturais que ao serem aplicadas, enfatizam a escalabilidade das interações entre componentes, generalidade de interfaces, \textit{deploy} independente dos componentes e componentes intermediários para reduzir a latência nas interações, reforçar a segurança e encapsular sistemas legados \cite{fielding2000architectural}.
 	
-\subsection{Princípios do estilo arquitetural \textit{REST}}
+\subsection{Princípios do Estilo Arquitetural \textit{REST}}
 
 	A característica principal que diferencia o \textit{REST} de outros estilos baseados em rede, é a ênfase em uma interface uniforme entre os componentes. Dessa forma, a arquitetura geral do sistema é simplificada e a visibilidade das interações e melhorada. Entretanto, um problema nesse princípio é que a eficiência se torna pior. Isso ocorre, pois, a informação é transferida de forma padronizada, em vez de um formato específico a necessidade das aplicações \cite{fielding2000architectural}.
 	
-	Como foi dito na seção \ref{rest_intro}, o estilo arquitetural \textit{REST} impõe uma série de restrições ao sistema. Portanto, o \textit{REST} possui alguns princípios que os sistemas devem adotar para serem considerados \textit{RESTful}, que são: 
+	O estilo arquitetural \textit{REST} impõe uma série de restrições ao sistema. Portanto, o \textit{REST} possui alguns princípios que os sistemas devem adotar para serem considerados \textit{RESTful}, que são: 
 
 \begin{itemize}
 	\item Todos os componentes do sistema se comunicam através de interfaces com métodos bem definidos e código dinâmico. A comunicação entre os componentes utiliza o protocolo \textit{HTTP}.
-	\item Cada componente é unicamente identificado por um link hipermídia (URL)
+	\item Cada componente é unicamente identificado por um \textit{link} hipermídia (URL)
 	\item Uma arquitetura cliente/servidor \textit{stateless} é seguida.
 	\item A arquitetura possui camadas, e os dados podem ser cacheados em qualquer camada.
 \end{itemize}
 
-	Atualmente, vários serviços na web fornecem interfaces \textit{REST}, para que interessados possam consumir os dados, tais como a Amazon, eBay, Yahoo. A câmara dos deputados também utiliza o estilo arquitetural \textit{REST} para fornecer algumas informações. Além disso, o framework \textit{ruby on rails}, que foi utilizado para desenvolver o sistema do estudo de caso, suporta aplicações \textit{REST} utilizando o padrão MVC.
+	Atualmente, vários serviços na web fornecem interfaces \textit{REST}, para que interessados possam consumir os dados, tais como a Amazon, eBay, Yahoo. A Câmara dos Deputados também utiliza o estilo arquitetural \textit{REST} para fornecer algumas informações. Além disso, o \textit{framework} \textit{Ruby on Rails}, que foi utilizado para desenvolver o sistema do estudo de caso, suporta aplicações \textit{REST} utilizando o padrão MVC.
 	
 	Um ponto interessante a ser colocado, é que nem todas essas aplicações mencionadas são puramente \textit{REST}, pois não respeitam todas as restrições destacadas por Roy Fielding em sua tese \cite{fielding2000architectural}. Esses serviços, seguem os princípios mais importantes, principalmente a interface uniforme. Tais aplicações são conhecidas como "acidentalmente \textit{RESTful}" \cite{acident-rest}.
 
-	A figura abaixo exemplifica o estilo arquitetural \textit{REST}:
-
-\begin{figure}[h]
-	\centering
-    \includegraphics[width=0.5\textwidth]{rest}
-    \caption{Estilo arquitetural \textit{REST}}
-    \label{fig:rest-style}
-\end{figure}
-
-
 \subsection{Interface \textit{REST} no OrientDB} \label{rest_orient_db}
-	O SGBD orientado a grafos utilizado no estudo de caso foi o OrientDB, descrito em mais detalhes na seção \ref{OrientDBMain}. O OrientDB fornece uma interface \textit{REST} de forma que as aplicações se comuniquem com o SGBD de forma eficiente e escalável. Essa interface utiliza os métodos do protocolo \textit{HTTP} para realizar operações nos dados, como descrito abaixo:
+	O OrientDB fornece uma interface \textit{REST} de forma que as aplicações se comuniquem com o SGBD de forma eficiente e escalável. Essa interface utiliza os métodos do protocolo \textit{HTTP} para realizar operações nos dados, como descrito abaixo:
 	
 \begin{itemize}
 	\item Método GET: Utilizado para recuperar dados do banco de dados. É uma operação idempotente, isso significa que nenhuma mudança no banco de dados é feita.
@@ -395,7 +383,7 @@ SELECT FROM Person WHERE name LIKE 'Luk%'
 	\item Método DELETE: Utilizado para deletar dados já persistidos no banco de dados.
 \end{itemize}
 
-	Dessa forma, uma aplicação que deseja se conectar ao SGBD utilizando a interface \textit{REST}, realizaria o seguinte comando: 
+	Dessa forma, uma aplicação que deseja se conectar ao SGBD utilizando a interface \textit{REST}, realizaria o comando apresentado no Código \ref{lst:label_rest_get}. 
 	
 \begin{lstlisting}[label={lst:label_rest_get}, caption={Exemplo de conexão com o OrientDB utilizando o protocolo HTTP.},captionpos=b]
 GET http://{{server}}:{{port}}/connect/{{database}}
@@ -403,14 +391,14 @@ GET http://{{server}}:{{port}}/connect/{{database}}
 
 	Esse método se conecta com um servidor remoto usando o formato de autenticação básica. Basta fornecer o endereço e porta do servidor e o nome do banco de dados. Se tudo ocorrer corretamente uma resposta 204 OK é retornada.
 	
-	Se a aplicação deseja, por exemplo, obter todos os parlamentares persistidos no banco de dados, realizaria o seguinte comando:
+	Se a aplicação deseja, por exemplo, obter todos os parlamentares persistidos no banco de dados,  realizaria o comando apresentado no Código \ref{lst:label_rest_get_parlamentar}:
 	
 \begin{lstlisting}[label={lst:label_rest_get_parlamentar}, caption={Exemplo de consulta no OrientDB utilizando o protocolo HTTP.},captionpos=b]
 GET http://{{server}}:{{port}}/query/{{database}}/{{language}}/SELECT 
 from Parlamentar
 \end{lstlisting}
 
-	Nesse caso, ao fornecer o endereço e porta do servidor, o nome do banco de dados e especificar a linguagem como sendo "sql", o SGBD retorna no formato JSON todos os parlamentares disponíveis no banco de dados.
+	Nesse caso, ao fornecer o endereço e porta do servidor, o nome do banco de dados e especificar a linguagem como sendo \textit{SQL}, o SGBD retorna no formato JSON todos os parlamentares disponíveis no banco de dados.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
