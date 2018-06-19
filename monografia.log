@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.26)  19 JUN 2018 00:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.26)  19 JUN 2018 01:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1860,47 +1860,46 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 330.
  [20 <./img/orientdb-the-2nd-generation-of-multimodel-nosql-44-638.png>]
-<img/teleporter-inheritance-orientdb-schema.png, id=577, 924.45375pt x 433.62pt
->
+<img/teleporter-inheritance-orientdb-schema.png, id=577, 722.7pt x 542.025pt>
 File: img/teleporter-inheritance-orientdb-schema.png Graphic file (type png)
- <use img/teleporter-inheritance-orientdb-schema.png>
+
+<use img/teleporter-inheritance-orientdb-schema.png>
 Package pdftex.def Info: img/teleporter-inheritance-orientdb-schema.png used on
  input line 335.
-(pdftex.def)             Requested size: 227.62206pt x 106.76384pt.
+(pdftex.def)             Requested size: 318.66948pt x 239.0045pt.
 
-<img/class-clusters.png, id=579, 401.5pt x 142.5325pt>
+<img/class-clusters.png, id=579, 722.7pt x 542.025pt>
 File: img/class-clusters.png Graphic file (type png)
 
 <use img/class-clusters.png>
 Package pdftex.def Info: img/class-clusters.png used on input line 343.
-(pdftex.def)             Requested size: 227.62206pt x 80.8072pt.
+(pdftex.def)             Requested size: 273.14923pt x 204.86337pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 347.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 347.
+ [21 <./img/teleporter-inheritance-orientdb-schema.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 351.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 354.
+(babel)             in language  on input line 358.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 354.
- [21 <./img/teleporter-inheritance-orientdb-schema.png> <./img/class-clusters.p
-ng>]
+(babel)             in language  on input line 358.
+ [22 <./img/class-clusters.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 359.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 368.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 368.
- [22]
-Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 376.
-
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 381.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 381.
+ [23]
 Overfull \hbox (31.20294pt too wide) in paragraph at lines 397--398
 [][][][][][][][][][][][][][][][][][] 
  []
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 399.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 399.
-[23])
+)
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 52.
 Package babel Info: Redefining portuges shorthand "|
@@ -2238,7 +2237,7 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
 Package rerunfilecheck Info: File `monografia.out' has not changed.
 (rerunfilecheck)             Checksum: 7A3332E24DB556499DEBDC3E3CA754E9;2834.
 Package rerunfilecheck Info: File `monografia.brf' has not changed.
-(rerunfilecheck)             Checksum: 5A265C0EFFECD3FEBFCC17CBA95C249E;4194.
+(rerunfilecheck)             Checksum: 0B6D7C5C147446D54CA0447CBD252DC4;4194.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -2253,7 +2252,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 55.
 Here is how much of TeX's memory you used:
  18038 strings out of 493029
  271243 string characters out of 6136234
- 456483 words of memory out of 5000000
+ 456485 words of memory out of 5000000
  20866 multiletter control sequences out of 15000+600000
  74164 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2270,7 +2269,7 @@ fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.p
 fb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm100
 0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm2074.pfb>
-Output written on monografia.pdf (60 pages, 1919267 bytes).
+Output written on monografia.pdf (60 pages, 1786640 bytes).
 PDF statistics:
  1039 PDF objects out of 1200 (max. 8388607)
  913 compressed objects within 10 object streams

@@ -11,8 +11,8 @@
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Possibilidade de registros no OrientDB\relax }}{17}{figure.caption.22}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Exemplo de uma arquitetura \textit {master-slave}.\relax }}{19}{figure.caption.23}
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Exemplo de uma arquitetura \textit {multi-master}.\relax }}{20}{figure.caption.24}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Exemplo de heran\IeC {\c c}a no \textit {schema} do OrientDB. \relax }}{21}{figure.caption.25}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Classe Customer mapeada para dois clusters diferentes\relax }}{21}{figure.caption.26}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Exemplo de heran\IeC {\c c}a no \textit {schema} do OrientDB.\relax }}{21}{figure.caption.25}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Classe Parlamentar mapeada para dois clusters diferentes\relax }}{22}{figure.caption.26}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Modelo de dados seguindo o formato GRAPHED.\relax }}{27}{figure.caption.27}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Fluxo de extra\IeC {\c c}\IeC {\~a}o, transforma\IeC {\c c}\IeC {\~a}o e carregamento para o OrientDB.\relax }}{28}{figure.caption.28}

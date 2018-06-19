@@ -26,8 +26,8 @@
 \contentsline {subsection}{\numberline {2.4.1}Performance}{17}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Arquitetura Distribu\IeC {\'\i }da}{19}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}Orienta\IeC {\c c}\IeC {\~a}o a Objetos}{20}{subsection.2.4.3}
-\contentsline {section}{\numberline {2.5}\textit {REST}}{21}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Princ\IeC {\'\i }pios do Estilo Arquitetural \textit {REST}}{22}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.5}\textit {REST}}{22}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Princ\IeC {\'\i }pios do Estilo Arquitetural \textit {REST}}{23}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}Interface \textit {REST} no OrientDB}{23}{subsection.2.5.2}
 \contentsline {chapter}{\numberline {3}CEAP: Detec\IeC {\c c}\IeC {\~a}o de Fraudes Com o Uso de SGBD Orientado a Grafos}{25}{chapter.3}
 \contentsline {section}{\numberline {3.1}ETL e Modelo do Banco de Dados}{25}{section.3.1}

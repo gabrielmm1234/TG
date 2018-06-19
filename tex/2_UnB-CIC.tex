@@ -326,22 +326,22 @@ SELECT FROM Person WHERE name LIKE 'Luk%'
 		\item Aresta
 	\end{itemize}
 	
-	Dessa forma, uma classe para esse tipo de registro, é o conceito mais próximo de tabela existente no OrientDB. O conceito de herança, muito utilizado no paradigma orientado a objetos, também possui suporte no OrientDB, sendo que classes podem herdar atributos e propriedades de uma classe pai. Por exemplo, a classe Pessoa, pode ser a classe pai da classe Parlamentar, assim um Parlamentar herda atributos de Pessoa. Além disso, ao realizar uma consulta utilizando a classe Pessoa, automaticamente todos os parlamentares também serão utilizados. Outra funcionalidade atrelada a esse assunto, é o suporte a classes abstratas utilizadas para definir outras classes. Uma classe abstrata não possui instâncias no banco de dados, bastante similar com os conceitos em orientação a objetos. 
+	Dessa forma, uma classe para esse tipo de registro, é o conceito mais próximo de tabela existente no OrientDB. O conceito de herança, muito utilizado no paradigma orientado a objetos, também possui suporte no OrientDB, sendo que classes podem herdar atributos e propriedades de uma classe pai. Por exemplo, a classe Pessoa, pode ser a classe pai da classe Parlamentar, assim um Parlamentar herda atributos de Pessoa. Outra funcionalidade atrelada a esse assunto, é o suporte a classes abstratas utilizadas para definir outras classes. Uma classe abstrata não possui instâncias no banco de dados, bastante similar com os conceitos em orientação a objetos. 
 	
-	A Figura \ref{fig:inheritance-orient}  exemplifica a herança presente no OrientDB, no caso é possível criar três classes para armazenar as instâncias dos vértices, que são: \textit{Employee}, \textit{Regular employee} e \textit{Contract employee}. As duas últimas classes herdam os atributos id e name da classe pai, sendo que ao realizar uma busca por todos as instâncias de \textit{Employee}, tanto \textit{Regular employee} quanto \textit{Contract employee} serão retornados.
+	A Figura \ref{fig:inheritance-orient}  exemplifica a herança presente no OrientDB, no caso é possível criar três classes para armazenar as instâncias dos vértices, que são: Pessoa, Parlamentar e Ministro. As duas últimas classes herdam os atributos CPF e Nome da classe pai, sendo que ao realizar uma busca por todos as instâncias de Pessoa, tanto Parlamentar quanto Ministro serão retornados.
 	
 \begin{figure}[h]
 	\centering
-    \includegraphics[width=0.5\textwidth]{teleporter-inheritance-orientdb-schema}
-    \caption{Exemplo de herança no \textit{schema} do OrientDB. }
+    \includegraphics[width=0.7\textwidth]{teleporter-inheritance-orientdb-schema}
+    \caption{Exemplo de herança no \textit{schema} do OrientDB.}
     \label{fig:inheritance-orient}
 \end{figure}
 	
 	Para finalizar é importante mencionar que as classes tem um papel importante ao se utilizar a arquitetura distribuída no OrientDB, pois para cada classe criada, o SGBD cria um \textit{cluster} automaticamente para armazenar instâncias dessas classes. Essa funcionalidade auxilía na organização do particionamento dos dados em um ambiente distribuído. Todos os registros de uma classe são armazenados juntos no mesmo \textit{cluster} que tem o mesmo nome da classe. No OrientDB é possível criar até trinta e dois mil setecentos e setenta e sete \textit{clusters}. Compreender bem os conceitos de classes nesse SGBD, permite que o usuário tenha vantagem ao fazer o \textit{design} do banco de dados. Vale lembrar que uma classe pode ser mapeada para n \textit{clusters} como mostra a Figura \ref{fig:class-cluster}:
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-    \includegraphics[width=0.5\textwidth]{class-clusters}
-    \caption{Classe Customer mapeada para dois clusters diferentes}
+    \includegraphics[width=0.6\textwidth]{class-clusters}
+    \caption{Classe Parlamentar mapeada para dois clusters diferentes}
     \label{fig:class-cluster}
 \end{figure}
 
