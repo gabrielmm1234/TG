@@ -27,14 +27,14 @@ Como se pode observar na Figura \ref{fig:modeloDeDados}, existem quatro classes 
 
 De forma análoga, uma empresa fornecedora realiza transações, que por sua vez favorece um certo parlamentar. Esse caminho representa os dados das doações das empresas para os deputados nas eleições de 2014, fornecido pelo TSE. 
 
-Os demais relacionamentos, como "socio-de" e "parente-de" tem por objetivo identificar possíveis fraudes na CEAP, uma vez que um parlamentar não pode utilizar a verba da CEAP com serviços de uma empresa que é sócio. Esses dois caminhos, se apresentaram como o maior desafio para o desenvolvimento do trabalho, uma vez que dados de parentesco dos parlamentares não são dados abertos.
+Os demais relacionamentos, como "socio-de" e "parente-de", tem por objetivo identificar possíveis fraudes na CEAP, uma vez que um parlamentar não pode utilizar a verba da CEAP com serviços de uma empresa que é sócio. Esses dois caminhos, se apresentaram como o maior desafio para o desenvolvimento do trabalho, uma vez que dados de parentesco dos parlamentares não são dados abertos.
 
 \subsection{ETL} \label{etl-subsection}
 
 	O termo ETL vem do inglês \textit{Extract Transform Load}, e corresponde a softwares que tem como função:
 \begin{itemize}
-		\item Extrair os dados de uma determinada fonte.
-		\item Transformar os dados de forma que atendam os requisitos da aplicação.
+		\item Extrair os dados de uma determinada fonte;
+		\item Transformar os dados de forma que atendam os requisitos da aplicação;
 		\item Carregar os dados no banco de dados.
 \end{itemize}
 	
@@ -45,7 +45,7 @@ Os demais relacionamentos, como "socio-de" e "parente-de" tem por objetivo ident
 \begin{figure}[H]
 \centering
 \includegraphics[width=.5\textwidth]{etlfluxo.png}
-\caption{Fluxo de extração, transformação e carregamento para o OrientDB}
+\caption{Fluxo de extração, transformação e carregamento para o OrientDB.}
 \label{fig:etlfluxo}
 \end{figure}
 
@@ -61,7 +61,7 @@ Finalizado a obtenção e carregamento dos dados no OrientDB, foram feitas consu
 	
 	A consulta feita para obter os resultados esperados é baseada no conceito de casamento de padrão, muito comum em linguagens funcionais. Dessa forma, para obter um certo padrão dentro do grafo o OrientDB fornece a função MATCH, como mostra a Consulta \ref{lst:label}.
 
-\begin{lstlisting}[label={lst:label}, caption={Consulta de relacionamento de doações entre deputados e empresas},captionpos=b, language=sql]
+\begin{lstlisting}[label={lst:label}, caption={Consulta de relacionamento de doações entre deputados e empresas.},captionpos=b, language=sql]
 MATCH 
   {class:Parlamentar, as:p} -RealizaTransacao-> 
   	{class:Transacao, as:t} 
@@ -109,7 +109,7 @@ RETURN $elements
 
 Como mostra a Figura \ref{fig:socios}, a consulta consegue localizar um padrão de transações efetuadas entre um deputado e uma empresa, na qual o deputado faz parte do quadro de sócios. A forma com que o grafo é apresentado visualmente, pode facilitar bastante o entendimento dos relacionamentos, de forma que fica claro que um deputado, representado pelo círculo com o ícone de uma pessoa, é sócio de uma empresa que prestou serviços com o dinheiro da CEAP. Dessa forma, a visualização gráfica, é uma das vantagens de um SGBD orientado a grafos, pois, a visualização dos vínculos em um grafo é mais simples e intuitiva do que uma estrutura de tabela utilizada nos SGBD relacionais.
 
-Outra consulta feita com o objetivo de encontrar padrões que violam as regras da CEAP, diz respeito a transações feitas por parlamentares no qual algum familiar é sócio da empresa envolvida na transação. Utilizando dados fictícios, a Figura \ref{fig:familia_socio} apresenta esse padrão. A consulta segue o mesmo formato das consultas anteriores utilizando a função MATCH para se beneficiar do casamento de padrões como mostra \ref{lst:familia_sql}
+Outra consulta feita com o objetivo de encontrar padrões que violam as regras da CEAP, diz respeito a transações feitas por parlamentares no qual algum familiar é sócio da empresa envolvida na transação. Utilizando dados fictícios, a Figura \ref{fig:familia_socio} apresenta esse padrão. A consulta \ref{lst:familia_sql} segue o mesmo formato das consultas anteriores utilizando a função MATCH para se beneficiar do casamento de padrões.
 
 \begin{lstlisting}[label={lst:familia_sql}, caption={Consulta de relacionamento de uso da CEAP entre deputados e empresas, em que um parente do deputado é sócio da empresa.},captionpos=b, language=sql]
 MATCH 
@@ -126,7 +126,7 @@ RETURN $elements
 \label{fig:familia_socio}
 \end{figure}
 
-	É importante mencionar que é possível atribuir propriedades a arestas no OrientDB. Dessa forma o relacionamento "Parente\_De" entre um parlamentar e uma pessoa, possui um atributo grau que indica qual o grau de parentesco entre esses dois vértices. A CEAP afirma que é irregular transações com parentes de até terceiro grau.
+	É importante mencionar que é possível atribuir propriedades a arestas no OrientDB. Dessa forma o relacionamento "Parente\_De", entre um parlamentar e uma pessoa, possui um atributo grau que indica qual o grau de parentesco entre esses dois vértices. A CEAP afirma que é irregular transações com parentes de até terceiro grau.
 
 \section{Sistema Web}
 
