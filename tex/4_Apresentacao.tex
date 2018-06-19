@@ -7,7 +7,7 @@ O sistema web recebeu o nome de "CEAP Colaborativo". Na tela inicial são aprese
 \begin{figure}[H]
 \centering
 \includegraphics[width=.75\textwidth]{sistema_ceap.png}
-\caption{Tela inicial do sistema "CEAP Colaborativo"}
+\caption{Tela inicial do sistema "CEAP Colaborativo".}
 \label{fig:sistema_ceap}
 \end{figure}
 
@@ -51,7 +51,7 @@ as transacoes from Parlamentar
 order by transacoes desc limit 10
 \end{lstlisting}
 
-Por meio da Figura \ref{fig:chart_2}, percebe-se que o deputado que mais realizou transações foi o Jorge Tadeu Mudalen do partido DEM com 1280 transações, seguido pelo Diego Garcia do PHS com 1176 transações, e pelo Zeca Dirceu do PT com 1173 transações. A Consulta \ref{lst:consulta_chart_2} por sua vez, possui elementos específicos do OrientDB, que no caso é a função "out". Nessa consulta são selecionados o nome do parlamentar, o partido do parlamentar e a quantidade de arestas de classe "RealizaTransacao" saindo do parlamentar. Essa consulta é ordenada de forma decrescente pela quantidade de arestas que saem de um parlamentar, e limitada para obter os 10 primeiros.
+Por meio da Figura \ref{fig:chart_2}, percebe-se que o deputado que mais realizou transações foi o Jorge Tadeu Mudalen do partido DEM com 1280 transações, seguido pelo Diego Garcia do PHS com 1176 transações, e pelo Zeca Dirceu do PT com 1173 transações. A Consulta \ref{lst:consulta_chart_2} por sua vez, possui elementos específicos do OrientDB, que no caso é a função "out". Nessa consulta são selecionados o nome do parlamentar, o partido do parlamentar e a quantidade de arestas de classe "RealizaTransacao"\ saindo do parlamentar. Essa consulta é ordenada de forma decrescente pela quantidade de arestas que saem de um parlamentar, e limitada para obter os 10 primeiros.
 
 A próxima consulta feita foi feita para obter as 15 empresas fornecedoras que mais forneceram serviços aos deputados em 2017. A Figura \ref{fig:chart_3} apresenta o resultado.
 
@@ -68,7 +68,7 @@ from EmpresaFornecedora
 order by servicos desc limit 15
 \end{lstlisting}
 
-A partir da Figura \ref{fig:chart_3}, percebe-se que as quatro primeiras empresas que mais forneceram serviços com a verba da CEAP são do ramo de aviação. Um dos propósitos da CEAP é justamente para a compra de passagens de avião, principalmente entre deputados de outros estados que não sejam o Distrito Federal. A Cia Aérea GOL lidera essa estatística com um total de 23529 transações. A Consulta \ref{lst:consulta_chart_3} também possui elementos específicos do OrientDB, agora no caso a função "in". Nessa consulta são selecionados da classe "EmpresaFornecedora", o nome do fornecedor e a quantidade de arestas de classe "FornecidaPor"  que entram no vértice. Em seguida é ordenada de forma decrescente pela quantidade de arestas mencionada e limitada para obter as 15 primeiras empresas.
+A partir da Figura \ref{fig:chart_3}, percebe-se que as quatro primeiras empresas que mais forneceram serviços com a verba da CEAP são do ramo de aviação. Um dos propósitos da CEAP é justamente para a compra de passagens de avião, principalmente entre deputados de outros estados que não sejam o Distrito Federal. A Cia Aérea GOL lidera essa estatística com um total de 23529 transações. A Consulta \ref{lst:consulta_chart_3} também possui elementos específicos do OrientDB, agora no caso a função "in". Nessa consulta são selecionados da classe "EmpresaFornecedora", o nome do fornecedor e a quantidade de arestas de classe "FornecidaPor"\ que entram no vértice. Em seguida é ordenada de forma decrescente pela quantidade de arestas mencionada e limitada para obter as 15 primeiras empresas.
 
 Finalmente a última consulta busca identificar no formato de um grafo parlamentares que usaram a CEAP com empresas que fizeram doações para a campanha desse parlamentar em 2014. Esse resultado foi mostrado no formato de grafo na Figura \ref{fig:ceap_tse_graph}, mas esse resultado utiliza a ferramenta gráfica presente no OrientDB. Nesse caso a consulta foi feita e a partir do \textit{JSON} obtido foi construído um grafo na camada de apresentação do sistema desenvolvido. A Figura \ref{fig:sigma} apresenta o resultado.
 
@@ -100,7 +100,7 @@ EROS BIONDINI & TARGET RENT A CAR LTDA \\ \hline
 
 \section{Consultas CEAP para detectar fraudes}
 
-O CEAP Colaborativo tem com um dos objetivos permitir que a população contribua com informações que podem ajudar na detecção de fraudes da CEAP. Tais informações podem ser em relação a parentes dos deputados e quadros de sócios das empresas fornecedoras. Portanto ao clicar no link Colabore na tela inicial, o usuário é redirecionado para uma tela com formulários que permitem que as informações sejam submetidas. A Figura \ref{fig:collaborate} apresenta a tela em questão.
+O "CEAP Colaborativo"\ tem com um dos objetivos permitir que a população contribua com informações que podem ajudar na detecção de fraudes da CEAP. Tais informações podem ser em relação a parentes dos deputados e quadros de sócios das empresas fornecedoras. Portanto ao clicar no link "Colabore"\ na tela inicial, o usuário é redirecionado para uma tela com formulários que permitem que as informações sejam submetidas. A Figura \ref{fig:collaborate} apresenta a tela em questão.
 
 \begin{figure}[H]
 \centering

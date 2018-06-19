@@ -27,7 +27,7 @@ Como se pode observar na Figura \ref{fig:modeloDeDados}, existem quatro classes 
 
 De forma análoga, uma empresa fornecedora realiza transações, que por sua vez favorece um certo parlamentar. Esse caminho representa os dados das doações das empresas para os deputados nas eleições de 2014, fornecido pelo TSE. 
 
-Os demais relacionamentos, como "socio-de" e "parente-de", tem por objetivo identificar possíveis fraudes na CEAP, uma vez que um parlamentar não pode utilizar a verba da CEAP com serviços de uma empresa que é sócio. Esses dois caminhos, se apresentaram como o maior desafio para o desenvolvimento do trabalho, uma vez que dados de parentesco dos parlamentares não são dados abertos.
+Os demais relacionamentos, como "socio-de"\ e "parente-de"\ tem por objetivo identificar possíveis fraudes na CEAP, uma vez que um parlamentar não pode utilizar a verba da CEAP com serviços de uma empresa que é sócio. Esses dois caminhos, se apresentaram como o maior desafio para o desenvolvimento do trabalho, uma vez que dados de parentesco dos parlamentares não são dados abertos.
 
 \subsection{ETL} \label{etl-subsection}
 
@@ -71,7 +71,7 @@ MATCH
 RETURN $elements
 \end{lstlisting}
 
-A Consulta \ref{lst:label} busca um certo padrão dentro do banco de dados. Esse padrão é definido por parlamentares chamados de "p", que realizam transações da CEAP "t", fornecidas por uma certa empresa "e". Além disso essa mesma empresa "e", realiza uma transação de doação "t2", que é fornecida para o mesmo parlamentar "p", definido no início da sentença. O resultado dessa consulta nos deputados de Minas Gerais e Distrito federal é apresentado na Figura \ref{fig:ceap_tse_graph}.
+A Consulta \ref{lst:label} busca um certo padrão dentro do banco de dados. Esse padrão é definido por parlamentares chamados de "p", que realizam transações da CEAP "t", fornecidas por uma certa empresa "e". Além disso essa mesma empresa "e", realiza uma transação de doação "t2", que é fornecida para o mesmo parlamentar "p"\ definido no início da sentença. O resultado dessa consulta nos deputados de Minas Gerais e Distrito federal é apresentado na Figura \ref{fig:ceap_tse_graph}.
 
 \begin{figure}[H]
 \centering
@@ -126,7 +126,7 @@ RETURN $elements
 \label{fig:familia_socio}
 \end{figure}
 
-	É importante mencionar que é possível atribuir propriedades a arestas no OrientDB. Dessa forma o relacionamento "Parente\_De", entre um parlamentar e uma pessoa, possui um atributo grau que indica qual o grau de parentesco entre esses dois vértices. A CEAP afirma que é irregular transações com parentes de até terceiro grau.
+	É importante mencionar que é possível atribuir propriedades a arestas no OrientDB. Dessa forma o relacionamento "Parente\_De"\ entre um parlamentar e uma pessoa, possui um atributo grau que indica qual o grau de parentesco entre esses dois vértices. A CEAP afirma que é irregular transações com parentes de até terceiro grau.
 
 \section{Sistema Web}
 
@@ -159,7 +159,7 @@ response = HTTParty.get('http://localhost:2481/class/
 			basic_auth: auth)
 \end{lstlisting}
 
-A Consulta \ref{lst:http_rails_orient_db}, mostra uma requisição HTTP feita ao OrientDB, que está rodando na máquina local na porta 2481. Essa consulta é feita buscando informações da classe "EmpresaFornecedora", do banco de dados "CotasParlamentares". Além disso é necessário fornecer informações de autenticação para consultar esses dados.
+A Consulta \ref{lst:http_rails_orient_db}, mostra uma requisição HTTP feita ao OrientDB, que está rodando na máquina local na porta 2481. Essa consulta é feita buscando informações da classe "EmpresaFornecedora"\ do banco de dados "CotasParlamentares". Além disso é necessário fornecer informações de autenticação para consultar esses dados.
 
 Ao receber a resposta no formato \textit{JSON}, a controladora renderiza uma nova tela na camada de apresentação com as informações obtidas por meio da Consulta \ref{lst:http_rails_orient_db}, por exemplo. Vale ressaltar, que depois de receber a resposta do OrientDB e renderizar uma nova tela com informações, são feitos processamentos sobre os dados da resposta para que a informação esteja disponível em um formato adequado para ser apresentada.
 
