@@ -38,7 +38,7 @@ Este capítulo descreve a fundamentação teórica por trás das tecnologias uti
 
 \begin{figure}[H]
 	\centering
-    \includegraphics[width=0.4\textwidth]{graph_loop}
+    \includegraphics[width=0.8\textwidth]{graph_loop}
     \caption{Exemplo de uma estrutura de grafo com presença de laço.}
     \label{graph_loop}
 \end{figure}
@@ -49,12 +49,12 @@ Este capítulo descreve a fundamentação teórica por trás das tecnologias uti
 	
 \begin{figure}[H]
 	\centering
-    \includegraphics[width=0.4\textwidth]{direction}
+    \includegraphics[width=0.8\textwidth]{direction}
     \caption{Exemplo de uma estrutura de grafo direcionado.}
     \label{graph_direction}
 \end{figure}
 
-	O OrientDB utiliza grafos orientados para representar os dados. Alguns relacionamentos exigem que a direção da aresta aponte para os dois lados, o OrientDB representa essa característica com somente uma aresta e uma seta em cada extremidade, mas é importante ressaltar que o é mais comum representar com duas arestas, uma em cada sentido, como mostra a Figura \ref{graph_direction} nas arestas 1 e 2.
+	O OrientDB utiliza grafos orientados para representar os dados. Alguns relacionamentos exigem que a direção da aresta aponte para os dois lados, o OrientDB representa essa característica com somente uma aresta e uma seta em cada extremidade, mas é importante ressaltar que o mais comum é representar com duas arestas, uma em cada sentido, como mostra a Figura \ref{graph_direction} nas arestas 1 e 2.
 	
 	Dentro do universo de teoria de grafos, existem ainda diversas outras propriedades tais como: Isomorfismo entre grafos, subgrafos, caminho, caminho fechado e etc. Essas propriedades fornecem a base para a compreensão e resolução de problemas importantes para a computação, como o problema de menor caminho, que busca encontrar o menor caminho entre dois vértices em um grafo com pesos. O SGBD utilizado nesse trabalho o OrientDB, fornece uma solução para o problema de menor caminho, e conhecer a teoria por trás do problema faz com que o usuário possa usar da melhor maneira essa solução \cite{orientShortestPath}.
 	
