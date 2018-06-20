@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.26)  19 JUN 2018 22:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.26)  19 JUN 2018 23:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2017,26 +2017,35 @@ Package babel Info: Redefining portuges shorthand "|
  [33 <./img/socios.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 131.
+
+<img/sistema_ceap.png, id=711, 1371.1225pt x 770.88pt>
+File: img/sistema_ceap.png Graphic file (type png)
+
+<use img/sistema_ceap.png>
+Package pdftex.def Info: img/sistema_ceap.png used on input line 141.
+(pdftex.def)             Requested size: 341.43307pt x 191.95496pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 137.
+(babel)             in language  on input line 145.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 140.
+(babel)             in language  on input line 145.
+ [34 <./img/familia_socio.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 140.
- [34 <./img/familia_socio.png>] <img/mvc-architecture.png, id=715, 722.7pt x 54
-2.025pt>
+(babel)             in language  on input line 146.
+
+<img/mvc-architecture.png, id=718, 722.7pt x 542.025pt>
 File: img/mvc-architecture.png Graphic file (type png)
 
 <use img/mvc-architecture.png>
-Package pdftex.def Info: img/mvc-architecture.png used on input line 143.
+Package pdftex.def Info: img/mvc-architecture.png used on input line 152.
 (pdftex.def)             Requested size: 318.66948pt x 239.0045pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 150.
+(babel)             in language  on input line 158.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 160.
+(babel)             in language  on input line 158.
+ [35 <./img/sistema_ceap.png> <./img/mvc-architecture.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 160.
- [35 <./img/mvc-architecture.png>])
+(babel)             in language  on input line 159.
+)
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 53.
 Package babel Info: Redefining portuges shorthand "|
@@ -2048,105 +2057,98 @@ Package babel Info: Redefining portuges shorthand "|
 (./tex/4_Apresentacao.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
+ <img/ceap-tse.png, id=738, 1371.1225pt x 770.88pt>
+File: img/ceap-tse.png Graphic file (type png)
 
-<img/sistema_ceap.png, id=734, 1371.1225pt x 770.88pt>
-File: img/sistema_ceap.png Graphic file (type png)
-
-<use img/sistema_ceap.png>
-Package pdftex.def Info: img/sistema_ceap.png used on input line 9.
+<use img/ceap-tse.png>
+Package pdftex.def Info: img/ceap-tse.png used on input line 9.
 (pdftex.def)             Requested size: 341.43307pt x 191.95496pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 16.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 16.
  [37
 
- <./img/sistema_ceap.png>]
-<img/ceap-tse.png, id=740, 1371.1225pt x 770.88pt>
-File: img/ceap-tse.png Graphic file (type png)
- <use img/ceap-tse.png>
-Package pdftex.def Info: img/ceap-tse.png used on input line 18.
-(pdftex.def)             Requested size: 341.43307pt x 191.95496pt.
-
-<img/chart_1.png, id=742, 1204.5pt x 803.0pt>
+ <./img/ceap-tse.png>]
+<img/chart_1.png, id=744, 1204.5pt x 803.0pt>
 File: img/chart_1.png Graphic file (type png)
  <use img/chart_1.png>
-Package pdftex.def Info: img/chart_1.png used on input line 28.
+Package pdftex.def Info: img/chart_1.png used on input line 19.
 (pdftex.def)             Requested size: 341.43307pt x 227.61984pt.
 
-Overfull \hbox (38.2529pt too wide) in paragraph at lines 34--35
+Overfull \hbox (38.2529pt too wide) in paragraph at lines 25--26
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 35.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 35.
-[38 <./img/ceap-tse.png> <./img/chart_1.png>]
-<img/chart_2.png, id=754, 1204.5pt x 803.0pt>
+<img/chart_2.png, id=750, 1204.5pt x 803.0pt>
 File: img/chart_2.png Graphic file (type png)
  <use img/chart_2.png>
-Package pdftex.def Info: img/chart_2.png used on input line 43.
+Package pdftex.def Info: img/chart_2.png used on input line 34.
 (pdftex.def)             Requested size: 341.43307pt x 227.61984pt.
-
-Overfull \hbox (17.10303pt too wide) in paragraph at lines 49--50
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 38.
+ [38 <./img/chart_1.png>]
+Overfull \hbox (17.10303pt too wide) in paragraph at lines 40--41
 [][][][][][][][][][][][][][][][][][][] 
  []
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 56.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 56.
-[39 <./img/chart_2.png>] <img/chart_3.png, id=771, 1204.5pt x 803.0pt>
+<img/chart_3.png, id=764, 1204.5pt x 803.0pt>
 File: img/chart_3.png Graphic file (type png)
-
-<use img/chart_3.png>
-Package pdftex.def Info: img/chart_3.png used on input line 60.
+ <use img/chart_3.png>
+Package pdftex.def Info: img/chart_3.png used on input line 51.
 (pdftex.def)             Requested size: 341.43307pt x 227.61984pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 74.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 74.
- [40 <./img/chart_3.png>]
-<img/sigma.png, id=787, 1371.1225pt x 770.88pt>
+(babel)             in language  on input line 55.
+ [39 <./img/chart_2.png>] <img/sigma.png, id=780, 1371.1225pt x 770.88pt>
 File: img/sigma.png Graphic file (type png)
- <use img/sigma.png>
-Package pdftex.def Info: img/sigma.png used on input line 77.
+
+<use img/sigma.png>
+Package pdftex.def Info: img/sigma.png used on input line 68.
 (pdftex.def)             Requested size: 341.43307pt x 191.95496pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 101.
+(babel)             in language  on input line 72.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 104.
+(babel)             in language  on input line 72.
+ [40 <./img/chart_3.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 104.
- [41 <./img/sigma.png>] <img/collaborate.png, id=794, 1371.1225pt x 770.88pt>
+(babel)             in language  on input line 92.
+
+<img/collaborate.png, id=792, 1371.1225pt x 770.88pt>
 File: img/collaborate.png Graphic file (type png)
 
 <use img/collaborate.png>
-Package pdftex.def Info: img/collaborate.png used on input line 107.
+Package pdftex.def Info: img/collaborate.png used on input line 98.
 (pdftex.def)             Requested size: 341.43307pt x 191.95496pt.
- <img/partner.png, id=797, 1371.1225pt x 770.88pt>
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 102.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 102.
+ [41 <./img/sigma.png>]
+<img/partner.png, id=799, 1371.1225pt x 770.88pt>
 File: img/partner.png Graphic file (type png)
-
-<use img/partner.png>
-Package pdftex.def Info: img/partner.png used on input line 118.
+ <use img/partner.png>
+Package pdftex.def Info: img/partner.png used on input line 109.
 (pdftex.def)             Requested size: 341.43307pt x 191.95496pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 122.
+(babel)             in language  on input line 113.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 122.
- [42 <./img/collaborate.png>]
-<img/familia.png, id=808, 1371.1225pt x 770.88pt>
+(babel)             in language  on input line 113.
+
+[42 <./img/collaborate.png>] <img/familia.png, id=810, 1371.1225pt x 770.88pt>
 File: img/familia.png Graphic file (type png)
- <use img/familia.png>
-Package pdftex.def Info: img/familia.png used on input line 129.
+
+<use img/familia.png>
+Package pdftex.def Info: img/familia.png used on input line 120.
 (pdftex.def)             Requested size: 341.43307pt x 191.95496pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 124.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 133.
-
-[43 <./img/partner.png>])
+(babel)             in language  on input line 124.
+ [43 <./img/partner.png>])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 54.
 Package babel Info: Redefining portuges shorthand "|
@@ -2249,10 +2251,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 55.
  )
 (\end occurred when \iffalse on line 120 was incomplete) 
 Here is how much of TeX's memory you used:
- 18039 strings out of 493029
- 270998 string characters out of 6136234
- 456477 words of memory out of 5000000
- 20866 multiletter control sequences out of 15000+600000
+ 18040 strings out of 493029
+ 271017 string characters out of 6136234
+ 456525 words of memory out of 5000000
+ 20867 multiletter control sequences out of 15000+600000
  74164 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,15n,92p,1940b,1877s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2268,10 +2270,10 @@ fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.p
 fb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm100
 0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm2074.pfb>
-Output written on monografia.pdf (61 pages, 1636407 bytes).
+Output written on monografia.pdf (61 pages, 1636767 bytes).
 PDF statistics:
- 1047 PDF objects out of 1200 (max. 8388607)
- 918 compressed objects within 10 object streams
+ 1049 PDF objects out of 1200 (max. 8388607)
+ 920 compressed objects within 10 object streams
  237 named destinations out of 1000 (max. 500000)
  459 words of extra memory for PDF output out of 10000 (max. 10000000)
 

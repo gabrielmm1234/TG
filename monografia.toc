@@ -36,8 +36,8 @@
 \contentsline {subsection}{\numberline {3.1.3}ETL}{28}{subsection.3.1.3}
 \contentsline {section}{\numberline {3.2}Consultas para Detec\IeC {\c c}\IeC {\~a}o de Fraudes}{30}{section.3.2}
 \contentsline {section}{\numberline {3.3}Sistema Web}{34}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}MVC}{34}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Comunica\IeC {\c c}\IeC {\~a}o com o OrientDB}{35}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.1}MVC}{35}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Comunica\IeC {\c c}\IeC {\~a}o com o OrientDB}{36}{subsection.3.3.2}
 \contentsline {chapter}{\numberline {4}CEAP: An\IeC {\'a}lise dos resultados obtidos}{37}{chapter.4}
 \contentsline {section}{\numberline {4.1}Consultas CEAP - TSE}{37}{section.4.1}
 \contentsline {section}{\numberline {4.2}Consultas CEAP para detectar fraudes}{41}{section.4.2}
