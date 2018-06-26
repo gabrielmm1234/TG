@@ -16,26 +16,25 @@
 \BOOKMARK [2][-]{subsection.2.2.2}{Caracter\355sticas de um SGBD NoSQL}{section.2.2}% 16
 \BOOKMARK [2][-]{subsection.2.2.3}{Gerenciamento de Transa\347\365es}{section.2.2}% 17
 \BOOKMARK [2][-]{subsection.2.2.4}{Categorias de NoSQL}{section.2.2}% 18
-\BOOKMARK [1][-]{section.2.3}{Compara\347\343o qualitativa entre OrientDB e Neo4j}{chapter.2}% 19
-\BOOKMARK [2][-]{subsection.2.3.1}{Compara\347\343o Qualitativa}{section.2.3}% 20
-\BOOKMARK [1][-]{section.2.4}{OrientDB}{chapter.2}% 21
-\BOOKMARK [2][-]{subsection.2.4.1}{Performance}{section.2.4}% 22
-\BOOKMARK [2][-]{subsection.2.4.2}{Arquitetura Distribu\355da}{section.2.4}% 23
-\BOOKMARK [2][-]{subsection.2.4.3}{Orienta\347\343o a Objetos}{section.2.4}% 24
-\BOOKMARK [1][-]{section.2.5}{REST}{chapter.2}% 25
-\BOOKMARK [2][-]{subsection.2.5.1}{Princ\355pios do Estilo Arquitetural REST}{section.2.5}% 26
-\BOOKMARK [2][-]{subsection.2.5.2}{Interface REST no OrientDB}{section.2.5}% 27
-\BOOKMARK [0][-]{chapter.3}{CEAP: Detec\347\343o de Fraudes Com o Uso de SGBD Orientado a Grafos}{}% 28
-\BOOKMARK [1][-]{section.3.1}{ETL e Modelo do Banco de Dados}{chapter.3}% 29
-\BOOKMARK [2][-]{subsection.3.1.1}{Dados Abertos}{section.3.1}% 30
-\BOOKMARK [2][-]{subsection.3.1.2}{Modelo de Dados}{section.3.1}% 31
-\BOOKMARK [2][-]{subsection.3.1.3}{ETL}{section.3.1}% 32
-\BOOKMARK [1][-]{section.3.2}{Consultas para Detec\347\343o de Fraudes}{chapter.3}% 33
-\BOOKMARK [1][-]{section.3.3}{Sistema Web}{chapter.3}% 34
-\BOOKMARK [2][-]{subsection.3.3.1}{MVC}{section.3.3}% 35
-\BOOKMARK [2][-]{subsection.3.3.2}{Comunica\347\343o com o OrientDB}{section.3.3}% 36
-\BOOKMARK [0][-]{chapter.4}{CEAP: An\341lise dos resultados obtidos}{}% 37
-\BOOKMARK [1][-]{section.4.1}{Consultas CEAP - TSE}{chapter.4}% 38
-\BOOKMARK [1][-]{section.4.2}{Consultas CEAP para detectar fraudes}{chapter.4}% 39
-\BOOKMARK [0][-]{chapter.5}{Conclus\343o}{}% 40
-\BOOKMARK [0][-]{section*.44}{Refer\352ncias}{}% 41
+\BOOKMARK [1][-]{section.2.3}{Compara\347\343o Qualitativa entre OrientDB e Neo4j}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.4}{OrientDB}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.4.1}{Performance}{section.2.4}% 21
+\BOOKMARK [2][-]{subsection.2.4.2}{Arquitetura Distribu\355da}{section.2.4}% 22
+\BOOKMARK [2][-]{subsection.2.4.3}{Orienta\347\343o a Objetos}{section.2.4}% 23
+\BOOKMARK [1][-]{section.2.5}{REST}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.5.1}{Princ\355pios do Estilo Arquitetural REST}{section.2.5}% 25
+\BOOKMARK [2][-]{subsection.2.5.2}{Interface REST no OrientDB}{section.2.5}% 26
+\BOOKMARK [0][-]{chapter.3}{CEAP: Detec\347\343o de Fraudes Com o Uso de SGBD Orientado a Grafos}{}% 27
+\BOOKMARK [1][-]{section.3.1}{ETL e Modelo do Banco de Dados}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.1.1}{Dados Abertos}{section.3.1}% 29
+\BOOKMARK [2][-]{subsection.3.1.2}{Modelo de Dados}{section.3.1}% 30
+\BOOKMARK [2][-]{subsection.3.1.3}{ETL}{section.3.1}% 31
+\BOOKMARK [1][-]{section.3.2}{Consultas para Detec\347\343o de Fraudes}{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.3}{Sistema Web}{chapter.3}% 33
+\BOOKMARK [2][-]{subsection.3.3.1}{MVC}{section.3.3}% 34
+\BOOKMARK [2][-]{subsection.3.3.2}{Comunica\347\343o com o OrientDB}{section.3.3}% 35
+\BOOKMARK [0][-]{chapter.4}{CEAP: An\341lise dos Resultados Obtidos}{}% 36
+\BOOKMARK [1][-]{section.4.1}{Consultas CEAP - TSE}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.2}{Consultas CEAP para Detectar Fraudes}{chapter.4}% 38
+\BOOKMARK [0][-]{chapter.5}{Conclus\343o}{}% 39
+\BOOKMARK [0][-]{section*.44}{Refer\352ncias}{}% 40

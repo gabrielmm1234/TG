@@ -1,33 +1,33 @@
-	Esse capítulo tem como objetivo, descrever todo o processo de desenvolvimento realizado para detectar possíveis fraudes na CEAP. Inicialmente é descrito em detalhes como foi desenvolvido um ETL para extrair os dados da CEAP, fornecidos pela Câmara dos Deputados, e carregá-los no OrientDB, além de explicar a modelagem feita para o armazenamento dos dados. Em seguida, explica-se o funcionamento das consultas realizadas para a detecção de fraudes. Finalmente, é apresentado a arquitetura do sistema web, e como o sistema se comunica com o OrientDB e apresenta informações relevantes sobre os dados.
+	Este capítulo tem como objetivo, descrever todo o processo de desenvolvimento realizado para detectar possíveis fraudes na CEAP. Inicialmente, é descrito em detalhes como foi desenvolvido um ETL para extrair os dados da CEAP, fornecidos pela Câmara dos Deputados, e carregá-los no OrientDB, além de explicar a modelagem feita para o armazenamento dos dados. Em seguida, explica-se o funcionamento das consultas realizadas para a detecção de fraudes. Finalmente, é apresentado a arquitetura do sistema web, e como o sistema se comunica com o OrientDB, e apresenta informações relevantes sobre os dados.
 
 \section{ETL e Modelo do Banco de Dados}
 
 \subsection{Dados Abertos}
 
-Foram utilizadas duas bases de dados abertos para o desenvolvimento deste trabalho. A primeira é referente aos dados da cota para exercício da atividade parlamentar, e pode ser obtida no seguinte site da Câmara dos Deputados\footnote{http://www2.camara.leg.br/transparencia/cota-para-exercicio-da-atividade-parlamentar/dados-abertos-cota-parlamentar}. A segunda base diz respeito as doações que cada deputado recebeu de empresas ou pessoas físicas, para a campanha eleitoral de 2014, e pode ser obtida no seguinte site do Tribunal Superior Eleitoral \footnote{http://www.tse.jus.br/eleitor-e-eleicoes/estatisticas/repositorio-de-dados-eleitorais-1/repositorio-de-dados-eleitorais}.
+Neste trabalho, foram utilizadas duas bases de dados abertos para o desenvolvimento do banco de dados. A primeira é referente aos dados da cota para exercício da atividade parlamentar, e pode ser obtida no site da Câmara dos Deputados\footnote{http://www2.camara.leg.br/transparencia/cota-para-exercicio-da-atividade-parlamentar/dados-abertos-cota-parlamentar}. A segunda base diz respeito as doações que cada Deputado recebeu de empresas ou pessoas físicas, para a campanha eleitoral de 2014, e pode ser obtida no site do Tribunal Superior Eleitoral \footnote{http://www.tse.jus.br/eleitor-e-eleicoes/estatisticas/repositorio-de-dados-eleitorais-1/repositorio-de-dados-eleitorais}.
 
-A iniciativa de disponibilizar dados e informações por meio de portais tem como um dos objetivos melhorar a confiança da população nos serviços prestados pelo governo. A transparência governamental é , portanto, uma ótima iniciativa e extremamente benéfica para a população. Porém ainda existem diversos pontos a serem melhorados para que estudos sejam feitos de forma mais rápida e precisa. Um dos maiores desafios desse projeto foi trabalhar com as bases de dados abertas mencionadas nesta seção.
+A iniciativa de disponibilizar dados e informações por meio de portais tem como um dos objetivos melhorar a confiança da população nos serviços prestados pelo governo. A transparência governamental é, portanto, uma ótima iniciativa e extremamente benéfica para a população. Porém, ainda existem diversos pontos a serem melhorados para que os estudos sejam feitos de forma mais rápida e precisa. Um dos maiores desafios deste projeto foi trabalhar com as bases de dados abertas mencionadas nesta seção.
 
-Trabalhar com esses dados abertos se tornou um desafio, porque, cada instituição fornece os dados da própria maneira, essa falta de padronização dificultou bastante a fase de carregamento dos dados. Isso se deve ao fato de que a base de dados do TSE fornece o CPF de cada candidato, já a base da CEAP não fornece um identificador único para o deputado. Portanto, no momento de realizar o cruzamento não existia um identificador único em ambas as bases para fazer o relacionamento entre as bases de dados. Para resolver esse problema, se fez necessário realizar o cruzamento entre as bases por meio do nome de cada candidato, o que também foi um desafio, já que cada base utiliza um nome diferente para cada candidato. Os detalhes do processo de extração, transformação e carregamento são fornecidos na Seção \ref{etl-subsection}, o ponto principal a ser levantado é que trabalhar com dados abertos no Brasil, para realizar estudos e pesquisas, pode se tornar um desafio devido a falta de padronização entre as bases de dados. 
+Trabalhar com esses dados abertos se tornou um desafio, porque, cada instituição fornece os dados da própria maneira, essa falta de padronização dificultou bastante a fase de carregamento dos dados. Isso se deve ao fato de que a base de dados do TSE fornece o CPF de cada candidato, já a base da CEAP não fornece um identificador único para o deputado. Portanto, no momento de realizar o cruzamento não existia um identificador único em ambas as bases para fazer o relacionamento entre as bases de dados. Para resolver esse problema, fez-se necessário realizar o cruzamento entre as bases por meio do nome de cada candidato, o que também foi um desafio, já que cada base utiliza um nome diferente para cada candidato. Os detalhes do processo de extração, transformação e carregamento são fornecidos na Seção \ref{etl-subsection}, contudo, o ponto principal a ser levantado é que trabalhar com dados abertos no Brasil, para realizar estudos e pesquisas, pode se tornar um desafio devido a falta de padronização entre as bases de dados. 
 
 \subsection{Modelo de Dados}
 
 A modelagem dos dados seguiu o modelo GRAPHED \cite{graphed}. O trabalho em questão, busca propor formas de modelagem dos dados para bancos de dados orientado a grafos, uma área já desenvolvida no universo dos SGBD relacionais, mas ainda em evolução na categoria de SGBD orientado a grafos.
 
-A modelagem tem como objetivo dar uma visão geral de como os dados estão organizados no banco de dados, suas propriedades e relacionamentos. Dessa forma, o modelo de dados desenvolvido busca evidenciar as propriedades dos Parlamentares, tais como: nome, partido e unidade federativa. Além disso apresenta características que identificam uma Empresa como nome e CNPJ, e características atreladas a transação que o deputado faz com uma empresa como o valor e descrição da transação. A Figura \ref{fig:modeloDeDados} apresenta a modelagem  desenvolvida.
+A modelagem tem como objetivo dar uma visão geral de como os dados estão organizados no banco de dados, suas propriedades e seus relacionamentos. Dessa forma, o modelo de dados desenvolvido busca evidenciar as propriedades dos Parlamentares, tais como: nome, partido e unidade federativa. Além disso, apresenta características que identificam uma Empresa como nome e CNPJ, e características atreladas a transação que o Deputado faz com uma empresa, como o valor e a descrição da transação. A Figura \ref{fig:modeloDeDados} apresenta a modelagem  desenvolvida.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=.85\textwidth]{CEAP-v3.png}
-\caption{Modelo de dados seguindo o formato GRAPHED.}
+\caption{Modelo de Dados Seguindo o Formato GRAPHED.}
 \label{fig:modeloDeDados}
 \end{figure}
 
-Como se pode observar na Figura \ref{fig:modeloDeDados}, existem quatro classes que representam as instâncias dos vértices no banco de dados, que são: Parlamentar, Transação, Empresa fornecedora e Pessoa. As setas que saem de uma classe a outra, representa um relacionamento entre essas classes, que no grafo é representado por uma aresta. Dessa forma, uma instância de um parlamentar, realiza transações, que por sua vez é fornecida por uma empresa fornecedora. Esse caminho descrito, representa as transações da CEAP, fornecida pela Câmara dos Deputados.
+Como se pode observar na Figura \ref{fig:modeloDeDados}, existem quatro classes que representam as instâncias dos vértices no banco de dados, que são: Parlamentar, Transação, Empresa fornecedora e Pessoa. As setas que saem de uma classe a outra, representa um relacionamento entre essas classes, que no grafo é representado por uma aresta. Dessa forma, uma instância de um parlamentar, realiza transações, que por sua vez é fornecida por uma empresa fornecedora. Esse caminho descrito representa as transações da CEAP, fornecida pela Câmara dos Deputados.
 
 De forma análoga, uma empresa fornecedora realiza transações, que por sua vez favorece um certo parlamentar. Esse caminho representa os dados das doações das empresas para os deputados nas eleições de 2014, fornecido pelo TSE. 
 
-Os demais relacionamentos, como "socio-de"\ e "parente-de"\ tem por objetivo identificar possíveis fraudes na CEAP, uma vez que um parlamentar não pode utilizar a verba da CEAP com serviços de uma empresa que é sócio. Esses dois caminhos, se apresentaram como o maior desafio para o desenvolvimento do trabalho, uma vez que dados de parentesco dos parlamentares não são dados abertos.
+Os demais relacionamentos, como "socio-de"\ e "parente-de"\ tem por objetivo identificar possíveis fraudes na CEAP, uma vez que um parlamentar não pode utilizar a verba da CEAP com serviços de uma empresa que é sócio. Esses dois caminhos se apresentaram como o maior desafio para o desenvolvimento deste trabalho, uma vez que dados de parentesco dos parlamentares não são dados abertos.
 
 \subsection{ETL} \label{etl-subsection}
 
@@ -38,30 +38,30 @@ Os demais relacionamentos, como "socio-de"\ e "parente-de"\ tem por objetivo ide
 		\item Carregar os dados no banco de dados.
 \end{itemize}
 	
-	Os dados abertos da CEAP estão presentes em diferentes formatos: \textit{XML}, \textit{JSON}, \textit{CSV} e \textit{XLSX}. Neste trabalho foi utilizado o formato \textit{CSV} do ano de 2017. Nesse formato, os dados estão dispostos em linhas e colunas, cada linha representa uma transação diferente para um certo parlamentar. Dentre as colunas disponibilizadas, foram utilizadas as seguintes informações para a fase de extração: TxtDescricao, TxtDescricaoEspecificacao, VlrDocumento, TxNomeParlamentar, IdeCadastro, NumCarteiraParlamentar, SgUF, SgPartido, TxtFornecedor e TxtCNPJCPF. Após o desenvolvimento do modelo de dados, foi desenvolvido um ETL utilizando a linguagem java, para extrair, transformar e carregar os dados para o OrientDB. O OrientDB foi desenvolvido na linguagem java, e executa portanto na JVM. Por esse motivo, o ETL foi feito em java, uma vez que, o OrientDB possui uma boa interface com essa linguagem. O ETL pode ser acessado por meio desse link no github\footnote{https://github.com/gabrielmm1234/CEAP-ETL}.
+	Os dados abertos da CEAP estão presentes em diferentes formatos: \textit{XML}, \textit{JSON}, \textit{CSV} e \textit{XLSX}. Neste trabalho foi utilizado o formato \textit{CSV} do ano de 2017. Nesse formato, os dados estão dispostos em linhas e colunas, cada linha representa uma transação diferente para um certo parlamentar. Dentre as colunas disponibilizadas foram utilizadas as seguintes informações para a fase de extração: TxtDescricao, TxtDescricaoEspecificacao, VlrDocumento, TxNomeParlamentar, IdeCadastro, NumCarteiraParlamentar, SgUF, SgPartido, TxtFornecedor e TxtCNPJCPF. Após o desenvolvimento do modelo de dados, foi desenvolvido um ETL utilizando a linguagem java, para extrair, transformar e carregar os dados para o OrientDB. O OrientDB foi desenvolvido na linguagem java, e executa portanto na JVM. Por esse motivo, o ETL foi feito em java, uma vez que, o OrientDB possui uma boa interface com essa linguagem. O ETL pode ser acessado por meio desse \textit{link} no Github\footnote{https://github.com/gabrielmm1234/CEAP-ETL}.
 	
-	O fluxo do ETL é exemplificado na Figura \ref{fig:etlfluxo}. Dessa forma o fluxo se organiza em ler linha a linha do \textit{CSV} fornecido pela Câmara dos Deputados, e criar os vértices e arestas com base em certas condições. Por exemplo, não se pode ter mais de um vértice representando um parlamentar, mas no arquivo fornecido existem diversas transações para um mesmo deputado. Ao ler uma nova linha é preciso saber se estamos tratando de um parlamentar já persistido ou de um novo parlamentar antes de criar o vértice que o representa. O mesmo pensamento ocorre no caso de empresas fornecedoras, uma vez que não se pode ter dois vértices representando uma mesma empresa.
+	O fluxo do ETL é exemplificado na Figura \ref{fig:etlfluxo}. Dessa forma, o fluxo se organiza em ler linha a linha do \textit{CSV} fornecido pela Câmara dos Deputados, e criar os vértices e arestas com base em certas condições. Por exemplo, não se pode ter mais de um vértice representando um parlamentar, mas no arquivo fornecido existem diversas transações para um mesmo deputado. Ao ler uma nova linha é preciso saber se estamos tratando de um parlamentar já persistido ou de um novo parlamentar antes de criar o vértice que o representa. O mesmo pensamento ocorre no caso de empresas fornecedoras, uma vez que não se pode ter dois vértices representando uma mesma empresa.
 	
 \begin{figure}[H]
 \centering
-\includegraphics[width=.5\textwidth]{etlfluxo.png}
-\caption{Fluxo de extração, transformação e carregamento para o OrientDB.}
+\includegraphics[width=.7\textwidth]{etlfluxo.png}
+\caption{Fluxo de Extração, Transformação e Carregamento para o OrientDB.}
 \label{fig:etlfluxo}
 \end{figure}
 
-O ponto chave desse processo são as associações entre os parlamentares com as transações e as empresas que forneceram o serviço. Criando esse vínculo, é possível por meio de consultas de casamento de padrões identificar possíveis fraudes ou padrões de transação e doação envolvendo um mesmo parlamentar e uma mesma empresa. A estrutura de um grafo fornece naturalmente os relacionamentos de forma simples e intuitiva, sendo uma ótima alternativa a estrutura relacional, que é muito comum atualmente. Além disso, a visualização da informação se torna mais clara e objetiva o que é uma ótima característica ao se tratar de transparência em dados governamentais.
+O ponto chave deste processo são as associações entre os parlamentares com as transações e as empresas que forneceram o serviço. Criando esse vínculo, é possível por meio de consultas de casamento de padrões identificar possíveis fraudes ou padrões de transação e doação envolvendo um mesmo parlamentar e uma mesma empresa. A estrutura de um grafo fornece naturalmente os relacionamentos de forma simples e intuitiva, sendo uma ótima alternativa a estrutura relacional, que é muito comum atualmente. Além disso, a visualização da informação se torna mais clara e objetiva o que é uma ótima característica ao se tratar de transparência em dados governamentais.
 
-O arquivo de dados da CEAP no ano de 2017 possui um total de 209496 transações, o carregamento total dessas transações levou cerca de 16 horas em um notebook com Ubuntu 16-04 LTS, Intel Core i5-5200U CPU 2.20GHz * 4 e 6 Gb de memória RAM. Esse tempo poderia ser otimizado, pois da forma que o ETL foi desenvolvido, sempre é feito uma busca no banco de dados para saber se um parlamentar ou empresa já estão persistidos. Como o tempo de carga não é um objetivo prioritário no escopo do projeto essa melhora no tempo de carregamento não foi feita.
+O arquivo de dados da CEAP no ano de 2017 possui um total de 209.496 transações, o carregamento total dessas transações levou cerca de 16 horas em um notebook com Ubuntu 16-04 LTS, Intel Core i5-5200U CPU 2.20GHz * 4 e 6 Gb de memória RAM. Esse tempo poderia ser otimizado, pois da forma que o ETL foi desenvolvido, sempre é feito uma busca no banco de dados para saber se um parlamentar ou empresa já estão persistidos. Como o tempo de carga não é um objetivo prioritário no escopo deste projeto, essa melhoria no tempo de carregamento não foi feita.
 
-Já o arquivo das doações passou por um processo de filtragem, para obter somente os dados referentes aos deputados federais dos estados de Minas Gerais e Distrito Federal. Esse filtro para obter deputados federais dos dois estados foi feito para validar mais rapidamente a arquitetura e proposta de solução, no futuro demais estados serão adicionados no banco de dados. O arquivo já filtrado possui um total de 19302 doações de empresas a candidatura de diversos deputados. Claramente, somente alguns desses deputados foram de fato eleitos, e portanto deputados que não se encontravam na base da CEAP foram ignorados. O tempo total de processamento desse arquivo foi de 5 horas, podendo ser melhorado nos mesmos princípios dos dados da CEAP.
+Já o arquivo das doações passou por um processo de filtragem, para obter somente os dados referentes aos Deputados Federais do estado de Minas Gerais e do Distrito Federal. Esse filtro para obter Deputados Federais dos dois estados foi feito para validar mais rapidamente a arquitetura e proposta de solução, no futuro demais Estados serão adicionados ao banco de dados. O arquivo já filtrado possui um total de 19.302 doações de empresas a candidatura de diversos deputados. Claramente, somente alguns desses Deputados foram de fato eleitos e, portanto, Deputados que não se encontravam na base da CEAP foram ignorados. O tempo total de processamento desse arquivo foi de 5 horas, podendo ser melhorado nos mesmos princípios dos dados da CEAP.
 
 \section{Consultas para Detecção de Fraudes}
 
-Finalizado a obtenção e carregamento dos dados no OrientDB, foram feitas consultas em busca dos relacionamentos entre as empresas doadoras e os deputados de Minas Gerais e Distrito Federal que utilizaram a CEAP com essas mesmas empresas.
+Finalizada as atividades de obtenção e de carregamento dos dados no OrientDB, foram feitas consultas em busca dos relacionamentos entre as empresas doadoras e os Deputados de Minas Gerais e Distrito Federal que utilizaram a CEAP com essas mesmas empresas.
 	
-	A consulta feita para obter os resultados esperados é baseada no conceito de casamento de padrão, muito comum em linguagens funcionais. Dessa forma, para obter um certo padrão dentro do grafo o OrientDB fornece a função MATCH, como mostra a Consulta \ref{lst:label}.
+	A consulta feita para obter os resultados esperados é baseada no conceito de casamento de padrão, muito comum em linguagens funcionais. Dessa forma, para obter um certo padrão dentro do grafo, o OrientDB fornece a função MATCH, como mostra o Código \ref{lst:label}.
 
-\begin{lstlisting}[label={lst:label}, caption={Consulta de relacionamento de doações entre deputados e empresas.},captionpos=b, language=sql]
+\begin{lstlisting}[label={lst:label}, caption={Consulta de Relacionamento de Doações entre Deputados e Empresas.},captionpos=b, language=sql]
 MATCH 
   {class:Parlamentar, as:p} -RealizaTransacao-> 
   	{class:Transacao, as:t} 
@@ -71,27 +71,27 @@ MATCH
 RETURN $elements
 \end{lstlisting}
 
-A Consulta \ref{lst:label} busca um certo padrão dentro do banco de dados. Esse padrão é definido por parlamentares chamados de "p", que realizam transações da CEAP "t", fornecidas por uma certa empresa "e". Além disso essa mesma empresa "e", realiza uma transação de doação "t2", que é fornecida para o mesmo parlamentar "p"\ definido no início da sentença. O resultado dessa consulta nos deputados de Minas Gerais e Distrito federal é apresentado na Figura \ref{fig:ceap_tse_graph}.
+A Consulta \ref{lst:label} busca um certo padrão dentro do banco de dados. Esse padrão é definido por parlamentares chamados de "p", que realizam transações da CEAP "t", fornecidas por uma certa empresa "e". Além disso, essa mesma empresa "e", realiza uma transação de doação "t2", que é fornecida para o mesmo parlamentar "p"\ definido no início da sentença. O resultado dessa consulta nos Deputados de Minas Gerais e Distrito federal é apresentado na Figura \ref{fig:ceap_tse_graph}.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.85\textwidth]{ceap_tse_graph.png}
-\caption{Resultado do cruzamento entre dados da CEAP e do TSE.}
+\includegraphics[width=.99\textwidth]{ceap_tse_graph.png}
+\caption{Resultado do Cruzamento entre Dados da CEAP e do TSE.}
 \label{fig:ceap_tse_graph}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=.85\textwidth]{padrao_ceap_tse.png}
-\caption{Padrão de relacionamento entre dados da CEAP e do TSE.}
+\caption{Padrão de Relacionamento entre Dados da CEAP e do TSE.}
 \label{fig:padrao_ceap_tse}
 \end{figure}
 
-O padrão definido foi encontrado para um total de sete parlamentares todos em Minas Gerais. A Figura \ref{fig:padrao_ceap_tse} mostra em mais detalhes como o padrão é definido. A partir da orientação das setas, é possível perceber que o parlamentar representado pelo vértice marrom claro e com o ícone de uma pessoa, realizou três transações, representadas pelo vértice roxo claro, com uma certa empresa representada pelo vértice marrom escuro. Sendo que essa empresa fez uma doação para esse parlamentar. No total, foram 44 transações registradas na CEAP, e 96 doações registradas pelo TSE que estão seguindo esse padrão.
+O padrão definido foi encontrado para um total de sete parlamentares, todos em Minas Gerais. A Figura \ref{fig:padrao_ceap_tse} mostra em mais detalhes como o padrão é definido. A partir da orientação das setas, é possível perceber que o parlamentar representado pelo vértice marrom claro e com o ícone de uma pessoa, realizou três transações, representadas pelo vértice roxo claro, com uma certa empresa representada pelo vértice marrom escuro. Sendo que essa empresa fez uma doação para esse parlamentar. No total, foram 44 transações registradas na CEAP, e 96 doações registradas pelo TSE que estão seguindo esse padrão.
 
-Foi feita uma consulta para obter os padrões que podem ser considerados fraudes na CEAP, e testada com dados fictícios. No caso a consulta busca por deputados que usaram a CEAP com empresas das quais são sócios, como apresentada na Consulta \ref{lst:label2}.
+Assim, foi feita uma consulta para obter os padrões que podem ser considerados fraudes na CEAP, e testada com dados fictícios. No caso a consulta busca por Deputados que usaram a CEAP com empresas das quais são sócios, como apresentada no Código \ref{lst:label2}.
 
-\begin{lstlisting}[label={lst:label2}, caption={Consulta de relacionamento de uso da CEAP entre deputados e empresas nas quais o deputado é sócio.},captionpos=b, language=sql]
+\begin{lstlisting}[label={lst:label2}, caption={Consulta de Relacionamento de uso da CEAP entre Deputados e Empresas nas quais o Deputado é Sócio.},captionpos=b, language=sql]
 MATCH 
   {class:Parlamentar, as:p} -RealizaTransacao-> 
   	{class:Transacao, as:t} 
@@ -103,15 +103,15 @@ RETURN $elements
 \begin{figure}[H]
 \centering
 \includegraphics[width=.85\textwidth]{socios.png}
-\caption{Padrão de uma transação fraudulenta com dados fictícios.}
+\caption{Padrão de uma Transação Fraudulenta com Dados Fictícios.}
 \label{fig:socios}
 \end{figure}
 
-Como mostra a Figura \ref{fig:socios}, a consulta consegue localizar um padrão de transações efetuadas entre um deputado e uma empresa, na qual o deputado faz parte do quadro de sócios. A forma com que o grafo é apresentado visualmente, pode facilitar bastante o entendimento dos relacionamentos, de forma que fica claro que um deputado, representado pelo círculo com o ícone de uma pessoa, é sócio de uma empresa que prestou serviços com o dinheiro da CEAP. Dessa forma, a visualização gráfica, é uma das vantagens de um SGBD orientado a grafos, pois, a visualização dos vínculos em um grafo é mais simples e intuitiva do que uma estrutura de tabela utilizada nos SGBD relacionais.
+Como mostra a Figura \ref{fig:socios}, a consulta consegue localizar um padrão de transações efetuadas entre um Deputado e uma empresa, na qual o Deputado faz parte do quadro de sócios. A forma com que o grafo é apresentado visualmente, pode facilitar bastante o entendimento dos relacionamentos, de forma que fica claro que um deputado, representado pelo círculo com o ícone de uma pessoa, é sócio de uma empresa que prestou serviços com o dinheiro da CEAP. Dessa forma, a visualização gráfica, é uma das vantagens de um SGBD orientado a grafos, pois, a visualização dos vínculos em um grafo é mais simples e intuitiva do que uma estrutura de tabela utilizada nos SGBD relacionais.
 
-Outra consulta feita com o objetivo de encontrar padrões que violam as regras da CEAP, diz respeito a transações feitas por parlamentares no qual algum familiar é sócio da empresa envolvida na transação. Utilizando dados fictícios, a Figura \ref{fig:familia_socio} apresenta esse padrão. A consulta \ref{lst:familia_sql} segue o mesmo formato das consultas anteriores utilizando a função MATCH para se beneficiar do casamento de padrões.
+Outra consulta feita com o objetivo de encontrar padrões que violam as regras da CEAP, diz respeito a transações feitas por parlamentares no qual algum familiar é sócio da empresa envolvida na transação. Utilizando dados fictícios, a Figura \ref{fig:familia_socio} apresenta esse padrão. O Código \ref{lst:familia_sql} segue o mesmo formato das consultas anteriores utilizando a função MATCH para se beneficiar do casamento de padrões.
 
-\begin{lstlisting}[label={lst:familia_sql}, caption={Consulta de relacionamento de uso da CEAP entre deputados e empresas, em que um parente do deputado é sócio da empresa.},captionpos=b, language=sql]
+\begin{lstlisting}[label={lst:familia_sql}, caption={Consulta de Relacionamento de Uso da CEAP entre Deputados e Empresas, em que um Parente do Deputado é Sócio da Empresa.},captionpos=b, language=sql]
 MATCH 
   {class:Parlamentar, as:p} -RealizaTransacao-> {class:Transacao, as:t} 
        -FornecidaPor-> {class:EmpresaFornecedora, as:e},
@@ -122,15 +122,15 @@ RETURN $elements
 \begin{figure}[H]
 \centering
 \includegraphics[width=.85\textwidth]{familia_socio}
-\caption{Padrão de uma transação fraudulenta na qual um parente do parlamentar é sócio da empresa.}
+\caption{Padrão de uma Transação Fraudulenta na qual um Parente do Parlamentar é Sócio da Empresa.}
 \label{fig:familia_socio}
 \end{figure}
 
-	É importante mencionar que é possível atribuir propriedades a arestas no OrientDB. Dessa forma o relacionamento "Parente\_De"\ entre um parlamentar e uma pessoa, possui um atributo grau que indica qual o grau de parentesco entre esses dois vértices. A CEAP afirma que é irregular transações com parentes de até terceiro grau.
+	É importante mencionar que é possível atribuir propriedades a arestas no OrientDB. Dessa forma, o relacionamento "Parente\_De"\ entre um parlamentar e uma pessoa possui um atributo grau que indica qual o grau de parentesco entre esses dois vértices. A CEAP afirma que é irregular transações com parentes de até terceiro grau.
 
 \section{Sistema Web}
 
-	O sistema web desenvolvido tem dois importantes objetivos, que são: fornecer informações a respeito dos dados do TSE e da CEAP, e criar um meio que a sociedade possa contribuir com dados que não são disponibilizados publicamente pelo governo e orgãos brasileiros. A partir desses dados fornecidos, será possível verificar se algum deputado realizou ou não transações seguindo padrões fraudulentos como os da Consulta \ref{lst:label2}.
+	O sistema web desenvolvido tem dois importantes objetivos, que são: fornecer informações a respeito dos dados do TSE e da CEAP, e criar um meio que a sociedade possa contribuir com dados que não são disponibilizados publicamente pelo governo e orgãos brasileiros. A partir desses dados fornecidos, será possível verificar se algum deputado realizou ou não transações seguindo padrões fraudulentos como os do Código \ref{lst:label2}.
 	
 	O sistema foi desenvolvido utilizando o \textit{framework Ruby on Rails}, sendo um software \textit{open source} que é baseado no padrão de arquitetura \textit{MVC (Model-View-Controller)}. O código do sistema desenvolvido também pode ser encontrado no github\footnote{https://github.com/gabrielmm1234/ceap}.
 	
@@ -139,7 +139,7 @@ RETURN $elements
 \begin{figure}[H]
 \centering
 \includegraphics[width=.75\textwidth]{sistema_ceap.png}
-\caption{Tela inicial do sistema "CEAP Colaborativo".}
+\caption{Tela Inicial do Sistema "CEAP Colaborativo".}
 \label{fig:sistema_ceap}
 \end{figure}
 
@@ -150,25 +150,25 @@ RETURN $elements
 \begin{figure}[H]
 \centering
 \includegraphics[width=.7\textwidth]{mvc-architecture.png}
-\caption{Comunicação entre os elementos do padrão MVC.}
+\caption{Comunicação entre os Elementos do Padrão MVC.}
 \label{fig:mvc}
 \end{figure}
 
-Portanto, no sistema desenvolvido as \textit{views} enviam requisições aos \textit{controllers}, que por sua vez vão se comunicar com o OrientDB e recuperar ou alterar o estado dos dados armazenados. Em seguida os \textit{controllers} renderizam as \textit{views} com as informações necessárias.
+Portanto, no sistema desenvolvido as \textit{views} enviam requisições aos \textit{controllers}, que por sua vez vão se comunicar com o OrientDB e recuperar ou alterar o estado dos dados armazenados. Em seguida, os \textit{controllers} renderizam as \textit{views} com as informações necessárias.
 
 \subsection{Comunicação com o OrientDB} \label{orient-communication}
 
-	Como foi mencionado na Seção \ref{rest_orient_db}, o OrientDB fornece uma interface \textit{REST} de forma que as aplicações se comuniquem com o SGBD de forma eficiente e escalável. O sistema web desenvolvido se comunica com o OrientBD utilizando o protocolo HTTP e seguindo estilo arquitetural REST.
+	Como foi mencionado na Seção \ref{rest_orient_db}, o OrientDB fornece uma interface \textit{REST} de forma que as aplicações se comuniquem com o SGBD de maneira eficiente e escalável. O sistema web desenvolvido se comunica com o OrientBD utilizando o protocolo HTTP e seguindo estilo arquitetural REST.
 	
-	Em geral, o fluxo de informação no sistema se desenvolve da seguinte forma: na camada de apresentação (\textit{view}), é enviado uma requisição de alguma informação para uma certa controladora. A controladora, se comunica com o OrientDB por meio do protocolo HTTP, como mostra a Consulta \ref{lst:http_rails_orient_db}.
+	Em geral, o fluxo de informação no sistema se desenvolve da seguinte forma: na camada de apresentação (\textit{view}), é enviado uma requisição de alguma informação para uma certa controladora. A controladora, se comunica com o OrientDB por meio do protocolo HTTP, como mostrado no Código \ref{lst:http_rails_orient_db}.
 
-\begin{lstlisting}[label={lst:http_rails_orient_db}, caption={Exemplo de consulta no OrientDB para retornar informações da classe de empresas fornecedoras.},captionpos=b]
+\begin{lstlisting}[label={lst:http_rails_orient_db}, caption={Exemplo de Consulta no OrientDB para Retornar Informações da Classe de Empresas Fornecedoras.},captionpos=b]
 response = HTTParty.get('http://localhost:2481/class/
 			CotasParlamentares/EmpresaFornecedora', 
 			basic_auth: auth)
 \end{lstlisting}
 
-A Consulta \ref{lst:http_rails_orient_db}, mostra uma requisição HTTP feita ao OrientDB, que está rodando na máquina local na porta 2481. Essa consulta é feita buscando informações da classe "EmpresaFornecedora"\ do banco de dados "CotasParlamentares". Além disso é necessário fornecer informações de autenticação para consultar esses dados.
+A Consulta \ref{lst:http_rails_orient_db}, mostra uma requisição HTTP feita ao OrientDB, que está rodando na máquina local na porta 2481. Essa consulta é feita buscando informações da classe "EmpresaFornecedora"\ do banco de dados "CotasParlamentares". Além disso, é necessário fornecer informações de autenticação para consultar esses dados.
 
-Ao receber a resposta no formato \textit{JSON}, a controladora renderiza uma nova tela na camada de apresentação com as informações obtidas por meio da Consulta \ref{lst:http_rails_orient_db}, por exemplo. Vale ressaltar, que depois de receber a resposta do OrientDB e renderizar uma nova tela com informações, são feitos processamentos sobre os dados da resposta para que a informação esteja disponível em um formato adequado para ser apresentada.
+Ao receber a resposta no formato \textit{JSON}, a controladora renderiza uma nova tela na camada de apresentação com as informações obtidas por meio da Consulta \ref{lst:http_rails_orient_db}, por exemplo. Dessa forma, vale ressaltar que depois de receber a resposta do OrientDB e renderizar uma nova tela com informações, são feitos processamentos sobre os dados da resposta para que a informação esteja disponível em um formato adequado para ser apresentada.
 
